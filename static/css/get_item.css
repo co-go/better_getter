@@ -1,5 +1,7 @@
 .search {
   top: 0;
+  left: 0;
+  right: 0;
   margin-top: 150px;
   width: 60%;
   position: absolute;
