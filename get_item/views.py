@@ -1,9 +1,79 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
+import requests
+import json
+from bs4 import BeautifulSoup
+
 def index(request):
     return HttpResponse("<h1> Item could not be found! </h1>")
 
 def get_item_details(request, item_name):
-    context = { "item_name": item_name }
+    # grab the latest item data and parse it
+    data = requests.get("http://warframe.market/api/get_all_items_v2")
+    items = data.json()
+
+    # function that returns the type of the item (if it exists)
+    def ret_type(item_n):
+        for item in items:
+            if (item["item_name"] == item_n):
+                return item["item_type"]
+
+    # return a connection to the orders for the passed in item
+    def connect(item_n):
+        r = requests.get("http://warframe.market/api/get_orders/%s/%s" % (ret_type(item_n), item_n))
+        return r
+
+    r = connect(item_name)
+
+    current_items = r.json()
+    online_prices = []
+    ingame_prices = []
+
+    if (current_items["code"] != 404):
+        for item in current_items["response"]["sell"]:
+            if (item["online_ingame"] and
+                item["ingame_name"].find("(PS4)") == -1 and
+                item["ingame_name"].find("(XB1)") == -1):
+
+                ingame_prices.append(item["price"])
+            elif (item["online_status"] and
+                  item["ingame_name"].find("(PS4)") == -1 and
+                  item["ingame_name"].find("(XB1)") == -1):
+
+                online_prices.append(item["price"])
+
+
+    online_prices.sort()
+    ingame_prices.sort()
+
+    if (len(ingame_prices) >= 5):
+        print "In-game prices have enough data"
+    elif (len(online_prices) == 0 and len(ingame_prices) == 0):
+        print "There is no current sell data"
+    else:
+        print "In-game prices will be supplemented with online data"
+
+    print "In-game prices:", ingame_prices[:5]
+
+    if (len(ingame_prices) < 5):
+        print "Online prices: ", online_prices[:(5 - len(ingame_prices))]
+
+    r = requests.get("http://warframe.wikia.com/wiki/Ducats/Prices")
+    soup = BeautifulSoup(r.text, "html.parser")
+
+    item = item_name.replace("Set", "Blueprint")
+
+    duc = soup.find("a", string=item).parent.parent.span.string
+    src = soup.find("a", string=item).previous_sibling.previous_sibling
+
+    if (item_name == "Akbronco Prime Blueprint"):
+        src = src.img["src"].split("/revision")[0]
+    else:
+        src = src.img["data-src"].split("/revision")[0]
+
+    context = { "item_name": item_name,
+                "ducats": duc,
+                "src": src }
+
     return render(request, 'get_item/item.html', context)
