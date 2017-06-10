@@ -12,6 +12,7 @@
   background-color: lightgrey;
   height: 300px;
   overflow: hidden;
+  text-align: center;
 }
 
 .top-search img {
