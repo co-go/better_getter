@@ -33,18 +33,17 @@
       <h1 class="title"> Better <b>Getter</b> </h1>
 
       <h4 class="subtitle"> Search for another item by typing in the bar below </h4>
-      <input class="form-control input-lg search" type="text" placeholder="Search for an Item">
+      <input class="form-control input-lg search typeahead" type="text" placeholder="Search for an Item">
     </div>
 
     <div class="container">
-
       <center>
         <img src="{{ src }}" style="padding-top: 50px">
         <h1 class="main-item"> {{ item_name }} </h1>
       </center>
-
     </div>
 
+    <script src="{% static 'js/search.js' %}"></script>
     <script src="{% static 'js/jquery.min.js' %}"></script>
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
   </body>
