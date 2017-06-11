@@ -11,14 +11,6 @@
 
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'css/get_item.css' %}" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
-
-    <style>
-      @font-face {
-          font-family: ADAM;
-          src: url("{% static 'fonts/ADAM.otf' %}") format("opentype");
-      }
-    </style>
 
     <link rel="icon" type="image/png" href="{% static 'img/favicon-32x32.png' %}" sizes="32x32" />
     <link rel="icon" type="image/png" href="{% static 'img/favicon-16x16.png' %}" sizes="16x16" />
@@ -33,7 +25,7 @@
       <h1 class="title"> Better <b>Getter</b> </h1>
 
       <h4 class="subtitle"> Search for another item by typing in the bar below </h4>
-      <input class="form-control input-lg search typeahead" type="text" name="valid_items" placeholder="Search for an Item">
+      <input class="form-control input-lg search typeahead" type="text" autocomplete="off" placeholder="Search for an Item">
     </div>
 
     <div class="container">
