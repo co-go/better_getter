@@ -52,6 +52,7 @@ def get_item_details(request, item_name):
                 item["ingame_name"].find("(XB1)") == -1):
 
                 ingame_buy_prices.append({"price": item["price"], "name": item["ingame_name"], "count": item["count"]})
+                
             elif (item["online_status"] and
                   item["ingame_name"].find("(PS4)") == -1 and
                   item["ingame_name"].find("(XB1)") == -1):

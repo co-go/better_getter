@@ -49,6 +49,8 @@
               <ul class="list-group">
                 {% for item in ingame_sell_prices %}
                   <li class="list-group-item">
+                    <b style="float: left"> {{ item.name }} </b>
+
                     {{ item.price }}
                     <img style="height: 1em;" src="{% static 'img/plat.png' %}" />
                     <span class="label label-success" style="float: right"><span>In-game</span></span>
@@ -59,6 +61,8 @@
               <ul class="list-group" style="margin-top: 5px">
                 {% for item in online_sell_prices %}
                   <li class="list-group-item">
+                    <b style="float: left"> {{ item.name }} </b>
+
                     {{ item.price }}
                     <img style="height: 1em;" src="{% static 'img/plat.png' %}" />
                     <span class="label label-primary" style="float: right">Online</span>
@@ -85,6 +89,8 @@
               <ul class="list-group">
                 {% for item in ingame_buy_prices %}
                   <li class="list-group-item">
+                    <b style="float: left"> {{ item.name }} </b>
+
                     {{ item.price }}
                     <img style="height: 1em;" src="{% static 'img/plat.png' %}" />
                     <span class="label label-success" style="float: right"><span>In-game</span></span>
@@ -95,6 +101,8 @@
               <ul class="list-group" style="margin-top: 5px">
                 {% for item in online_buy_prices %}
                   <li class="list-group-item">
+                    <b style="float: left"> {{ item.name }} </b>
+
                     {{ item.price }}
                     <img style="height: 1em;" src="{% static 'img/plat.png' %}" />
                     <span class="label label-primary" style="float: right">Online</span>
