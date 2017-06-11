@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Overpass:100,400,900');
 
-.search {
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: 40px auto 0;
-  max-width: 800px;
-  width: 80%
-}
-
 .top {
   height: 300px;
   width: 100%;
@@ -44,4 +35,48 @@
   margin: 0;
   letter-spacing: 0.2em;
   text-align: center;
+}
+
+.search {
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 40px auto 0;
+  max-width: 800px;
+  width: 80%;
+
+  height: 50px;
+  background: #2b303b;
+  border: none;
+  color: #63717f;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+  -webkit-transition: background .55s ease;
+  -moz-transition: background .55s ease;
+  -ms-transition: background .55s ease;
+  -o-transition: background .55s ease;
+  transition: background .55s ease;
+}
+
+.search::-webkit-input-placeholder {
+   color: #65737e;
+}
+
+.search:-moz-placeholder {
+   color: #65737e;
+}
+
+.search::-moz-placeholder {
+   color: #65737e;
+}
+
+.search:-ms-input-placeholder {
+   color: #65737e;
+}
+
+.search:focus, .search:active {
+    outline: none !important;
+    background: #ffffff !important;
 }

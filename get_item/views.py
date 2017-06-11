@@ -52,7 +52,7 @@ def get_item_details(request, item_name):
                 item["ingame_name"].find("(XB1)") == -1):
 
                 ingame_buy_prices.append({"price": item["price"], "name": item["ingame_name"], "count": item["count"]})
-                
+
             elif (item["online_status"] and
                   item["ingame_name"].find("(PS4)") == -1 and
                   item["ingame_name"].find("(XB1)") == -1):
@@ -72,7 +72,7 @@ def get_item_details(request, item_name):
         duc = soup.find("a", string=item).parent.parent.span.string
         src = soup.find("a", string=item).previous_sibling.previous_sibling
 
-        if (item_name == "Akbronco Prime Blueprint"):
+        if (item_name == "Akbronco Prime Blueprint" or item_name == "Akbronco Prime Link"):
             src = src.img["src"].split("/revision")[0]
         else:
             src = src.img["data-src"].split("/revision")[0]
