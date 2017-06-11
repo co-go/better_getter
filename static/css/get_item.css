@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Overpass');
+@import url('https://fonts.googleapis.com/css?family=Overpass:100,400,900');
 
 .search {
   top: 0;
@@ -12,20 +12,27 @@
 .top {
   height: 300px;
   width: 100%;
-  background-color: #2b2b2b;
+  background: url('/static/img/bg.jpg');
+  background-color: #1F2833;
   box-shadow: 0px 0px 6px #888888;
 }
 
-.main-item {
-  font-family: 'Bitter', serif;
+.item .item_type {
+  color: #0B0C10;
+  font-family: "Overpass", sans-serif;
+}
+.ducats img {
+  height: 1em;
 }
 
 .title {
   color: white;
   padding: 60px 0 0;
   margin: 0;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.2em;
+  font-weight: 100;
   text-align: center;
+  color: #66FCF1;
   font-family: "Overpass", sans-serif;
 }
 
@@ -33,6 +40,6 @@
   color: #f5f5f5;
   padding: 5px 0 0;
   margin: 0;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.2em;
   text-align: center;
 }

@@ -9,8 +9,8 @@
 
     <title>{{ item_name }} Details</title>
 
-    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'css/get_item.css' %}" rel="stylesheet">
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
 
     <link rel="icon" type="image/png" href="{% static 'img/favicon-32x32.png' %}" sizes="32x32" />
     <link rel="icon" type="image/png" href="{% static 'img/favicon-16x16.png' %}" sizes="16x16" />
@@ -22,16 +22,20 @@
   </head>
   <body>
     <div class="top">
-      <h1 class="title"> Better <b>Getter</b> </h1>
+      <h1 class="title"> Better <b style="font-weight: 900;">Getter</b> </h1>
 
-      <h4 class="subtitle"> Search for another item by typing in the bar below </h4>
+      <h5 class="subtitle"> built for Warframe </h5>
       <input class="form-control input-lg search typeahead" type="text" autocomplete="off" placeholder="Search for an Item">
     </div>
 
     <div class="container">
       <center>
         <img src="{{ src }}" style="padding-top: 50px">
-        <h1 class="main-item"> {{ item_name }} </h1>
+        <h2 class="item"> {{ item_name }} </h2>
+        <h4 class="item_type"> {{ type }} </h4>
+        <h3 class="ducats"> {{ ducats }} <img src="{% static 'img/duc.png' %}" /> </h3>
+
+        <hr style="width: 50%"> 
       </center>
     </div>
 

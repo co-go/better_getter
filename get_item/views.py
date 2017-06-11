@@ -74,6 +74,7 @@ def get_item_details(request, item_name):
 
     context = { "item_name": item_name,
                 "ducats": duc,
-                "src": src }
+                "src": src,
+                "type": ret_type(item_name) }
 
     return render(request, 'get_item/item.html', context)
