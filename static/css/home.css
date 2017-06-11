@@ -88,3 +88,7 @@ html {
     outline: none !important;
     background: #ffffff !important;
 }
+
+.err {
+  border: solid 2px #BD2031;
+}
