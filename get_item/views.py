@@ -27,8 +27,10 @@ def get_item_details(request, item_name):
     r = connect(item_name)
 
     current_items = r.json()
-    online_prices = []
-    ingame_prices = []
+    online_sell_prices = []
+    ingame_sell_prices = []
+    online_buy_prices = []
+    ingame_buy_prices = []
 
     if (current_items["code"] != 404):
         for item in current_items["response"]["sell"]:
@@ -36,34 +38,53 @@ def get_item_details(request, item_name):
                 item["ingame_name"].find("(PS4)") == -1 and
                 item["ingame_name"].find("(XB1)") == -1):
 
-                ingame_prices.append(item["price"])
+                ingame_sell_prices.append({"price": item["price"], "name": item["ingame_name"], "count": item["count"])
+
             elif (item["online_status"] and
                   item["ingame_name"].find("(PS4)") == -1 and
                   item["ingame_name"].find("(XB1)") == -1):
 
-                online_prices.append(item["price"])
+                online_sell_prices.append({"price": item["price"], "name": item["ingame_name"], "count": item["count"])
 
-    ingame_prices.sort()
-    online_prices.sort()
+        for item in current_items["response"]["buy"]:
+            if (item["online_ingame"] and
+                item["ingame_name"].find("(PS4)") == -1 and
+                item["ingame_name"].find("(XB1)") == -1):
 
-    r = requests.get("http://warframe.wikia.com/wiki/Ducats/Prices")
-    soup = BeautifulSoup(r.text, "html.parser")
+                ingame_buy_prices.append({"price": item["price"], "name": item["ingame_name"], "count": item["count"])
+            elif (item["online_status"] and
+                  item["ingame_name"].find("(PS4)") == -1 and
+                  item["ingame_name"].find("(XB1)") == -1):
 
-    item = item_name.replace("Set", "Blueprint")
+                online_buy_prices.append({"price": item["price"], "name": item["ingame_name"], "count": item["count"])
 
-    duc = soup.find("a", string=item).parent.parent.span.string
-    src = soup.find("a", string=item).previous_sibling.previous_sibling
+        ingame_buy_prices.sort()
+        ingame_sell_prices.sort()
+        online_buy_prices.sort()
+        online_sell_prices.sort()
 
-    if (item_name == "Akbronco Prime Blueprint"):
-        src = src.img["src"].split("/revision")[0]
+        r = requests.get("http://warframe.wikia.com/wiki/Ducats/Prices")
+        soup = BeautifulSoup(r.text, "html.parser")
+
+        item = item_name.replace("Set", "Blueprint")
+
+        duc = soup.find("a", string=item).parent.parent.span.string
+        src = soup.find("a", string=item).previous_sibling.previous_sibling
+
+        if (item_name == "Akbronco Prime Blueprint"):
+            src = src.img["src"].split("/revision")[0]
+        else:
+            src = src.img["data-src"].split("/revision")[0]
+
+        context = { "item_name": item_name,
+                    "ducats": duc,
+                    "src": src,
+                    "type": ret_type(item_name),
+                    "ingame_sell_prices": ingame_sell_prices[:10],
+                    "online_sell_prices": online_sell_prices[:5],
+                    "ingame_buy_prices": ingame_buy_prices[:10],
+                    "online_buy_prices": online_buy_prices[:5] }
     else:
-        src = src.img["data-src"].split("/revision")[0]
-
-    context = { "item_name": item_name,
-                "ducats": duc,
-                "src": src,
-                "type": ret_type(item_name),
-                "ingame_prices": ingame_prices[:10],
-                "online_prices": online_prices[:5] }
+        context = { "err": True }
 
     return render(request, 'get_item/item.html', context)
