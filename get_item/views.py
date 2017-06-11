@@ -5,9 +5,6 @@ import requests
 import json
 from bs4 import BeautifulSoup
 
-def index(request):
-    return HttpResponse("<h1> Item could not be found! </h1>")
-
 def get_item_details(request, item_name):
     # grab the latest item data and parse it
     data = requests.get("http://warframe.market/api/get_all_items_v2")
