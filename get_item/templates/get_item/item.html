@@ -33,9 +33,47 @@
         <img src="{{ src }}" style="padding-top: 50px">
         <h2 class="item"> {{ item_name }} </h2>
         <h4 class="item_type"> {{ type }} </h4>
-        <h3 class="ducats"> {{ ducats }} <img src="{% static 'img/duc.png' %}" /> </h3>
+        <h3> {{ ducats }} <img style="height: 1em;" src="{% static 'img/duc.png' %}" /> </h3>
 
-        <hr style="width: 50%"> 
+        <hr style="width: 50%">
+
+        {% if ingame_prices and online_prices %}
+        <div class="row">
+          <div class="col-md-5">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Sellers</h3>
+              </div>
+
+              <ul class="list-group">
+                {% for price in ingame_prices %}
+                  <li class="list-group-item">
+                    {{ price }}
+                    <img style="height: 1em;" src="{% static 'img/plat.png' %}" />
+                    <span class="label label-success change-text" data-hover="name" style="float: right"><span>In-game</span></span>
+                  </li>
+                {% endfor %}
+              </ul>
+
+              <ul class="list-group" style="margin-top: 5px">
+                {% for price in online_prices %}
+                  <li class="list-group-item">{{ price }}
+                    <img style="height: 1em;" src="{% static 'img/plat.png' %}" />
+                    <span class="label label-primary" style="float: right">Online</span>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+        {% else %}
+        <div class="panel panel-default">
+          <div class="panel-body">
+            No current seller data could be found!
+          </div>
+        </div>
+        {% endif %}
+
       </center>
     </div>
 

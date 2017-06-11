@@ -43,21 +43,8 @@ def get_item_details(request, item_name):
 
                 online_prices.append(item["price"])
 
-
-    online_prices.sort()
     ingame_prices.sort()
-
-    if (len(ingame_prices) >= 5):
-        print "In-game prices have enough data"
-    elif (len(online_prices) == 0 and len(ingame_prices) == 0):
-        print "There is no current sell data"
-    else:
-        print "In-game prices will be supplemented with online data"
-
-    print "In-game prices:", ingame_prices[:5]
-
-    if (len(ingame_prices) < 5):
-        print "Online prices: ", online_prices[:(5 - len(ingame_prices))]
+    online_prices.sort()
 
     r = requests.get("http://warframe.wikia.com/wiki/Ducats/Prices")
     soup = BeautifulSoup(r.text, "html.parser")
@@ -75,6 +62,8 @@ def get_item_details(request, item_name):
     context = { "item_name": item_name,
                 "ducats": duc,
                 "src": src,
-                "type": ret_type(item_name) }
+                "type": ret_type(item_name),
+                "ingame_prices": ingame_prices[:10],
+                "online_prices": online_prices[:5] }
 
     return render(request, 'get_item/item.html', context)
