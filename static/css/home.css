@@ -5,3 +5,29 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
+
+.title {
+  color: white;
+  padding: 60px 0 0;
+  margin: 0;
+  letter-spacing: 0.2em;
+  font-weight: 100;
+  text-align: center;
+  color: #66FCF1;
+  font-family: "Overpass", sans-serif;
+}
+
+.container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30%;
+}
+
+.subtitle {
+  color: #f5f5f5;
+  padding: 5px 0 0;
+  margin: 0;
+  letter-spacing: 0.2em;
+  text-align: center;
+}
