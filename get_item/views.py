@@ -58,9 +58,9 @@ def get_item_details(request, item_name):
 
                 online_buy_prices.append({"price": item["price"], "name": item["ingame_name"], "count": item["count"]})
 
-        ingame_buy_prices = sorted(ingame_buy_prices, key=lambda k: k['price'])
+        ingame_buy_prices = sorted(ingame_buy_prices, key=lambda k: k['price'], reverse=True)
         ingame_sell_prices = sorted(ingame_sell_prices, key=lambda k: k['price'])
-        online_buy_prices = sorted(online_buy_prices, key=lambda k: k['price'])
+        online_buy_prices = sorted(online_buy_prices, key=lambda k: k['price'], reverse=True)
         online_sell_prices = sorted(online_sell_prices, key=lambda k: k['price'])
 
         r = requests.get("http://warframe.wikia.com/wiki/Ducats/Prices")
