@@ -38,30 +38,30 @@ def get_item_details(request, item_name):
                 item["ingame_name"].find("(PS4)") == -1 and
                 item["ingame_name"].find("(XB1)") == -1):
 
-                ingame_sell_prices.append({"price": item["price"], "name": item["ingame_name"], "count": item["count"])
+                ingame_sell_prices.append({"price": item["price"], "name": item["ingame_name"], "count": item["count"]})
 
             elif (item["online_status"] and
                   item["ingame_name"].find("(PS4)") == -1 and
                   item["ingame_name"].find("(XB1)") == -1):
 
-                online_sell_prices.append({"price": item["price"], "name": item["ingame_name"], "count": item["count"])
+                online_sell_prices.append({"price": item["price"], "name": item["ingame_name"], "count": item["count"]})
 
         for item in current_items["response"]["buy"]:
             if (item["online_ingame"] and
                 item["ingame_name"].find("(PS4)") == -1 and
                 item["ingame_name"].find("(XB1)") == -1):
 
-                ingame_buy_prices.append({"price": item["price"], "name": item["ingame_name"], "count": item["count"])
+                ingame_buy_prices.append({"price": item["price"], "name": item["ingame_name"], "count": item["count"]})
             elif (item["online_status"] and
                   item["ingame_name"].find("(PS4)") == -1 and
                   item["ingame_name"].find("(XB1)") == -1):
 
-                online_buy_prices.append({"price": item["price"], "name": item["ingame_name"], "count": item["count"])
+                online_buy_prices.append({"price": item["price"], "name": item["ingame_name"], "count": item["count"]})
 
-        ingame_buy_prices.sort()
-        ingame_sell_prices.sort()
-        online_buy_prices.sort()
-        online_sell_prices.sort()
+        ingame_buy_prices = sorted(ingame_buy_prices, key=lambda k: k['price'])
+        ingame_sell_prices = sorted(ingame_sell_prices, key=lambda k: k['price'])
+        online_buy_prices = sorted(online_buy_prices, key=lambda k: k['price'])
+        online_sell_prices = sorted(online_sell_prices, key=lambda k: k['price'])
 
         r = requests.get("http://warframe.wikia.com/wiki/Ducats/Prices")
         soup = BeautifulSoup(r.text, "html.parser")

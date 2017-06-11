@@ -37,27 +37,65 @@
 
         <hr style="width: 50%">
 
-        {% if ingame_prices and online_prices %}
+
         <div class="row">
-          <div class="col-md-5">
+          {% if ingame_sell_prices and online_sell_prices %}
+          <div class="col-md-4">
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h3 class="panel-title">Sellers</h3>
               </div>
 
               <ul class="list-group">
-                {% for price in ingame_prices %}
+                {% for item in ingame_sell_prices %}
                   <li class="list-group-item">
-                    {{ price }}
+                    {{ item.price }}
                     <img style="height: 1em;" src="{% static 'img/plat.png' %}" />
-                    <span class="label label-success change-text" data-hover="name" style="float: right"><span>In-game</span></span>
+                    <span class="label label-success" style="float: right"><span>In-game</span></span>
                   </li>
                 {% endfor %}
               </ul>
 
               <ul class="list-group" style="margin-top: 5px">
-                {% for price in online_prices %}
-                  <li class="list-group-item">{{ price }}
+                {% for item in online_sell_prices %}
+                  <li class="list-group-item">
+                    {{ item.price }}
+                    <img style="height: 1em;" src="{% static 'img/plat.png' %}" />
+                    <span class="label label-primary" style="float: right">Online</span>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+            {% else %}
+            <div class="panel panel-default">
+              <div class="panel-body">
+                No current seller data could be found!
+              </div>
+            </div>
+            {% endif %}
+          </div>
+
+          {% if ingame_buy_prices and online_buy_prices %}
+          <div class="col-md-4">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Sellers</h3>
+              </div>
+
+              <ul class="list-group">
+                {% for item in ingame_buy_prices %}
+                  <li class="list-group-item">
+                    {{ item.price }}
+                    <img style="height: 1em;" src="{% static 'img/plat.png' %}" />
+                    <span class="label label-success" style="float: right"><span>In-game</span></span>
+                  </li>
+                {% endfor %}
+              </ul>
+
+              <ul class="list-group" style="margin-top: 5px">
+                {% for item in online_buy_prices %}
+                  <li class="list-group-item">
+                    {{ item.price }}
                     <img style="height: 1em;" src="{% static 'img/plat.png' %}" />
                     <span class="label label-primary" style="float: right">Online</span>
                   </li>
@@ -65,15 +103,14 @@
               </ul>
             </div>
           </div>
-        </div>
-        {% else %}
-        <div class="panel panel-default">
-          <div class="panel-body">
-            No current seller data could be found!
+          {% else %}
+          <div class="panel panel-default">
+            <div class="panel-body">
+              No current buyer data could be found!
+            </div>
           </div>
+          {% endif %}
         </div>
-        {% endif %}
-
       </center>
     </div>
 
