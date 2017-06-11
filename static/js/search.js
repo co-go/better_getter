@@ -2,7 +2,12 @@ function handler(item) {
   if (valid_item(item)) {
     window.location.href = "/get_item/" + item;
   } else {
-    $(this).addClass("err");
+    $('.typeahead').addClass('err');
+    $('.typeahead').addClass('err-animation');
+
+    setTimeout(function() {
+      $('.typeahead').removeClass('err-animation');
+    }, 2000);
   }
 }
 
@@ -48,7 +53,7 @@ $( document ).ready(function() {
   $('.typeahead').keypress(function(event){
     var keycode = (event.keyCode ? event.keyCode : event.which);
     if(keycode == '13'){
-      handler($('.typeahead').typeahead('val'));
+      handler($(this).typeahead('val'));
     }
   });
 });
