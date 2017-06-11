@@ -17,8 +17,13 @@
   box-shadow: 0px 0px 6px #888888;
 }
 
-.item .item_type {
+.item {
   color: #0B0C10;
+  font-family: "Overpass", sans-serif;
+}
+
+.item_type {
+  color: #45A29B;
   font-family: "Overpass", sans-serif;
 }
 
