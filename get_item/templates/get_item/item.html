@@ -39,8 +39,8 @@
 
 
         <div class="row">
-          {% if ingame_sell_prices and online_sell_prices %}
           <div class="col-md-4">
+            {% if ingame_sell_prices and online_sell_prices %}
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h3 class="panel-title">Sellers</h3>
@@ -75,11 +75,11 @@
             {% endif %}
           </div>
 
-          {% if ingame_buy_prices and online_buy_prices %}
           <div class="col-md-4">
+            {% if ingame_buy_prices and online_buy_prices %}
             <div class="panel panel-default">
               <div class="panel-heading">
-                <h3 class="panel-title">Sellers</h3>
+                <h3 class="panel-title">Buyers</h3>
               </div>
 
               <ul class="list-group">
@@ -102,14 +102,14 @@
                 {% endfor %}
               </ul>
             </div>
-          </div>
-          {% else %}
-          <div class="panel panel-default">
-            <div class="panel-body">
-              No current buyer data could be found!
+            {% else %}
+            <div class="panel panel-default">
+              <div class="panel-body">
+                No current buyer data could be found!
+              </div>
             </div>
+            {% endif %}
           </div>
-          {% endif %}
         </div>
       </center>
     </div>
