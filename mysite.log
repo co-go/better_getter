@@ -1043,3 +1043,119 @@ VariableDoesNotExist: Failed lookup for key [ingame_buy_prices] in u"[{'False': 
 [12/Jun/2017 02:23:31] INFO [django.server:124] "GET /get_item/Ankyros%20Prime%20Blueprint/ HTTP/1.1" 200 7933
 [12/Jun/2017 02:23:32] INFO [django.server:124] "GET /static/img/favicon-16x16.e45deacf157e.png HTTP/1.1" 200 742
 [12/Jun/2017 02:23:33] INFO [django.server:124] "GET / HTTP/1.1" 200 2164
+[12/Jun/2017 02:24:33] INFO [django.server:124] "GET /get_item/Akbronco%20Prime%20Blueprint/ HTTP/1.1" 200 6843
+[12/Jun/2017 02:24:40] INFO [django.server:124] "GET /get_item/Bo%20Prime%20Blueprint HTTP/1.1" 301 0
+[12/Jun/2017 02:24:41] INFO [django.server:124] "GET /get_item/Bo%20Prime%20Blueprint/ HTTP/1.1" 200 8273
+[12/Jun/2017 02:24:50] INFO [django.server:124] "GET /get_item/Reflex%20Guard HTTP/1.1" 301 0
+[12/Jun/2017 02:24:59] INFO [django.server:124] "GET /get_item/Reflex%20Guard/ HTTP/1.1" 200 7561
+[12/Jun/2017 02:25:06] INFO [django.server:124] "GET /get_item/Glaive%20Prime%20Blade HTTP/1.1" 301 0
+[12/Jun/2017 02:25:07] INFO [django.server:124] "GET /get_item/Glaive%20Prime%20Blade/ HTTP/1.1" 200 11717
+[12/Jun/2017 02:25:21] INFO [django.server:124] "GET /get_item/Lex%20Prime%20Barrel HTTP/1.1" 301 0
+[12/Jun/2017 02:25:22] INFO [django.server:124] "GET /get_item/Lex%20Prime%20Barrel/ HTTP/1.1" 200 8608
+[12/Jun/2017 02:25:26] INFO [django.server:124] "GET /get_item/Lex%20Prime%20Blueprint HTTP/1.1" 301 0
+[12/Jun/2017 02:25:27] INFO [django.server:124] "GET /get_item/Lex%20Prime%20Blueprint/ HTTP/1.1" 200 9149
+[12/Jun/2017 02:25:31] INFO [django.server:124] "GET /get_item/Aurora%20Frost%20Helmet HTTP/1.1" 301 0
+[12/Jun/2017 02:25:32] INFO [django.server:124] "GET /get_item/Aurora%20Frost%20Helmet/ HTTP/1.1" 200 3100
+[12/Jun/2017 02:25:58] INFO [django.server:124] "GET /get_item/Primed%20Flow HTTP/1.1" 301 0
+[12/Jun/2017 02:25:59] INFO [django.server:124] "GET /get_item/Primed%20Flow/ HTTP/1.1" 200 9532
+[12/Jun/2017 02:26:05] INFO [django.server:124] "GET /get_item/Mesa's%20Waltz/ HTTP/1.1" 200 3080
+[12/Jun/2017 02:27:10] INFO [django.server:124] "GET /get_item/Paris%20Prime%20Lower%20Limb/ HTTP/1.1" 200 8277
+[12/Jun/2017 02:28:10] INFO [django.server:124] "GET /get_item/Corrosive%20Projection HTTP/1.1" 301 0
+[12/Jun/2017 02:28:12] INFO [django.server:124] "GET /get_item/Corrosive%20Projection/ HTTP/1.1" 200 8676
+[12/Jun/2017 02:28:17] INFO [django.server:124] "GET /get_item/EMP%20Aura HTTP/1.1" 301 0
+[12/Jun/2017 02:28:18] INFO [django.server:124] "GET /get_item/EMP%20Aura/ HTTP/1.1" 200 8272
+[12/Jun/2017 02:28:25] INFO [django.server:124] "GET /get_item/Mag%20Prime%20Neuroptics HTTP/1.1" 301 0
+[12/Jun/2017 02:28:26] INFO [django.server:124] "GET /get_item/Mag%20Prime%20Neuroptics/ HTTP/1.1" 200 5739
+[12/Jun/2017 02:28:33] INFO [django.server:124] "GET /get_item/Kavasa%20Prime%20Collar%20Buckle/ HTTP/1.1" 200 9856
+[12/Jun/2017 02:28:33] WARNING [django.request:152] Not Found: /static/img/notFound.png
+[12/Jun/2017 02:28:33] WARNING [django.server:124] "GET /static/img/notFound.png HTTP/1.1" 404 97
+[12/Jun/2017 02:28:39] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 99165
+[12/Jun/2017 02:28:52] INFO [django.server:124] "GET /get_item/Kavasa%20Prime%20Collar%20Buckle/static/img/notFound.png HTTP/1.1" 301 0
+[12/Jun/2017 02:28:52] ERROR [django.request:135] Internal Server Error: /get_item/Kavasa Prime Collar Buckle/static/img/notFound.png/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jwcorle/Documents/better_getter/get_item/views.py", line 35, in get_item_details
+    current_items = r.json()
+  File "/Library/Python/2.7/site-packages/requests/models.py", line 886, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+[12/Jun/2017 02:28:52] ERROR [django.server:124] "GET /get_item/Kavasa%20Prime%20Collar%20Buckle/static/img/notFound.png/ HTTP/1.1" 500 27
+[12/Jun/2017 02:28:59] WARNING [django.request:152] Not Found: /static/img/notFound.png
+[12/Jun/2017 02:28:59] WARNING [django.server:124] "GET /static/img/notFound.png HTTP/1.1" 404 97
+[12/Jun/2017 02:30:22] ERROR [django.request:135] Internal Server Error: /get_item/Kavasa Prime Collar Buckle/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jwcorle/Documents/better_getter/get_item/views.py", line 136, in get_item_details
+    src = static("img/notFound.png")
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/templatetags/staticfiles.py", line 12, in static
+    return _static(path)
+  File "/Library/Python/2.7/site-packages/django/templatetags/static.py", line 166, in static
+    return StaticNode.handle_simple(path)
+  File "/Library/Python/2.7/site-packages/django/templatetags/static.py", line 117, in handle_simple
+    return staticfiles_storage.url(path)
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/storage.py", line 162, in url
+    return self._url(self.stored_name, name, force)
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/storage.py", line 141, in _url
+    hashed_name = hashed_name_func(*args)
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/storage.py", line 432, in stored_name
+    raise ValueError("Missing staticfiles manifest entry for '%s'" % clean_name)
+ValueError: Missing staticfiles manifest entry for 'img/notFound.png'
+[12/Jun/2017 02:30:22] ERROR [django.server:124] "GET /get_item/Kavasa%20Prime%20Collar%20Buckle/ HTTP/1.1" 500 27
+[12/Jun/2017 02:30:59] ERROR [django.request:135] Internal Server Error: /get_item/Kavasa Prime Collar Buckle/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jwcorle/Documents/better_getter/get_item/views.py", line 136, in get_item_details
+    src = static("img/notFound.png")
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/templatetags/staticfiles.py", line 12, in static
+    return _static(path)
+  File "/Library/Python/2.7/site-packages/django/templatetags/static.py", line 166, in static
+    return StaticNode.handle_simple(path)
+  File "/Library/Python/2.7/site-packages/django/templatetags/static.py", line 117, in handle_simple
+    return staticfiles_storage.url(path)
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/storage.py", line 162, in url
+    return self._url(self.stored_name, name, force)
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/storage.py", line 141, in _url
+    hashed_name = hashed_name_func(*args)
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/storage.py", line 432, in stored_name
+    raise ValueError("Missing staticfiles manifest entry for '%s'" % clean_name)
+ValueError: Missing staticfiles manifest entry for 'img/notFound.png'
+[12/Jun/2017 02:30:59] ERROR [django.server:124] "GET /get_item/Kavasa%20Prime%20Collar%20Buckle/ HTTP/1.1" 500 27
+[12/Jun/2017 02:31:17] INFO [django.server:124] "GET /get_item/Kavasa%20Prime%20Collar%20Buckle/ HTTP/1.1" 200 9869
+[12/Jun/2017 02:31:17] INFO [django.server:124] "GET /static/css/get_item.e2e3bbd82ebb.css HTTP/1.1" 200 725
+[12/Jun/2017 02:31:17] INFO [django.server:124] "GET /static/css/bootstrap.min.5c7070ef655a.css HTTP/1.1" 200 19643
+[12/Jun/2017 02:31:17] INFO [django.server:124] "GET /static/css/stretchy.6ade60b89e65.css HTTP/1.1" 200 1719
+[12/Jun/2017 02:31:17] INFO [django.server:124] "GET /static/css/typeaheadjs.74cbdb0b28ef.css HTTP/1.1" 200 685
+[12/Jun/2017 02:31:17] INFO [django.server:124] "GET /static/js/jquery.min.4f252523d4af.js HTTP/1.1" 200 33738
+[12/Jun/2017 02:31:17] INFO [django.server:124] "GET /static/js/bootstrap.min.5869c96cc8f1.js HTTP/1.1" 200 9806
+[12/Jun/2017 02:31:17] INFO [django.server:124] "GET /static/js/typeahead.fd054c48bcd9.js HTTP/1.1" 200 11583
+[12/Jun/2017 02:31:17] INFO [django.server:124] "GET /static/js/search.6a5b24de653c.js HTTP/1.1" 200 9532
+[12/Jun/2017 02:31:17] INFO [django.server:124] "GET /static/js/modernizr.1258d3cdc715.js HTTP/1.1" 200 6195
+[12/Jun/2017 02:31:17] INFO [django.server:124] "GET /static/js/main-min.943e47719b21.js HTTP/1.1" 200 220
+[12/Jun/2017 02:31:17] INFO [django.server:124] "GET /static/img/notFound.66b0c87f4487.png HTTP/1.1" 200 22596
+[12/Jun/2017 02:31:17] INFO [django.server:124] "GET /static/img/duc.1727a9df825d.png HTTP/1.1" 200 133953
+[12/Jun/2017 02:31:17] INFO [django.server:124] "GET /static/img/plat.884aa1f89f92.png HTTP/1.1" 200 103876
+[12/Jun/2017 02:31:17] INFO [django.server:124] "GET /static/img/cd-sprite-1.e0ce20fb0a6d.svg HTTP/1.1" 200 803
+[12/Jun/2017 02:31:17] INFO [django.server:124] "GET /static/img/bg.4a370c063b65.jpg HTTP/1.1" 200 254754
+[12/Jun/2017 02:31:17] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 99165
+[12/Jun/2017 02:31:17] INFO [django.server:124] "GET /static/img/favicon-16x16.e45deacf157e.png HTTP/1.1" 200 742

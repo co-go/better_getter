@@ -1,5 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from django.contrib.staticfiles.templatetags.staticfiles import static
 
 import requests
 import json
@@ -132,7 +133,7 @@ def get_item_details(request, item_name):
 
                 src = soup.find("img", class_="pi-image-thumbnail")["src"].split("/revision")[0]
             except:
-                src = "/static/img/notFound.png"
+                src = static("img/notFound.png")
 
 
         context = { "item_name": item_name,
