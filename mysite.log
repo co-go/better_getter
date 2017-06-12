@@ -337,3 +337,709 @@ ValueError: Missing staticfiles manifest entry for 'css/bootstrap.min.css'
 [12/Jun/2017 01:21:26] INFO [django.server:124] "GET /static/img/cd-sprite-1.e0ce20fb0a6d.svg HTTP/1.1" 200 803
 [12/Jun/2017 01:21:26] INFO [django.server:124] "GET /static/img/favicon-16x16.e45deacf157e.png HTTP/1.1" 200 742
 [12/Jun/2017 01:21:26] INFO [django.server:124] "GET /static/img/favicon-32x32.d59b1d998588.png HTTP/1.1" 200 2022
+[12/Jun/2017 01:23:16] INFO [django.server:124] "GET /get_item/Akbronco%20Prime%20Blueprint/ HTTP/1.1" 200 7195
+[12/Jun/2017 01:23:16] INFO [django.server:124] "GET /static/css/get_item.e2e3bbd82ebb.css HTTP/1.1" 200 725
+[12/Jun/2017 01:23:16] INFO [django.server:124] "GET /static/img/duc.1727a9df825d.png HTTP/1.1" 200 133953
+[12/Jun/2017 01:23:16] INFO [django.server:124] "GET /static/img/plat.884aa1f89f92.png HTTP/1.1" 200 103876
+[12/Jun/2017 01:23:31] INFO [django.server:124] "GET /get_item/Quickdraw HTTP/1.1" 301 0
+[12/Jun/2017 01:23:32] ERROR [django.request:135] Internal Server Error: /get_item/Quickdraw/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jwcorle/Documents/better_getter/get_item/views.py", line 72, in get_item_details
+    duc = soup.find("a", string=item).parent.parent.span.string
+AttributeError: 'NoneType' object has no attribute 'parent'
+[12/Jun/2017 01:23:32] ERROR [django.server:124] "GET /get_item/Quickdraw/ HTTP/1.1" 500 27
+[12/Jun/2017 01:23:41] INFO [django.server:124] "GET / HTTP/1.1" 200 2164
+[12/Jun/2017 01:23:48] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 99165
+[12/Jun/2017 01:25:20] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[12/Jun/2017 01:25:20] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[12/Jun/2017 01:25:31] INFO [django.server:124] "GET / HTTP/1.1" 200 2008
+[12/Jun/2017 01:25:31] INFO [django.server:124] "GET /static/css/home.css HTTP/1.1" 304 0
+[12/Jun/2017 01:25:31] INFO [django.server:124] "GET /static/css/stretchy.css HTTP/1.1" 304 0
+[12/Jun/2017 01:25:31] INFO [django.server:124] "GET /static/js/search.js HTTP/1.1" 304 0
+[12/Jun/2017 01:25:31] INFO [django.server:124] "GET /static/css/typeaheadjs.css HTTP/1.1" 304 0
+[12/Jun/2017 01:25:31] INFO [django.server:124] "GET /static/img/bg.jpg HTTP/1.1" 304 0
+[12/Jun/2017 01:25:31] INFO [django.server:124] "GET /static/img/favicon-32x32.png HTTP/1.1" 304 0
+[12/Jun/2017 01:26:07] DEBUG [django.db.backends:91] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[12/Jun/2017 01:26:07] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[12/Jun/2017 01:37:02] DEBUG [django.db.backends:91] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[12/Jun/2017 01:37:02] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[12/Jun/2017 01:38:20] DEBUG [django.db.backends:91] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[12/Jun/2017 01:38:20] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[12/Jun/2017 01:38:30] DEBUG [django.db.backends:91] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[12/Jun/2017 01:38:30] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[12/Jun/2017 01:39:15] INFO [django.server:124] "GET /get_item/Ankyros%20Prime%20Blade/ HTTP/1.1" 200 5297
+[12/Jun/2017 01:39:15] INFO [django.server:124] "GET /static/css/get_item.css HTTP/1.1" 304 0
+[12/Jun/2017 01:39:15] INFO [django.server:124] "GET /static/css/stretchy.css HTTP/1.1" 304 0
+[12/Jun/2017 01:39:15] INFO [django.server:124] "GET /static/js/search.js HTTP/1.1" 304 0
+[12/Jun/2017 01:39:18] INFO [django.server:124] "GET /get_item/Shattering%20Justice HTTP/1.1" 301 0
+[12/Jun/2017 01:39:18] ERROR [django.request:135] Internal Server Error: /get_item/Shattering Justice/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jwcorle/Documents/better_getter/get_item/views.py", line 64, in get_item_details
+    "mod_rank": item["mod_rank"]})
+TypeError: 'list' object is not callable
+[12/Jun/2017 01:39:18] ERROR [django.server:124] "GET /get_item/Shattering%20Justice/ HTTP/1.1" 500 78962
+[12/Jun/2017 01:42:30] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[12/Jun/2017 01:42:30] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[12/Jun/2017 01:42:36] ERROR [django.request:135] Internal Server Error: /get_item/Shattering Justice/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jwcorle/Documents/better_getter/get_item/views.py", line 110, in get_item_details
+    duc = soup.find("a", string=item).parent.parent.span.string
+AttributeError: 'NoneType' object has no attribute 'parent'
+[12/Jun/2017 01:42:36] ERROR [django.server:124] "GET /get_item/Shattering%20Justice/ HTTP/1.1" 500 84374
+[12/Jun/2017 01:44:47] DEBUG [django.db.backends:91] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[12/Jun/2017 01:44:47] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[12/Jun/2017 01:44:50] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[12/Jun/2017 01:44:50] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[12/Jun/2017 01:44:58] ERROR [django.request:135] Internal Server Error: /get_item/Shattering Justice/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jwcorle/Documents/better_getter/get_item/views.py", line 115, in get_item_details
+    src = soup.find("a", string=item).previous_sibling.previous_sibling
+AttributeError: 'NoneType' object has no attribute 'previous_sibling'
+[12/Jun/2017 01:44:58] ERROR [django.server:124] "GET /get_item/Shattering%20Justice/ HTTP/1.1" 500 84453
+[12/Jun/2017 01:52:10] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[12/Jun/2017 01:52:10] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[12/Jun/2017 01:52:17] INFO [django.server:124] "GET /get_item/Shattering%20Justice/ HTTP/1.1" 200 2901
+[12/Jun/2017 01:52:17] INFO [django.server:124] "GET /static/css/stretchy.css HTTP/1.1" 304 0
+[12/Jun/2017 01:52:17] INFO [django.server:124] "GET /static/css/typeaheadjs.css HTTP/1.1" 304 0
+[12/Jun/2017 01:52:17] INFO [django.server:124] "GET /static/img/favicon-16x16.png HTTP/1.1" 200 742
+[12/Jun/2017 01:53:05] INFO [django.server:124] "GET /get_item/Akbronco%20Prime%20Blueprint/ HTTP/1.1" 200 6519
+[12/Jun/2017 01:53:52] INFO [django.server:124] "GET /get_item/Shattering%20Justice/ HTTP/1.1" 200 2901
+[12/Jun/2017 01:54:34] INFO [django.server:124] "GET /get_item/Continuity HTTP/1.1" 301 0
+[12/Jun/2017 01:54:35] INFO [django.server:124] "GET /get_item/Continuity/ HTTP/1.1" 200 8238
+[12/Jun/2017 01:54:35] INFO [django.server:124] "GET /static/js/search.js HTTP/1.1" 304 0
+[12/Jun/2017 01:54:51] INFO [django.server:124] "GET /get_item/Mesa's%20Waltz HTTP/1.1" 301 0
+[12/Jun/2017 01:54:52] DEBUG [django.template:925] Exception while resolving variable 'item_name' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [item_name] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x10efbd1b8>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x10e4f0140>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x10f023510>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10ec595d0>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 01:54:52] DEBUG [django.template:925] Exception while resolving variable 'src' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [src] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x10efbd1b8>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x10e4f0140>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x10f023510>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10ec595d0>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 01:54:52] DEBUG [django.template:925] Exception while resolving variable 'item_name' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [item_name] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x10efbd1b8>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x10e4f0140>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x10f023510>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10ec595d0>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 01:54:52] DEBUG [django.template:925] Exception while resolving variable 'type' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [type] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x10efbd1b8>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x10e4f0140>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x10f023510>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10ec595d0>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 01:54:52] DEBUG [django.template:925] Exception while resolving variable 'ducats' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [ducats] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x10efbd1b8>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x10e4f0140>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x10f023510>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10ec595d0>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 01:54:52] DEBUG [django.template:925] Exception while resolving variable 'ingame_sell_prices' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [ingame_sell_prices] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x10efbd1b8>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x10e4f0140>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x10f023510>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10ec595d0>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 01:54:52] DEBUG [django.template:925] Exception while resolving variable 'ingame_buy_prices' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [ingame_buy_prices] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x10efbd1b8>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x10e4f0140>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x10f023510>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10ec595d0>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 01:54:52] INFO [django.server:124] "GET /get_item/Mesa's%20Waltz/ HTTP/1.1" 200 2780
+[12/Jun/2017 01:54:52] INFO [django.server:124] "GET /static/css/get_item.css HTTP/1.1" 304 0
+[12/Jun/2017 01:55:18] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+[12/Jun/2017 01:56:04] DEBUG [django.template:925] Exception while resolving variable 'item_name' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [item_name] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x10efbd398>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x10d2d1848>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x10e4ce450>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10f1c1690>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 01:56:04] DEBUG [django.template:925] Exception while resolving variable 'src' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [src] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x10efbd398>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x10d2d1848>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x10e4ce450>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10f1c1690>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 01:56:04] DEBUG [django.template:925] Exception while resolving variable 'item_name' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [item_name] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x10efbd398>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x10d2d1848>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x10e4ce450>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10f1c1690>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 01:56:04] DEBUG [django.template:925] Exception while resolving variable 'type' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [type] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x10efbd398>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x10d2d1848>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x10e4ce450>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10f1c1690>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 01:56:04] DEBUG [django.template:925] Exception while resolving variable 'ducats' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [ducats] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x10efbd398>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x10d2d1848>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x10e4ce450>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10f1c1690>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 01:56:04] DEBUG [django.template:925] Exception while resolving variable 'ingame_sell_prices' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [ingame_sell_prices] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x10efbd398>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x10d2d1848>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x10e4ce450>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10f1c1690>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 01:56:04] DEBUG [django.template:925] Exception while resolving variable 'ingame_buy_prices' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [ingame_buy_prices] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x10efbd398>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x10d2d1848>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x10e4ce450>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10f1c1690>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 01:56:04] INFO [django.server:124] "GET /get_item/Mesa's%20Waltz/ HTTP/1.1" 200 2780
+[12/Jun/2017 01:56:04] INFO [django.server:124] "GET /static/css/get_item.css HTTP/1.1" 200 1910
+[12/Jun/2017 01:56:04] INFO [django.server:124] "GET /static/css/typeaheadjs.css HTTP/1.1" 200 2578
+[12/Jun/2017 01:56:04] INFO [django.server:124] "GET /static/css/stretchy.css HTTP/1.1" 200 10447
+[12/Jun/2017 01:56:04] INFO [django.server:124] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121200
+[12/Jun/2017 01:56:04] INFO [django.server:124] "GET /static/js/jquery.min.js HTTP/1.1" 200 97163
+[12/Jun/2017 01:56:04] INFO [django.server:124] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+[12/Jun/2017 01:56:04] INFO [django.server:124] "GET /static/js/typeahead.js HTTP/1.1" 200 63137
+[12/Jun/2017 01:56:04] INFO [django.server:124] "GET /static/js/search.js HTTP/1.1" 200 30683
+[12/Jun/2017 01:56:04] INFO [django.server:124] "GET /static/js/modernizr.js HTTP/1.1" 200 15250
+[12/Jun/2017 01:56:04] INFO [django.server:124] "GET /static/js/main-min.js HTTP/1.1" 200 386
+[12/Jun/2017 01:56:04] INFO [django.server:124] "GET /static/img/duc.png HTTP/1.1" 200 133953
+[12/Jun/2017 01:56:04] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+[12/Jun/2017 01:56:04] INFO [django.server:124] "GET /static/img/cd-sprite-1.svg HTTP/1.1" 200 2008
+[12/Jun/2017 01:56:04] INFO [django.server:124] "GET /static/img/bg.jpg HTTP/1.1" 200 254754
+[12/Jun/2017 01:56:04] INFO [django.server:124] "GET /static/img/favicon-16x16.png HTTP/1.1" 200 742
+[12/Jun/2017 01:56:59] DEBUG [django.db.backends:91] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[12/Jun/2017 01:56:59] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[12/Jun/2017 01:57:36] DEBUG [django.db.backends:91] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[12/Jun/2017 01:57:36] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[12/Jun/2017 01:57:47] DEBUG [django.db.backends:91] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[12/Jun/2017 01:57:47] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[12/Jun/2017 01:57:53] DEBUG [django.template:925] Exception while resolving variable 'item_name' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [item_name] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x1051d4488>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x104fc7848>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x1051d2610>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x104fddcd0>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 01:57:53] DEBUG [django.template:925] Exception while resolving variable 'src' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [src] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x1051d4488>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x104fc7848>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x1051d2610>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x104fddcd0>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 01:57:53] DEBUG [django.template:925] Exception while resolving variable 'item_name' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [item_name] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x1051d4488>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x104fc7848>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x1051d2610>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x104fddcd0>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 01:57:53] DEBUG [django.template:925] Exception while resolving variable 'type' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [type] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x1051d4488>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x104fc7848>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x1051d2610>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x104fddcd0>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 01:57:53] DEBUG [django.template:925] Exception while resolving variable 'ducats' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [ducats] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x1051d4488>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x104fc7848>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x1051d2610>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x104fddcd0>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 01:57:53] DEBUG [django.template:925] Exception while resolving variable 'ingame_sell_prices' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [ingame_sell_prices] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x1051d4488>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x104fc7848>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x1051d2610>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x104fddcd0>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 01:57:53] DEBUG [django.template:925] Exception while resolving variable 'ingame_buy_prices' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [ingame_buy_prices] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x1051d4488>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x104fc7848>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x1051d2610>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x104fddcd0>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 01:57:53] INFO [django.server:124] "GET /get_item/Mesa's%20Waltz/ HTTP/1.1" 200 2780
+[12/Jun/2017 01:57:53] INFO [django.server:124] "GET /static/img/favicon-16x16.png HTTP/1.1" 200 742
+[12/Jun/2017 01:58:04] DEBUG [django.template:925] Exception while resolving variable 'item_name' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [item_name] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x1051ec7d0>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x104fe7b90>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x105128f10>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x1051f4ed0>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 01:58:04] DEBUG [django.template:925] Exception while resolving variable 'src' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [src] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x1051ec7d0>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x104fe7b90>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x105128f10>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x1051f4ed0>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 01:58:04] DEBUG [django.template:925] Exception while resolving variable 'item_name' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [item_name] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x1051ec7d0>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x104fe7b90>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x105128f10>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x1051f4ed0>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 01:58:04] DEBUG [django.template:925] Exception while resolving variable 'type' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [type] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x1051ec7d0>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x104fe7b90>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x105128f10>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x1051f4ed0>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 01:58:04] DEBUG [django.template:925] Exception while resolving variable 'ducats' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [ducats] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x1051ec7d0>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x104fe7b90>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x105128f10>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x1051f4ed0>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 01:58:04] DEBUG [django.template:925] Exception while resolving variable 'ingame_sell_prices' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [ingame_sell_prices] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x1051ec7d0>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x104fe7b90>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x105128f10>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x1051f4ed0>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 01:58:04] DEBUG [django.template:925] Exception while resolving variable 'ingame_buy_prices' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [ingame_buy_prices] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x1051ec7d0>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x104fe7b90>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x105128f10>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x1051f4ed0>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 01:58:04] INFO [django.server:124] "GET /get_item/Mesa's%20Waltz/ HTTP/1.1" 200 2780
+[12/Jun/2017 01:58:04] INFO [django.server:124] "GET /static/img/favicon-16x16.png HTTP/1.1" 200 742
+[12/Jun/2017 01:58:14] DEBUG [django.template:925] Exception while resolving variable 'item_name' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [item_name] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x1051ec668>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x104fe7de8>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x1050ee4d0>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x1051ac750>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 01:58:14] DEBUG [django.template:925] Exception while resolving variable 'src' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [src] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x1051ec668>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x104fe7de8>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x1050ee4d0>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x1051ac750>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 01:58:14] DEBUG [django.template:925] Exception while resolving variable 'item_name' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [item_name] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x1051ec668>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x104fe7de8>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x1050ee4d0>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x1051ac750>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 01:58:14] DEBUG [django.template:925] Exception while resolving variable 'type' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [type] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x1051ec668>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x104fe7de8>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x1050ee4d0>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x1051ac750>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 01:58:14] DEBUG [django.template:925] Exception while resolving variable 'ducats' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [ducats] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x1051ec668>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x104fe7de8>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x1050ee4d0>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x1051ac750>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 01:58:14] DEBUG [django.template:925] Exception while resolving variable 'ingame_sell_prices' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [ingame_sell_prices] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x1051ec668>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x104fe7de8>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x1050ee4d0>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x1051ac750>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 01:58:14] DEBUG [django.template:925] Exception while resolving variable 'ingame_buy_prices' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [ingame_buy_prices] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x1051ec668>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x104fe7de8>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x1050ee4d0>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x1051ac750>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 01:58:14] INFO [django.server:124] "GET /get_item/Mesa's%20Waltz/ HTTP/1.1" 200 2780
+[12/Jun/2017 01:59:52] DEBUG [django.db.backends:91] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[12/Jun/2017 01:59:52] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[12/Jun/2017 01:59:55] ERROR [django.request:135] Internal Server Error: /get_item/Mesa's Waltz/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jwcorle/Documents/better_getter/get_item/views.py", line 29, in get_item_details
+    r = connect(item_name)
+  File "/Users/jwcorle/Documents/better_getter/get_item/views.py", line 24, in connect
+    url = "http://warframe.market/api/get_orders/%s/%s" % ret_type(item_n), item_n
+TypeError: not enough arguments for format string
+[12/Jun/2017 01:59:55] ERROR [django.server:124] "GET /get_item/Mesa's%20Waltz/ HTTP/1.1" 500 75409
+[12/Jun/2017 02:00:06] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[12/Jun/2017 02:00:06] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[12/Jun/2017 02:00:09] DEBUG [django.template:925] Exception while resolving variable 'item_name' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [item_name] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x10ac9b488>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x109a6f848>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x10ac99610>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x109a84cd0>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 02:00:09] DEBUG [django.template:925] Exception while resolving variable 'src' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [src] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x10ac9b488>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x109a6f848>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x10ac99610>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x109a84cd0>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 02:00:09] DEBUG [django.template:925] Exception while resolving variable 'item_name' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [item_name] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x10ac9b488>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x109a6f848>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x10ac99610>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x109a84cd0>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 02:00:09] DEBUG [django.template:925] Exception while resolving variable 'type' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [type] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x10ac9b488>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x109a6f848>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x10ac99610>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x109a84cd0>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 02:00:09] DEBUG [django.template:925] Exception while resolving variable 'ducats' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [ducats] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x10ac9b488>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x109a6f848>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x10ac99610>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x109a84cd0>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 02:00:09] DEBUG [django.template:925] Exception while resolving variable 'ingame_sell_prices' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [ingame_sell_prices] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x10ac9b488>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x109a6f848>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x10ac99610>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x109a84cd0>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 02:00:09] DEBUG [django.template:925] Exception while resolving variable 'ingame_buy_prices' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [ingame_buy_prices] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x10ac9b488>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x109a6f848>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x10ac99610>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x109a84cd0>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 02:00:09] INFO [django.server:124] "GET /get_item/Mesa's%20Waltz/ HTTP/1.1" 200 2780
+[12/Jun/2017 02:00:09] INFO [django.server:124] "GET /static/img/favicon-16x16.png HTTP/1.1" 200 742
+[12/Jun/2017 02:04:37] DEBUG [django.db.backends:91] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[12/Jun/2017 02:04:37] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[12/Jun/2017 02:04:55] DEBUG [django.template:925] Exception while resolving variable 'item_name' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [item_name] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x103d5a410>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x102b2b848>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x103d58610>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x102b42cd0>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 02:04:55] DEBUG [django.template:925] Exception while resolving variable 'src' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [src] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x103d5a410>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x102b2b848>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x103d58610>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x102b42cd0>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 02:04:55] DEBUG [django.template:925] Exception while resolving variable 'item_name' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [item_name] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x103d5a410>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x102b2b848>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x103d58610>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x102b42cd0>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 02:04:55] DEBUG [django.template:925] Exception while resolving variable 'type' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [type] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x103d5a410>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x102b2b848>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x103d58610>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x102b42cd0>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 02:04:55] DEBUG [django.template:925] Exception while resolving variable 'ducats' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [ducats] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x103d5a410>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x102b2b848>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x103d58610>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x102b42cd0>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 02:04:55] DEBUG [django.template:925] Exception while resolving variable 'ingame_sell_prices' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [ingame_sell_prices] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x103d5a410>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x102b2b848>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x103d58610>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x102b42cd0>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 02:04:55] DEBUG [django.template:925] Exception while resolving variable 'ingame_buy_prices' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [ingame_buy_prices] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x103d5a410>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x102b2b848>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x103d58610>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x102b42cd0>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 02:04:55] INFO [django.server:124] "GET /get_item/Mesa's%20Waltz/ HTTP/1.1" 200 2780
+[12/Jun/2017 02:04:55] INFO [django.server:124] "GET /static/img/favicon-16x16.png HTTP/1.1" 200 742
+[12/Jun/2017 02:07:56] DEBUG [django.db.backends:91] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[12/Jun/2017 02:07:56] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[12/Jun/2017 02:08:05] DEBUG [django.template:925] Exception while resolving variable 'item_name' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [item_name] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x10891a410>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x1076ec848>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x108918650>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x107701d10>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 02:08:05] DEBUG [django.template:925] Exception while resolving variable 'src' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [src] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x10891a410>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x1076ec848>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x108918650>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x107701d10>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 02:08:05] DEBUG [django.template:925] Exception while resolving variable 'item_name' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [item_name] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x10891a410>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x1076ec848>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x108918650>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x107701d10>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 02:08:05] DEBUG [django.template:925] Exception while resolving variable 'type' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [type] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x10891a410>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x1076ec848>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x108918650>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x107701d10>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 02:08:05] DEBUG [django.template:925] Exception while resolving variable 'ducats' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [ducats] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x10891a410>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x1076ec848>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x108918650>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x107701d10>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 02:08:05] DEBUG [django.template:925] Exception while resolving variable 'ingame_sell_prices' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [ingame_sell_prices] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x10891a410>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x1076ec848>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x108918650>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x107701d10>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 02:08:05] DEBUG [django.template:925] Exception while resolving variable 'ingame_buy_prices' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [ingame_buy_prices] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x10891a410>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x1076ec848>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x108918650>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x107701d10>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 02:08:05] INFO [django.server:124] "GET /get_item/Mesa's%20Waltz/ HTTP/1.1" 200 2780
+[12/Jun/2017 02:08:05] INFO [django.server:124] "GET /static/css/stretchy.css HTTP/1.1" 304 0
+[12/Jun/2017 02:08:05] INFO [django.server:124] "GET /static/img/favicon-16x16.png HTTP/1.1" 200 742
+[12/Jun/2017 02:08:09] DEBUG [django.template:925] Exception while resolving variable 'item_name' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [item_name] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x108930758>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x10770baa0>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x1077cdf50>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x1076d7e10>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 02:08:09] DEBUG [django.template:925] Exception while resolving variable 'src' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [src] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x108930758>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x10770baa0>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x1077cdf50>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x1076d7e10>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 02:08:09] DEBUG [django.template:925] Exception while resolving variable 'item_name' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [item_name] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x108930758>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x10770baa0>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x1077cdf50>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x1076d7e10>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 02:08:09] DEBUG [django.template:925] Exception while resolving variable 'type' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [type] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x108930758>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x10770baa0>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x1077cdf50>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x1076d7e10>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 02:08:09] DEBUG [django.template:925] Exception while resolving variable 'ducats' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [ducats] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x108930758>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x10770baa0>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x1077cdf50>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x1076d7e10>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 02:08:09] DEBUG [django.template:925] Exception while resolving variable 'ingame_sell_prices' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [ingame_sell_prices] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x108930758>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x10770baa0>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x1077cdf50>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x1076d7e10>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 02:08:09] DEBUG [django.template:925] Exception while resolving variable 'ingame_buy_prices' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [ingame_buy_prices] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x108930758>>, \'user\': <SimpleLazyObject: <function <lambda> at 0x10770baa0>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x1077cdf50>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x1076d7e10>, u\'request\': <WSGIRequest: GET "/get_item/Mesa\'s%20Waltz/">}, {}, {\'err\': True}]'
+[12/Jun/2017 02:08:09] INFO [django.server:124] "GET /get_item/Mesa's%20Waltz/ HTTP/1.1" 200 2780
+[12/Jun/2017 02:08:10] INFO [django.server:124] "GET /static/img/favicon-16x16.png HTTP/1.1" 200 742
+[12/Jun/2017 02:09:59] DEBUG [django.db.backends:91] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[12/Jun/2017 02:09:59] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[12/Jun/2017 02:10:03] ERROR [django.request:135] Internal Server Error: /get_item/Mesa's Waltz/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jwcorle/Documents/better_getter/get_item/views.py", line 23, in get_item_details
+    def connect(item_n, item_t=ret_type(item_n)):
+NameError: global name 'item_n' is not defined
+[12/Jun/2017 02:10:03] ERROR [django.server:124] "GET /get_item/Mesa's%20Waltz/ HTTP/1.1" 500 71789
+[12/Jun/2017 02:10:19] DEBUG [django.db.backends:91] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[12/Jun/2017 02:10:19] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[12/Jun/2017 02:10:26] INFO [django.server:124] "GET /get_item/Mesa's%20Waltz/ HTTP/1.1" 200 2891
+[12/Jun/2017 02:10:26] INFO [django.server:124] "GET /static/img/favicon-16x16.png HTTP/1.1" 200 742
+[12/Jun/2017 02:11:15] INFO [django.server:124] "GET /get_item/Thief's%20Wit HTTP/1.1" 301 0
+[12/Jun/2017 02:11:17] INFO [django.server:124] "GET /get_item/Thief's%20Wit/ HTTP/1.1" 200 5111
+[12/Jun/2017 02:11:23] INFO [django.server:124] "GET /get_item/Nova%20Prime%20Neuroptics HTTP/1.1" 301 0
+[12/Jun/2017 02:11:24] INFO [django.server:124] "GET /get_item/Nova%20Prime%20Neuroptics/ HTTP/1.1" 200 8285
+[12/Jun/2017 02:11:31] INFO [django.server:124] "GET /get_item/Kavasa%20Prime%20Collar%20Buckle HTTP/1.1" 301 0
+[12/Jun/2017 02:11:32] INFO [django.server:124] "GET /get_item/Kavasa%20Prime%20Collar%20Buckle/ HTTP/1.1" 200 8717
+[12/Jun/2017 02:11:32] INFO [django.server:124] "GET /get_item/Kavasa%20Prime%20Collar%20Buckle/notFound HTTP/1.1" 301 0
+[12/Jun/2017 02:11:33] ERROR [django.request:135] Internal Server Error: /get_item/Kavasa Prime Collar Buckle/notFound/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jwcorle/Documents/better_getter/get_item/views.py", line 34, in get_item_details
+    current_items = r.json()
+  File "/Library/Python/2.7/site-packages/requests/models.py", line 886, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+[12/Jun/2017 02:11:33] ERROR [django.server:124] "GET /get_item/Kavasa%20Prime%20Collar%20Buckle/notFound/ HTTP/1.1" 500 103530
+[12/Jun/2017 02:12:11] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[12/Jun/2017 02:12:11] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[12/Jun/2017 02:12:40] INFO [django.server:124] "GET /get_item/Kavasa%20Prime%20Collar%20Buckle/ HTTP/1.1" 200 8717
+[12/Jun/2017 02:12:40] INFO [django.server:124] "GET /static/js/search.js HTTP/1.1" 304 0
+[12/Jun/2017 02:12:41] ERROR [django.request:135] Internal Server Error: /get_item/Kavasa Prime Collar Buckle/notFound/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jwcorle/Documents/better_getter/get_item/views.py", line 33, in get_item_details
+    current_items = r.json()
+  File "/Library/Python/2.7/site-packages/requests/models.py", line 886, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+[12/Jun/2017 02:12:41] ERROR [django.server:124] "GET /get_item/Kavasa%20Prime%20Collar%20Buckle/notFound/ HTTP/1.1" 500 103530
+[12/Jun/2017 02:12:41] INFO [django.server:124] "GET /static/img/favicon-16x16.png HTTP/1.1" 200 742
+[12/Jun/2017 02:12:50] INFO [django.server:124] "GET /get_item/Kavasa%20Prime%20Collar%20Buckle/ HTTP/1.1" 200 8717
+[12/Jun/2017 02:12:50] ERROR [django.request:135] Internal Server Error: /get_item/Kavasa Prime Collar Buckle/notFound/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jwcorle/Documents/better_getter/get_item/views.py", line 33, in get_item_details
+    current_items = r.json()
+  File "/Library/Python/2.7/site-packages/requests/models.py", line 886, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+[12/Jun/2017 02:12:50] ERROR [django.server:124] "GET /get_item/Kavasa%20Prime%20Collar%20Buckle/notFound/ HTTP/1.1" 500 103530
+[12/Jun/2017 02:12:50] INFO [django.server:124] "GET /static/img/favicon-16x16.png HTTP/1.1" 200 742
+[12/Jun/2017 02:15:56] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[12/Jun/2017 02:15:56] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[12/Jun/2017 02:16:14] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[12/Jun/2017 02:16:14] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[12/Jun/2017 02:16:23] INFO [django.server:124] "GET /get_item/Kavasa%20Prime%20Collar%20Buckle/ HTTP/1.1" 200 8733
+[12/Jun/2017 02:16:23] INFO [django.server:124] "GET /static/css/get_item.css HTTP/1.1" 304 0
+[12/Jun/2017 02:16:23] INFO [django.server:124] "GET /static/css/typeaheadjs.css HTTP/1.1" 304 0
+[12/Jun/2017 02:16:23] INFO [django.server:124] "GET /static/img/notFound.png HTTP/1.1" 200 22596
+[12/Jun/2017 02:16:23] INFO [django.server:124] "GET /static/img/favicon-16x16.png HTTP/1.1" 200 742
+[12/Jun/2017 02:16:38] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+[12/Jun/2017 02:17:37] INFO [django.server:124] "GET /get_item/Kavasa%20Prime%20Collar%20Buckle/ HTTP/1.1" 200 8753
+[12/Jun/2017 02:17:37] INFO [django.server:124] "GET /static/img/notFound.png HTTP/1.1" 304 0
+[12/Jun/2017 02:17:37] INFO [django.server:124] "GET /static/img/favicon-16x16.png HTTP/1.1" 200 742
+[12/Jun/2017 02:17:53] INFO [django.server:124] "GET /get_item/Kavasa%20Prime%20Collar%20Buckle/ HTTP/1.1" 200 8753
+[12/Jun/2017 02:17:53] INFO [django.server:124] "GET /static/img/notFound.png HTTP/1.1" 304 0
+[12/Jun/2017 02:17:54] INFO [django.server:124] "GET /static/img/favicon-16x16.png HTTP/1.1" 200 742
+[12/Jun/2017 02:18:03] INFO [django.server:124] "GET /get_item/Aklex%20Prime%20Blueprint HTTP/1.1" 301 0
+[12/Jun/2017 02:18:04] INFO [django.server:124] "GET /get_item/Aklex%20Prime%20Blueprint/ HTTP/1.1" 200 8280
+[12/Jun/2017 02:18:10] INFO [django.server:124] "GET /get_item/Akbronco%20Prime%20Link HTTP/1.1" 301 0
+[12/Jun/2017 02:18:11] INFO [django.server:124] "GET /get_item/Akbronco%20Prime%20Link/ HTTP/1.1" 200 8289
+[12/Jun/2017 02:18:14] INFO [django.server:124] "GET /get_item/Paris%20Prime%20Lower%20Limb HTTP/1.1" 301 0
+[12/Jun/2017 02:18:14] DEBUG [django.template:925] Exception while resolving variable 'item_name' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [item_name] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x112208938>>, 'user': <SimpleLazyObject: <function <lambda> at 0x11053ccf8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x1117115d0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x111c84fd0>, u'request': <WSGIRequest: GET '/get_item/Paris%20Prime%20Lower%20Limb/'>}, {}, {'err': True}]"
+[12/Jun/2017 02:18:14] DEBUG [django.template:925] Exception while resolving variable 'src' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [src] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x112208938>>, 'user': <SimpleLazyObject: <function <lambda> at 0x11053ccf8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x1117115d0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x111c84fd0>, u'request': <WSGIRequest: GET '/get_item/Paris%20Prime%20Lower%20Limb/'>}, {}, {'err': True}]"
+[12/Jun/2017 02:18:14] DEBUG [django.template:925] Exception while resolving variable 'item_name' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [item_name] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x112208938>>, 'user': <SimpleLazyObject: <function <lambda> at 0x11053ccf8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x1117115d0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x111c84fd0>, u'request': <WSGIRequest: GET '/get_item/Paris%20Prime%20Lower%20Limb/'>}, {}, {'err': True}]"
+[12/Jun/2017 02:18:14] DEBUG [django.template:925] Exception while resolving variable 'type' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [type] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x112208938>>, 'user': <SimpleLazyObject: <function <lambda> at 0x11053ccf8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x1117115d0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x111c84fd0>, u'request': <WSGIRequest: GET '/get_item/Paris%20Prime%20Lower%20Limb/'>}, {}, {'err': True}]"
+[12/Jun/2017 02:18:14] DEBUG [django.template:925] Exception while resolving variable 'ducats' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [ducats] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x112208938>>, 'user': <SimpleLazyObject: <function <lambda> at 0x11053ccf8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x1117115d0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x111c84fd0>, u'request': <WSGIRequest: GET '/get_item/Paris%20Prime%20Lower%20Limb/'>}, {}, {'err': True}]"
+[12/Jun/2017 02:18:14] DEBUG [django.template:925] Exception while resolving variable 'ingame_sell_prices' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [ingame_sell_prices] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x112208938>>, 'user': <SimpleLazyObject: <function <lambda> at 0x11053ccf8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x1117115d0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x111c84fd0>, u'request': <WSGIRequest: GET '/get_item/Paris%20Prime%20Lower%20Limb/'>}, {}, {'err': True}]"
+[12/Jun/2017 02:18:14] DEBUG [django.template:925] Exception while resolving variable 'ingame_buy_prices' in template 'get_item/item.html'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [ingame_buy_prices] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x112208938>>, 'user': <SimpleLazyObject: <function <lambda> at 0x11053ccf8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x1117115d0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x111c84fd0>, u'request': <WSGIRequest: GET '/get_item/Paris%20Prime%20Lower%20Limb/'>}, {}, {'err': True}]"
+[12/Jun/2017 02:18:14] INFO [django.server:124] "GET /get_item/Paris%20Prime%20Lower%20Limb/ HTTP/1.1" 200 2800
+[12/Jun/2017 02:18:47] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[12/Jun/2017 02:18:47] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[12/Jun/2017 02:21:36] INFO [django.server:124] "GET /get_item/Paris%20Prime%20%20Lower%20Limb/ HTTP/1.1" 200 7561
+[12/Jun/2017 02:21:36] INFO [django.server:124] "GET /static/css/stretchy.css HTTP/1.1" 304 0
+[12/Jun/2017 02:21:36] INFO [django.server:124] "GET /static/img/notFound.png HTTP/1.1" 304 0
+[12/Jun/2017 02:22:39] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[12/Jun/2017 02:22:39] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[12/Jun/2017 02:22:43] INFO [django.server:124] "GET /get_item/Paris%20Prime%20%20Lower%20Limb/ HTTP/1.1" 200 7561
+[12/Jun/2017 02:22:43] INFO [django.server:124] "GET /static/img/notFound.png HTTP/1.1" 304 0
+[12/Jun/2017 02:22:43] INFO [django.server:124] "GET /static/img/favicon-16x16.png HTTP/1.1" 200 742
+[12/Jun/2017 02:22:50] INFO [django.server:124] "GET /get_item/Paris%20Prime%20Lower%20Limb/ HTTP/1.1" 200 7600
+[12/Jun/2017 02:22:59] INFO [django.server:124] "GET /get_item/Ankyros%20Prime%20Blade/ HTTP/1.1" 200 4137
+[12/Jun/2017 02:23:02] INFO [django.server:124] "GET /get_item/Ankyros%20Prime%20Blueprint HTTP/1.1" 301 0
+[12/Jun/2017 02:23:03] INFO [django.server:124] "GET /get_item/Ankyros%20Prime%20Blueprint/ HTTP/1.1" 200 7595
+[12/Jun/2017 02:23:31] INFO [django.server:124] "GET /get_item/Ankyros%20Prime%20Blueprint/ HTTP/1.1" 200 7933
+[12/Jun/2017 02:23:32] INFO [django.server:124] "GET /static/img/favicon-16x16.e45deacf157e.png HTTP/1.1" 200 742
+[12/Jun/2017 02:23:33] INFO [django.server:124] "GET / HTTP/1.1" 200 2164
