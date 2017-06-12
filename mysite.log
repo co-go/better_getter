@@ -1,0 +1,339 @@
+[12/Jun/2017 01:16:05] ERROR [django.request:135] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Library/Python/2.7/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Library/Python/2.7/site-packages/django/template/response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Library/Python/2.7/site-packages/django/templatetags/static.py", line 105, in render
+    url = self.url(context)
+  File "/Library/Python/2.7/site-packages/django/templatetags/static.py", line 102, in url
+    return self.handle_simple(path)
+  File "/Library/Python/2.7/site-packages/django/templatetags/static.py", line 117, in handle_simple
+    return staticfiles_storage.url(path)
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/storage.py", line 162, in url
+    return self._url(self.stored_name, name, force)
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/storage.py", line 141, in _url
+    hashed_name = hashed_name_func(*args)
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/storage.py", line 432, in stored_name
+    raise ValueError("Missing staticfiles manifest entry for '%s'" % clean_name)
+ValueError: Missing staticfiles manifest entry for 'css/bootstrap.min.css'
+[12/Jun/2017 01:16:05] ERROR [django.server:124] "GET / HTTP/1.1" 500 27
+[12/Jun/2017 01:16:05] ERROR [django.request:135] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Library/Python/2.7/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Library/Python/2.7/site-packages/django/template/response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Library/Python/2.7/site-packages/django/templatetags/static.py", line 105, in render
+    url = self.url(context)
+  File "/Library/Python/2.7/site-packages/django/templatetags/static.py", line 102, in url
+    return self.handle_simple(path)
+  File "/Library/Python/2.7/site-packages/django/templatetags/static.py", line 117, in handle_simple
+    return staticfiles_storage.url(path)
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/storage.py", line 162, in url
+    return self._url(self.stored_name, name, force)
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/storage.py", line 141, in _url
+    hashed_name = hashed_name_func(*args)
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/storage.py", line 432, in stored_name
+    raise ValueError("Missing staticfiles manifest entry for '%s'" % clean_name)
+ValueError: Missing staticfiles manifest entry for 'css/bootstrap.min.css'
+[12/Jun/2017 01:16:05] ERROR [django.server:124] "GET / HTTP/1.1" 500 27
+[12/Jun/2017 01:16:11] ERROR [django.request:135] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Library/Python/2.7/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Library/Python/2.7/site-packages/django/template/response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Library/Python/2.7/site-packages/django/templatetags/static.py", line 105, in render
+    url = self.url(context)
+  File "/Library/Python/2.7/site-packages/django/templatetags/static.py", line 102, in url
+    return self.handle_simple(path)
+  File "/Library/Python/2.7/site-packages/django/templatetags/static.py", line 117, in handle_simple
+    return staticfiles_storage.url(path)
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/storage.py", line 162, in url
+    return self._url(self.stored_name, name, force)
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/storage.py", line 141, in _url
+    hashed_name = hashed_name_func(*args)
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/storage.py", line 432, in stored_name
+    raise ValueError("Missing staticfiles manifest entry for '%s'" % clean_name)
+ValueError: Missing staticfiles manifest entry for 'css/bootstrap.min.css'
+[12/Jun/2017 01:16:11] ERROR [django.server:124] "GET / HTTP/1.1" 500 27
+[12/Jun/2017 01:16:12] ERROR [django.request:135] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Library/Python/2.7/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Library/Python/2.7/site-packages/django/template/response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Library/Python/2.7/site-packages/django/templatetags/static.py", line 105, in render
+    url = self.url(context)
+  File "/Library/Python/2.7/site-packages/django/templatetags/static.py", line 102, in url
+    return self.handle_simple(path)
+  File "/Library/Python/2.7/site-packages/django/templatetags/static.py", line 117, in handle_simple
+    return staticfiles_storage.url(path)
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/storage.py", line 162, in url
+    return self._url(self.stored_name, name, force)
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/storage.py", line 141, in _url
+    hashed_name = hashed_name_func(*args)
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/storage.py", line 432, in stored_name
+    raise ValueError("Missing staticfiles manifest entry for '%s'" % clean_name)
+ValueError: Missing staticfiles manifest entry for 'css/bootstrap.min.css'
+[12/Jun/2017 01:16:12] ERROR [django.server:124] "GET / HTTP/1.1" 500 27
+[12/Jun/2017 01:16:12] ERROR [django.request:135] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Library/Python/2.7/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Library/Python/2.7/site-packages/django/template/response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Library/Python/2.7/site-packages/django/templatetags/static.py", line 105, in render
+    url = self.url(context)
+  File "/Library/Python/2.7/site-packages/django/templatetags/static.py", line 102, in url
+    return self.handle_simple(path)
+  File "/Library/Python/2.7/site-packages/django/templatetags/static.py", line 117, in handle_simple
+    return staticfiles_storage.url(path)
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/storage.py", line 162, in url
+    return self._url(self.stored_name, name, force)
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/storage.py", line 141, in _url
+    hashed_name = hashed_name_func(*args)
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/storage.py", line 432, in stored_name
+    raise ValueError("Missing staticfiles manifest entry for '%s'" % clean_name)
+ValueError: Missing staticfiles manifest entry for 'css/bootstrap.min.css'
+[12/Jun/2017 01:16:12] ERROR [django.server:124] "GET / HTTP/1.1" 500 27
+[12/Jun/2017 01:17:03] ERROR [django.request:135] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Library/Python/2.7/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Library/Python/2.7/site-packages/django/template/response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Library/Python/2.7/site-packages/django/templatetags/static.py", line 105, in render
+    url = self.url(context)
+  File "/Library/Python/2.7/site-packages/django/templatetags/static.py", line 102, in url
+    return self.handle_simple(path)
+  File "/Library/Python/2.7/site-packages/django/templatetags/static.py", line 117, in handle_simple
+    return staticfiles_storage.url(path)
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/storage.py", line 162, in url
+    return self._url(self.stored_name, name, force)
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/storage.py", line 141, in _url
+    hashed_name = hashed_name_func(*args)
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/storage.py", line 432, in stored_name
+    raise ValueError("Missing staticfiles manifest entry for '%s'" % clean_name)
+ValueError: Missing staticfiles manifest entry for 'css/bootstrap.min.css'
+[12/Jun/2017 01:17:03] ERROR [django.server:124] "GET / HTTP/1.1" 500 27
+[12/Jun/2017 01:20:56] ERROR [django.request:135] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Library/Python/2.7/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Library/Python/2.7/site-packages/django/template/response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Library/Python/2.7/site-packages/django/templatetags/static.py", line 105, in render
+    url = self.url(context)
+  File "/Library/Python/2.7/site-packages/django/templatetags/static.py", line 102, in url
+    return self.handle_simple(path)
+  File "/Library/Python/2.7/site-packages/django/templatetags/static.py", line 117, in handle_simple
+    return staticfiles_storage.url(path)
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/storage.py", line 162, in url
+    return self._url(self.stored_name, name, force)
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/storage.py", line 141, in _url
+    hashed_name = hashed_name_func(*args)
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/storage.py", line 432, in stored_name
+    raise ValueError("Missing staticfiles manifest entry for '%s'" % clean_name)
+ValueError: Missing staticfiles manifest entry for 'css/bootstrap.min.css'
+[12/Jun/2017 01:20:56] ERROR [django.server:124] "GET / HTTP/1.1" 500 27
+[12/Jun/2017 01:20:58] ERROR [django.request:135] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Library/Python/2.7/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Library/Python/2.7/site-packages/django/template/response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Library/Python/2.7/site-packages/django/templatetags/static.py", line 105, in render
+    url = self.url(context)
+  File "/Library/Python/2.7/site-packages/django/templatetags/static.py", line 102, in url
+    return self.handle_simple(path)
+  File "/Library/Python/2.7/site-packages/django/templatetags/static.py", line 117, in handle_simple
+    return staticfiles_storage.url(path)
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/storage.py", line 162, in url
+    return self._url(self.stored_name, name, force)
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/storage.py", line 141, in _url
+    hashed_name = hashed_name_func(*args)
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/storage.py", line 432, in stored_name
+    raise ValueError("Missing staticfiles manifest entry for '%s'" % clean_name)
+ValueError: Missing staticfiles manifest entry for 'css/bootstrap.min.css'
+[12/Jun/2017 01:20:58] ERROR [django.server:124] "GET / HTTP/1.1" 500 27
+[12/Jun/2017 01:21:03] ERROR [django.request:135] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Library/Python/2.7/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Library/Python/2.7/site-packages/django/template/response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Library/Python/2.7/site-packages/django/templatetags/static.py", line 105, in render
+    url = self.url(context)
+  File "/Library/Python/2.7/site-packages/django/templatetags/static.py", line 102, in url
+    return self.handle_simple(path)
+  File "/Library/Python/2.7/site-packages/django/templatetags/static.py", line 117, in handle_simple
+    return staticfiles_storage.url(path)
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/storage.py", line 162, in url
+    return self._url(self.stored_name, name, force)
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/storage.py", line 141, in _url
+    hashed_name = hashed_name_func(*args)
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/storage.py", line 432, in stored_name
+    raise ValueError("Missing staticfiles manifest entry for '%s'" % clean_name)
+ValueError: Missing staticfiles manifest entry for 'css/bootstrap.min.css'
+[12/Jun/2017 01:21:03] ERROR [django.server:124] "GET / HTTP/1.1" 500 27
+[12/Jun/2017 01:21:26] INFO [django.server:124] "GET / HTTP/1.1" 200 2164
+[12/Jun/2017 01:21:26] INFO [django.server:124] "GET /static/css/home.291ce6bdb2f5.css HTTP/1.1" 200 712
+[12/Jun/2017 01:21:26] INFO [django.server:124] "GET /static/css/bootstrap.min.5c7070ef655a.css HTTP/1.1" 200 19643
+[12/Jun/2017 01:21:26] INFO [django.server:124] "GET /static/css/stretchy.6ade60b89e65.css HTTP/1.1" 200 1719
+[12/Jun/2017 01:21:26] INFO [django.server:124] "GET /static/js/bootstrap.min.5869c96cc8f1.js HTTP/1.1" 200 9806
+[12/Jun/2017 01:21:26] INFO [django.server:124] "GET /static/js/typeahead.fd054c48bcd9.js HTTP/1.1" 200 11583
+[12/Jun/2017 01:21:26] INFO [django.server:124] "GET /static/js/jquery.min.4f252523d4af.js HTTP/1.1" 200 33738
+[12/Jun/2017 01:21:26] INFO [django.server:124] "GET /static/js/search.6a5b24de653c.js HTTP/1.1" 200 9532
+[12/Jun/2017 01:21:26] INFO [django.server:124] "GET /static/js/modernizr.1258d3cdc715.js HTTP/1.1" 200 6195
+[12/Jun/2017 01:21:26] INFO [django.server:124] "GET /static/css/typeaheadjs.74cbdb0b28ef.css HTTP/1.1" 200 685
+[12/Jun/2017 01:21:26] INFO [django.server:124] "GET /static/js/main-min.943e47719b21.js HTTP/1.1" 200 220
+[12/Jun/2017 01:21:26] INFO [django.server:124] "GET /static/img/bg.4a370c063b65.jpg HTTP/1.1" 200 254754
+[12/Jun/2017 01:21:26] INFO [django.server:124] "GET /static/img/cd-sprite-1.e0ce20fb0a6d.svg HTTP/1.1" 200 803
+[12/Jun/2017 01:21:26] INFO [django.server:124] "GET /static/img/favicon-16x16.e45deacf157e.png HTTP/1.1" 200 742
+[12/Jun/2017 01:21:26] INFO [django.server:124] "GET /static/img/favicon-32x32.d59b1d998588.png HTTP/1.1" 200 2022
