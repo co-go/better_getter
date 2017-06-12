@@ -52,7 +52,7 @@ Stretchy Nav style
   position: absolute;
   width: 16px;
   height: 2px;
-  background-color: #ffffff;
+  background-color: #738C99;
 }
 .cd-nav-trigger span {
   /* middle line of the hamburger icon */
@@ -193,6 +193,7 @@ Stretchy Nav style
 }
 .cd-stretchy-nav ul span {
   /* navigation item labels */
+  color: #738C99;
   display: block;
   opacity: 0;
   -webkit-transform: translateX(-25px);
@@ -220,7 +221,7 @@ Stretchy Nav style
   transition: opacity 0.2s;
 }
 .cd-stretchy-nav.nav-is-visible ul a.active {
-  color: #ffffff;
+  color: #738C99;
 }
 .cd-stretchy-nav.nav-is-visible ul a.active::after {
   opacity: 1;
@@ -250,7 +251,7 @@ Stretchy Nav style
   transition: transform 0.2s;
 }
 .no-touch .cd-stretchy-nav.nav-is-visible ul a:hover {
-  color: #ffffff;
+  color: #738C99;
 }
 .no-touch .cd-stretchy-nav.nav-is-visible ul a:hover::after {
   opacity: 1;
