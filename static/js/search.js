@@ -7,7 +7,7 @@ function handler(item) {
 
     setTimeout(function() {
       $('.typeahead').removeClass('err-animation');
-    }, 2000);
+    }, 1000);
   }
 }
 

@@ -11,6 +11,7 @@
 
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'css/get_item.css' %}" rel="stylesheet">
+  	<link href="{% static 'css/stretchy.css' %}" rel="stylesheet">
 
     <link rel="icon" type="image/png" href="{% static 'img/favicon-32x32.png' %}" sizes="32x32" />
     <link rel="icon" type="image/png" href="{% static 'img/favicon-16x16.png' %}" sizes="16x16" />
@@ -21,6 +22,22 @@
     <![endif]-->
   </head>
   <body>
+    <header>
+    	<nav class="cd-stretchy-nav">
+    		<a class="cd-nav-trigger" href="#">
+    			<span aria-hidden="true"></span>
+    		</a>
+
+    		<ul>
+    			<li><a href="/" class="active"><span>Home</span></a></li>
+    			<li><a href="#"><span>Place Orders</span></a></li>
+    			<li><a href="#"><span>Login</span></a></li>
+    		</ul>
+
+    		<span aria-hidden="true" class="stretchy-nav-bg"></span>
+    	</nav>
+    </header>
+
     <div class="top">
       <h1 class="title"> Better <b style="font-weight: 900;">Getter</b> </h1>
 
@@ -126,6 +143,8 @@
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
     <script src="{% static 'js/typeahead.js' %}"></script>
     <script src="{% static 'js/search.js' %}"></script>
+    <script src="{% static 'js/modernizr.js' %}"></script>
+    <script src="{% static 'js/main-min.js' %}"></script>
 
     <link href="{% static 'css/typeaheadjs.css' %}" rel="stylesheet">
   </body>
