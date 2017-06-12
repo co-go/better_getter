@@ -1,1 +1,1 @@
-web: gunicorn wf_market.wsgi --log-file -
+web: gunicorn better_getter.wsgi --log-file -
