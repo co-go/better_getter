@@ -2841,3 +2841,10 @@ VariableDoesNotExist: Failed lookup for key [ingame_buy_prices] in u'[{\'False\'
 [13/Jun/2017 03:42:07] INFO [django.server:124] "GET /get_item/Axi%20E1%20Intact HTTP/1.1" 301 0
 [13/Jun/2017 03:42:09] INFO [django.server:124] "GET /get_item/Axi%20E1%20Intact/ HTTP/1.1" 200 10800
 [13/Jun/2017 03:42:34] INFO [django.server:124] "GET / HTTP/1.1" 200 2163
+[13/Jun/2017 03:55:03] INFO [django.server:124] "GET /get_item/Dakra%20Prime%20Blade HTTP/1.1" 301 0
+[13/Jun/2017 03:55:04] INFO [django.server:124] "GET /get_item/Dakra%20Prime%20Blade/ HTTP/1.1" 200 12169
+[13/Jun/2017 03:55:09] INFO [django.server:124] "GET /get_item/Modified%20Munitions/ HTTP/1.1" 200 6937
+[13/Jun/2017 03:55:52] INFO [django.server:124] "GET /get_item/Modified%20Munitions/ HTTP/1.1" 200 6937
+[13/Jun/2017 03:55:52] INFO [django.server:124] "GET /static/img/favicon-16x16.e45deacf157e.png HTTP/1.1" 200 742
+[13/Jun/2017 03:56:21] INFO [django.server:124] "GET /get_item/Modified%20Munitions/ HTTP/1.1" 200 6839
+[13/Jun/2017 03:56:21] INFO [django.server:124] "GET /static/img/favicon-16x16.e45deacf157e.png HTTP/1.1" 200 742

@@ -124,7 +124,7 @@ def get_item_details(request, item_name):
         try:
             duc = soup.find("a", string=item).parent.parent.span.string
         except AttributeError:
-            duc = "N/A"
+            duc = 0
 
         try:
             src = soup.find("a", string=item).previous_sibling.previous_sibling

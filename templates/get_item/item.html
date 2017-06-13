@@ -50,7 +50,9 @@
         <img src="{{ src }}" style="padding-top: 50px; max-height: 300px;">
         <h2 class="item"> {{ item_name }} </h2>
         <h4 class="item_type"> {{ type }} </h4>
+        {% if ducats != 0 %}
         <h3> {{ ducats }} <img style="height: 1em;" src="{% static 'img/duc.png' %}" /> </h3>
+        {% endif %}
 
         <hr style="width: 50%">
 
