@@ -14,24 +14,33 @@ def get_item_details(request, item_name):
     data = requests.get("http://warframe.market/api/get_all_items_v2")
     items = data.json()
 
-    # function that returns the type of the item (if it exists)
-    def ret_type(item_n):
-        for item in items:
-            if (item["item_name"] == item_n):
-                return item["item_type"]
+    max_rank = None;
+    item_type = None;
 
     # return a connection to the orders for the passed in item
-    def connect(item_n, item_t=ret_type(item_name)):
+    def connect(item_n, item_t):
         url = "http://warframe.market/api/get_orders/%s/%s" % (item_t, item_n)
         r = requests.get(url)
         return r
+
+
+    for item in items:
+        if (item["item_name"] == item_name):
+
+            if "mod_max_rank" in item.keys():
+                max_rank = item["mod_max_rank"]
+
+            item_type = item["item_type"]
+
 
     if (item_name == "Mesa's Waltz"):
         r = connect("Mesa%E2%80%99s%20Waltz", "Mod")
     elif (item_name == "Paris Prime Lower Limb"):
         r = connect("Paris Prime  Lower Limb", "Blueprint")
-    else:
-        r = connect(item_name)
+    elif (item_type == None):
+        return render(request, 'get_item/item.html', {'err: True'})
+
+    r = connect(item_name, item_type)
 
     current_items = r.json()
     online_sell_prices = []
@@ -39,18 +48,14 @@ def get_item_details(request, item_name):
     online_buy_prices = []
     ingame_buy_prices = []
 
-    mr = None
-
     if (current_items["code"] != 404):
         for item in current_items["response"]["sell"]:
-            if (mr == None):
-                mr = "mod_rank" in item.keys()
 
             if (item["online_ingame"] and
                 item["ingame_name"].find("(PS4)") == -1 and
                 item["ingame_name"].find("(XB1)") == -1):
 
-                if (mr):
+                if (max_rank != None):
                     ingame_sell_prices.append({"price": item["price"],
                                                "name": item["ingame_name"],
                                                "count": item["count"],
@@ -64,7 +69,7 @@ def get_item_details(request, item_name):
                   item["ingame_name"].find("(PS4)") == -1 and
                   item["ingame_name"].find("(XB1)") == -1):
 
-                if (mr):
+                if (max_rank != None):
                     online_sell_prices.append({"price": item["price"],
                                                "name": item["ingame_name"],
                                                "count": item["count"],
@@ -79,7 +84,7 @@ def get_item_details(request, item_name):
                 item["ingame_name"].find("(PS4)") == -1 and
                 item["ingame_name"].find("(XB1)") == -1):
 
-                if (mr):
+                if (max_rank != None):
                     ingame_buy_prices.append({"price": item["price"],
                                                "name": item["ingame_name"],
                                                "count": item["count"],
@@ -93,7 +98,7 @@ def get_item_details(request, item_name):
                   item["ingame_name"].find("(PS4)") == -1 and
                   item["ingame_name"].find("(XB1)") == -1):
 
-                if (mr):
+                if (max_rank != None):
                     online_buy_prices.append({"price": item["price"],
                                               "name": item["ingame_name"],
                                               "count": item["count"],
@@ -139,11 +144,12 @@ def get_item_details(request, item_name):
         context = { "item_name": item_name,
                     "ducats": duc,
                     "src": src,
-                    "type": ret_type(item_name),
+                    "type": item_type,
                     "ingame_sell_prices": ingame_sell_prices[:10],
                     "online_sell_prices": online_sell_prices[:5],
                     "ingame_buy_prices": ingame_buy_prices[:10],
-                    "online_buy_prices": online_buy_prices[:5] }
+                    "online_buy_prices": online_buy_prices[:5],
+                    "max_rank": max_rank }
     else:
         context = { "err": True }
 

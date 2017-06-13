@@ -63,30 +63,47 @@
                 <h3 class="panel-title">Sellers</h3>
               </div>
 
-              <ul class="list-group">
-                {% for item in ingame_sell_prices %}
-                  <li class="list-group-item">
-                    <b style="float: left"> {{ item.name }} </b>
+              <table class="table table-hover info-row">
+                <tbody>
+                  {% for item in ingame_sell_prices %}
+                  <tr class="order">
+                    <td><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></td>
+                    <td><b style="float: left"> {{ item.name }} </b></td>
+                    <td>{{ item.price }} <img style="height: 1em;" src="{% static 'img/plat.png' %}" /></td>
+                    <td><span class="label label-success" style="float: right"><span>In-game</span></span></td>
+                  </tr>
+                  <tr class="details">
+                    <td></td>
+                    <td>Selling <b>{{ item.count }}</b></td>
+                    <td>{% if 'mod_rank' in item %}
+                    Rank <i>{{ item.mod_rank }}</i> out of <i>{{ max_rank }}</i>
+                    {% endif %}</td>
+                    <td></td>
+                  </tr>
+                  {% endfor %}
 
-                    {{ item.price }}
-                    <img style="height: 1em;" src="{% static 'img/plat.png' %}" />
-                    <span class="label label-success" style="float: right"><span>In-game</span></span>
-                  </li>
-                {% endfor %}
-              </ul>
+                  <td></td><td></td><td></td><td></td>
 
-              <ul class="list-group" style="margin-top: 5px">
-                {% for item in online_sell_prices %}
-                  <li class="list-group-item">
-                    <b style="float: left"> {{ item.name }} </b>
-
-                    {{ item.price }}
-                    <img style="height: 1em;" src="{% static 'img/plat.png' %}" />
-                    <span class="label label-primary" style="float: right">Online</span>
-                  </li>
-                {% endfor %}
-              </ul>
+                  {% for item in online_sell_prices %}
+                  <tr class="order">
+                    <td><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></td>
+                    <td><b style="float: left"> {{ item.name }} </b></td>
+                    <td>{{ item.price }} <img style="height: 1em;" src="{% static 'img/plat.png' %}" /></td>
+                    <td><span class="label label-primary" style="float: right"><span>Online</span></span></td>
+                  </tr>
+                  <tr class="details">
+                    <td></td>
+                    <td>Selling <b>{{ item.count }}</b></td>
+                    <td>{% if 'mod_rank' in item %}
+                    Rank <i>{{ item.mod_rank }}</i> out of <i>{{ max_rank }}</i>
+                    {% endif %}</td>
+                    <td></td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
             </div>
+
             {% else %}
             <div class="panel panel-default">
               <div class="panel-body">
@@ -103,29 +120,45 @@
                 <h3 class="panel-title">Buyers</h3>
               </div>
 
-              <ul class="list-group">
-                {% for item in ingame_buy_prices %}
-                  <li class="list-group-item">
-                    <b style="float: left"> {{ item.name }} </b>
+              <table class="table table-hover info-row">
+                <tbody>
+                  {% for item in ingame_buy_prices %}
+                  <tr class="order">
+                    <td><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></td>
+                    <td><b style="float: left"> {{ item.name }} </b></td>
+                    <td>{{ item.price }} <img style="height: 1em;" src="{% static 'img/plat.png' %}" /></td>
+                    <td><span class="label label-success" style="float: right"><span>In-game</span></span></td>
+                  </tr>
+                  <tr class="details">
+                    <td></td>
+                    <td>Buying <b>{{ item.count }}</b></td>
+                    <td>{% if 'mod_rank' in item %}
+                    Rank <i>{{ item.mod_rank }}</i> out of <i>{{ max_rank }}</i>
+                    {% endif %}</td>
+                    <td></td>
+                  </tr>
+                  {% endfor %}
 
-                    {{ item.price }}
-                    <img style="height: 1em;" src="{% static 'img/plat.png' %}" />
-                    <span class="label label-success" style="float: right"><span>In-game</span></span>
-                  </li>
-                {% endfor %}
-              </ul>
+                  <td></td><td></td><td></td><td></td>
 
-              <ul class="list-group" style="margin-top: 5px">
-                {% for item in online_buy_prices %}
-                  <li class="list-group-item">
-                    <b style="float: left"> {{ item.name }} </b>
-
-                    {{ item.price }}
-                    <img style="height: 1em;" src="{% static 'img/plat.png' %}" />
-                    <span class="label label-primary" style="float: right">Online</span>
-                  </li>
-                {% endfor %}
-              </ul>
+                  {% for item in online_buy_prices %}
+                  <tr class="order">
+                    <td><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></td>
+                    <td><b style="float: left"> {{ item.name }} </b></td>
+                    <td>{{ item.price }} <img style="height: 1em;" src="{% static 'img/plat.png' %}" /></td>
+                    <td><span class="label label-primary" style="float: right"><span>Online</span></span></td>
+                  </tr>
+                  <tr class="details">
+                    <td></td>
+                    <td>Buying <b>{{ item.count }}</b></td>
+                    <td>{% if 'mod_rank' in item %}
+                    Rank <i>{{ item.mod_rank }}</i> out of <i>{{ max_rank }}</i>
+                    {% endif %}</td>
+                    <td></td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
             </div>
             {% else %}
             <div class="panel panel-default">
