@@ -39,6 +39,9 @@ def get_item_details(request, item_name):
     elif (item_name == "Paris Prime Lower Limb"):
         item_type = "Blueprint"
         r = connect("Paris Prime  Lower Limb", item_type)
+    elif (item_name == "Paris Prime Grip"):
+        item_type = "Blueprint"
+        r = connect("Paris Prime  Grip", item_type)
     elif (item_type == None):
         return render(request, 'get_item/item.html', {'err: True'})
     else:
