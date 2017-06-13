@@ -184,19 +184,28 @@
                   <span class="glyphicon glyphicon-book" aria-hidden="true"></span> &nbsp;View on Warframe Wiki
                 </a>
                 <hr style="width: 80%">
-                <h3> Sell </h3>
-                <div class="input-group">
+
+                <div class="btn-group" data-toggle="buttons" id="market_type">
+                  <label class="btn btn-lg btn-success active">
+                    <input type="radio" id="sell" autocomplete="off" checked> Want to <b>Sell</b>
+                  </label>
+                  <label class="btn btn-lg btn-warning">
+                    <input type="radio" id="buy" autocomplete="off"> Want to <b>Buy</b>
+                  </label>
+                </div>
+                
+                <div class="input-group" style="margin-bottom: 5px;">
                   <span class="input-group-addon">Quantity:</span>
                   <input type="text" id="quantity" class="form-control" placeholder="Default is 1">
                 </div>
-                <div class="input-group">
+                <div class="input-group" style="margin-bottom: 10px;">
                   <span class="input-group-addon">Platinum:</span>
                   <input type="text" id="platinum" class="form-control" placeholder="Default is (lowest price - 1)">
                 </div>
 
+                <a href="#" class="btn btn-primary submit">Submit</a>
 
                 <hr style="width: 80%">
-                <h3> Buy </h3>
               </div>
             </div>
           </div>
