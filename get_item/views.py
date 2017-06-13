@@ -34,13 +34,15 @@ def get_item_details(request, item_name):
 
 
     if (item_name == "Mesa's Waltz"):
-        r = connect("Mesa%E2%80%99s%20Waltz", "Mod")
+        item_type = "Mod"
+        r = connect("Mesa%E2%80%99s%20Waltz", item_type)
     elif (item_name == "Paris Prime Lower Limb"):
-        r = connect("Paris Prime  Lower Limb", "Blueprint")
+        item_type = "Blueprint"
+        r = connect("Paris Prime  Lower Limb", item_type)
     elif (item_type == None):
         return render(request, 'get_item/item.html', {'err: True'})
-
-    r = connect(item_name, item_type)
+    else:
+        r = connect(item_name, item_type)
 
     current_items = r.json()
     online_sell_prices = []

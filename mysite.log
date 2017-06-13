@@ -2697,3 +2697,19 @@ VariableDoesNotExist: Failed lookup for key [ingame_buy_prices] in u'[{\'False\'
             WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
             ORDER BY name; args=None
 [13/Jun/2017 03:12:52] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2017 03:14:07] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2017 03:14:07] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2017 03:14:17] INFO [django.server:124] "GET /get_item/Mesa's%20Waltz/ HTTP/1.1" 200 2911
+[13/Jun/2017 03:14:17] INFO [django.server:124] "GET /static/img/favicon-16x16.png HTTP/1.1" 200 742
+[13/Jun/2017 03:14:54] DEBUG [django.db.backends:91] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2017 03:14:54] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2017 03:14:58] INFO [django.server:124] "GET /get_item/Mesa's%20Waltz/ HTTP/1.1" 200 2910
+[13/Jun/2017 03:14:58] INFO [django.server:124] "GET /static/img/favicon-16x16.png HTTP/1.1" 200 742
+[13/Jun/2017 03:15:12] INFO [django.server:124] "GET /get_item/Entropy%20Spike HTTP/1.1" 301 0
+[13/Jun/2017 03:15:13] INFO [django.server:124] "GET /get_item/Entropy%20Spike/ HTTP/1.1" 200 6744
