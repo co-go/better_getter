@@ -1,2 +1,0 @@
-[13/Jun/2017 18:13:43] INFO [django.server:124] "GET /get_item/Neo%20V4%20Exceptional HTTP/1.1" 301 0
-[13/Jun/2017 18:13:46] INFO [django.server:124] "GET /get_item/Neo%20V4%20Exceptional/ HTTP/1.1" 200 4826
