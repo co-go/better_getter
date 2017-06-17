@@ -466,3 +466,12 @@ TemplateSyntaxError: Invalid block tag on line 1: 'static'. Did you forget to re
 [17/Jun/2017 03:21:18] INFO [django.server:124] "GET /static/img/favicon-16x16.png HTTP/1.1" 200 742
 [17/Jun/2017 03:23:22] INFO [django.server:124] "GET /get_item/Akbronco%20Prime%20Blueprint/ HTTP/1.1" 200 8398
 [17/Jun/2017 03:23:22] INFO [django.server:124] "GET /static/img/favicon-16x16.png HTTP/1.1" 200 742
+[17/Jun/2017 03:30:48] INFO [django.server:124] "GET / HTTP/1.1" 200 406
+[17/Jun/2017 03:31:20] INFO [django.server:124] "GET / HTTP/1.1" 200 1984
+[17/Jun/2017 03:31:21] INFO [django.server:124] "GET /static/img/favicon-16x16.png HTTP/1.1" 200 742
+[17/Jun/2017 03:31:23] INFO [django.server:124] "GET / HTTP/1.1" 200 1984
+[17/Jun/2017 03:31:23] INFO [django.server:124] "GET /static/img/favicon-16x16.png HTTP/1.1" 200 742
+[17/Jun/2017 03:31:26] INFO [django.server:124] "GET /get_item/Ankyros%20Prime%20Blade/ HTTP/1.1" 200 14001
+[17/Jun/2017 03:31:39] INFO [django.server:124] "GET /get_item/Ankyros%20Prime%20Blade/ HTTP/1.1" 200 14001
+[17/Jun/2017 03:31:44] INFO [django.server:124] "GET /get_item/Point%20Blank HTTP/1.1" 301 0
+[17/Jun/2017 03:31:45] INFO [django.server:124] "GET /get_item/Point%20Blank/ HTTP/1.1" 200 9207
