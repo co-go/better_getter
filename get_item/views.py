@@ -43,7 +43,7 @@ def get_item_details(request, item_name):
         item_type = "Blueprint"
         r = connect("Paris Prime  Grip", item_type)
     elif (item_type == None):
-        return render(request, 'get_item/item.html', {'err: True'})
+        return render(request, 'item.html', {'err: True'})
     else:
         r = connect(item_name, item_type)
 
@@ -158,4 +158,4 @@ def get_item_details(request, item_name):
     else:
         context = { "err": True }
 
-    return render(request, 'get_item/item.html', context)
+    return render(request, 'item.html', context)

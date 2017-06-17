@@ -1,0 +1,200 @@
+[17/Jun/2017 02:46:23] INFO [django.server:124] "GET / HTTP/1.1" 200 2163
+[17/Jun/2017 02:46:34] INFO [django.server:124] "GET /get_item/Ankyros%20Prime%20Blueprint HTTP/1.1" 301 0
+[17/Jun/2017 02:46:35] ERROR [django.request:135] Internal Server Error: /get_item/Ankyros Prime Blueprint/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jwcorle/Documents/better_getter/get_item/views.py", line 161, in get_item_details
+    return render(request, 'item.html', context)
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: item.html
+[17/Jun/2017 02:46:35] ERROR [django.server:124] "GET /get_item/Ankyros%20Prime%20Blueprint/ HTTP/1.1" 500 27
+[17/Jun/2017 02:46:35] WARNING [django.request:152] Not Found: /favicon.ico
+[17/Jun/2017 02:46:35] WARNING [django.server:124] "GET /favicon.ico HTTP/1.1" 404 85
+[17/Jun/2017 02:47:29] ERROR [django.request:135] Internal Server Error: /get_item/Ankyros Prime Blueprint/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jwcorle/Documents/better_getter/get_item/views.py", line 161, in get_item_details
+    return render(request, 'item.html', context)
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: item.html
+[17/Jun/2017 02:47:29] ERROR [django.server:124] "GET /get_item/Ankyros%20Prime%20Blueprint/ HTTP/1.1" 500 27
+[17/Jun/2017 02:47:33] INFO [django.server:124] "GET / HTTP/1.1" 200 2163
+[17/Jun/2017 02:47:37] INFO [django.server:124] "GET /get_item/Akbronco%20Prime%20Blueprint HTTP/1.1" 301 0
+[17/Jun/2017 02:47:38] ERROR [django.request:135] Internal Server Error: /get_item/Akbronco Prime Blueprint/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jwcorle/Documents/better_getter/get_item/views.py", line 161, in get_item_details
+    return render(request, 'item.html', context)
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: item.html
+[17/Jun/2017 02:47:38] ERROR [django.server:124] "GET /get_item/Akbronco%20Prime%20Blueprint/ HTTP/1.1" 500 27
+[17/Jun/2017 02:50:34] ERROR [django.request:135] Internal Server Error: /get_item/Akbronco Prime Blueprint/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jwcorle/Documents/better_getter/get_item/views.py", line 161, in get_item_details
+    return render(request, 'item.html', context)
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Library/Python/2.7/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Library/Python/2.7/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Library/Python/2.7/site-packages/django/template/loaders/cached.py", line 60, in get_template
+    template_name, template_dirs, skip,
+  File "/Library/Python/2.7/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Unknown argument for u'include' tag: u"'components/scripts.html'".
+[17/Jun/2017 02:50:34] ERROR [django.server:124] "GET /get_item/Akbronco%20Prime%20Blueprint/ HTTP/1.1" 500 27
+[17/Jun/2017 02:50:37] INFO [django.server:124] "GET / HTTP/1.1" 200 2163
+[17/Jun/2017 02:50:41] ERROR [django.request:135] Internal Server Error: /get_item/Akbronco Prime Link/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jwcorle/Documents/better_getter/get_item/views.py", line 161, in get_item_details
+    return render(request, 'item.html', context)
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Library/Python/2.7/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Library/Python/2.7/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Library/Python/2.7/site-packages/django/template/loaders/cached.py", line 60, in get_template
+    template_name, template_dirs, skip,
+  File "/Library/Python/2.7/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Unknown argument for u'include' tag: u"'components/scripts.html'".
+[17/Jun/2017 02:50:41] ERROR [django.server:124] "GET /get_item/Akbronco%20Prime%20Link/ HTTP/1.1" 500 27
+[17/Jun/2017 02:52:08] ERROR [django.request:135] Internal Server Error: /get_item/Akbronco Prime Link/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jwcorle/Documents/better_getter/get_item/views.py", line 161, in get_item_details
+    return render(request, 'item.html', context)
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Library/Python/2.7/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Library/Python/2.7/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Library/Python/2.7/site-packages/django/template/loaders/cached.py", line 60, in get_template
+    template_name, template_dirs, skip,
+  File "/Library/Python/2.7/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Unknown argument for u'include' tag: u"'components/scripts.html'".
+[17/Jun/2017 02:52:08] ERROR [django.server:124] "GET /get_item/Akbronco%20Prime%20Link/ HTTP/1.1" 500 27
+[17/Jun/2017 02:52:16] DEBUG [django.db.backends:91] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[17/Jun/2017 02:52:16] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[17/Jun/2017 02:52:19] ERROR [django.request:135] Internal Server Error: /get_item/Akbronco Prime Link/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jwcorle/Documents/better_getter/get_item/views.py", line 161, in get_item_details
+    return render(request, 'item.html', context)
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Library/Python/2.7/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Library/Python/2.7/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Library/Python/2.7/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Unknown argument for u'include' tag: u"'components/scripts.html'".
+[17/Jun/2017 02:52:19] ERROR [django.server:124] "GET /get_item/Akbronco%20Prime%20Link/ HTTP/1.1" 500 151844
