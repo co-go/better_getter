@@ -3,4 +3,3 @@
 .log
 .venv
 secret_settings.py
-staticfiles
