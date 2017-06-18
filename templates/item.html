@@ -183,3 +183,9 @@
 </div>
 
 {% endblock %}
+
+{% block extra_scripts %}
+<script>
+  $( "ul li" ).eq(1).addClass("mm-selected");
+</script>
+{% endblock %}
