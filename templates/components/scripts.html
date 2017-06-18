@@ -4,5 +4,23 @@
 <script src="{% static 'js/bootstrap.min.js' %}"></script>
 <script src="{% static 'js/typeahead.js' %}"></script>
 <script src="{% static 'js/search.js' %}"></script>
-<script src="{% static 'js/modernizr.js' %}"></script>
-<script src="{% static 'js/main-min.js' %}"></script>
+<script src="{% static 'mmenu/jquery.mmenu.all.js' %}"></script>
+<script src="{% static 'mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.js' %}"></script>
+
+<script type="text/javascript">
+   jQuery(document).ready(function( $ ) {
+      $("#menu").mmenu({
+         "extensions": [
+            "theme-dark"
+         ],
+         "navbars": [
+            {
+               "position": "bottom",
+               "content": [
+                  "Welcome eqwert_"
+               ]
+            }
+         ]
+      });
+   });
+</script>

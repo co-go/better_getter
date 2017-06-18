@@ -10,8 +10,9 @@
     <title>{% block title %}{% endblock %}</title>
 
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
-  	<link href="{% static 'css/stretchy.css' %}" rel="stylesheet">
     <link href="{% static 'css/typeaheadjs.css' %}" rel="stylesheet">
+    <link href="{% static 'mmenu/jquery.mmenu.all.css' %}" rel="stylesheet">
+    <link href="{% static 'mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.css' %}" rel="stylesheet">
 
     {% block extra_styles %}{% endblock %}
 
@@ -25,21 +26,22 @@
   </head>
 
   <body>
-    <header>
-    	<nav class="cd-stretchy-nav">
-    		<a class="cd-nav-trigger" href="#">
-    			<span aria-hidden="true"></span>
-    		</a>
+    <nav id="menu">
+       <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">About us</a>
+             <ul>
+                <li><a href="/about/history/">History</a></li>
+                <li><a href="/about/team/">The team</a></li>
+                <li><a href="/about/address/">Our address</a></li>
+             </ul>
+          </li>
+          <li><a href="/contact/">Contact</a></li>
+       </ul>
+    </nav>
 
-    		<ul>
-    			<li><a href="/"><span>Home</span></a></li>
-    			<li><a href="#"><span>Place Order</span></a></li>
-    			<li><a href="#"><span>Login</span></a></li>
-    		</ul>
 
-    		<span aria-hidden="true" class="stretchy-nav-bg"></span>
-    	</nav>
-    </header>
+    <a href="#menu">Open the menu</a>
 
     {% block content %}{% endblock %}
 

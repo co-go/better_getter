@@ -3,7 +3,7 @@ import dj_database_url
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [ 'better-getter.herokuapp.com', '127.0.0.1', 'localhost' ]
 
