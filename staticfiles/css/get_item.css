@@ -3,7 +3,7 @@
 .top {
   height: 300px;
   width: 100%;
-  background: url("/static/img/bg.4a370c063b65.jpg");
+  background: url('/static/img/bg.jpg');
   background-color: #1F2833;
   box-shadow: 0px 0px 6px #888888;
 }
@@ -119,6 +119,15 @@
 }
 
 .details {
-  box-shadow: inset 0 0 2px #ccc !important;
-  background-color: #f0f0f0 !important;
+  box-shadow: inset 0 0 2px #ccc;
+  background-color: #f0f0f0;
+}
+
+#market_type {
+
+  margin-bottom: 10px;
+}
+
+#market_type label {
+  outline: none !important;
 }

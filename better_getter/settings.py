@@ -4,7 +4,6 @@ import dj_database_url
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
@@ -15,6 +14,7 @@ ALLOWED_HOSTS = [ 'better-getter.herokuapp.com', '127.0.0.1', 'localhost' ]
 
 ADMINS = [ ('James', 'JCorley111@gmail.com') ]
 
+# heroku config:set SECRET="MY_KEY_VALUE"
 SECRET_KEY = os.environ.get('SECRET', 'my-default-secret-key')
 
 # Application definition
@@ -108,8 +108,8 @@ USE_TZ = True
 
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
-STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
-STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = 'static/'
 
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
