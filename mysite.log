@@ -108,3 +108,66 @@ Traceback (most recent call last):
     (bit, current))  # missing attribute
 VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'get_item.urls' from '/Users/jwcorle/Documents/better_getter/get_item/urls.pyc'> (None:None) ^get_item/>"
 [18/Jun/2017 16:22:51] WARNING [django.request:152] Not Found: /contact/
+[18/Jun/2017 17:37:53] DEBUG [django.template:925] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[18/Jun/2017 17:37:53] DEBUG [django.template:925] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'get_item.urls' from '/Users/jwcorle/Documents/better_getter/get_item/urls.pyc'> (None:None) ^get_item/>"
+[18/Jun/2017 17:37:53] WARNING [django.request:152] Not Found: /about/
+[18/Jun/2017 17:41:51] DEBUG [django.template:925] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[18/Jun/2017 17:41:51] DEBUG [django.template:925] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'get_item.urls' from '/Users/jwcorle/Documents/better_getter/get_item/urls.pyc'> (None:None) ^get_item/>"
+[18/Jun/2017 17:41:51] WARNING [django.request:152] Not Found: /login/
+[18/Jun/2017 17:41:56] DEBUG [django.template:925] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[18/Jun/2017 17:41:56] DEBUG [django.template:925] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'get_item.urls' from '/Users/jwcorle/Documents/better_getter/get_item/urls.pyc'> (None:None) ^get_item/>"
+[18/Jun/2017 17:41:56] WARNING [django.request:152] Not Found: /login/
+[18/Jun/2017 17:53:49] DEBUG [django.template:925] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[18/Jun/2017 17:53:49] DEBUG [django.template:925] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'get_item.urls' from '/Users/jwcorle/Documents/better_getter/get_item/urls.pyc'> (None:None) ^get_item/>"
+[18/Jun/2017 17:53:49] WARNING [django.request:152] Not Found: /login/
+[18/Jun/2017 17:58:01] ERROR [django.request:135] Internal Server Error: /get_item/Loki Prime Neuroptics/login/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jwcorle/Documents/better_getter/get_item/views.py", line 46, in get_item_details
+    return render(request, 'item.html', {'err: True'})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 64, in render
+    context = make_context(context, request, autoescape=self.backend.engine.autoescape)
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 287, in make_context
+    raise TypeError('context must be a dict rather than %s.' % context.__class__.__name__)
+TypeError: context must be a dict rather than set.

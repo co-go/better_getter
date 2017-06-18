@@ -13,6 +13,7 @@
     <link href="{% static 'css/typeaheadjs.css' %}" rel="stylesheet">
     <link href="{% static 'mmenu/jquery.mmenu.all.css' %}" rel="stylesheet">
     <link href="{% static 'mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'css/common.css' %}" rel="stylesheet">
 
     {% block extra_styles %}{% endblock %}
 
@@ -29,21 +30,21 @@
     <nav id="menu">
        <ul>
           <li><a href="/">Home</a></li>
-          <li><a href="/about/">About us</a>
-             <ul>
-                <li><a href="/about/history/">History</a></li>
-                <li><a href="/about/team/">The team</a></li>
-                <li><a href="/about/address/">Our address</a></li>
-             </ul>
-          </li>
-          <li><a href="/contact/">Contact</a></li>
+          <li><a href="#">Sell / Buy Items</a></li>
+          <li><a href="/login/">Login</a></li>
        </ul>
     </nav>
 
+    <div class="mm-page">
+      <div style="height: 100vh">
 
-    <a href="#menu">Open the menu</a>
+        <a class="o-menu" href="#menu" aria-label="Open Menu">
+          <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
+        </a>
 
-    {% block content %}{% endblock %}
+        {% block content %}{% endblock %}
+      </div>
+    </div>
 
     {% include "components/scripts.html" %}
 

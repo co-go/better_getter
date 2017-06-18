@@ -1,0 +1,89 @@
+/* Searchbar CSS */
+.search {
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 40px auto 0;
+  max-width: 800px;
+  width: 80%;
+
+  height: 50px;
+  background: #2b303b;
+  border: none;
+  color: #63717f;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+  -webkit-transition: background .55s ease;
+  -moz-transition: background .55s ease;
+  -ms-transition: background .55s ease;
+  -o-transition: background .55s ease;
+  transition: background .55s ease;
+}
+
+.search::-webkit-input-placeholder {
+   color: #65737e;
+}
+
+.search:-moz-placeholder {
+   color: #65737e;
+}
+
+.search::-moz-placeholder {
+   color: #65737e;
+}
+
+.search:-ms-input-placeholder {
+   color: #65737e;
+}
+
+.search:focus, .search:active {
+    outline: none !important;
+    background: #ffffff !important;
+}
+
+.err-animation {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.err {
+  border: solid 2px #BD2031 !important;
+}
+
+
+/* this is stupid that I have to include this */
+.mm-page {
+  position: absolute;
+  left: 0;
+  right: 0
+}
+
+
+.o-menu {
+  position: fixed;
+  float: left;
+  margin: 10px;
+  color: #66FCF1;
+}
