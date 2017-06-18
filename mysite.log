@@ -171,3 +171,14 @@ Traceback (most recent call last):
   File "/Library/Python/2.7/site-packages/django/template/context.py", line 287, in make_context
     raise TypeError('context must be a dict rather than %s.' % context.__class__.__name__)
 TypeError: context must be a dict rather than set.
+[18/Jun/2017 18:01:32] DEBUG [django.template:925] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[18/Jun/2017 18:01:32] DEBUG [django.template:925] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'get_item.urls' from '/Users/jwcorle/Documents/better_getter/get_item/urls.pyc'> (None:None) ^get_item/>"
+[18/Jun/2017 18:01:32] WARNING [django.request:152] Not Found: /login/

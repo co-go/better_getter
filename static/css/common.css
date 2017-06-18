@@ -92,6 +92,15 @@
   color: #66FCF1;
 }
 
+.mm-listview a:hover {
+  font-weight: bold;
+}
+
+.mm-listview .glyphicon {
+  padding-right: 5px;
+  color: #63717f;
+}
+
 
 /* formatting for MMENU */
 .mm-menu {
