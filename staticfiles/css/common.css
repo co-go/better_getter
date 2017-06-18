@@ -82,15 +82,23 @@
 
 
 .o-menu, .o-menu:focus {
-  position: fixed;
   float: left;
   margin: 10px 15px;
-  color: #BBB;
+  color: #65737e;
   font-size: 24px;
 }
 
 .o-menu:hover {
   color: #66FCF1;
+}
+
+.mm-listview a:hover {
+  font-weight: bold;
+}
+
+.mm-listview .glyphicon {
+  padding-right: 5px;
+  color: #63717f;
 }
 
 
