@@ -1,0 +1,197 @@
+/* Searchbar CSS */
+.search {
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 40px auto 0;
+  max-width: 800px;
+  width: 80%;
+
+  height: 50px;
+  background: #2b303b;
+  border: none;
+  color: #63717f;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+  -webkit-transition: background .55s ease;
+  -moz-transition: background .55s ease;
+  -ms-transition: background .55s ease;
+  -o-transition: background .55s ease;
+  transition: background .55s ease;
+}
+
+.search::-webkit-input-placeholder {
+   color: #65737e;
+}
+
+.search:-moz-placeholder {
+   color: #65737e;
+}
+
+.search::-moz-placeholder {
+   color: #65737e;
+}
+
+.search:-ms-input-placeholder {
+   color: #65737e;
+}
+
+.search:focus, .search:active {
+    outline: none !important;
+    background: #ffffff !important;
+}
+
+.err-animation {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.err {
+  border: solid 2px #BD2031 !important;
+}
+
+
+/* this is stupid that I have to include this */
+.mm-page {
+  position: absolute;
+  left: 0;
+  right: 0
+}
+
+
+.o-menu, .o-menu:focus {
+  position: fixed;
+  float: left;
+  margin: 10px 15px;
+  color: #65737e;
+  font-size: 24px;
+  background-color: #2b303b;
+  border-radius: 10px;
+  height: 2em;
+  width: 2em;
+}
+
+.o-menu .glyphicon {
+  left: 12px;
+  top: 9px;
+}
+
+.o-menu:hover {
+  color: #66FCF1;
+}
+
+.mm-listview a:hover {
+  font-weight: bold;
+}
+
+.mm-listview .glyphicon {
+  padding-right: 5px;
+  color: #63717f;
+}
+
+
+/* formatting for MMENU */
+.mm-menu {
+    background: #2b303b;
+    border-color: rgba(0, 0, 0, .15);
+    color: rgba(255, 255, 255, .8)
+}
+.mm-menu .mm-navbar a,
+.mm-menu .mm-navbar>* {
+    color: rgba(255, 255, 255, .4)
+}
+.mm-menu .mm-btn:after,
+.mm-menu .mm-btn:before {
+    border-color: rgba(255, 255, 255, .4)
+}
+.mm-menu .mm-listview {
+    border-color: rgba(0, 0, 0, .15)
+}
+.mm-menu .mm-listview>li .mm-next:after {
+    border-color: rgba(255, 255, 255, .4)
+}
+.mm-menu .mm-listview>li a:not(.mm-next) {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, .1);
+    tap-highlight-color: rgba(0, 0, 0, .1)
+}
+.mm-menu .mm-listview>li.mm-selected>a:not(.mm-next),
+.mm-menu .mm-listview>li.mm-selected>span {
+    background: rgba(0, 0, 0, .1)
+}
+.mm-menu .mm-listview>li.mm-opened.mm-vertical>.mm-panel,
+.mm-menu .mm-listview>li.mm-opened.mm-vertical>a.mm-next,
+.mm-menu.mm-vertical .mm-listview>li.mm-opened>.mm-panel,
+.mm-menu.mm-vertical .mm-listview>li.mm-opened>a.mm-next {
+    background: rgba(255, 255, 255, .05)
+}
+.mm-menu .mm-divider {
+    background: rgba(255, 255, 255, .05)
+}
+.mm-menu label.mm-check:before {
+    border-color: rgba(255, 255, 255, .8)
+}
+.mm-menu em.mm-counter {
+    color: rgba(255, 255, 255, .4)
+}
+.mm-menu .mm-fixeddivider span {
+    background: rgba(255, 255, 255, .05)
+}
+.mm-menu.mm-keyboardfocus a:focus {
+    background: rgba(0, 0, 0, .1)
+}
+.mm-menu.mm-shadow-page:after {
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5)
+}
+.mm-menu.mm-shadow-panels .mm-panel.mm-opened:nth-child(n+2) {
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5)
+}
+.mm-menu .mm-search input {
+    background: rgba(255, 255, 255, .3);
+    color: rgba(255, 255, 255, .8)
+}
+.mm-menu .mm-noresultsmsg {
+    color: rgba(255, 255, 255, .4)
+}
+.mm-menu .mm-indexer a {
+    color: rgba(255, 255, 255, .4)
+}
+.mm-menu.mm-hoverselected .mm-listview>li>a.mm-fullsubopen:hover+span,
+.mm-menu.mm-hoverselected .mm-listview>li>a:not(.mm-fullsubopen):hover {
+    background: rgba(0, 0, 0, .1)
+}
+.mm-menu.mm-parentselected .mm-listview>li>a.mm-selected.mm-fullsubopen+a,
+.mm-menu.mm-parentselected .mm-listview>li>a.mm-selected.mm-fullsubopen+span,
+.mm-menu.mm-parentselected .mm-listview>li>a.mm-selected:not(.mm-fullsubopen) {
+    background: rgba(0, 0, 0, .1)
+}
+.mm-menu label.mm-toggle {
+    background: rgba(0, 0, 0, .15)
+}
+.mm-menu label.mm-toggle:before {
+    background: #333
+}
+.mm-menu input.mm-toggle:checked~label.mm-toggle {
+    background: #4bd963
+}
