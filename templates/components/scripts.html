@@ -1,25 +1,36 @@
 {% load static %}
 
+<script src="{% static 'js/hammer.min.js' %}"></script>
 <script src="{% static 'js/jquery.min.js' %}"></script>
 <script src="{% static 'js/bootstrap.min.js' %}"></script>
 <script src="{% static 'js/typeahead.js' %}"></script>
 <script src="{% static 'js/search.js' %}"></script>
 <script src="{% static 'mmenu/jquery.mmenu.all.js' %}"></script>
+<script src="{% static 'mmenu/addons/drag/jquery.mmenu.drag.js' %}"></script>
 <script src="{% static 'mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.js' %}"></script>
 
 <script type="text/javascript">
-   jQuery(document).ready(function( $ ) {
-      $("#menu").mmenu({
-        "setSelected": {
-            "hover": true,
-        }, "navbars": [
-            {
-               "position": "bottom",
-               "content": [
-                  "<p>Better Getter</p>"
-               ]
-            }
-         ]
-      });
-   });
+$(document).ready(function() {
+  $("#menu").mmenu({
+    extensions: [
+      "shadow-page",
+      "pagedim-black"
+    ], drag: {
+      page: {
+        open: true
+      }, panels: {
+        close: true
+      }
+    }, "setSelected": {
+      "hover": true,
+    }, "navbars": [
+      {
+        "position": "bottom",
+        "content": [
+          "<p>Better Getter</p>"
+        ]
+      }
+    ]
+  });
+});
 </script>

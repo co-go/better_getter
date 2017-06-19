@@ -80,16 +80,25 @@
   right: 0
 }
 
-
 .o-menu, .o-menu:focus {
+  position: fixed;
   float: left;
   margin: 10px 15px;
   color: #65737e;
   font-size: 24px;
+  background-color: #2b303b;
+  border-radius: 10px;
+  height: 2em;
+  width: 2em;
+}
+
+.o-menu .glyphicon {
+  left: 12px;
+  top: 9px;
 }
 
 .o-menu:hover {
-  color: #66FCF1;
+  color: #FFF;
 }
 
 .mm-listview a:hover {

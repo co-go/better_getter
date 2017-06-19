@@ -12,6 +12,7 @@
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'css/typeaheadjs.css' %}" rel="stylesheet">
     <link href="{% static 'mmenu/jquery.mmenu.all.css' %}" rel="stylesheet">
+    <link href="{% static 'mmenu/addons/drag/jquery.mmenu.drag.css' %}" rel="stylesheet">
     <link href="{% static 'mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.css' %}" rel="stylesheet">
     <link href="{% static 'css/common.css' %}" rel="stylesheet">
 
@@ -50,16 +51,15 @@
        </ul>
     </nav>
 
-    <div class="mm-page">
-      <div style="height: 100vh">
+    <div class="mm-page Fixed">
+      <a class="o-menu" href="#menu" aria-label="Open Menu">
+        <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
+      </a>
 
-        <a class="o-menu" href="#menu" aria-label="Open Menu">
-          <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
-        </a>
-
-        {% block content %}{% endblock %}
-      </div>
+      {% block content %}{% endblock %}
     </div>
+
+    {% block footer %}{% endblock %}
 
     {% include "components/scripts.html" %}
 

@@ -182,3 +182,689 @@ Traceback (most recent call last):
     (bit, current))  # missing attribute
 VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'get_item.urls' from '/Users/jwcorle/Documents/better_getter/get_item/urls.pyc'> (None:None) ^get_item/>"
 [18/Jun/2017 18:01:32] WARNING [django.request:152] Not Found: /login/
+[18/Jun/2017 22:48:29] ERROR [django.request:135] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Library/Python/2.7/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Library/Python/2.7/site-packages/django/template/response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/loader_tags.py", line 154, in render
+    compiled_parent = self.get_parent(context)
+  File "/Library/Python/2.7/site-packages/django/template/loader_tags.py", line 151, in get_parent
+    return self.find_template(parent, context)
+  File "/Library/Python/2.7/site-packages/django/template/loader_tags.py", line 131, in find_template
+    template_name, skip=history,
+  File "/Library/Python/2.7/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Library/Python/2.7/site-packages/django/template/loaders/cached.py", line 60, in get_template
+    template_name, template_dirs, skip,
+  File "/Library/Python/2.7/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Unclosed tag on line 61: 'block'. Looking for one of: endblock.
+[18/Jun/2017 22:48:40] ERROR [django.request:135] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Library/Python/2.7/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Library/Python/2.7/site-packages/django/template/response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/loader_tags.py", line 154, in render
+    compiled_parent = self.get_parent(context)
+  File "/Library/Python/2.7/site-packages/django/template/loader_tags.py", line 151, in get_parent
+    return self.find_template(parent, context)
+  File "/Library/Python/2.7/site-packages/django/template/loader_tags.py", line 131, in find_template
+    template_name, skip=history,
+  File "/Library/Python/2.7/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Library/Python/2.7/site-packages/django/template/loaders/cached.py", line 60, in get_template
+    template_name, template_dirs, skip,
+  File "/Library/Python/2.7/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Unclosed tag on line 61: 'block'. Looking for one of: endblock.
+[18/Jun/2017 22:48:41] ERROR [django.request:135] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Library/Python/2.7/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Library/Python/2.7/site-packages/django/template/response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/loader_tags.py", line 154, in render
+    compiled_parent = self.get_parent(context)
+  File "/Library/Python/2.7/site-packages/django/template/loader_tags.py", line 151, in get_parent
+    return self.find_template(parent, context)
+  File "/Library/Python/2.7/site-packages/django/template/loader_tags.py", line 131, in find_template
+    template_name, skip=history,
+  File "/Library/Python/2.7/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Library/Python/2.7/site-packages/django/template/loaders/cached.py", line 60, in get_template
+    template_name, template_dirs, skip,
+  File "/Library/Python/2.7/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Unclosed tag on line 61: 'block'. Looking for one of: endblock.
+[18/Jun/2017 22:50:07] INFO [django.server:124] "GET / HTTP/1.1" 200 3216
+[18/Jun/2017 22:50:07] INFO [django.server:124] "GET /static/css/common.c0dd2e3719d8.css HTTP/1.1" 200 1127
+[18/Jun/2017 22:50:07] INFO [django.server:124] "GET /static/img/favicon-16x16.e45deacf157e.png HTTP/1.1" 200 742
+[18/Jun/2017 22:50:12] INFO [django.server:124] "GET / HTTP/1.1" 200 3216
+[18/Jun/2017 22:50:16] INFO [django.server:124] "GET /get_item/Loki%20Prime%20Blueprint HTTP/1.1" 301 0
+[18/Jun/2017 22:50:17] INFO [django.server:124] "GET /get_item/Loki%20Prime%20Blueprint/ HTTP/1.1" 200 16434
+[18/Jun/2017 22:59:55] INFO [django.server:124] "GET / HTTP/1.1" 200 3216
+[18/Jun/2017 23:00:27] INFO [django.server:124] "GET / HTTP/1.1" 200 3216
+[18/Jun/2017 23:00:31] INFO [django.server:124] "GET /get_item/Loki%20Prime%20Neuroptics/ HTTP/1.1" 200 17057
+[18/Jun/2017 23:00:54] INFO [django.server:124] "GET /get_item/Loki%20Prime%20Neuroptics/ HTTP/1.1" 200 17057
+[18/Jun/2017 23:00:54] INFO [django.server:124] "GET /static/img/favicon-16x16.e45deacf157e.png HTTP/1.1" 200 742
+[18/Jun/2017 23:00:56] INFO [django.server:124] "GET / HTTP/1.1" 200 3216
+[18/Jun/2017 23:01:06] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 99165
+[18/Jun/2017 23:01:07] INFO [django.server:124] "GET / HTTP/1.1" 200 3216
+[18/Jun/2017 23:01:07] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.d0a03cbdb1ba.css HTTP/1.1" 200 150
+[18/Jun/2017 23:01:07] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.9e950209fa6b.css HTTP/1.1" 200 6658
+[18/Jun/2017 23:01:07] INFO [django.server:124] "GET /static/css/home.5abddea5953d.css HTTP/1.1" 200 332
+[18/Jun/2017 23:01:07] INFO [django.server:124] "GET /static/css/typeaheadjs.74cbdb0b28ef.css HTTP/1.1" 200 685
+[18/Jun/2017 23:01:07] INFO [django.server:124] "GET /static/css/bootstrap.min.1825bc9de3d6.css HTTP/1.1" 200 19644
+[18/Jun/2017 23:01:07] INFO [django.server:124] "GET /static/css/common.c0dd2e3719d8.css HTTP/1.1" 200 1127
+[18/Jun/2017 23:01:07] INFO [django.server:124] "GET /static/js/bootstrap.min.5869c96cc8f1.js HTTP/1.1" 200 9806
+[18/Jun/2017 23:01:07] INFO [django.server:124] "GET /static/js/jquery.min.4f252523d4af.js HTTP/1.1" 200 33738
+[18/Jun/2017 23:01:07] INFO [django.server:124] "GET /static/js/typeahead.fd054c48bcd9.js HTTP/1.1" 200 11583
+[18/Jun/2017 23:01:07] INFO [django.server:124] "GET /static/js/search.7d707a66c25f.js HTTP/1.1" 200 9786
+[18/Jun/2017 23:01:07] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.213ae8f5d26d.js HTTP/1.1" 200 743
+[18/Jun/2017 23:01:07] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.28049b64fb08.js HTTP/1.1" 200 15166
+[18/Jun/2017 23:01:07] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.448c34a56d69.woff2 HTTP/1.1" 200 18028
+[18/Jun/2017 23:01:07] INFO [django.server:124] "GET /static/img/bg.4a370c063b65.jpg HTTP/1.1" 200 254754
+[18/Jun/2017 23:01:07] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 99165
+[18/Jun/2017 23:01:07] INFO [django.server:124] "GET /static/img/favicon-16x16.e45deacf157e.png HTTP/1.1" 200 742
+[18/Jun/2017 23:01:21] INFO [django.server:124] "GET / HTTP/1.1" 200 3278
+[18/Jun/2017 23:01:21] INFO [django.server:124] "GET /static/css/typeaheadjs.74cbdb0b28ef.css HTTP/1.1" 200 685
+[18/Jun/2017 23:01:21] INFO [django.server:124] "GET /static/css/common.0ca20e466833.css HTTP/1.1" 200 1125
+[18/Jun/2017 23:01:21] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.d0a03cbdb1ba.css HTTP/1.1" 200 150
+[18/Jun/2017 23:01:21] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.9e950209fa6b.css HTTP/1.1" 200 6658
+[18/Jun/2017 23:01:21] INFO [django.server:124] "GET /static/css/home.5abddea5953d.css HTTP/1.1" 200 332
+[18/Jun/2017 23:01:21] INFO [django.server:124] "GET /static/css/bootstrap.min.1825bc9de3d6.css HTTP/1.1" 200 19644
+[18/Jun/2017 23:01:21] INFO [django.server:124] "GET /static/js/hammer.min.150659814972.js HTTP/1.1" 200 7341
+[18/Jun/2017 23:01:21] INFO [django.server:124] "GET /static/js/bootstrap.min.5869c96cc8f1.js HTTP/1.1" 200 9806
+[18/Jun/2017 23:01:21] INFO [django.server:124] "GET /static/js/search.7d707a66c25f.js HTTP/1.1" 200 9786
+[18/Jun/2017 23:01:21] INFO [django.server:124] "GET /static/js/jquery.min.4f252523d4af.js HTTP/1.1" 200 33738
+[18/Jun/2017 23:01:21] INFO [django.server:124] "GET /static/js/typeahead.fd054c48bcd9.js HTTP/1.1" 200 11583
+[18/Jun/2017 23:01:21] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.28049b64fb08.js HTTP/1.1" 200 15166
+[18/Jun/2017 23:01:21] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.213ae8f5d26d.js HTTP/1.1" 200 743
+[18/Jun/2017 23:01:21] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.448c34a56d69.woff2 HTTP/1.1" 200 18028
+[18/Jun/2017 23:01:21] INFO [django.server:124] "GET /static/img/bg.4a370c063b65.jpg HTTP/1.1" 200 254754
+[18/Jun/2017 23:01:21] WARNING [django.request:152] Not Found: /static/js/hammer.min.js.map
+[18/Jun/2017 23:01:21] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 101
+[18/Jun/2017 23:01:21] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 99165
+[18/Jun/2017 23:01:21] INFO [django.server:124] "GET /static/img/favicon-16x16.e45deacf157e.png HTTP/1.1" 200 742
+[18/Jun/2017 23:01:29] INFO [django.server:124] "GET / HTTP/1.1" 200 3278
+[18/Jun/2017 23:01:33] INFO [django.server:124] "GET /get_item/Loki%20Prime%20Blueprint/ HTTP/1.1" 200 16495
+[18/Jun/2017 23:01:47] INFO [django.server:124] "GET / HTTP/1.1" 200 3278
+[18/Jun/2017 23:04:47] INFO [django.server:124] "GET / HTTP/1.1" 200 3278
+[18/Jun/2017 23:04:47] INFO [django.server:124] "GET /static/img/favicon-16x16.e45deacf157e.png HTTP/1.1" 200 742
+[18/Jun/2017 23:16:03] INFO [django.server:124] "GET / HTTP/1.1" 200 3278
+[18/Jun/2017 23:16:03] INFO [django.server:124] "GET /static/img/favicon-16x16.e45deacf157e.png HTTP/1.1" 200 742
+[18/Jun/2017 23:16:52] INFO [django.server:124] "GET / HTTP/1.1" 200 3278
+[18/Jun/2017 23:16:52] INFO [django.server:124] "GET /static/img/favicon-16x16.e45deacf157e.png HTTP/1.1" 200 742
+[18/Jun/2017 23:17:01] INFO [django.server:124] "GET / HTTP/1.1" 200 3336
+[18/Jun/2017 23:17:01] INFO [django.server:124] "GET /static/img/favicon-16x16.e45deacf157e.png HTTP/1.1" 200 742
+[18/Jun/2017 23:17:06] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 99165
+[18/Jun/2017 23:23:57] INFO [django.server:124] "GET / HTTP/1.1" 200 3223
+[18/Jun/2017 23:23:57] INFO [django.server:124] "GET /static/css/typeaheadjs.74cbdb0b28ef.css HTTP/1.1" 200 685
+[18/Jun/2017 23:23:57] INFO [django.server:124] "GET /static/css/bootstrap.min.1825bc9de3d6.css HTTP/1.1" 200 19644
+[18/Jun/2017 23:23:57] INFO [django.server:124] "GET /static/css/common.0ca20e466833.css HTTP/1.1" 200 1125
+[18/Jun/2017 23:23:57] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.d0a03cbdb1ba.css HTTP/1.1" 200 150
+[18/Jun/2017 23:23:57] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.9e950209fa6b.css HTTP/1.1" 200 6658
+[18/Jun/2017 23:23:57] INFO [django.server:124] "GET /static/css/home.5abddea5953d.css HTTP/1.1" 200 332
+[18/Jun/2017 23:23:57] INFO [django.server:124] "GET /static/js/jquery.min.4f252523d4af.js HTTP/1.1" 200 33738
+[18/Jun/2017 23:23:57] INFO [django.server:124] "GET /static/js/typeahead.fd054c48bcd9.js HTTP/1.1" 200 11583
+[18/Jun/2017 23:23:57] INFO [django.server:124] "GET /static/js/hammer.min.150659814972.js HTTP/1.1" 200 7341
+[18/Jun/2017 23:23:57] INFO [django.server:124] "GET /static/js/bootstrap.min.5869c96cc8f1.js HTTP/1.1" 200 9806
+[18/Jun/2017 23:23:57] INFO [django.server:124] "GET /static/js/search.7d707a66c25f.js HTTP/1.1" 200 9786
+[18/Jun/2017 23:23:57] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.28049b64fb08.js HTTP/1.1" 200 15166
+[18/Jun/2017 23:23:57] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.213ae8f5d26d.js HTTP/1.1" 200 743
+[18/Jun/2017 23:23:57] WARNING [django.request:152] Not Found: /static/js/hammer.min.js.map
+[18/Jun/2017 23:23:57] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 101
+[18/Jun/2017 23:23:57] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.448c34a56d69.woff2 HTTP/1.1" 200 18028
+[18/Jun/2017 23:23:57] INFO [django.server:124] "GET /static/img/bg.4a370c063b65.jpg HTTP/1.1" 200 254754
+[18/Jun/2017 23:23:57] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 99165
+[18/Jun/2017 23:23:57] INFO [django.server:124] "GET /static/img/favicon-16x16.e45deacf157e.png HTTP/1.1" 200 742
+[18/Jun/2017 23:23:58] INFO [django.server:124] "GET /static/img/favicon-16x16.e45deacf157e.png HTTP/1.1" 200 742
+[18/Jun/2017 23:24:18] INFO [django.server:124] "GET / HTTP/1.1" 200 3223
+[18/Jun/2017 23:24:18] INFO [django.server:124] "GET /static/css/common.0ca20e466833.css HTTP/1.1" 200 1125
+[18/Jun/2017 23:24:18] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.9e950209fa6b.css HTTP/1.1" 200 6658
+[18/Jun/2017 23:24:18] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.d0a03cbdb1ba.css HTTP/1.1" 200 150
+[18/Jun/2017 23:24:18] INFO [django.server:124] "GET /static/css/typeaheadjs.74cbdb0b28ef.css HTTP/1.1" 200 685
+[18/Jun/2017 23:24:18] INFO [django.server:124] "GET /static/css/bootstrap.min.1825bc9de3d6.css HTTP/1.1" 200 19644
+[18/Jun/2017 23:24:18] INFO [django.server:124] "GET /static/css/home.5abddea5953d.css HTTP/1.1" 200 332
+[18/Jun/2017 23:24:18] INFO [django.server:124] "GET /static/js/jquery.min.4f252523d4af.js HTTP/1.1" 200 33738
+[18/Jun/2017 23:24:18] INFO [django.server:124] "GET /static/js/hammer.min.150659814972.js HTTP/1.1" 200 7341
+[18/Jun/2017 23:24:18] INFO [django.server:124] "GET /static/js/bootstrap.min.5869c96cc8f1.js HTTP/1.1" 200 9806
+[18/Jun/2017 23:24:18] INFO [django.server:124] "GET /static/js/typeahead.fd054c48bcd9.js HTTP/1.1" 200 11583
+[18/Jun/2017 23:24:18] INFO [django.server:124] "GET /static/js/search.7d707a66c25f.js HTTP/1.1" 200 9786
+[18/Jun/2017 23:24:18] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.28049b64fb08.js HTTP/1.1" 200 15166
+[18/Jun/2017 23:24:18] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.213ae8f5d26d.js HTTP/1.1" 200 743
+[18/Jun/2017 23:24:18] WARNING [django.request:152] Not Found: /static/js/hammer.min.js.map
+[18/Jun/2017 23:24:18] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 101
+[18/Jun/2017 23:24:18] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.448c34a56d69.woff2 HTTP/1.1" 200 18028
+[18/Jun/2017 23:24:18] INFO [django.server:124] "GET /static/img/bg.4a370c063b65.jpg HTTP/1.1" 200 254754
+[18/Jun/2017 23:24:18] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 99165
+[18/Jun/2017 23:24:18] INFO [django.server:124] "GET /static/img/favicon-16x16.e45deacf157e.png HTTP/1.1" 200 742
+[18/Jun/2017 23:24:23] INFO [django.server:124] "GET / HTTP/1.1" 200 3234
+[18/Jun/2017 23:24:23] INFO [django.server:124] "GET /static/css/bootstrap.min.1825bc9de3d6.css HTTP/1.1" 200 19644
+[18/Jun/2017 23:24:23] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.9e950209fa6b.css HTTP/1.1" 200 6658
+[18/Jun/2017 23:24:23] INFO [django.server:124] "GET /static/css/typeaheadjs.74cbdb0b28ef.css HTTP/1.1" 200 685
+[18/Jun/2017 23:24:23] INFO [django.server:124] "GET /static/css/common.0ca20e466833.css HTTP/1.1" 200 1125
+[18/Jun/2017 23:24:23] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.d0a03cbdb1ba.css HTTP/1.1" 200 150
+[18/Jun/2017 23:24:23] INFO [django.server:124] "GET /static/css/home.5abddea5953d.css HTTP/1.1" 200 332
+[18/Jun/2017 23:24:23] INFO [django.server:124] "GET /static/js/hammer.min.150659814972.js HTTP/1.1" 200 7341
+[18/Jun/2017 23:24:23] INFO [django.server:124] "GET /static/js/jquery.min.4f252523d4af.js HTTP/1.1" 200 33738
+[18/Jun/2017 23:24:23] INFO [django.server:124] "GET /static/js/bootstrap.min.5869c96cc8f1.js HTTP/1.1" 200 9806
+[18/Jun/2017 23:24:23] INFO [django.server:124] "GET /static/js/typeahead.fd054c48bcd9.js HTTP/1.1" 200 11583
+[18/Jun/2017 23:24:23] INFO [django.server:124] "GET /static/js/search.7d707a66c25f.js HTTP/1.1" 200 9786
+[18/Jun/2017 23:24:23] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.28049b64fb08.js HTTP/1.1" 200 15166
+[18/Jun/2017 23:24:23] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.213ae8f5d26d.js HTTP/1.1" 200 743
+[18/Jun/2017 23:24:24] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.448c34a56d69.woff2 HTTP/1.1" 200 18028
+[18/Jun/2017 23:24:24] INFO [django.server:124] "GET /static/img/bg.4a370c063b65.jpg HTTP/1.1" 200 254754
+[18/Jun/2017 23:24:24] WARNING [django.request:152] Not Found: /static/js/hammer.min.js.map
+[18/Jun/2017 23:24:24] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 101
+[18/Jun/2017 23:24:24] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 99165
+[18/Jun/2017 23:24:24] INFO [django.server:124] "GET /static/img/favicon-16x16.e45deacf157e.png HTTP/1.1" 200 742
+[18/Jun/2017 23:27:41] ERROR [django.request:135] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Library/Python/2.7/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Library/Python/2.7/site-packages/django/template/response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Library/Python/2.7/site-packages/django/templatetags/static.py", line 105, in render
+    url = self.url(context)
+  File "/Library/Python/2.7/site-packages/django/templatetags/static.py", line 102, in url
+    return self.handle_simple(path)
+  File "/Library/Python/2.7/site-packages/django/templatetags/static.py", line 117, in handle_simple
+    return staticfiles_storage.url(path)
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/storage.py", line 162, in url
+    return self._url(self.stored_name, name, force)
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/storage.py", line 141, in _url
+    hashed_name = hashed_name_func(*args)
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/storage.py", line 432, in stored_name
+    raise ValueError("Missing staticfiles manifest entry for '%s'" % clean_name)
+ValueError: Missing staticfiles manifest entry for 'mmenu/addons/jquery.mmenu.drag.css'
+[18/Jun/2017 23:27:41] ERROR [django.server:124] "GET / HTTP/1.1" 500 27
+[18/Jun/2017 23:30:46] INFO [django.server:124] "GET / HTTP/1.1" 200 3414
+[18/Jun/2017 23:30:46] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.d0a03cbdb1ba.css HTTP/1.1" 200 150
+[18/Jun/2017 23:30:46] INFO [django.server:124] "GET /static/css/bootstrap.min.1825bc9de3d6.css HTTP/1.1" 200 19644
+[18/Jun/2017 23:30:46] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.9e950209fa6b.css HTTP/1.1" 200 6658
+[18/Jun/2017 23:30:46] INFO [django.server:124] "GET /static/css/common.0ca20e466833.css HTTP/1.1" 200 1125
+[18/Jun/2017 23:30:46] INFO [django.server:124] "GET /static/css/typeaheadjs.74cbdb0b28ef.css HTTP/1.1" 200 685
+[18/Jun/2017 23:30:46] INFO [django.server:124] "GET /static/mmenu/addons/drag/jquery.mmenu.drag.064861aeb13b.css HTTP/1.1" 200 84
+[18/Jun/2017 23:30:46] INFO [django.server:124] "GET /static/css/home.5abddea5953d.css HTTP/1.1" 200 332
+[18/Jun/2017 23:30:46] INFO [django.server:124] "GET /static/js/jquery.min.4f252523d4af.js HTTP/1.1" 200 33738
+[18/Jun/2017 23:30:46] INFO [django.server:124] "GET /static/js/bootstrap.min.5869c96cc8f1.js HTTP/1.1" 200 9806
+[18/Jun/2017 23:30:46] INFO [django.server:124] "GET /static/js/typeahead.fd054c48bcd9.js HTTP/1.1" 200 11583
+[18/Jun/2017 23:30:46] INFO [django.server:124] "GET /static/js/hammer.min.150659814972.js HTTP/1.1" 200 7341
+[18/Jun/2017 23:30:46] INFO [django.server:124] "GET /static/js/search.7d707a66c25f.js HTTP/1.1" 200 9786
+[18/Jun/2017 23:30:46] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.28049b64fb08.js HTTP/1.1" 200 15166
+[18/Jun/2017 23:30:46] INFO [django.server:124] "GET /static/mmenu/addons/drag/jquery.mmenu.drag.7e7edb40b255.js HTTP/1.1" 200 1410
+[18/Jun/2017 23:30:46] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.213ae8f5d26d.js HTTP/1.1" 200 743
+[18/Jun/2017 23:30:46] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.448c34a56d69.woff2 HTTP/1.1" 200 18028
+[18/Jun/2017 23:30:46] INFO [django.server:124] "GET /static/img/bg.4a370c063b65.jpg HTTP/1.1" 200 254754
+[18/Jun/2017 23:30:46] WARNING [django.request:152] Not Found: /static/js/hammer.min.js.map
+[18/Jun/2017 23:30:46] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 101
+[18/Jun/2017 23:30:46] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 99165
+[18/Jun/2017 23:30:46] INFO [django.server:124] "GET /static/img/favicon-16x16.e45deacf157e.png HTTP/1.1" 200 742
+[18/Jun/2017 23:32:14] INFO [django.server:124] "GET / HTTP/1.1" 200 3414
+[18/Jun/2017 23:32:14] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.9e950209fa6b.css HTTP/1.1" 200 6658
+[18/Jun/2017 23:32:14] INFO [django.server:124] "GET /static/css/typeaheadjs.74cbdb0b28ef.css HTTP/1.1" 200 685
+[18/Jun/2017 23:32:14] INFO [django.server:124] "GET /static/css/bootstrap.min.1825bc9de3d6.css HTTP/1.1" 200 19644
+[18/Jun/2017 23:32:14] INFO [django.server:124] "GET /static/mmenu/addons/drag/jquery.mmenu.drag.064861aeb13b.css HTTP/1.1" 200 84
+[18/Jun/2017 23:32:14] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.d0a03cbdb1ba.css HTTP/1.1" 200 150
+[18/Jun/2017 23:32:14] INFO [django.server:124] "GET /static/css/common.0ca20e466833.css HTTP/1.1" 200 1125
+[18/Jun/2017 23:32:14] INFO [django.server:124] "GET /static/css/home.5abddea5953d.css HTTP/1.1" 200 332
+[18/Jun/2017 23:32:14] INFO [django.server:124] "GET /static/js/jquery.min.4f252523d4af.js HTTP/1.1" 200 33738
+[18/Jun/2017 23:32:14] INFO [django.server:124] "GET /static/js/typeahead.fd054c48bcd9.js HTTP/1.1" 200 11583
+[18/Jun/2017 23:32:14] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.28049b64fb08.js HTTP/1.1" 200 15166
+[18/Jun/2017 23:32:14] INFO [django.server:124] "GET /static/js/hammer.min.150659814972.js HTTP/1.1" 200 7341
+[18/Jun/2017 23:32:14] INFO [django.server:124] "GET /static/js/search.7d707a66c25f.js HTTP/1.1" 200 9786
+[18/Jun/2017 23:32:14] INFO [django.server:124] "GET /static/js/bootstrap.min.5869c96cc8f1.js HTTP/1.1" 200 9806
+[18/Jun/2017 23:32:14] INFO [django.server:124] "GET /static/mmenu/addons/drag/jquery.mmenu.drag.7e7edb40b255.js HTTP/1.1" 200 1410
+[18/Jun/2017 23:32:14] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.213ae8f5d26d.js HTTP/1.1" 200 743
+[18/Jun/2017 23:32:14] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.448c34a56d69.woff2 HTTP/1.1" 200 18028
+[18/Jun/2017 23:32:14] INFO [django.server:124] "GET /static/img/bg.4a370c063b65.jpg HTTP/1.1" 200 254754
+[18/Jun/2017 23:32:14] WARNING [django.request:152] Not Found: /static/js/hammer.min.js.map
+[18/Jun/2017 23:32:14] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 101
+[18/Jun/2017 23:32:14] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 99165
+[18/Jun/2017 23:32:14] INFO [django.server:124] "GET /static/img/favicon-16x16.e45deacf157e.png HTTP/1.1" 200 742
+[18/Jun/2017 23:32:17] INFO [django.server:124] "GET / HTTP/1.1" 200 3414
+[18/Jun/2017 23:32:17] INFO [django.server:124] "GET /static/css/typeaheadjs.74cbdb0b28ef.css HTTP/1.1" 200 685
+[18/Jun/2017 23:32:17] INFO [django.server:124] "GET /static/mmenu/addons/drag/jquery.mmenu.drag.064861aeb13b.css HTTP/1.1" 200 84
+[18/Jun/2017 23:32:17] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.d0a03cbdb1ba.css HTTP/1.1" 200 150
+[18/Jun/2017 23:32:17] INFO [django.server:124] "GET /static/css/common.0ca20e466833.css HTTP/1.1" 200 1125
+[18/Jun/2017 23:32:17] INFO [django.server:124] "GET /static/css/bootstrap.min.1825bc9de3d6.css HTTP/1.1" 200 19644
+[18/Jun/2017 23:32:17] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.9e950209fa6b.css HTTP/1.1" 200 6658
+[18/Jun/2017 23:32:17] INFO [django.server:124] "GET /static/css/home.5abddea5953d.css HTTP/1.1" 200 332
+[18/Jun/2017 23:32:17] INFO [django.server:124] "GET /static/js/bootstrap.min.5869c96cc8f1.js HTTP/1.1" 200 9806
+[18/Jun/2017 23:32:17] INFO [django.server:124] "GET /static/js/hammer.min.150659814972.js HTTP/1.1" 200 7341
+[18/Jun/2017 23:32:17] INFO [django.server:124] "GET /static/js/jquery.min.4f252523d4af.js HTTP/1.1" 200 33738
+[18/Jun/2017 23:32:17] INFO [django.server:124] "GET /static/js/typeahead.fd054c48bcd9.js HTTP/1.1" 200 11583
+[18/Jun/2017 23:32:17] INFO [django.server:124] "GET /static/js/search.7d707a66c25f.js HTTP/1.1" 200 9786
+[18/Jun/2017 23:32:17] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.28049b64fb08.js HTTP/1.1" 200 15166
+[18/Jun/2017 23:32:17] INFO [django.server:124] "GET /static/mmenu/addons/drag/jquery.mmenu.drag.7e7edb40b255.js HTTP/1.1" 200 1410
+[18/Jun/2017 23:32:17] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.213ae8f5d26d.js HTTP/1.1" 200 743
+[18/Jun/2017 23:32:17] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.448c34a56d69.woff2 HTTP/1.1" 200 18028
+[18/Jun/2017 23:32:17] INFO [django.server:124] "GET /static/img/bg.4a370c063b65.jpg HTTP/1.1" 200 254754
+[18/Jun/2017 23:32:17] WARNING [django.request:152] Not Found: /static/js/hammer.min.js.map
+[18/Jun/2017 23:32:17] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 101
+[18/Jun/2017 23:32:17] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 99165
+[18/Jun/2017 23:32:17] INFO [django.server:124] "GET /static/img/favicon-16x16.e45deacf157e.png HTTP/1.1" 200 742
+[18/Jun/2017 23:33:24] INFO [django.server:124] "GET / HTTP/1.1" 200 3414
+[18/Jun/2017 23:33:24] INFO [django.server:124] "GET /static/css/bootstrap.min.1825bc9de3d6.css HTTP/1.1" 200 19644
+[18/Jun/2017 23:33:24] INFO [django.server:124] "GET /static/css/typeaheadjs.74cbdb0b28ef.css HTTP/1.1" 200 685
+[18/Jun/2017 23:33:24] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.9e950209fa6b.css HTTP/1.1" 200 6658
+[18/Jun/2017 23:33:24] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.d0a03cbdb1ba.css HTTP/1.1" 200 150
+[18/Jun/2017 23:33:24] INFO [django.server:124] "GET /static/css/home.5abddea5953d.css HTTP/1.1" 200 332
+[18/Jun/2017 23:33:24] INFO [django.server:124] "GET /static/css/common.0ca20e466833.css HTTP/1.1" 200 1125
+[18/Jun/2017 23:33:24] INFO [django.server:124] "GET /static/mmenu/addons/drag/jquery.mmenu.drag.064861aeb13b.css HTTP/1.1" 200 84
+[18/Jun/2017 23:33:24] INFO [django.server:124] "GET /static/js/hammer.min.150659814972.js HTTP/1.1" 200 7341
+[18/Jun/2017 23:33:24] INFO [django.server:124] "GET /static/js/jquery.min.4f252523d4af.js HTTP/1.1" 200 33738
+[18/Jun/2017 23:33:24] INFO [django.server:124] "GET /static/js/bootstrap.min.5869c96cc8f1.js HTTP/1.1" 200 9806
+[18/Jun/2017 23:33:24] INFO [django.server:124] "GET /static/js/typeahead.fd054c48bcd9.js HTTP/1.1" 200 11583
+[18/Jun/2017 23:33:24] INFO [django.server:124] "GET /static/js/search.7d707a66c25f.js HTTP/1.1" 200 9786
+[18/Jun/2017 23:33:24] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.28049b64fb08.js HTTP/1.1" 200 15166
+[18/Jun/2017 23:33:24] INFO [django.server:124] "GET /static/mmenu/addons/drag/jquery.mmenu.drag.7e7edb40b255.js HTTP/1.1" 200 1410
+[18/Jun/2017 23:33:24] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.213ae8f5d26d.js HTTP/1.1" 200 743
+[18/Jun/2017 23:33:24] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.448c34a56d69.woff2 HTTP/1.1" 200 18028
+[18/Jun/2017 23:33:24] INFO [django.server:124] "GET /static/img/bg.4a370c063b65.jpg HTTP/1.1" 200 254754
+[18/Jun/2017 23:33:24] WARNING [django.request:152] Not Found: /static/js/hammer.min.js.map
+[18/Jun/2017 23:33:24] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 101
+[18/Jun/2017 23:33:24] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 99165
+[18/Jun/2017 23:33:24] INFO [django.server:124] "GET /static/img/favicon-16x16.e45deacf157e.png HTTP/1.1" 200 742
+[18/Jun/2017 23:38:09] INFO [django.server:124] "GET / HTTP/1.1" 200 3414
+[18/Jun/2017 23:38:09] INFO [django.server:124] "GET /static/css/typeaheadjs.74cbdb0b28ef.css HTTP/1.1" 200 685
+[18/Jun/2017 23:38:09] INFO [django.server:124] "GET /static/css/common.0ca20e466833.css HTTP/1.1" 200 1125
+[18/Jun/2017 23:38:09] INFO [django.server:124] "GET /static/css/bootstrap.min.1825bc9de3d6.css HTTP/1.1" 200 19644
+[18/Jun/2017 23:38:09] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.d0a03cbdb1ba.css HTTP/1.1" 200 150
+[18/Jun/2017 23:38:09] INFO [django.server:124] "GET /static/mmenu/addons/drag/jquery.mmenu.drag.064861aeb13b.css HTTP/1.1" 200 84
+[18/Jun/2017 23:38:09] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.9e950209fa6b.css HTTP/1.1" 200 6658
+[18/Jun/2017 23:38:09] INFO [django.server:124] "GET /static/css/home.5abddea5953d.css HTTP/1.1" 200 332
+[18/Jun/2017 23:38:09] INFO [django.server:124] "GET /static/js/bootstrap.min.5869c96cc8f1.js HTTP/1.1" 200 9806
+[18/Jun/2017 23:38:09] INFO [django.server:124] "GET /static/js/hammer.min.150659814972.js HTTP/1.1" 200 7341
+[18/Jun/2017 23:38:09] INFO [django.server:124] "GET /static/js/typeahead.fd054c48bcd9.js HTTP/1.1" 200 11583
+[18/Jun/2017 23:38:09] INFO [django.server:124] "GET /static/js/search.7d707a66c25f.js HTTP/1.1" 200 9786
+[18/Jun/2017 23:38:09] INFO [django.server:124] "GET /static/js/jquery.min.4f252523d4af.js HTTP/1.1" 200 33738
+[18/Jun/2017 23:38:09] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.28049b64fb08.js HTTP/1.1" 200 15166
+[18/Jun/2017 23:38:09] INFO [django.server:124] "GET /static/mmenu/addons/drag/jquery.mmenu.drag.7e7edb40b255.js HTTP/1.1" 200 1410
+[18/Jun/2017 23:38:09] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.213ae8f5d26d.js HTTP/1.1" 200 743
+[18/Jun/2017 23:38:09] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.448c34a56d69.woff2 HTTP/1.1" 200 18028
+[18/Jun/2017 23:38:09] INFO [django.server:124] "GET /static/img/bg.4a370c063b65.jpg HTTP/1.1" 200 254754
+[18/Jun/2017 23:38:09] WARNING [django.request:152] Not Found: /static/js/hammer.min.js.map
+[18/Jun/2017 23:38:09] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 101
+[18/Jun/2017 23:38:10] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 99165
+[18/Jun/2017 23:38:10] INFO [django.server:124] "GET /static/img/favicon-16x16.e45deacf157e.png HTTP/1.1" 200 742
+[18/Jun/2017 23:38:18] INFO [django.server:124] "GET / HTTP/1.1" 200 3437
+[18/Jun/2017 23:38:18] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.d0a03cbdb1ba.css HTTP/1.1" 200 150
+[18/Jun/2017 23:38:18] INFO [django.server:124] "GET /static/css/common.0ca20e466833.css HTTP/1.1" 200 1125
+[18/Jun/2017 23:38:18] INFO [django.server:124] "GET /static/css/typeaheadjs.74cbdb0b28ef.css HTTP/1.1" 200 685
+[18/Jun/2017 23:38:18] INFO [django.server:124] "GET /static/mmenu/addons/drag/jquery.mmenu.drag.064861aeb13b.css HTTP/1.1" 200 84
+[18/Jun/2017 23:38:18] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.9e950209fa6b.css HTTP/1.1" 200 6658
+[18/Jun/2017 23:38:18] INFO [django.server:124] "GET /static/css/bootstrap.min.1825bc9de3d6.css HTTP/1.1" 200 19644
+[18/Jun/2017 23:38:18] INFO [django.server:124] "GET /static/js/hammer.min.150659814972.js HTTP/1.1" 200 7341
+[18/Jun/2017 23:38:18] INFO [django.server:124] "GET /static/js/jquery.min.4f252523d4af.js HTTP/1.1" 200 33738
+[18/Jun/2017 23:38:18] INFO [django.server:124] "GET /static/css/home.5abddea5953d.css HTTP/1.1" 200 332
+[18/Jun/2017 23:38:18] INFO [django.server:124] "GET /static/js/bootstrap.min.5869c96cc8f1.js HTTP/1.1" 200 9806
+[18/Jun/2017 23:38:18] INFO [django.server:124] "GET /static/js/typeahead.fd054c48bcd9.js HTTP/1.1" 200 11583
+[18/Jun/2017 23:38:18] INFO [django.server:124] "GET /static/js/search.7d707a66c25f.js HTTP/1.1" 200 9786
+[18/Jun/2017 23:38:18] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.28049b64fb08.js HTTP/1.1" 200 15166
+[18/Jun/2017 23:38:18] INFO [django.server:124] "GET /static/mmenu/addons/drag/jquery.mmenu.drag.7e7edb40b255.js HTTP/1.1" 200 1410
+[18/Jun/2017 23:38:18] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.213ae8f5d26d.js HTTP/1.1" 200 743
+[18/Jun/2017 23:38:18] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.448c34a56d69.woff2 HTTP/1.1" 200 18028
+[18/Jun/2017 23:38:18] INFO [django.server:124] "GET /static/img/bg.4a370c063b65.jpg HTTP/1.1" 200 254754
+[18/Jun/2017 23:38:18] WARNING [django.request:152] Not Found: /static/js/hammer.min.js.map
+[18/Jun/2017 23:38:18] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 101
+[18/Jun/2017 23:38:18] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 99165
+[18/Jun/2017 23:38:18] INFO [django.server:124] "GET /static/img/favicon-16x16.e45deacf157e.png HTTP/1.1" 200 742
+[18/Jun/2017 23:38:36] INFO [django.server:124] "GET / HTTP/1.1" 200 3437
+[18/Jun/2017 23:38:36] INFO [django.server:124] "GET /static/css/bootstrap.min.1825bc9de3d6.css HTTP/1.1" 200 19644
+[18/Jun/2017 23:38:36] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.9e950209fa6b.css HTTP/1.1" 200 6658
+[18/Jun/2017 23:38:36] INFO [django.server:124] "GET /static/css/typeaheadjs.74cbdb0b28ef.css HTTP/1.1" 200 685
+[18/Jun/2017 23:38:36] INFO [django.server:124] "GET /static/mmenu/addons/drag/jquery.mmenu.drag.064861aeb13b.css HTTP/1.1" 200 84
+[18/Jun/2017 23:38:36] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.d0a03cbdb1ba.css HTTP/1.1" 200 150
+[18/Jun/2017 23:38:36] INFO [django.server:124] "GET /static/css/home.5abddea5953d.css HTTP/1.1" 200 332
+[18/Jun/2017 23:38:36] INFO [django.server:124] "GET /static/css/common.0ca20e466833.css HTTP/1.1" 200 1125
+[18/Jun/2017 23:38:36] INFO [django.server:124] "GET /static/js/jquery.min.4f252523d4af.js HTTP/1.1" 200 33738
+[18/Jun/2017 23:38:36] INFO [django.server:124] "GET /static/js/typeahead.fd054c48bcd9.js HTTP/1.1" 200 11583
+[18/Jun/2017 23:38:36] INFO [django.server:124] "GET /static/js/hammer.min.150659814972.js HTTP/1.1" 200 7341
+[18/Jun/2017 23:38:36] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.28049b64fb08.js HTTP/1.1" 200 15166
+[18/Jun/2017 23:38:36] INFO [django.server:124] "GET /static/mmenu/addons/drag/jquery.mmenu.drag.7e7edb40b255.js HTTP/1.1" 200 1410
+[18/Jun/2017 23:38:36] INFO [django.server:124] "GET /static/js/bootstrap.min.5869c96cc8f1.js HTTP/1.1" 200 9806
+[18/Jun/2017 23:38:36] INFO [django.server:124] "GET /static/js/search.7d707a66c25f.js HTTP/1.1" 200 9786
+[18/Jun/2017 23:38:36] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.213ae8f5d26d.js HTTP/1.1" 200 743
+[18/Jun/2017 23:38:36] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.448c34a56d69.woff2 HTTP/1.1" 200 18028
+[18/Jun/2017 23:38:36] INFO [django.server:124] "GET /static/img/bg.4a370c063b65.jpg HTTP/1.1" 200 254754
+[18/Jun/2017 23:38:36] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 99165
+[18/Jun/2017 23:38:36] WARNING [django.request:152] Not Found: /static/js/hammer.min.js.map
+[18/Jun/2017 23:38:36] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 101
+[18/Jun/2017 23:38:36] INFO [django.server:124] "GET /static/img/favicon-16x16.e45deacf157e.png HTTP/1.1" 200 742
+[18/Jun/2017 23:38:44] INFO [django.server:124] "GET / HTTP/1.1" 200 3437
+[18/Jun/2017 23:38:44] INFO [django.server:124] "GET /static/css/typeaheadjs.74cbdb0b28ef.css HTTP/1.1" 200 685
+[18/Jun/2017 23:38:44] INFO [django.server:124] "GET /static/css/bootstrap.min.1825bc9de3d6.css HTTP/1.1" 200 19644
+[18/Jun/2017 23:38:44] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.9e950209fa6b.css HTTP/1.1" 200 6658
+[18/Jun/2017 23:38:44] INFO [django.server:124] "GET /static/css/common.0ca20e466833.css HTTP/1.1" 200 1125
+[18/Jun/2017 23:38:44] INFO [django.server:124] "GET /static/mmenu/addons/drag/jquery.mmenu.drag.064861aeb13b.css HTTP/1.1" 200 84
+[18/Jun/2017 23:38:44] INFO [django.server:124] "GET /static/css/home.5abddea5953d.css HTTP/1.1" 200 332
+[18/Jun/2017 23:38:44] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.d0a03cbdb1ba.css HTTP/1.1" 200 150
+[18/Jun/2017 23:38:44] INFO [django.server:124] "GET /static/js/jquery.min.4f252523d4af.js HTTP/1.1" 200 33738
+[18/Jun/2017 23:38:45] INFO [django.server:124] "GET /static/js/bootstrap.min.5869c96cc8f1.js HTTP/1.1" 200 9806
+[18/Jun/2017 23:38:45] INFO [django.server:124] "GET /static/js/typeahead.fd054c48bcd9.js HTTP/1.1" 200 11583
+[18/Jun/2017 23:38:45] INFO [django.server:124] "GET /static/js/search.7d707a66c25f.js HTTP/1.1" 200 9786
+[18/Jun/2017 23:38:45] INFO [django.server:124] "GET /static/js/hammer.min.150659814972.js HTTP/1.1" 200 7341
+[18/Jun/2017 23:38:45] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.28049b64fb08.js HTTP/1.1" 200 15166
+[18/Jun/2017 23:38:45] INFO [django.server:124] "GET /static/mmenu/addons/drag/jquery.mmenu.drag.7e7edb40b255.js HTTP/1.1" 200 1410
+[18/Jun/2017 23:38:45] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.213ae8f5d26d.js HTTP/1.1" 200 743
+[18/Jun/2017 23:38:45] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.448c34a56d69.woff2 HTTP/1.1" 200 18028
+[18/Jun/2017 23:38:45] INFO [django.server:124] "GET /static/img/bg.4a370c063b65.jpg HTTP/1.1" 200 254754
+[18/Jun/2017 23:38:45] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 99165
+[18/Jun/2017 23:38:45] WARNING [django.request:152] Not Found: /static/js/hammer.min.js.map
+[18/Jun/2017 23:38:45] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 101
+[18/Jun/2017 23:38:45] INFO [django.server:124] "GET /static/img/favicon-16x16.e45deacf157e.png HTTP/1.1" 200 742
+[18/Jun/2017 23:39:24] INFO [django.server:124] "GET / HTTP/1.1" 200 3437
+[18/Jun/2017 23:39:24] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.9e950209fa6b.css HTTP/1.1" 200 6658
+[18/Jun/2017 23:39:24] INFO [django.server:124] "GET /static/css/bootstrap.min.1825bc9de3d6.css HTTP/1.1" 200 19644
+[18/Jun/2017 23:39:24] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.d0a03cbdb1ba.css HTTP/1.1" 200 150
+[18/Jun/2017 23:39:24] INFO [django.server:124] "GET /static/mmenu/addons/drag/jquery.mmenu.drag.064861aeb13b.css HTTP/1.1" 200 84
+[18/Jun/2017 23:39:24] INFO [django.server:124] "GET /static/css/typeaheadjs.74cbdb0b28ef.css HTTP/1.1" 200 685
+[18/Jun/2017 23:39:24] INFO [django.server:124] "GET /static/css/common.0ca20e466833.css HTTP/1.1" 200 1125
+[18/Jun/2017 23:39:24] INFO [django.server:124] "GET /static/css/home.5abddea5953d.css HTTP/1.1" 200 332
+[18/Jun/2017 23:39:24] INFO [django.server:124] "GET /static/js/jquery.min.4f252523d4af.js HTTP/1.1" 200 33738
+[18/Jun/2017 23:39:24] INFO [django.server:124] "GET /static/js/hammer.min.150659814972.js HTTP/1.1" 200 7341
+[18/Jun/2017 23:39:24] INFO [django.server:124] "GET /static/js/typeahead.fd054c48bcd9.js HTTP/1.1" 200 11583
+[18/Jun/2017 23:39:24] INFO [django.server:124] "GET /static/js/bootstrap.min.5869c96cc8f1.js HTTP/1.1" 200 9806
+[18/Jun/2017 23:39:24] INFO [django.server:124] "GET /static/js/search.7d707a66c25f.js HTTP/1.1" 200 9786
+[18/Jun/2017 23:39:24] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.28049b64fb08.js HTTP/1.1" 200 15166
+[18/Jun/2017 23:39:24] INFO [django.server:124] "GET /static/mmenu/addons/drag/jquery.mmenu.drag.7e7edb40b255.js HTTP/1.1" 200 1410
+[18/Jun/2017 23:39:24] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.213ae8f5d26d.js HTTP/1.1" 200 743
+[18/Jun/2017 23:39:24] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.448c34a56d69.woff2 HTTP/1.1" 200 18028
+[18/Jun/2017 23:39:24] INFO [django.server:124] "GET /static/img/bg.4a370c063b65.jpg HTTP/1.1" 200 254754
+[18/Jun/2017 23:39:24] WARNING [django.request:152] Not Found: /static/js/hammer.min.js.map
+[18/Jun/2017 23:39:24] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 101
+[18/Jun/2017 23:39:24] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 99165
+[18/Jun/2017 23:39:24] INFO [django.server:124] "GET /static/img/favicon-16x16.e45deacf157e.png HTTP/1.1" 200 742
+[18/Jun/2017 23:40:12] INFO [django.server:124] "GET /get_item/Loki%20Prime%20Chassis HTTP/1.1" 301 0
+[18/Jun/2017 23:40:13] INFO [django.server:124] "GET /get_item/Loki%20Prime%20Chassis/ HTTP/1.1" 200 16051
+[18/Jun/2017 23:40:13] INFO [django.server:124] "GET /static/mmenu/addons/drag/jquery.mmenu.drag.064861aeb13b.css HTTP/1.1" 200 84
+[18/Jun/2017 23:40:13] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.9e950209fa6b.css HTTP/1.1" 200 6658
+[18/Jun/2017 23:40:13] INFO [django.server:124] "GET /static/css/typeaheadjs.74cbdb0b28ef.css HTTP/1.1" 200 685
+[18/Jun/2017 23:40:13] INFO [django.server:124] "GET /static/css/common.0ca20e466833.css HTTP/1.1" 200 1125
+[18/Jun/2017 23:40:13] INFO [django.server:124] "GET /static/css/bootstrap.min.1825bc9de3d6.css HTTP/1.1" 200 19644
+[18/Jun/2017 23:40:13] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.d0a03cbdb1ba.css HTTP/1.1" 200 150
+[18/Jun/2017 23:40:13] INFO [django.server:124] "GET /static/css/get_item.65b81c747eb4.css HTTP/1.1" 200 805
+[18/Jun/2017 23:40:13] INFO [django.server:124] "GET /static/js/jquery.min.4f252523d4af.js HTTP/1.1" 200 33738
+[18/Jun/2017 23:40:13] INFO [django.server:124] "GET /static/js/hammer.min.150659814972.js HTTP/1.1" 200 7341
+[18/Jun/2017 23:40:13] INFO [django.server:124] "GET /static/js/bootstrap.min.5869c96cc8f1.js HTTP/1.1" 200 9806
+[18/Jun/2017 23:40:13] INFO [django.server:124] "GET /static/js/typeahead.fd054c48bcd9.js HTTP/1.1" 200 11583
+[18/Jun/2017 23:40:13] INFO [django.server:124] "GET /static/js/search.7d707a66c25f.js HTTP/1.1" 200 9786
+[18/Jun/2017 23:40:13] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.28049b64fb08.js HTTP/1.1" 200 15166
+[18/Jun/2017 23:40:13] INFO [django.server:124] "GET /static/mmenu/addons/drag/jquery.mmenu.drag.7e7edb40b255.js HTTP/1.1" 200 1410
+[18/Jun/2017 23:40:13] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.213ae8f5d26d.js HTTP/1.1" 200 743
+[18/Jun/2017 23:40:13] INFO [django.server:124] "GET /static/img/duc.1727a9df825d.png HTTP/1.1" 200 133953
+[18/Jun/2017 23:40:13] INFO [django.server:124] "GET /static/img/plat.884aa1f89f92.png HTTP/1.1" 200 103876
+[18/Jun/2017 23:40:13] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 99165
+[18/Jun/2017 23:40:13] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.448c34a56d69.woff2 HTTP/1.1" 200 18028
+[18/Jun/2017 23:40:13] INFO [django.server:124] "GET /static/img/bg.4a370c063b65.jpg HTTP/1.1" 200 254754
+[18/Jun/2017 23:40:13] WARNING [django.request:152] Not Found: /static/js/hammer.min.js.map
+[18/Jun/2017 23:40:13] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 101
+[18/Jun/2017 23:40:14] INFO [django.server:124] "GET /static/img/favicon-16x16.e45deacf157e.png HTTP/1.1" 200 742
+[19/Jun/2017 00:01:17] WARNING [django.request:152] Not Found: /static/js/hammer.min.js.map
+[19/Jun/2017 00:01:17] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 101
+[19/Jun/2017 00:01:17] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 99165
+[19/Jun/2017 00:01:28] INFO [django.server:124] "GET /get_item/Loki%20Prime%20Chassis/ HTTP/1.1" 200 15441
+[19/Jun/2017 00:01:28] INFO [django.server:124] "GET /static/css/typeaheadjs.74cbdb0b28ef.css HTTP/1.1" 200 685
+[19/Jun/2017 00:01:28] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.9e950209fa6b.css HTTP/1.1" 200 6658
+[19/Jun/2017 00:01:28] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.d0a03cbdb1ba.css HTTP/1.1" 200 150
+[19/Jun/2017 00:01:28] INFO [django.server:124] "GET /static/mmenu/addons/drag/jquery.mmenu.drag.064861aeb13b.css HTTP/1.1" 200 84
+[19/Jun/2017 00:01:28] INFO [django.server:124] "GET /static/css/bootstrap.min.1825bc9de3d6.css HTTP/1.1" 200 19644
+[19/Jun/2017 00:01:28] INFO [django.server:124] "GET /static/css/common.0ca20e466833.css HTTP/1.1" 200 1125
+[19/Jun/2017 00:01:28] INFO [django.server:124] "GET /static/css/get_item.65b81c747eb4.css HTTP/1.1" 200 805
+[19/Jun/2017 00:01:28] INFO [django.server:124] "GET /static/js/jquery.min.4f252523d4af.js HTTP/1.1" 200 33738
+[19/Jun/2017 00:01:28] INFO [django.server:124] "GET /static/js/hammer.min.150659814972.js HTTP/1.1" 200 7341
+[19/Jun/2017 00:01:28] INFO [django.server:124] "GET /static/js/bootstrap.min.5869c96cc8f1.js HTTP/1.1" 200 9806
+[19/Jun/2017 00:01:28] INFO [django.server:124] "GET /static/js/typeahead.fd054c48bcd9.js HTTP/1.1" 200 11583
+[19/Jun/2017 00:01:28] INFO [django.server:124] "GET /static/js/search.7d707a66c25f.js HTTP/1.1" 200 9786
+[19/Jun/2017 00:01:28] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.28049b64fb08.js HTTP/1.1" 200 15166
+[19/Jun/2017 00:01:28] INFO [django.server:124] "GET /static/mmenu/addons/drag/jquery.mmenu.drag.7e7edb40b255.js HTTP/1.1" 200 1410
+[19/Jun/2017 00:01:28] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.213ae8f5d26d.js HTTP/1.1" 200 743
+[19/Jun/2017 00:01:28] INFO [django.server:124] "GET /static/img/duc.1727a9df825d.png HTTP/1.1" 200 133953
+[19/Jun/2017 00:01:28] INFO [django.server:124] "GET /static/img/plat.884aa1f89f92.png HTTP/1.1" 200 103876
+[19/Jun/2017 00:01:29] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.448c34a56d69.woff2 HTTP/1.1" 200 18028
+[19/Jun/2017 00:01:29] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 99165
+[19/Jun/2017 00:01:29] INFO [django.server:124] "GET /static/img/bg.4a370c063b65.jpg HTTP/1.1" 200 254754
+[19/Jun/2017 00:01:29] WARNING [django.request:152] Not Found: /static/js/hammer.min.js.map
+[19/Jun/2017 00:01:29] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 101
+[19/Jun/2017 00:01:29] INFO [django.server:124] "GET /static/img/favicon-16x16.e45deacf157e.png HTTP/1.1" 200 742
+[19/Jun/2017 00:07:05] INFO [django.server:124] "GET /get_item/Loki%20Prime%20Chassis/ HTTP/1.1" 200 15502
+[19/Jun/2017 00:07:05] INFO [django.server:124] "GET /static/css/typeaheadjs.74cbdb0b28ef.css HTTP/1.1" 200 685
+[19/Jun/2017 00:07:05] INFO [django.server:124] "GET /static/css/bootstrap.min.1825bc9de3d6.css HTTP/1.1" 200 19644
+[19/Jun/2017 00:07:05] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.9e950209fa6b.css HTTP/1.1" 200 6658
+[19/Jun/2017 00:07:05] INFO [django.server:124] "GET /static/mmenu/addons/drag/jquery.mmenu.drag.064861aeb13b.css HTTP/1.1" 200 84
+[19/Jun/2017 00:07:05] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.d0a03cbdb1ba.css HTTP/1.1" 200 150
+[19/Jun/2017 00:07:05] INFO [django.server:124] "GET /static/css/common.0ca20e466833.css HTTP/1.1" 200 1125
+[19/Jun/2017 00:07:05] INFO [django.server:124] "GET /static/css/get_item.65b81c747eb4.css HTTP/1.1" 200 805
+[19/Jun/2017 00:07:05] INFO [django.server:124] "GET /static/js/jquery.min.4f252523d4af.js HTTP/1.1" 200 33738
+[19/Jun/2017 00:07:05] INFO [django.server:124] "GET /static/js/hammer.min.150659814972.js HTTP/1.1" 200 7341
+[19/Jun/2017 00:07:05] INFO [django.server:124] "GET /static/js/bootstrap.min.5869c96cc8f1.js HTTP/1.1" 200 9806
+[19/Jun/2017 00:07:05] INFO [django.server:124] "GET /static/js/typeahead.fd054c48bcd9.js HTTP/1.1" 200 11583
+[19/Jun/2017 00:07:05] INFO [django.server:124] "GET /static/js/search.7d707a66c25f.js HTTP/1.1" 200 9786
+[19/Jun/2017 00:07:05] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.28049b64fb08.js HTTP/1.1" 200 15166
+[19/Jun/2017 00:07:05] INFO [django.server:124] "GET /static/mmenu/addons/drag/jquery.mmenu.drag.7e7edb40b255.js HTTP/1.1" 200 1410
+[19/Jun/2017 00:07:05] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.213ae8f5d26d.js HTTP/1.1" 200 743
+[19/Jun/2017 00:07:05] INFO [django.server:124] "GET /static/img/duc.1727a9df825d.png HTTP/1.1" 200 133953
+[19/Jun/2017 00:07:05] INFO [django.server:124] "GET /static/img/plat.884aa1f89f92.png HTTP/1.1" 200 103876
+[19/Jun/2017 00:07:05] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.448c34a56d69.woff2 HTTP/1.1" 200 18028
+[19/Jun/2017 00:07:05] INFO [django.server:124] "GET /static/img/bg.4a370c063b65.jpg HTTP/1.1" 200 254754
+[19/Jun/2017 00:07:05] WARNING [django.request:152] Not Found: /static/js/hammer.min.js.map
+[19/Jun/2017 00:07:05] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 101
+[19/Jun/2017 00:07:05] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 99165
+[19/Jun/2017 00:07:05] INFO [django.server:124] "GET /static/img/favicon-16x16.e45deacf157e.png HTTP/1.1" 200 742
+[19/Jun/2017 00:07:25] INFO [django.server:124] "GET / HTTP/1.1" 200 3498
+[19/Jun/2017 00:07:31] WARNING [django.request:152] Not Found: /static/js/hammer.min.js.map
+[19/Jun/2017 00:07:31] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 101
+[19/Jun/2017 00:07:31] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 99165
+[19/Jun/2017 01:05:46] INFO [django.server:124] "GET / HTTP/1.1" 200 3498
+[19/Jun/2017 01:05:46] INFO [django.server:124] "GET /static/css/bootstrap.min.1825bc9de3d6.css HTTP/1.1" 200 19644
+[19/Jun/2017 01:05:46] INFO [django.server:124] "GET /static/css/typeaheadjs.74cbdb0b28ef.css HTTP/1.1" 200 685
+[19/Jun/2017 01:05:46] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.9e950209fa6b.css HTTP/1.1" 200 6658
+[19/Jun/2017 01:05:46] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.d0a03cbdb1ba.css HTTP/1.1" 200 150
+[19/Jun/2017 01:05:46] INFO [django.server:124] "GET /static/mmenu/addons/drag/jquery.mmenu.drag.064861aeb13b.css HTTP/1.1" 200 84
+[19/Jun/2017 01:05:46] INFO [django.server:124] "GET /static/css/common.0ca20e466833.css HTTP/1.1" 200 1125
+[19/Jun/2017 01:05:46] INFO [django.server:124] "GET /static/css/home.5abddea5953d.css HTTP/1.1" 200 332
+[19/Jun/2017 01:05:46] INFO [django.server:124] "GET /static/js/hammer.min.150659814972.js HTTP/1.1" 200 7341
+[19/Jun/2017 01:05:46] INFO [django.server:124] "GET /static/js/bootstrap.min.5869c96cc8f1.js HTTP/1.1" 200 9806
+[19/Jun/2017 01:05:46] INFO [django.server:124] "GET /static/js/jquery.min.4f252523d4af.js HTTP/1.1" 200 33738
+[19/Jun/2017 01:05:46] INFO [django.server:124] "GET /static/js/typeahead.fd054c48bcd9.js HTTP/1.1" 200 11583
+[19/Jun/2017 01:05:46] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.28049b64fb08.js HTTP/1.1" 200 15166
+[19/Jun/2017 01:05:46] INFO [django.server:124] "GET /static/js/search.7d707a66c25f.js HTTP/1.1" 200 9786
+[19/Jun/2017 01:05:46] INFO [django.server:124] "GET /static/mmenu/addons/drag/jquery.mmenu.drag.7e7edb40b255.js HTTP/1.1" 200 1410
+[19/Jun/2017 01:05:46] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.213ae8f5d26d.js HTTP/1.1" 200 743
+[19/Jun/2017 01:05:46] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.448c34a56d69.woff2 HTTP/1.1" 200 18028
+[19/Jun/2017 01:05:46] INFO [django.server:124] "GET /static/img/bg.4a370c063b65.jpg HTTP/1.1" 200 254754
+[19/Jun/2017 01:05:46] WARNING [django.request:152] Not Found: /static/js/hammer.min.js.map
+[19/Jun/2017 01:05:46] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 101
+[19/Jun/2017 01:05:46] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 99165
+[19/Jun/2017 01:05:46] INFO [django.server:124] "GET /static/img/favicon-16x16.e45deacf157e.png HTTP/1.1" 200 742
+[19/Jun/2017 01:06:12] INFO [django.server:124] "GET / HTTP/1.1" 200 3498
+[19/Jun/2017 01:06:12] INFO [django.server:124] "GET /static/css/typeaheadjs.74cbdb0b28ef.css HTTP/1.1" 200 685
+[19/Jun/2017 01:06:12] INFO [django.server:124] "GET /static/css/bootstrap.min.1825bc9de3d6.css HTTP/1.1" 200 19644
+[19/Jun/2017 01:06:12] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.9e950209fa6b.css HTTP/1.1" 200 6658
+[19/Jun/2017 01:06:12] INFO [django.server:124] "GET /static/mmenu/addons/drag/jquery.mmenu.drag.064861aeb13b.css HTTP/1.1" 200 84
+[19/Jun/2017 01:06:12] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.d0a03cbdb1ba.css HTTP/1.1" 200 150
+[19/Jun/2017 01:06:12] INFO [django.server:124] "GET /static/css/common.0ca20e466833.css HTTP/1.1" 200 1125
+[19/Jun/2017 01:06:12] INFO [django.server:124] "GET /static/css/home.5abddea5953d.css HTTP/1.1" 200 332
+[19/Jun/2017 01:06:12] INFO [django.server:124] "GET /static/js/hammer.min.150659814972.js HTTP/1.1" 200 7341
+[19/Jun/2017 01:06:12] INFO [django.server:124] "GET /static/js/bootstrap.min.5869c96cc8f1.js HTTP/1.1" 200 9806
+[19/Jun/2017 01:06:12] INFO [django.server:124] "GET /static/js/typeahead.fd054c48bcd9.js HTTP/1.1" 200 11583
+[19/Jun/2017 01:06:12] INFO [django.server:124] "GET /static/js/jquery.min.4f252523d4af.js HTTP/1.1" 200 33738
+[19/Jun/2017 01:06:12] INFO [django.server:124] "GET /static/js/search.7d707a66c25f.js HTTP/1.1" 200 9786
+[19/Jun/2017 01:06:12] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.28049b64fb08.js HTTP/1.1" 200 15166
+[19/Jun/2017 01:06:12] INFO [django.server:124] "GET /static/mmenu/addons/drag/jquery.mmenu.drag.7e7edb40b255.js HTTP/1.1" 200 1410
+[19/Jun/2017 01:06:12] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.213ae8f5d26d.js HTTP/1.1" 200 743
+[19/Jun/2017 01:06:12] WARNING [django.request:152] Not Found: /static/js/hammer.min.js.map
+[19/Jun/2017 01:06:12] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 101
+[19/Jun/2017 01:06:12] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.448c34a56d69.woff2 HTTP/1.1" 200 18028
+[19/Jun/2017 01:06:12] INFO [django.server:124] "GET /static/img/bg.4a370c063b65.jpg HTTP/1.1" 200 254754
+[19/Jun/2017 01:06:12] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 99165
+[19/Jun/2017 01:06:12] INFO [django.server:124] "GET /static/img/favicon-16x16.e45deacf157e.png HTTP/1.1" 200 742
+[19/Jun/2017 01:06:21] INFO [django.server:124] "GET / HTTP/1.1" 200 3498
+[19/Jun/2017 01:06:21] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.9e950209fa6b.css HTTP/1.1" 200 6658
+[19/Jun/2017 01:06:21] INFO [django.server:124] "GET /static/css/typeaheadjs.74cbdb0b28ef.css HTTP/1.1" 200 685
+[19/Jun/2017 01:06:21] INFO [django.server:124] "GET /static/mmenu/addons/drag/jquery.mmenu.drag.064861aeb13b.css HTTP/1.1" 200 84
+[19/Jun/2017 01:06:21] INFO [django.server:124] "GET /static/css/bootstrap.min.1825bc9de3d6.css HTTP/1.1" 200 19644
+[19/Jun/2017 01:06:21] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.d0a03cbdb1ba.css HTTP/1.1" 200 150
+[19/Jun/2017 01:06:21] INFO [django.server:124] "GET /static/css/common.0ca20e466833.css HTTP/1.1" 200 1125
+[19/Jun/2017 01:06:21] INFO [django.server:124] "GET /static/css/home.5abddea5953d.css HTTP/1.1" 200 332
+[19/Jun/2017 01:06:21] INFO [django.server:124] "GET /static/js/hammer.min.150659814972.js HTTP/1.1" 200 7341
+[19/Jun/2017 01:06:21] INFO [django.server:124] "GET /static/js/typeahead.fd054c48bcd9.js HTTP/1.1" 200 11583
+[19/Jun/2017 01:06:21] INFO [django.server:124] "GET /static/js/jquery.min.4f252523d4af.js HTTP/1.1" 200 33738
+[19/Jun/2017 01:06:21] INFO [django.server:124] "GET /static/js/search.7d707a66c25f.js HTTP/1.1" 200 9786
+[19/Jun/2017 01:06:21] INFO [django.server:124] "GET /static/js/bootstrap.min.5869c96cc8f1.js HTTP/1.1" 200 9806
+[19/Jun/2017 01:06:21] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.28049b64fb08.js HTTP/1.1" 200 15166
+[19/Jun/2017 01:06:21] INFO [django.server:124] "GET /static/mmenu/addons/drag/jquery.mmenu.drag.7e7edb40b255.js HTTP/1.1" 200 1410
+[19/Jun/2017 01:06:21] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.213ae8f5d26d.js HTTP/1.1" 200 743
+[19/Jun/2017 01:06:21] WARNING [django.request:152] Not Found: /static/js/hammer.min.js.map
+[19/Jun/2017 01:06:21] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 101
+[19/Jun/2017 01:06:21] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.448c34a56d69.woff2 HTTP/1.1" 200 18028
+[19/Jun/2017 01:06:21] INFO [django.server:124] "GET /static/img/bg.4a370c063b65.jpg HTTP/1.1" 200 254754
+[19/Jun/2017 01:06:21] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 99165
+[19/Jun/2017 01:06:21] INFO [django.server:124] "GET /static/img/favicon-16x16.e45deacf157e.png HTTP/1.1" 200 742
+[19/Jun/2017 01:06:41] INFO [django.server:124] "GET /get_item/Loki%20Prime%20Systems HTTP/1.1" 301 0
+[19/Jun/2017 01:06:43] INFO [django.server:124] "GET /get_item/Loki%20Prime%20Systems/ HTTP/1.1" 200 12839
+[19/Jun/2017 01:06:43] INFO [django.server:124] "GET /static/css/typeaheadjs.74cbdb0b28ef.css HTTP/1.1" 200 685
+[19/Jun/2017 01:06:43] INFO [django.server:124] "GET /static/css/bootstrap.min.1825bc9de3d6.css HTTP/1.1" 200 19644
+[19/Jun/2017 01:06:43] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.9e950209fa6b.css HTTP/1.1" 200 6658
+[19/Jun/2017 01:06:43] INFO [django.server:124] "GET /static/mmenu/addons/drag/jquery.mmenu.drag.064861aeb13b.css HTTP/1.1" 200 84
+[19/Jun/2017 01:06:43] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.d0a03cbdb1ba.css HTTP/1.1" 200 150
+[19/Jun/2017 01:06:43] INFO [django.server:124] "GET /static/css/common.0ca20e466833.css HTTP/1.1" 200 1125
+[19/Jun/2017 01:06:43] INFO [django.server:124] "GET /static/css/get_item.65b81c747eb4.css HTTP/1.1" 200 805
+[19/Jun/2017 01:06:43] INFO [django.server:124] "GET /static/js/hammer.min.150659814972.js HTTP/1.1" 200 7341
+[19/Jun/2017 01:06:43] INFO [django.server:124] "GET /static/js/jquery.min.4f252523d4af.js HTTP/1.1" 200 33738
+[19/Jun/2017 01:06:43] INFO [django.server:124] "GET /static/js/bootstrap.min.5869c96cc8f1.js HTTP/1.1" 200 9806
+[19/Jun/2017 01:06:43] INFO [django.server:124] "GET /static/js/typeahead.fd054c48bcd9.js HTTP/1.1" 200 11583
+[19/Jun/2017 01:06:43] INFO [django.server:124] "GET /static/js/search.7d707a66c25f.js HTTP/1.1" 200 9786
+[19/Jun/2017 01:06:43] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.28049b64fb08.js HTTP/1.1" 200 15166
+[19/Jun/2017 01:06:43] INFO [django.server:124] "GET /static/mmenu/addons/drag/jquery.mmenu.drag.7e7edb40b255.js HTTP/1.1" 200 1410
+[19/Jun/2017 01:06:43] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.213ae8f5d26d.js HTTP/1.1" 200 743
+[19/Jun/2017 01:06:43] INFO [django.server:124] "GET /static/img/duc.1727a9df825d.png HTTP/1.1" 200 133953
+[19/Jun/2017 01:06:43] INFO [django.server:124] "GET /static/img/plat.884aa1f89f92.png HTTP/1.1" 200 103876
+[19/Jun/2017 01:06:43] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 99165
+[19/Jun/2017 01:06:43] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.448c34a56d69.woff2 HTTP/1.1" 200 18028
+[19/Jun/2017 01:06:43] INFO [django.server:124] "GET /static/img/bg.4a370c063b65.jpg HTTP/1.1" 200 254754
+[19/Jun/2017 01:06:43] WARNING [django.request:152] Not Found: /static/js/hammer.min.js.map
+[19/Jun/2017 01:06:43] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 101
+[19/Jun/2017 01:06:43] INFO [django.server:124] "GET /static/img/favicon-16x16.e45deacf157e.png HTTP/1.1" 200 742
+[19/Jun/2017 01:09:17] INFO [django.server:124] "GET /get_item/Loki%20Prime%20Systems/ HTTP/1.1" 200 12840
+[19/Jun/2017 01:09:17] INFO [django.server:124] "GET /static/mmenu/addons/drag/jquery.mmenu.drag.064861aeb13b.css HTTP/1.1" 200 84
+[19/Jun/2017 01:09:17] INFO [django.server:124] "GET /static/css/typeaheadjs.74cbdb0b28ef.css HTTP/1.1" 200 685
+[19/Jun/2017 01:09:17] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.9e950209fa6b.css HTTP/1.1" 200 6658
+[19/Jun/2017 01:09:17] INFO [django.server:124] "GET /static/css/bootstrap.min.1825bc9de3d6.css HTTP/1.1" 200 19644
+[19/Jun/2017 01:09:17] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.d0a03cbdb1ba.css HTTP/1.1" 200 150
+[19/Jun/2017 01:09:17] INFO [django.server:124] "GET /static/css/common.0ca20e466833.css HTTP/1.1" 200 1125
+[19/Jun/2017 01:09:17] INFO [django.server:124] "GET /static/css/get_item.65b81c747eb4.css HTTP/1.1" 200 805
+[19/Jun/2017 01:09:17] INFO [django.server:124] "GET /static/js/hammer.min.150659814972.js HTTP/1.1" 200 7341
+[19/Jun/2017 01:09:17] INFO [django.server:124] "GET /static/js/jquery.min.4f252523d4af.js HTTP/1.1" 200 33738
+[19/Jun/2017 01:09:17] INFO [django.server:124] "GET /static/js/bootstrap.min.5869c96cc8f1.js HTTP/1.1" 200 9806
+[19/Jun/2017 01:09:17] INFO [django.server:124] "GET /static/js/typeahead.fd054c48bcd9.js HTTP/1.1" 200 11583
+[19/Jun/2017 01:09:17] INFO [django.server:124] "GET /static/js/search.7d707a66c25f.js HTTP/1.1" 200 9786
+[19/Jun/2017 01:09:17] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.28049b64fb08.js HTTP/1.1" 200 15166
+[19/Jun/2017 01:09:17] INFO [django.server:124] "GET /static/mmenu/addons/drag/jquery.mmenu.drag.7e7edb40b255.js HTTP/1.1" 200 1410
+[19/Jun/2017 01:09:17] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.213ae8f5d26d.js HTTP/1.1" 200 743
+[19/Jun/2017 01:09:17] INFO [django.server:124] "GET /static/img/duc.1727a9df825d.png HTTP/1.1" 200 133953
+[19/Jun/2017 01:09:17] INFO [django.server:124] "GET /static/img/plat.884aa1f89f92.png HTTP/1.1" 200 103876
+[19/Jun/2017 01:09:17] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.448c34a56d69.woff2 HTTP/1.1" 200 18028
+[19/Jun/2017 01:09:17] INFO [django.server:124] "GET /static/img/bg.4a370c063b65.jpg HTTP/1.1" 200 254754
+[19/Jun/2017 01:09:17] WARNING [django.request:152] Not Found: /static/js/hammer.min.js.map
+[19/Jun/2017 01:09:17] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 101
+[19/Jun/2017 01:09:17] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 99165
+[19/Jun/2017 01:09:18] INFO [django.server:124] "GET /static/img/favicon-16x16.e45deacf157e.png HTTP/1.1" 200 742
+[19/Jun/2017 01:09:42] INFO [django.server:124] "GET / HTTP/1.1" 200 3498
+[19/Jun/2017 01:09:51] INFO [django.server:124] "GET /get_item/Loki%20Prime%20Neuroptics/ HTTP/1.1" 200 17343
+[19/Jun/2017 01:10:03] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 99165
