@@ -6,7 +6,6 @@
 <script src="{% static 'js/typeahead.js' %}"></script>
 <script src="{% static 'js/search.js' %}"></script>
 <script src="{% static 'mmenu/jquery.mmenu.all.js' %}"></script>
-<script src="{% static 'mmenu/addons/drag/jquery.mmenu.drag.js' %}"></script>
 <script src="{% static 'mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.js' %}"></script>
 
 <script type="text/javascript">
@@ -15,13 +14,8 @@ $(document).ready(function() {
     extensions: [
       "shadow-page",
       "pagedim-black"
-    ], drag: {
-      page: {
-        open: true
-      }, panels: {
-        close: true
-      }
-    }, "setSelected": {
+    ], drag: true,
+    "setSelected": {
       "hover": true,
     }, "navbars": [
       {
