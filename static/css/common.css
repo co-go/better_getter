@@ -90,6 +90,7 @@
   border-radius: 10px;
   height: 2em;
   width: 2em;
+  z-index: 999;
 }
 
 .o-menu .glyphicon {
