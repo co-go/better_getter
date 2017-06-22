@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 from django.contrib import admin
-from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
+from django.contrib.auth.admin import UserAdmin as DjangoUserAdmin
 
 from .models import User
-from .forms import CreateUserForm, ChangeUserForm
+from .forms import CreateUserForm, UserChangeForm
 
-
-class UserAdmin(BaseUserAdmin):
+@admin.register(User)
+class UserAdmin(DjangoUserAdmin):
 
     form = UserChangeForm
     add_form = CreateUserForm
@@ -17,7 +17,7 @@ class UserAdmin(BaseUserAdmin):
     fieldsets = (
         (None, {'fields': ('username', 'password')}),
         ('Personal info', {'fields': ('username',)}),
-        ('Permissions', {'fields': ('is_superuser')}),
+        ('Permissions', {'fields': ('is_superuser',)}),
     )
     # add_fieldsets is not a standard ModelAdmin attribute. UserAdmin
     # overrides get_fieldsets to use this attribute when creating a user.
@@ -33,5 +33,3 @@ class UserAdmin(BaseUserAdmin):
     search_fields = ('username',)
     ordering = ('username',)
     filter_horizontal = ()
-
-admin.site.register(User, UserAdmin)

@@ -3,3 +3,4 @@
 .log
 .venv
 mysite.log
+db.sqlite3

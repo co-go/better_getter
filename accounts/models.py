@@ -1,79 +1,48 @@
 # -*- coding: utf-8 -*-
 import re
 from django.db import models
-from django.core import validators
 from django.utils.translation import ugettext_lazy as _
-from django.utils import timezone
-from django.contrib.auth.models import AbstractBaseUser
-from django.contrib.auth.models import PermissionsMixin
-from django.contrib.auth.models import UserManager
-from django.contrib.auth.models import BaseUserManager
-from model_utils import Choices
-
-
-class User(AbstractBaseUser, PermissionsMixin):
-
-    class Meta:
-        app_label = "accounts"
-        db_table = "user"
-
-    username = models.CharField(_('username'), max_length=75, unique=True, required=True,
-		help_text=_('Required. 30 characters or fewer. Letters, numbers and '
-					'@/./+/-/_ characters'),
-		validators=[
-			validators.RegexValidator(re.compile('^[\w.@+-]+$'),
-			_('Enter a valid username.'), 'invalid')
-		])
-
-	is_active = models.BooleanField(_('active'), default=False )
-	date_joined = models.DateTimeField(_('date joined'), default=timezone.now)
-
-	objects = UserManager()
-
-	USERNAME_FIELD = 'username'
-	REQUIRED_FIELDS = ['username']
-
-	def get_full_name(self):
-		return self.username
-
-	def get_short_name(self):
-		return self.username
-
-	def __unicode__(self):
-		return self.email
+from django.contrib.auth.models import AbstractUser, BaseUserManager
 
 
 class UserManager(BaseUserManager):
     use_in_migrations = True
 
-    # envoked with regular users
-    def create_user(self, username, password, **extras):
+    # create_user and create_superuser call this handler
+    def _create_user(self, username, password, **extra_fields):
         if not username:
-            raise ValueError('username is required')
+            raise ValueError('Username is not set.')
 
-        user = self.model(
-            username=username,
-            **extras
-        )
-
-        # set_password will take take of the hashing
+        user = self.model(username=username, **extra_fields)
         user.set_password(password)
-        user.save()
-
+        user.save(using=self._db)
         return user
 
-    # envoked with superuser
-    def create_superuser(self, username, password, **extras):
-        if not username:
-            raise ValueError('username is required')
+    def create_user(self, username, password, **extra_fields):
+        extra_fields.setdefault('is_staff', False)
+        extra_fields.setdefault('is_superuser', False)
+        return self._create_user(username, password, **extra_fields)
 
-        user = self.model(
-            username=username,
-            **extras
-        )
+    def create_superuser(self, username, password, **extra_fields):
+        extra_fields.setdefault('is_staff', True)
+        extra_fields.setdefault('is_superuser', True)
 
-        user.set_password(password)
-        user.is_superuser = True
-        user.save()
+        if extra_fields.get('is_staff') is not True:
+            raise ValueError('SUPERUSER: Failed [is_staff=True]')
+        if extra_fields.get('is_superuser') is not True:
+            raise ValueError('SUPERUSER: Failed [is_superuser=True]')
 
-        return user
+        return self._create_user(username, password, **extra_fields)
+
+
+class User(AbstractUser):
+    email = None
+    first_name = None
+    last_name = None
+
+    is_active = models.BooleanField(default=False, verbose_name='active')
+
+    USERNAME_FIELD = "username"
+    REQUIRED_FIELDS = []
+
+    objects = UserManager()
