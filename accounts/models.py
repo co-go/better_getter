@@ -40,8 +40,6 @@ class User(AbstractUser):
     first_name = None
     last_name = None
 
-    is_active = models.BooleanField(default=False, verbose_name='active')
-
     USERNAME_FIELD = "username"
     REQUIRED_FIELDS = []
 
