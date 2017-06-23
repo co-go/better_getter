@@ -18,6 +18,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'widget_tweaks',
     'accounts',
 ]
 
@@ -127,6 +128,10 @@ LOGGING = {
             'level':'DEBUG',
         },
         'get_item': {
+            'handlers': ['file'],
+            'level': 'DEBUG',
+        },
+        'accounts': {
             'handlers': ['file'],
             'level': 'DEBUG',
         },
