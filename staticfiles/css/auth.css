@@ -1,53 +1,11 @@
-/*body {
+body {
   background: url(../img/bg.jpg) no-repeat center center fixed;
   background-color: #333;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}*/
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,700,500);
-
-body {
-  background:#F7F7F7;
-  color:#666666;
-  font-family: 'Roboto', sans-serif;
-  font-weight:100;
 }
-
-body{
-  width: 100%;
-  background: -webkit-linear-gradient(left, #22d686, #24d3d3, #22d686, #24d3d3);
-  background: linear-gradient(to right, #22d686, #24d3d3, #22d686, #24d3d3);
-  background-size: 600% 100%;
-  -webkit-animation: HeroBG 20s ease infinite;
-          animation: HeroBG 20s ease infinite;
-}
-
-@-webkit-keyframes HeroBG {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 100% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-
-@keyframes HeroBG {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 100% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-
 
 .panel {
   border-radius: 5px;
@@ -142,9 +100,14 @@ label {
 }
 .panel-login>.panel-heading .register {
   padding: 20px 30px;
-  background: #2d3b55;
   border-bottom-right-radius: 5px;
 }
+
+.active-panel {
+  color: #fff !important;
+  background: #2b303b;
+}
+
 .panel-login>.panel-heading a{
   text-decoration: none;
   color: #666;
@@ -155,7 +118,6 @@ label {
   transition: all 0.1s linear;
 }
 .panel-login>.panel-heading a#register-form-link {
-  color: #fff;
   width: 100%;
   text-align: right;
 }

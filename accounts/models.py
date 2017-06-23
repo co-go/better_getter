@@ -39,7 +39,6 @@ class User(AbstractUser):
     email = None
     first_name = None
     last_name = None
-    is_active = None
 
     activated = models.BooleanField(default=False)
 

@@ -1,31 +1,30 @@
 # -*- coding: utf-8 -*-
-from django.contrib.auth import login, authenticate
+from django.contrib.auth import authenticate, login as auth_login
 from django.contrib.auth.forms import AuthenticationForm
 from forms import CreateUserForm
-from django.shortcuts import render
-
-REDIRECT_FIELD_NAME = 'next'
+from django.shortcuts import render, redirect
 
 def signup(request):
-    if request.method == 'POST':
-        form = CreateUserForm(request, data=request.POST)
+    if request.method == "POST":
+        signup_form = CreateUserForm(request.POST)
 
-        if form.is_valid():
-            form.save()
-            username = form.cleaned_data.get('username')
-            raw_password = form.cleaned_data.get('password1')
+        if signup_form.is_valid():
+            signup_form.save()
+            username = signup_form.cleaned_data.get('username')
+            raw_password = signup_form.cleaned_data.get('password1')
             user = authenticate(username=username, password=raw_password)
 
             auth_login(request, user)
-            return HttpResponseRedirect('/')
+            return redirect('/')
     else:
-        login_form = AuthenticationForm()
-        signup_form = CreateUserForm(request)
+        signup_form = CreateUserForm()
 
-        context = {
-            'login_form': login_form,
-            'signup_form': signup_form
-        }
+    login_form = AuthenticationForm()
+
+    context = {
+        'login_form': login_form,
+        'signup_form': signup_form
+    }
 
     return render(request, 'login.html', context)
 
@@ -34,12 +33,13 @@ def login(request):
     if request.method == "POST":
         login_form = AuthenticationForm(request, data=request.POST)
 
-        if form.is_valid():
-            auth_login(request, form.get_user())
-            return HttpResponseRedirect('/')
+        if login_form.is_valid():
+            auth_login(request, login_form.get_user())
+            return redirect('/')
     else:
         login_form = AuthenticationForm(request)
-        signup_form = CreateUserForm()
+
+    signup_form = CreateUserForm()
 
     context = {
         'login_form': login_form,

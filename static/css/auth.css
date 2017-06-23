@@ -1,55 +1,14 @@
-/*body {
+body {
   background: url(../img/bg.jpg) no-repeat center center fixed;
   background-color: #333;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}*/
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,700,500);
-
-body {
-  background:#F7F7F7;
-  color:#666666;
-  font-family: 'Roboto', sans-serif;
-  font-weight:100;
 }
-
-body{
-  width: 100%;
-  background: -webkit-linear-gradient(left, #22d686, #24d3d3, #22d686, #24d3d3);
-  background: linear-gradient(to right, #22d686, #24d3d3, #22d686, #24d3d3);
-  background-size: 600% 100%;
-  -webkit-animation: HeroBG 20s ease infinite;
-          animation: HeroBG 20s ease infinite;
-}
-
-@-webkit-keyframes HeroBG {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 100% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-
-@keyframes HeroBG {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 100% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-
 
 .panel {
+  margin-top: 20vh;
   border-radius: 5px;
 }
 label {
@@ -61,18 +20,23 @@ label {
   -moz-box-shadow: 0px 0px 49px 14px rgba(188,190,194,0.39);
   box-shadow: 0px 0px 49px 14px rgba(188,190,194,0.39);
   }
+
+/* CHECKBOX */
 .panel-login .checkbox input[type=checkbox]{
   margin-left: 0px;
 }
+
 .panel-login .checkbox label {
   padding-left: 25px;
   font-weight: 300;
   display: inline-block;
   position: relative;
 }
+
 .panel-login .checkbox {
  padding-left: 20px;
 }
+
 .panel-login .checkbox label::before {
   content: "";
   display: inline-block;
@@ -110,9 +74,11 @@ label {
   outline-offset: -2px;
 }
 .panel-login .checkbox input[type="checkbox"]:checked + label::after {
-  font-family: 'FontAwesome';
-  content: "\f00c";
+  font-family: 'Glyphicons Halflings';
+  content: "\e013";
 }
+
+/* FORM STYLING */
 .panel-login>.panel-heading .tabs{
   padding: 0;
 }
@@ -138,13 +104,29 @@ label {
 }
 .panel-login>.panel-heading .login {
   padding: 20px 30px;
-  border-bottom-leftt-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 .panel-login>.panel-heading .register {
   padding: 20px 30px;
-  background: #2d3b55;
   border-bottom-right-radius: 5px;
 }
+
+.tabs:hover {
+  background: #474e5f;
+}
+
+.tabs:hover a {
+  color: #fff !important;
+}
+
+.active-panel {
+  background: #2b303b;
+}
+
+.active-panel > a {
+  color: #fff !important;
+}
+
 .panel-login>.panel-heading a{
   text-decoration: none;
   color: #666;
@@ -155,7 +137,6 @@ label {
   transition: all 0.1s linear;
 }
 .panel-login>.panel-heading a#register-form-link {
-  color: #fff;
   width: 100%;
   text-align: right;
 }
@@ -188,7 +169,6 @@ label {
 .btn-login {
   background-color: #E8E9EC;
   outline: none;
-  color: #2D3B55;
   font-size: 14px;
   height: auto;
   font-weight: normal;
@@ -201,7 +181,7 @@ label {
 .btn-login:hover,
 .btn-login:focus {
   color: #fff;
-  background-color: #2D3B55;
+  background-color: #474e5f;
 }
 .forgot-password {
   text-decoration: underline;
@@ -216,7 +196,6 @@ label {
 .btn-register {
   background-color: #E8E9EC;
   outline: none;
-  color: #2D3B55;
   font-size: 14px;
   height: auto;
   font-weight: normal;
@@ -229,5 +208,5 @@ label {
 .btn-register:hover,
 .btn-register:focus {
   color: #fff;
-  background-color: #2D3B55;
+  background-color: #474e5f;
 }
