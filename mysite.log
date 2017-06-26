@@ -7322,3 +7322,158 @@ VariableDoesNotExist: Failed lookup for key [name] in u'eqwert'
 [26/Jun/2017 16:17:04] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'i1bou1iip8l8537p3phs4yy948ptukp3' AND "django_session"."expire_date" > '2017-06-26 16:17:04.780177'); args=('i1bou1iip8l8537p3phs4yy948ptukp3', u'2017-06-26 16:17:04.780177')
 [26/Jun/2017 16:17:04] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
 [26/Jun/2017 16:17:04] INFO [django.server:124] "GET / HTTP/1.1" 200 3224
+[26/Jun/2017 20:59:22] DEBUG [django.db.backends:91] (0.018) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[26/Jun/2017 20:59:22] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[26/Jun/2017 20:59:25] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'i1bou1iip8l8537p3phs4yy948ptukp3' AND "django_session"."expire_date" > '2017-06-26 20:59:25.619556'); args=('i1bou1iip8l8537p3phs4yy948ptukp3', u'2017-06-26 20:59:25.619556')
+[26/Jun/2017 20:59:25] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[26/Jun/2017 20:59:25] INFO [django.server:124] "GET / HTTP/1.1" 200 3224
+[26/Jun/2017 20:59:27] INFO [django.server:124] "GET /static/css/home.css HTTP/1.1" 200 678
+[26/Jun/2017 20:59:27] INFO [django.server:124] "GET /static/css/typeaheadjs.css HTTP/1.1" 200 2578
+[26/Jun/2017 20:59:27] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.css HTTP/1.1" 200 391
+[26/Jun/2017 20:59:27] INFO [django.server:124] "GET /static/css/common.css HTTP/1.1" 200 4685
+[26/Jun/2017 20:59:27] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.css HTTP/1.1" 200 47879
+[26/Jun/2017 20:59:27] INFO [django.server:124] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+[26/Jun/2017 20:59:27] INFO [django.server:124] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121201
+[26/Jun/2017 20:59:27] INFO [django.server:124] "GET /static/js/hammer.min.js HTTP/1.1" 200 20765
+[26/Jun/2017 20:59:27] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.js HTTP/1.1" 200 1631
+[26/Jun/2017 20:59:27] INFO [django.server:124] "GET /static/js/typeahead.js HTTP/1.1" 200 63137
+[26/Jun/2017 20:59:27] INFO [django.server:124] "GET /static/js/jquery.min.js HTTP/1.1" 200 97163
+[26/Jun/2017 20:59:27] INFO [django.server:124] "GET /static/js/search.js HTTP/1.1" 200 31453
+[26/Jun/2017 20:59:27] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.js HTTP/1.1" 200 61679
+[26/Jun/2017 20:59:28] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[26/Jun/2017 20:59:28] INFO [django.server:124] "GET /static/img/bg.jpg HTTP/1.1" 200 254754
+[26/Jun/2017 20:59:29] INFO [django.server:124] "GET /static/img/notFound.png HTTP/1.1" 200 22596
+[26/Jun/2017 20:59:29] INFO [django.server:124] "GET /static/img/favicon-32x32.png HTTP/1.1" 200 2022
+[26/Jun/2017 20:59:29] INFO [django.server:124] "GET /static/img/favicon-16x16.png HTTP/1.1" 200 742
+[26/Jun/2017 21:00:04] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[26/Jun/2017 21:00:04] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[26/Jun/2017 21:00:07] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'i1bou1iip8l8537p3phs4yy948ptukp3' AND "django_session"."expire_date" > '2017-06-26 21:00:06.999872'); args=('i1bou1iip8l8537p3phs4yy948ptukp3', u'2017-06-26 21:00:06.999872')
+[26/Jun/2017 21:00:07] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[26/Jun/2017 21:00:07] INFO [django.server:124] "GET / HTTP/1.1" 200 3231
+[26/Jun/2017 21:00:07] INFO [django.server:124] "GET /static/img/favicon-32x32.png HTTP/1.1" 200 2022
+[26/Jun/2017 21:00:11] INFO [django.server:124] "GET /account HTTP/1.1" 301 0
+[26/Jun/2017 21:00:11] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'i1bou1iip8l8537p3phs4yy948ptukp3' AND "django_session"."expire_date" > '2017-06-26 21:00:11.709336'); args=('i1bou1iip8l8537p3phs4yy948ptukp3', u'2017-06-26 21:00:11.709336')
+[26/Jun/2017 21:00:11] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[26/Jun/2017 21:00:11] INFO [django.server:124] "GET /account/ HTTP/1.1" 200 3116
+[26/Jun/2017 21:00:11] INFO [django.server:124] "GET /static/css/get_item.css HTTP/1.1" 200 2156
+[26/Jun/2017 21:00:17] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+[26/Jun/2017 21:00:24] INFO [django.server:124] "GET /static/img/bg.jpg HTTP/1.1" 200 254754
+[26/Jun/2017 21:04:32] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[26/Jun/2017 21:04:32] DEBUG [django.db.backends:91] (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[26/Jun/2017 21:04:34] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'i1bou1iip8l8537p3phs4yy948ptukp3' AND "django_session"."expire_date" > '2017-06-26 21:04:34.238583'); args=('i1bou1iip8l8537p3phs4yy948ptukp3', u'2017-06-26 21:04:34.238583')
+[26/Jun/2017 21:04:34] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[26/Jun/2017 21:04:34] INFO [django.server:124] "GET /account/ HTTP/1.1" 200 3116
+[26/Jun/2017 21:04:34] INFO [django.server:124] "GET /static/img/favicon-32x32.png HTTP/1.1" 200 2022
+[26/Jun/2017 21:04:37] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 1673
+[26/Jun/2017 21:04:37] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+[26/Jun/2017 21:05:01] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'i1bou1iip8l8537p3phs4yy948ptukp3' AND "django_session"."expire_date" > '2017-06-26 21:05:01.812901'); args=('i1bou1iip8l8537p3phs4yy948ptukp3', u'2017-06-26 21:05:01.812901')
+[26/Jun/2017 21:05:01] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[26/Jun/2017 21:05:01] INFO [django.server:124] "GET /account/ HTTP/1.1" 200 3116
+[26/Jun/2017 21:05:05] INFO [django.server:124] "GET /static/img/favicon-32x32.png HTTP/1.1" 200 2022
+[26/Jun/2017 21:05:10] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 1673
+[26/Jun/2017 21:05:10] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+[26/Jun/2017 21:05:19] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'i1bou1iip8l8537p3phs4yy948ptukp3' AND "django_session"."expire_date" > '2017-06-26 21:05:19.511024'); args=('i1bou1iip8l8537p3phs4yy948ptukp3', u'2017-06-26 21:05:19.511024')
+[26/Jun/2017 21:05:19] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[26/Jun/2017 21:05:19] INFO [django.server:124] "GET /account/ HTTP/1.1" 200 3116
+[26/Jun/2017 21:05:19] INFO [django.server:124] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121201
+[26/Jun/2017 21:05:19] INFO [django.server:124] "GET /static/css/typeaheadjs.css HTTP/1.1" 200 2578
+[26/Jun/2017 21:05:19] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.css HTTP/1.1" 200 47879
+[26/Jun/2017 21:05:19] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.css HTTP/1.1" 200 391
+[26/Jun/2017 21:05:19] INFO [django.server:124] "GET /static/css/common.css HTTP/1.1" 200 5124
+[26/Jun/2017 21:05:19] INFO [django.server:124] "GET /static/css/get_item.css HTTP/1.1" 200 1779
+[26/Jun/2017 21:05:19] INFO [django.server:124] "GET /static/js/jquery.min.js HTTP/1.1" 200 97163
+[26/Jun/2017 21:05:19] INFO [django.server:124] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+[26/Jun/2017 21:05:19] INFO [django.server:124] "GET /static/js/hammer.min.js HTTP/1.1" 200 20765
+[26/Jun/2017 21:05:19] INFO [django.server:124] "GET /static/js/search.js HTTP/1.1" 200 31453
+[26/Jun/2017 21:05:19] INFO [django.server:124] "GET /static/js/typeahead.js HTTP/1.1" 200 63137
+[26/Jun/2017 21:05:19] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.js HTTP/1.1" 200 61679
+[26/Jun/2017 21:05:19] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.js HTTP/1.1" 200 1631
+[26/Jun/2017 21:05:20] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[26/Jun/2017 21:05:20] INFO [django.server:124] "GET /static/img/bg.jpg HTTP/1.1" 200 254754
+[26/Jun/2017 21:05:20] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 1673
+[26/Jun/2017 21:05:20] INFO [django.server:124] "GET /static/img/notFound.png HTTP/1.1" 200 22596
+[26/Jun/2017 21:05:20] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+[26/Jun/2017 21:05:24] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[26/Jun/2017 21:05:24] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[26/Jun/2017 21:05:25] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'i1bou1iip8l8537p3phs4yy948ptukp3' AND "django_session"."expire_date" > '2017-06-26 21:05:25.827763'); args=('i1bou1iip8l8537p3phs4yy948ptukp3', u'2017-06-26 21:05:25.827763')
+[26/Jun/2017 21:05:25] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[26/Jun/2017 21:05:25] INFO [django.server:124] "GET /account/ HTTP/1.1" 200 3116
+[26/Jun/2017 21:05:25] INFO [django.server:124] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121201
+[26/Jun/2017 21:05:25] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.css HTTP/1.1" 200 47879
+[26/Jun/2017 21:05:25] INFO [django.server:124] "GET /static/css/typeaheadjs.css HTTP/1.1" 200 2578
+[26/Jun/2017 21:05:25] INFO [django.server:124] "GET /static/css/settings.css HTTP/1.1" 200 146
+[26/Jun/2017 21:05:25] INFO [django.server:124] "GET /static/js/hammer.min.js HTTP/1.1" 200 20765
+[26/Jun/2017 21:05:25] INFO [django.server:124] "GET /static/css/common.css HTTP/1.1" 200 5124
+[26/Jun/2017 21:05:25] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.css HTTP/1.1" 200 391
+[26/Jun/2017 21:05:25] INFO [django.server:124] "GET /static/js/jquery.min.js HTTP/1.1" 200 97163
+[26/Jun/2017 21:05:25] INFO [django.server:124] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+[26/Jun/2017 21:05:25] INFO [django.server:124] "GET /static/js/typeahead.js HTTP/1.1" 200 63137
+[26/Jun/2017 21:05:25] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.js HTTP/1.1" 200 61679
+[26/Jun/2017 21:05:25] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.js HTTP/1.1" 200 1631
+[26/Jun/2017 21:05:25] INFO [django.server:124] "GET /static/js/search.js HTTP/1.1" 200 31453
+[26/Jun/2017 21:05:26] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[26/Jun/2017 21:05:26] INFO [django.server:124] "GET /static/img/bg.jpg HTTP/1.1" 200 254754
+[26/Jun/2017 21:05:26] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 1673
+[26/Jun/2017 21:05:26] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+[26/Jun/2017 21:05:26] INFO [django.server:124] "GET /static/img/notFound.png HTTP/1.1" 200 22596
+[26/Jun/2017 22:07:10] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[26/Jun/2017 22:07:10] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[26/Jun/2017 22:08:10] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'i1bou1iip8l8537p3phs4yy948ptukp3' AND "django_session"."expire_date" > '2017-06-26 22:08:10.711779'); args=('i1bou1iip8l8537p3phs4yy948ptukp3', u'2017-06-26 22:08:10.711779')
+[26/Jun/2017 22:08:10] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[26/Jun/2017 22:08:10] INFO [django.server:124] "GET /account/ HTTP/1.1" 200 4136
+[26/Jun/2017 22:08:10] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.css HTTP/1.1" 304 0
+[26/Jun/2017 22:08:10] INFO [django.server:124] "GET /static/css/common.css HTTP/1.1" 304 0
+[26/Jun/2017 22:08:10] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.css HTTP/1.1" 304 0
+[26/Jun/2017 22:08:10] INFO [django.server:124] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+[26/Jun/2017 22:08:10] INFO [django.server:124] "GET /static/css/settings.css HTTP/1.1" 304 0
+[26/Jun/2017 22:08:10] INFO [django.server:124] "GET /static/js/hammer.min.js HTTP/1.1" 304 0
+[26/Jun/2017 22:08:10] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.js HTTP/1.1" 304 0
+[26/Jun/2017 22:08:10] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.js HTTP/1.1" 304 0
+[26/Jun/2017 22:08:11] INFO [django.server:124] "GET /static/img/favicon-32x32.png HTTP/1.1" 200 2022
+[26/Jun/2017 22:14:01] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'i1bou1iip8l8537p3phs4yy948ptukp3' AND "django_session"."expire_date" > '2017-06-26 22:14:01.332785'); args=('i1bou1iip8l8537p3phs4yy948ptukp3', u'2017-06-26 22:14:01.332785')
+[26/Jun/2017 22:14:01] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[26/Jun/2017 22:14:01] INFO [django.server:124] "GET /account/ HTTP/1.1" 200 4136
+[26/Jun/2017 22:14:01] INFO [django.server:124] "GET /static/img/favicon-32x32.png HTTP/1.1" 200 2022
+[26/Jun/2017 22:14:10] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[26/Jun/2017 22:14:10] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[26/Jun/2017 22:14:15] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'i1bou1iip8l8537p3phs4yy948ptukp3' AND "django_session"."expire_date" > '2017-06-26 22:14:15.668541'); args=('i1bou1iip8l8537p3phs4yy948ptukp3', u'2017-06-26 22:14:15.668541')
+[26/Jun/2017 22:14:15] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[26/Jun/2017 22:14:15] INFO [django.server:124] "GET /account/ HTTP/1.1" 200 5262
+[26/Jun/2017 22:14:16] INFO [django.server:124] "GET /static/img/favicon-32x32.png HTTP/1.1" 200 2022
+[26/Jun/2017 22:14:34] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'i1bou1iip8l8537p3phs4yy948ptukp3' AND "django_session"."expire_date" > '2017-06-26 22:14:34.589324'); args=('i1bou1iip8l8537p3phs4yy948ptukp3', u'2017-06-26 22:14:34.589324')
+[26/Jun/2017 22:14:34] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[26/Jun/2017 22:14:34] INFO [django.server:124] "GET /account/ HTTP/1.1" 200 5262
+[26/Jun/2017 22:14:34] INFO [django.server:124] "GET /static/css/settings.css HTTP/1.1" 304 0
+[26/Jun/2017 22:14:34] INFO [django.server:124] "GET /static/img/favicon-32x32.png HTTP/1.1" 200 2022
+[26/Jun/2017 22:14:52] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'i1bou1iip8l8537p3phs4yy948ptukp3' AND "django_session"."expire_date" > '2017-06-26 22:14:52.130425'); args=('i1bou1iip8l8537p3phs4yy948ptukp3', u'2017-06-26 22:14:52.130425')
+[26/Jun/2017 22:14:52] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[26/Jun/2017 22:14:52] INFO [django.server:124] "GET /account/ HTTP/1.1" 200 5262
+[26/Jun/2017 22:14:52] INFO [django.server:124] "GET /static/css/common.css HTTP/1.1" 304 0
+[26/Jun/2017 22:14:52] INFO [django.server:124] "GET /static/img/favicon-32x32.png HTTP/1.1" 200 2022
+[26/Jun/2017 22:15:03] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[26/Jun/2017 22:15:03] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[26/Jun/2017 22:15:04] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'i1bou1iip8l8537p3phs4yy948ptukp3' AND "django_session"."expire_date" > '2017-06-26 22:15:04.693991'); args=('i1bou1iip8l8537p3phs4yy948ptukp3', u'2017-06-26 22:15:04.693991')
+[26/Jun/2017 22:15:04] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[26/Jun/2017 22:15:04] INFO [django.server:124] "GET /account/ HTTP/1.1" 200 5179
+[26/Jun/2017 22:15:05] INFO [django.server:124] "GET /static/img/favicon-32x32.png HTTP/1.1" 200 2022

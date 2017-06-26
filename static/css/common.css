@@ -1,3 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass:100,400,900');
+
+/* better-getter styles */
+.title {
+  color: white;
+  padding: 60px 0 0;
+  margin: 0;
+  letter-spacing: 0.2em;
+  font-weight: 100;
+  text-align: center;
+  color: #66FCF1;
+  font-family: "Overpass", sans-serif;
+}
+
+.subtitle {
+  color: #f5f5f5;
+  padding: 5px 0 0;
+  margin: 0;
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+
 /* Searchbar CSS */
 .search {
   top: 0;
@@ -43,6 +65,7 @@
     background: #ffffff !important;
 }
 
+/* err shake for the searchbar */
 .err-animation {
   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
   transform: translate3d(0, 0, 0);
@@ -71,6 +94,7 @@
 .err {
   border: solid 2px #BD2031 !important;
 }
+
 
 
 /* this is stupid that I have to include this */

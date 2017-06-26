@@ -11,5 +11,7 @@ urlpatterns = [
 
     url(r'^login/$', acc_views.login, name="login"),
     url(r'^signup/$', acc_views.signup, name="signup"),
-    url(r'^logout/$', auth_views.logout, {'next_page': '/'}, name="logout")
+    url(r'^logout/$', auth_views.logout, {'next_page': '/'}, name="logout"),
+
+    url(r'^account/', include('accounts.urls'))
 ]

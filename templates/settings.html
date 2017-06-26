@@ -1,0 +1,81 @@
+{% extends "components/base.html" %}
+{% load static %}
+
+{% block title %}
+  {{ user.username }} Settings
+{% endblock %}
+
+{% block extra_styles %}
+  <link href="{% static 'css/settings.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<div class="top">
+  <h1 class="title"> Better <b style="font-weight: 900;">Getter</b> </h1>
+
+  <h5 class="subtitle"> built for Warframe </h5>
+</div>
+
+<div class="container">
+  <center>
+    <h1> Settings for {{ user.username }} </h1>
+    <div class="row">
+
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading"> Set up Warframe Market Account </div>
+          <div class="panel-body">
+            <p>Please enter your email and password for <b>warframe.market</b></p>
+
+            <div class="input-group" style="margin-bottom: 5px;">
+              <span class="input-group-addon">E-Mail:</span>
+              <input type="text" id="email" class="form-control" placeholder="E-Mail Address">
+            </div>
+
+            <div class="input-group" style="margin-bottom: 10px;">
+              <span class="input-group-addon">Password:</span>
+              <input type="password" id="password" class="form-control" placeholder="Password">
+            </div>
+
+            <a href="#" class="btn btn-primary submit">Submit</a>
+
+            <p>NOTE: We will <b>only</b> use your password when you place orders!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading"> Reset your Password </div>
+          <div class="panel-body">
+            <div class="input-group" style="margin-bottom: 10px;">
+              <span class="input-group-addon">Old Password:</span>
+              <input type="password" id="o_password" class="form-control" placeholder="Password">
+            </div>
+
+            <div class="input-group" style="margin-bottom: 10px;">
+              <span class="input-group-addon">New Password:</span>
+              <input type="password" id="password1" class="form-control" placeholder="Password">
+            </div>
+
+            <div class="input-group" style="margin-bottom: 10px;">
+              <span class="input-group-addon">Confirm Password:</span>
+              <input type="password" id="password2" class="form-control" placeholder="Password">
+            </div>
+
+            <a href="#" class="btn btn-primary submit">Submit</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </center>
+</div>
+
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+  $( "ul li" ).eq(4).addClass("mm-selected");
+</script>
+{% endblock %}

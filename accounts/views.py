@@ -47,3 +47,11 @@ def login(request):
     }
 
     return render(request, 'login.html', context)
+
+
+def settings(request):
+    if request.method == "POST":
+        return "Ok, you POSTed"
+        # we will handle the post later
+
+    return render(request, 'settings.html')
