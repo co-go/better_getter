@@ -19,14 +19,21 @@ $(document).ready(function() {
     "setSelected": {
       "hover": true,
     },
-    "navbars": [{
-        height 	: 3,
-  			content : [
-  				'<a href="#/" class="fa fa-phone"></a>',
-  				'<img src="inc/profile-2-w.png" />',
-  				'<a href="#/" class="fa fa-envelope"></a>'
+    navbar: {
+      title: "Better Getter"
+    },
+    {% if user.is_authenticated %}
+    "navbars": [
+      {
+        "position": "top",
+        "height": 3,
+        "content" : [
+  				'<img src="{% static 'img/notFound.png' %}" />',
+  				'<h2><b>{{ user.username }}</b></h2>'
   			]
-  		}, true]
+      }
+    ]
+    {% endif %}
   });
 });
 </script>

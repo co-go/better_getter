@@ -195,3 +195,34 @@
 .mm-menu input.mm-toggle:checked~label.mm-toggle {
     background: #4bd963
 }
+
+.mm-navbar-size-3 {
+	text-align: center;
+	position: relative;
+	border-bottom: none;
+}
+
+.mm-navbar-size-3:before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+	width: 1px;
+}
+.mm-navbar-size-3 > * {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.mm-navbar-size-3 img {
+	opacity: 0.6;
+	width: 110px;
+	height: auto;
+	padding: 10px;
+  margin: -10px 0;
+}
+
+.mm-navbar h2 {
+  margin: 0 0 1px -15px;
+  color: #fff !important;
+}
