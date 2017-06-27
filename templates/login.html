@@ -22,56 +22,57 @@
               <form id="login-form" action="/login/" method="POST" role="form" style="display: block;">
 
                 {% if login_form.errors %}
-                    <div class="alert alert-danger">
-                        <p><strong>Oh snap!</strong> Please enter a correct username and password. Note that both fields are case-sensitive.</p>
-                    </div>
+                  <div class="alert alert-danger">
+                    <p><strong>Oh snap!</strong> Please enter a correct username and password. Note that both fields are case-sensitive.</p>
+                  </div>
                 {% endif %}
 
                 {% csrf_token %}
 
                 <h2>LOG IN</h2>
 
-                  {% for field in login_form %}
-                    <div class="form-group {% if field.errors %}has-error{% endif %}">
-                      {% render_field field class="form-control" placeholder=field.label %}
-                    </div>
-                  {% endfor %}
-
-                  <div class="col-xs-6 form-group pull-left checkbox">
-                    <input id="checkbox1" type="checkbox" name="remember">
-                    <label for="checkbox1">Remember Me</label>
+                {% for field in login_form %}
+                  <div class="form-group {% if field.errors %}has-error{% endif %}">
+                    {% render_field field class="form-control" placeholder=field.label %}
                   </div>
+                {% endfor %}
 
-                  <div class="col-xs-6 form-group pull-right">
-                        <input type="submit" name="login-submit" id="login-submit" class="form-control btn btn-login" value="Log In">
-                  </div>
+                <div class="col-xs-6 form-group pull-left checkbox">
+                  <input id="checkbox1" type="checkbox" name="remember">
+                  <label for="checkbox1">Remember Me</label>
+                </div>
+
+                <div class="col-xs-6 form-group pull-right">
+                  <input type="submit" name="login-submit" id="login-submit" class="form-control btn btn-login" value="Log In">
+                </div>
               </form>
+
 
               <form id="register-form" action="/signup/" method="post" role="form" style="display: none;">
 
                 {% if signup_form.errors %}
-                    <div class="alert alert-danger">
-                        <p><strong>Oh snap!</strong> Your passwords don't seem to match.</p>
-                    </div>
+                  <div class="alert alert-danger">
+                    <p><strong>Oh snap!</strong> Your passwords don't seem to match.</p>
+                  </div>
                 {% endif %}
 
                 {% csrf_token %}
 
                 <h2>REGISTER</h2>
 
-                  {% for field in signup_form %}
-                    <div class="form-group {% if field.errors %}has-error{% endif %}">
-                      {% render_field field class="form-control" placeholder=field.label %}
-                    </div>
-                  {% endfor %}
+                {% for field in signup_form %}
+                  <div class="form-group {% if field.errors %}has-error{% endif %}">
+                    {% render_field field class="form-control" placeholder=field.label %}
+                  </div>
+                {% endfor %}
 
-                  <div class="form-group">
-                    <div class="row">
-                      <div class="col-sm-6 col-sm-offset-3">
-                        <input type="submit" name="register-submit" id="register-submit" class="form-control btn btn-register" value="Register">
-                      </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                      <input type="submit" name="register-submit" id="register-submit" class="form-control btn btn-register" value="Register">
                     </div>
                   </div>
+                </div>
 
               </form>
             </div>

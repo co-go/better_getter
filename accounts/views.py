@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from django.contrib.auth import authenticate, login as auth_login
 from django.contrib.auth.forms import AuthenticationForm
-from forms import CreateUserForm
+from forms import CreateUserForm, MarketForm
 from django.shortcuts import render, redirect
 
 def signup(request):
@@ -51,7 +51,13 @@ def login(request):
 
 def settings(request):
     if request.method == "POST":
-        return "Ok, you POSTed"
-        # we will handle the post later
+        market_form = MarketForm(request.POST)
 
-    return render(request, 'settings.html')
+        if market.is_valid():
+            # lets do another check for validity
+            # must modify and save the user credentials
+            return render(request, 'settings.html', market_form=market_form)
+    else:
+        market_form = MarketForm()
+
+    return render(request, 'settings.html', market_form=market_form, err=False)

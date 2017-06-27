@@ -24,20 +24,29 @@
       <div class="col-md-6">
         <div class="panel panel-default">
           <div class="panel-heading"> Set up Warframe Market Account </div>
+
           <div class="panel-body">
             <p>Please enter your email and password for <b>warframe.market</b></p>
 
-            <div class="input-group" style="margin-bottom: 5px;">
-              <span class="input-group-addon">E-Mail:</span>
-              <input type="text" id="email" class="form-control" placeholder="E-Mail Address">
-            </div>
+            <form id="market-form" action="/settings/" method="POST" role="form" style="display: block;">
+              {% if market_error %}
+                <div class="alert alert-danger">
+                  <p><strong>Oh snap!</strong> Your credentials appear to be invalid! </p>
+                </div>
+              {% endif %}
 
-            <div class="input-group" style="margin-bottom: 10px;">
-              <span class="input-group-addon">Password:</span>
-              <input type="password" id="password" class="form-control" placeholder="Password">
-            </div>
+              {% csrf_token %}
 
-            <a href="#" class="btn btn-primary submit">Submit</a>
+              {% for field in market_form %}
+                <div class="form-group {% if field.errors %}has-error{% endif %}">
+                  {% render_field field class="form-control" placeholder=field.label %}
+                </div>
+              {% endfor %}
+
+              <div class="col-xs-6 form-group pull-right">
+                <input type="submit" name="market-submit" id="market-submit" class="form-control btn btn-login" value="Submit">
+              </div>
+            </form>
 
             <p>NOTE: We will <b>only</b> use your password when you place orders!</p>
           </div>
@@ -53,7 +62,7 @@
               <input type="password" id="o_password" class="form-control" placeholder="Password">
             </div>
 
-            <div class="input-group" style="margin-bottom: 10px;">
+            <div class="input-group" style="margin-bottom: 5px;">
               <span class="input-group-addon">New Password:</span>
               <input type="password" id="password1" class="form-control" placeholder="Password">
             </div>
