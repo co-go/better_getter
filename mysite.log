@@ -7537,3 +7537,906 @@ VariableDoesNotExist: Failed lookup for key [name] in u'eqwert'
             WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
             ORDER BY name; args=None
 [27/Jun/2017 21:55:48] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[27/Jun/2017 22:01:07] INFO [django.server:124] "GET /admin HTTP/1.1" 301 0
+[27/Jun/2017 22:01:07] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'i1bou1iip8l8537p3phs4yy948ptukp3' AND "django_session"."expire_date" > '2017-06-27 22:01:07.307727'); args=('i1bou1iip8l8537p3phs4yy948ptukp3', u'2017-06-27 22:01:07.307727')
+[27/Jun/2017 22:01:07] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[27/Jun/2017 22:01:07] INFO [django.server:124] "GET /admin/ HTTP/1.1" 302 0
+[27/Jun/2017 22:01:07] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'i1bou1iip8l8537p3phs4yy948ptukp3' AND "django_session"."expire_date" > '2017-06-27 22:01:07.332279'); args=('i1bou1iip8l8537p3phs4yy948ptukp3', u'2017-06-27 22:01:07.332279')
+[27/Jun/2017 22:01:07] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[27/Jun/2017 22:01:07] DEBUG [django.db.backends:91] (0.000) SELECT "django_content_type"."app_label", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "accounts_user_user_permissions" ON ("auth_permission"."id" = "accounts_user_user_permissions"."permission_id") INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "accounts_user_user_permissions"."user_id" = 1; args=(1,)
+[27/Jun/2017 22:01:07] DEBUG [django.db.backends:91] (0.000) SELECT "django_content_type"."app_label", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "auth_group_permissions" ON ("auth_permission"."id" = "auth_group_permissions"."permission_id") INNER JOIN "auth_group" ON ("auth_group_permissions"."group_id" = "auth_group"."id") INNER JOIN "accounts_user_groups" ON ("auth_group"."id" = "accounts_user_groups"."group_id") INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "accounts_user_groups"."user_id" = 1; args=(1,)
+[27/Jun/2017 22:01:07] DEBUG [django.template:925] Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_popup] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x7f5a1a461d70>>, 'user': <SimpleLazyObject: <User: eqwert>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f5a1a412290>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f5a1a4aa0d0>, u'request': <WSGIRequest: GET '/admin/login/?next=/admin/'>}, {}, {'username': u'eqwert', 'app_path': u'/admin/login/?next=/admin/', 'available_apps': [], 'site_name': '127.0.0.1:8000', 'form': <AdminAuthenticationForm bound=False, valid=Unknown, fields=(username;password)>, 'title': u'Log in', 'site_header': u'Django administration', 'site': <django.contrib.sites.requests.RequestSite object at 0x7f5a1a4aad90>, 'next': u'/admin/', 'site_title': u'Django site admin', u'LANGUAGE_CODE': 'en-us', 'has_permission': False, 'site_url': '/', u'LANGUAGE_BIDI': False, u'view': <django.contrib.auth.views.LoginView object at 0x7f5a1a4aab90>}]"
+[27/Jun/2017 22:01:07] DEBUG [django.template:925] Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_popup] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x7f5a1a461d70>>, 'user': <SimpleLazyObject: <User: eqwert>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f5a1a412290>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f5a1a4aa0d0>, u'request': <WSGIRequest: GET '/admin/login/?next=/admin/'>}, {}, {'username': u'eqwert', 'app_path': u'/admin/login/?next=/admin/', 'available_apps': [], 'site_name': '127.0.0.1:8000', 'form': <AdminAuthenticationForm bound=False, valid=Unknown, fields=(username;password)>, 'title': u'Log in', 'site_header': u'Django administration', 'site': <django.contrib.sites.requests.RequestSite object at 0x7f5a1a4aad90>, 'next': u'/admin/', 'site_title': u'Django site admin', u'LANGUAGE_CODE': 'en-us', 'has_permission': False, 'site_url': '/', u'LANGUAGE_BIDI': False, u'view': <django.contrib.auth.views.LoginView object at 0x7f5a1a4aab90>}]"
+[27/Jun/2017 22:01:07] INFO [django.server:124] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1803
+[27/Jun/2017 22:01:07] INFO [django.server:124] "GET /static/admin/css/base.css HTTP/1.1" 200 16066
+[27/Jun/2017 22:01:07] INFO [django.server:124] "GET /static/admin/css/login.css HTTP/1.1" 200 1203
+[27/Jun/2017 22:01:07] INFO [django.server:124] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[27/Jun/2017 22:01:07] INFO [django.server:124] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+[27/Jun/2017 22:01:07] INFO [django.server:124] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+[27/Jun/2017 22:01:07] INFO [django.server:124] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+[27/Jun/2017 22:01:08] DEBUG [django.template:925] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[27/Jun/2017 22:01:08] DEBUG [django.template:925] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'get_item.urls' from '/home/forgeguest/Documents/better_getter/get_item/urls.pyc'> (None:None) ^get_item/>"
+[27/Jun/2017 22:01:08] DEBUG [django.template:925] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'accounts.urls' from '/home/forgeguest/Documents/better_getter/accounts/urls.pyc'> (None:None) ^account/>"
+[27/Jun/2017 22:01:08] WARNING [django.request:152] Not Found: /favicon.ico
+[27/Jun/2017 22:01:08] WARNING [django.server:124] "GET /favicon.ico HTTP/1.1" 404 2660
+[27/Jun/2017 22:01:09] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'i1bou1iip8l8537p3phs4yy948ptukp3' AND "django_session"."expire_date" > '2017-06-27 22:01:09.426444'); args=('i1bou1iip8l8537p3phs4yy948ptukp3', u'2017-06-27 22:01:09.426444')
+[27/Jun/2017 22:01:09] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[27/Jun/2017 22:01:09] DEBUG [django.db.backends:91] (0.000) SELECT "django_content_type"."app_label", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "accounts_user_user_permissions" ON ("auth_permission"."id" = "accounts_user_user_permissions"."permission_id") INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "accounts_user_user_permissions"."user_id" = 1; args=(1,)
+[27/Jun/2017 22:01:09] DEBUG [django.db.backends:91] (0.000) SELECT "django_content_type"."app_label", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "auth_group_permissions" ON ("auth_permission"."id" = "auth_group_permissions"."permission_id") INNER JOIN "auth_group" ON ("auth_group_permissions"."group_id" = "auth_group"."id") INNER JOIN "accounts_user_groups" ON ("auth_group"."id" = "accounts_user_groups"."group_id") INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "accounts_user_groups"."user_id" = 1; args=(1,)
+[27/Jun/2017 22:01:09] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" WHERE "accounts_user"."username" = 'eqwert'; args=(u'eqwert',)
+[27/Jun/2017 22:01:09] DEBUG [django.template:925] Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_popup] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x7f5a1a33c398>>, 'user': <SimpleLazyObject: <User: eqwert>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f5a1a3a9910>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f5a1a331990>, u'request': <WSGIRequest: POST '/admin/login/?next=/admin/'>}, {}, {'username': u'eqwert', 'app_path': u'/admin/login/?next=/admin/', 'available_apps': [], 'site_name': '127.0.0.1:8000', 'form': <AdminAuthenticationForm bound=True, valid=False, fields=(username;password)>, 'title': u'Log in', 'site_header': u'Django administration', 'site': <django.contrib.sites.requests.RequestSite object at 0x7f5a217a4310>, 'next': u'/admin/', 'site_title': u'Django site admin', u'LANGUAGE_CODE': 'en-us', 'has_permission': False, 'site_url': '/', u'LANGUAGE_BIDI': False, u'view': <django.contrib.auth.views.LoginView object at 0x7f5a1a370810>}]"
+[27/Jun/2017 22:01:09] DEBUG [django.template:925] Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_popup] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x7f5a1a33c398>>, 'user': <SimpleLazyObject: <User: eqwert>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f5a1a3a9910>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f5a1a331990>, u'request': <WSGIRequest: POST '/admin/login/?next=/admin/'>}, {}, {'username': u'eqwert', 'app_path': u'/admin/login/?next=/admin/', 'available_apps': [], 'site_name': '127.0.0.1:8000', 'form': <AdminAuthenticationForm bound=True, valid=False, fields=(username;password)>, 'title': u'Log in', 'site_header': u'Django administration', 'site': <django.contrib.sites.requests.RequestSite object at 0x7f5a217a4310>, 'next': u'/admin/', 'site_title': u'Django site admin', u'LANGUAGE_CODE': 'en-us', 'has_permission': False, 'site_url': '/', u'LANGUAGE_BIDI': False, u'view': <django.contrib.auth.views.LoginView object at 0x7f5a1a370810>}]"
+[27/Jun/2017 22:01:09] INFO [django.server:124] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 1965
+[27/Jun/2017 22:01:38] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[27/Jun/2017 22:01:38] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[27/Jun/2017 22:01:41] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" WHERE "accounts_user"."username" = 'jwcorle'; args=('jwcorle',)
+[27/Jun/2017 22:01:48] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:01:48] DEBUG [django.db.backends:91] (0.000) INSERT INTO "accounts_user" ("password", "last_login", "is_superuser", "username", "is_staff", "is_active", "date_joined", "activated") VALUES ('pbkdf2_sha256$36000$zsn2royKD6Il$eQB4ZNa47x5I25Qvna3G5gB8oBUPkpvfaw/342AMpP4=', NULL, 1, 'jwcorle', 1, 1, '2017-06-27 22:01:48.518686', 0); args=[u'pbkdf2_sha256$36000$zsn2royKD6Il$eQB4ZNa47x5I25Qvna3G5gB8oBUPkpvfaw/342AMpP4=', None, True, 'jwcorle', True, True, u'2017-06-27 22:01:48.518686', False]
+[27/Jun/2017 22:01:52] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'i1bou1iip8l8537p3phs4yy948ptukp3' AND "django_session"."expire_date" > '2017-06-27 22:01:52.418834'); args=('i1bou1iip8l8537p3phs4yy948ptukp3', u'2017-06-27 22:01:52.418834')
+[27/Jun/2017 22:01:52] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[27/Jun/2017 22:01:52] DEBUG [django.db.backends:91] (0.000) SELECT "django_content_type"."app_label", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "accounts_user_user_permissions" ON ("auth_permission"."id" = "accounts_user_user_permissions"."permission_id") INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "accounts_user_user_permissions"."user_id" = 1; args=(1,)
+[27/Jun/2017 22:01:52] DEBUG [django.db.backends:91] (0.000) SELECT "django_content_type"."app_label", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "auth_group_permissions" ON ("auth_permission"."id" = "auth_group_permissions"."permission_id") INNER JOIN "auth_group" ON ("auth_group_permissions"."group_id" = "auth_group"."id") INNER JOIN "accounts_user_groups" ON ("auth_group"."id" = "accounts_user_groups"."group_id") INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "accounts_user_groups"."user_id" = 1; args=(1,)
+[27/Jun/2017 22:01:52] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" WHERE "accounts_user"."username" = 'jwcorle'; args=(u'jwcorle',)
+[27/Jun/2017 22:01:52] DEBUG [django.db.backends:91] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = 'i1bou1iip8l8537p3phs4yy948ptukp3'; args=('i1bou1iip8l8537p3phs4yy948ptukp3',)
+[27/Jun/2017 22:01:52] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:01:52] DEBUG [django.db.backends:91] (0.000) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('i1bou1iip8l8537p3phs4yy948ptukp3'); args=(u'i1bou1iip8l8537p3phs4yy948ptukp3',)
+[27/Jun/2017 22:01:52] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:01:52] DEBUG [django.db.backends:91] (0.000) UPDATE "accounts_user" SET "last_login" = '2017-06-27 22:01:52.560905' WHERE "accounts_user"."id" = 2; args=(u'2017-06-27 22:01:52.560905', 2)
+[27/Jun/2017 22:01:52] DEBUG [django.db.backends:91] (0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = 'qgh5p06tmhnz052nho8t8mf3zeec8sk8' LIMIT 1; args=(u'qgh5p06tmhnz052nho8t8mf3zeec8sk8',)
+[27/Jun/2017 22:01:52] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:01:52] DEBUG [django.db.backends:91] (0.000) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT 'qgh5p06tmhnz052nho8t8mf3zeec8sk8', 'Yzg1Zjk1MjUxZTRkNjVlYTY3ZmI1NTFkZjRjNTNlYmIyOTJkMmUyNjp7Il9hdXRoX3VzZXJfaGFzaCI6ImRjOTVlYmFhZTczYzMwMzkzMGExOWExMTNjNTkxNGE1MjRjZGIwN2UiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIyIn0=', '2017-07-11 22:01:52.629157'; args=(u'qgh5p06tmhnz052nho8t8mf3zeec8sk8', u'Yzg1Zjk1MjUxZTRkNjVlYTY3ZmI1NTFkZjRjNTNlYmIyOTJkMmUyNjp7Il9hdXRoX3VzZXJfaGFzaCI6ImRjOTVlYmFhZTczYzMwMzkzMGExOWExMTNjNTkxNGE1MjRjZGIwN2UiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIyIn0=', u'2017-07-11 22:01:52.629157')
+[27/Jun/2017 22:01:52] INFO [django.server:124] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[27/Jun/2017 22:01:52] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'qgh5p06tmhnz052nho8t8mf3zeec8sk8' AND "django_session"."expire_date" > '2017-06-27 22:01:52.712244'); args=('qgh5p06tmhnz052nho8t8mf3zeec8sk8', u'2017-06-27 22:01:52.712244')
+[27/Jun/2017 22:01:52] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[27/Jun/2017 22:01:52] DEBUG [django.template:925] Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_popup] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x7f5a1a37eed8>>, 'user': <SimpleLazyObject: <User: jwcorle>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f5a1a3689d0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f5a1a388c10>, u'request': <WSGIRequest: GET '/admin/'>}, {}, {'site_header': u'Django administration', 'available_apps': [{'app_url': u'/admin/accounts/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/accounts/user/', 'object_name': 'User', 'name': u'Users', 'add_url': u'/admin/accounts/user/add/'}], 'has_module_perms': True, 'name': 'Accounts', 'app_label': 'accounts'}, {'app_url': u'/admin/auth/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/group/', 'object_name': 'Group', 'name': u'Groups', 'add_url': u'/admin/auth/group/add/'}], 'has_module_perms': True, 'name': u'Authentication and Authorization', 'app_label': 'auth'}], 'site_title': u'Django site admin', 'title': u'Site administration', 'has_permission': True, 'app_list': [{'app_url': u'/admin/accounts/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/accounts/user/', 'object_name': 'User', 'name': u'Users', 'add_url': u'/admin/accounts/user/add/'}], 'has_module_perms': True, 'name': 'Accounts', 'app_label': 'accounts'}, {'app_url': u'/admin/auth/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/group/', 'object_name': 'Group', 'name': u'Groups', 'add_url': u'/admin/auth/group/add/'}], 'has_module_perms': True, 'name': u'Authentication and Authorization', 'app_label': 'auth'}], u'LANGUAGE_CODE': 'en-us', u'LANGUAGE_BIDI': False, 'site_url': '/'}]"
+[27/Jun/2017 22:01:52] DEBUG [django.template:925] Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_popup] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x7f5a1a37eed8>>, 'user': <SimpleLazyObject: <User: jwcorle>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f5a1a3689d0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f5a1a388c10>, u'request': <WSGIRequest: GET '/admin/'>}, {}, {'site_header': u'Django administration', 'available_apps': [{'app_url': u'/admin/accounts/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/accounts/user/', 'object_name': 'User', 'name': u'Users', 'add_url': u'/admin/accounts/user/add/'}], 'has_module_perms': True, 'name': 'Accounts', 'app_label': 'accounts'}, {'app_url': u'/admin/auth/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/group/', 'object_name': 'Group', 'name': u'Groups', 'add_url': u'/admin/auth/group/add/'}], 'has_module_perms': True, 'name': u'Authentication and Authorization', 'app_label': 'auth'}], 'site_title': u'Django site admin', 'title': u'Site administration', 'has_permission': True, 'app_list': [{'app_url': u'/admin/accounts/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/accounts/user/', 'object_name': 'User', 'name': u'Users', 'add_url': u'/admin/accounts/user/add/'}], 'has_module_perms': True, 'name': 'Accounts', 'app_label': 'accounts'}, {'app_url': u'/admin/auth/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/group/', 'object_name': 'Group', 'name': u'Groups', 'add_url': u'/admin/auth/group/add/'}], 'has_module_perms': True, 'name': u'Authentication and Authorization', 'app_label': 'auth'}], u'LANGUAGE_CODE': 'en-us', u'LANGUAGE_BIDI': False, 'site_url': '/'}]"
+[27/Jun/2017 22:01:52] DEBUG [django.db.backends:91] (0.000) SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_admin_log" INNER JOIN "accounts_user" ON ("django_admin_log"."user_id" = "accounts_user"."id") LEFT OUTER JOIN "django_content_type" ON ("django_admin_log"."content_type_id" = "django_content_type"."id") WHERE "django_admin_log"."user_id" = 2 ORDER BY "django_admin_log"."action_time" DESC LIMIT 10; args=(2,)
+[27/Jun/2017 22:01:52] INFO [django.server:124] "GET /admin/ HTTP/1.1" 200 3045
+[27/Jun/2017 22:01:52] INFO [django.server:124] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+[27/Jun/2017 22:01:53] INFO [django.server:124] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[27/Jun/2017 22:01:53] INFO [django.server:124] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[27/Jun/2017 22:01:56] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'qgh5p06tmhnz052nho8t8mf3zeec8sk8' AND "django_session"."expire_date" > '2017-06-27 22:01:56.690884'); args=('qgh5p06tmhnz052nho8t8mf3zeec8sk8', u'2017-06-27 22:01:56.690884')
+[27/Jun/2017 22:01:56] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[27/Jun/2017 22:01:56] DEBUG [django.db.backends:91] (0.000) SELECT COUNT(*) AS "__count" FROM "accounts_user"; args=()
+[27/Jun/2017 22:01:56] DEBUG [django.db.backends:91] (0.000) SELECT COUNT(*) AS "__count" FROM "accounts_user"; args=()
+[27/Jun/2017 22:01:56] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" ORDER BY "accounts_user"."username" ASC, "accounts_user"."id" DESC; args=()
+[27/Jun/2017 22:01:56] DEBUG [django.template:925] Exception while resolving variable 'errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [errors] in u'None'
+[27/Jun/2017 22:01:56] DEBUG [django.template:925] Exception while resolving variable 'show' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [show] in u"[{'False': False, 'None': None, 'True': True, 'csrf_token': <SimpleLazyObject: <function _get_val at 0x7f5a1a37eed8>>}]"
+[27/Jun/2017 22:01:56] DEBUG [django.template:925] Exception while resolving variable 'is_multipart' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_multipart] in u'None'
+[27/Jun/2017 22:01:56] DEBUG [django.template:925] Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [non_field_errors] in u'None'
+[27/Jun/2017 22:01:56] DEBUG [django.template:925] Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [non_field_errors] in u'None'
+[27/Jun/2017 22:01:56] INFO [django.server:124] "GET /admin/accounts/user/ HTTP/1.1" 200 5329
+[27/Jun/2017 22:01:56] INFO [django.server:124] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6170
+[27/Jun/2017 22:01:56] INFO [django.server:124] "GET /static/admin/js/core.js HTTP/1.1" 200 7976
+[27/Jun/2017 22:01:56] DEBUG [django.db.backends:91] (0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'qgh5p06tmhnz052nho8t8mf3zeec8sk8' AND "django_session"."expire_date" > '2017-06-27 22:01:56.833297'); args=('qgh5p06tmhnz052nho8t8mf3zeec8sk8', u'2017-06-27 22:01:56.833297')
+[27/Jun/2017 22:01:56] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[27/Jun/2017 22:01:56] INFO [django.server:124] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[27/Jun/2017 22:01:56] INFO [django.server:124] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 258648
+[27/Jun/2017 22:01:56] INFO [django.server:124] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6591
+[27/Jun/2017 22:01:56] INFO [django.server:124] "GET /static/admin/js/actions.js HTTP/1.1" 200 6501
+[27/Jun/2017 22:01:56] INFO [django.server:124] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[27/Jun/2017 22:01:56] INFO [django.server:124] "GET /static/admin/js/urlify.js HTTP/1.1" 200 8186
+[27/Jun/2017 22:01:56] INFO [django.server:124] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1538
+[27/Jun/2017 22:01:56] INFO [django.server:124] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+[27/Jun/2017 22:01:56] INFO [django.server:124] "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+[27/Jun/2017 22:01:56] INFO [django.server:124] "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+[27/Jun/2017 22:01:56] INFO [django.server:124] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[27/Jun/2017 22:01:57] INFO [django.server:124] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[27/Jun/2017 22:01:57] INFO [django.server:124] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+[27/Jun/2017 22:02:01] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'qgh5p06tmhnz052nho8t8mf3zeec8sk8' AND "django_session"."expire_date" > '2017-06-27 22:02:01.162203'); args=('qgh5p06tmhnz052nho8t8mf3zeec8sk8', u'2017-06-27 22:02:01.162203')
+[27/Jun/2017 22:02:01] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[27/Jun/2017 22:02:01] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:02:01] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[27/Jun/2017 22:02:01] DEBUG [django.db.backends:91] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'user' AND "django_content_type"."app_label" = 'accounts'); args=('user', 'accounts')
+[27/Jun/2017 22:02:01] INFO [django.server:124] "GET /admin/accounts/user/1/change/ HTTP/1.1" 200 6189
+[27/Jun/2017 22:02:01] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'qgh5p06tmhnz052nho8t8mf3zeec8sk8' AND "django_session"."expire_date" > '2017-06-27 22:02:01.260394'); args=('qgh5p06tmhnz052nho8t8mf3zeec8sk8', u'2017-06-27 22:02:01.260394')
+[27/Jun/2017 22:02:01] DEBUG [django.db.backends:91] (0.001) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[27/Jun/2017 22:02:01] INFO [django.server:124] "GET /static/admin/css/forms.css HTTP/1.1" 200 8173
+[27/Jun/2017 22:02:01] INFO [django.server:124] "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+[27/Jun/2017 22:02:01] INFO [django.server:124] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+[27/Jun/2017 22:02:01] INFO [django.server:124] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[27/Jun/2017 22:02:01] INFO [django.server:124] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+[27/Jun/2017 22:02:10] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'qgh5p06tmhnz052nho8t8mf3zeec8sk8' AND "django_session"."expire_date" > '2017-06-27 22:02:10.777278'); args=('qgh5p06tmhnz052nho8t8mf3zeec8sk8', u'2017-06-27 22:02:10.777278')
+[27/Jun/2017 22:02:10] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[27/Jun/2017 22:02:10] DEBUG [django.db.backends:91] (0.000) SELECT COUNT(*) AS "__count" FROM "accounts_user"; args=()
+[27/Jun/2017 22:02:10] DEBUG [django.db.backends:91] (0.000) SELECT COUNT(*) AS "__count" FROM "accounts_user"; args=()
+[27/Jun/2017 22:02:10] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" ORDER BY "accounts_user"."username" ASC, "accounts_user"."id" DESC; args=()
+[27/Jun/2017 22:02:10] DEBUG [django.template:925] Exception while resolving variable 'errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [errors] in u'None'
+[27/Jun/2017 22:02:10] DEBUG [django.template:925] Exception while resolving variable 'show' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [show] in u"[{'False': False, 'None': None, 'True': True, 'csrf_token': <SimpleLazyObject: <function _get_val at 0x7f5a1b43d230>>}]"
+[27/Jun/2017 22:02:10] DEBUG [django.template:925] Exception while resolving variable 'is_multipart' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_multipart] in u'None'
+[27/Jun/2017 22:02:10] DEBUG [django.template:925] Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [non_field_errors] in u'None'
+[27/Jun/2017 22:02:10] DEBUG [django.template:925] Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [non_field_errors] in u'None'
+[27/Jun/2017 22:02:10] INFO [django.server:124] "GET /admin/accounts/user/ HTTP/1.1" 200 5329
+[27/Jun/2017 22:02:10] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'qgh5p06tmhnz052nho8t8mf3zeec8sk8' AND "django_session"."expire_date" > '2017-06-27 22:02:10.882108'); args=('qgh5p06tmhnz052nho8t8mf3zeec8sk8', u'2017-06-27 22:02:10.882108')
+[27/Jun/2017 22:02:10] DEBUG [django.db.backends:91] (0.001) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[27/Jun/2017 22:02:10] INFO [django.server:124] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[27/Jun/2017 22:02:15] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'qgh5p06tmhnz052nho8t8mf3zeec8sk8' AND "django_session"."expire_date" > '2017-06-27 22:02:15.346906'); args=('qgh5p06tmhnz052nho8t8mf3zeec8sk8', u'2017-06-27 22:02:15.346906')
+[27/Jun/2017 22:02:15] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[27/Jun/2017 22:02:15] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:02:15] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[27/Jun/2017 22:02:15] INFO [django.server:124] "GET /admin/accounts/user/1/change/ HTTP/1.1" 200 6189
+[27/Jun/2017 22:02:15] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'qgh5p06tmhnz052nho8t8mf3zeec8sk8' AND "django_session"."expire_date" > '2017-06-27 22:02:15.436891'); args=('qgh5p06tmhnz052nho8t8mf3zeec8sk8', u'2017-06-27 22:02:15.436891')
+[27/Jun/2017 22:02:15] DEBUG [django.db.backends:91] (0.001) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[27/Jun/2017 22:02:15] INFO [django.server:124] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[27/Jun/2017 22:02:23] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'qgh5p06tmhnz052nho8t8mf3zeec8sk8' AND "django_session"."expire_date" > '2017-06-27 22:02:23.159316'); args=('qgh5p06tmhnz052nho8t8mf3zeec8sk8', u'2017-06-27 22:02:23.159316')
+[27/Jun/2017 22:02:23] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[27/Jun/2017 22:02:23] DEBUG [django.db.backends:91] (0.000) SELECT COUNT(*) AS "__count" FROM "accounts_user"; args=()
+[27/Jun/2017 22:02:23] DEBUG [django.db.backends:91] (0.000) SELECT COUNT(*) AS "__count" FROM "accounts_user"; args=()
+[27/Jun/2017 22:02:23] DEBUG [django.db.backends:91] (0.001) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" ORDER BY "accounts_user"."username" ASC, "accounts_user"."id" DESC; args=()
+[27/Jun/2017 22:02:23] DEBUG [django.template:925] Exception while resolving variable 'errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [errors] in u'None'
+[27/Jun/2017 22:02:23] DEBUG [django.template:925] Exception while resolving variable 'show' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [show] in u"[{'False': False, 'None': None, 'True': True, 'csrf_token': <SimpleLazyObject: <function _get_val at 0x7f5a20ad1320>>}]"
+[27/Jun/2017 22:02:23] DEBUG [django.template:925] Exception while resolving variable 'is_multipart' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_multipart] in u'None'
+[27/Jun/2017 22:02:23] DEBUG [django.template:925] Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [non_field_errors] in u'None'
+[27/Jun/2017 22:02:23] DEBUG [django.template:925] Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [non_field_errors] in u'None'
+[27/Jun/2017 22:02:23] INFO [django.server:124] "GET /admin/accounts/user/ HTTP/1.1" 200 5329
+[27/Jun/2017 22:02:23] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'qgh5p06tmhnz052nho8t8mf3zeec8sk8' AND "django_session"."expire_date" > '2017-06-27 22:02:23.239248'); args=('qgh5p06tmhnz052nho8t8mf3zeec8sk8', u'2017-06-27 22:02:23.239248')
+[27/Jun/2017 22:02:23] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[27/Jun/2017 22:02:23] INFO [django.server:124] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[27/Jun/2017 22:03:30] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[27/Jun/2017 22:03:30] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[27/Jun/2017 22:03:34] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'qgh5p06tmhnz052nho8t8mf3zeec8sk8' AND "django_session"."expire_date" > '2017-06-27 22:03:34.496236'); args=('qgh5p06tmhnz052nho8t8mf3zeec8sk8', u'2017-06-27 22:03:34.496236')
+[27/Jun/2017 22:03:34] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[27/Jun/2017 22:03:34] DEBUG [django.db.backends:91] (0.000) SELECT COUNT(*) AS "__count" FROM "accounts_user"; args=()
+[27/Jun/2017 22:03:34] DEBUG [django.db.backends:91] (0.000) SELECT COUNT(*) AS "__count" FROM "accounts_user"; args=()
+[27/Jun/2017 22:03:34] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" ORDER BY "accounts_user"."username" ASC, "accounts_user"."id" DESC; args=()
+[27/Jun/2017 22:03:34] DEBUG [django.template:925] Exception while resolving variable 'errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [errors] in u'None'
+[27/Jun/2017 22:03:34] DEBUG [django.template:925] Exception while resolving variable 'show' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [show] in u"[{'False': False, 'None': None, 'True': True, 'csrf_token': <SimpleLazyObject: <function _get_val at 0x7f37583c15f0>>}]"
+[27/Jun/2017 22:03:34] DEBUG [django.template:925] Exception while resolving variable 'is_multipart' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_multipart] in u'None'
+[27/Jun/2017 22:03:34] DEBUG [django.template:925] Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [non_field_errors] in u'None'
+[27/Jun/2017 22:03:34] DEBUG [django.template:925] Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [non_field_errors] in u'None'
+[27/Jun/2017 22:03:34] INFO [django.server:124] "GET /admin/accounts/user/ HTTP/1.1" 200 5329
+[27/Jun/2017 22:03:34] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'qgh5p06tmhnz052nho8t8mf3zeec8sk8' AND "django_session"."expire_date" > '2017-06-27 22:03:34.605677'); args=('qgh5p06tmhnz052nho8t8mf3zeec8sk8', u'2017-06-27 22:03:34.605677')
+[27/Jun/2017 22:03:34] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[27/Jun/2017 22:03:34] INFO [django.server:124] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[27/Jun/2017 22:03:37] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'qgh5p06tmhnz052nho8t8mf3zeec8sk8' AND "django_session"."expire_date" > '2017-06-27 22:03:37.201966'); args=('qgh5p06tmhnz052nho8t8mf3zeec8sk8', u'2017-06-27 22:03:37.201966')
+[27/Jun/2017 22:03:37] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[27/Jun/2017 22:03:37] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:03:37] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[27/Jun/2017 22:03:37] DEBUG [django.db.backends:91] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'user' AND "django_content_type"."app_label" = 'accounts'); args=('user', 'accounts')
+[27/Jun/2017 22:03:37] INFO [django.server:124] "GET /admin/accounts/user/1/change/ HTTP/1.1" 200 6596
+[27/Jun/2017 22:03:37] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'qgh5p06tmhnz052nho8t8mf3zeec8sk8' AND "django_session"."expire_date" > '2017-06-27 22:03:37.290538'); args=('qgh5p06tmhnz052nho8t8mf3zeec8sk8', u'2017-06-27 22:03:37.290538')
+[27/Jun/2017 22:03:37] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[27/Jun/2017 22:03:37] INFO [django.server:124] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[27/Jun/2017 22:05:26] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[27/Jun/2017 22:05:26] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[27/Jun/2017 22:05:55] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[27/Jun/2017 22:05:55] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[27/Jun/2017 22:06:33] DEBUG [django.db.backends:91] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[27/Jun/2017 22:06:33] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys; args=None
+[27/Jun/2017 22:06:33] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys = 0; args=None
+[27/Jun/2017 22:06:33] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:06:33] DEBUG [django.db.backends.schema:111] CREATE TABLE "django_migrations" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app" varchar(255) NOT NULL, "name" varchar(255) NOT NULL, "applied" datetime NOT NULL); (params None)
+[27/Jun/2017 22:06:33] DEBUG [django.db.backends:91] (0.000) CREATE TABLE "django_migrations" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app" varchar(255) NOT NULL, "name" varchar(255) NOT NULL, "applied" datetime NOT NULL); args=None
+[27/Jun/2017 22:06:33] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys = 0; args=None
+[27/Jun/2017 22:06:33] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[27/Jun/2017 22:06:46] DEBUG [django.db.backends:91] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[27/Jun/2017 22:06:46] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[27/Jun/2017 22:06:46] DEBUG [django.db.backends:91] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[27/Jun/2017 22:06:46] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[27/Jun/2017 22:06:46] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys; args=None
+[27/Jun/2017 22:06:46] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys = 0; args=None
+[27/Jun/2017 22:06:46] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:06:46] DEBUG [django.db.backends.schema:111] CREATE TABLE "django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(100) NOT NULL, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); (params None)
+[27/Jun/2017 22:06:46] DEBUG [django.db.backends:91] (0.000) CREATE TABLE "django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(100) NOT NULL, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); args=None
+[27/Jun/2017 22:06:46] DEBUG [django.db.backends.schema:111] CREATE UNIQUE INDEX "django_content_type_app_label_model_76bd3d3b_uniq" ON "django_content_type" ("app_label", "model"); (params ())
+[27/Jun/2017 22:06:46] DEBUG [django.db.backends:91] (0.000) CREATE UNIQUE INDEX "django_content_type_app_label_model_76bd3d3b_uniq" ON "django_content_type" ("app_label", "model"); args=()
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys = 0; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('contenttypes', '0001_initial', '2017-06-27 22:06:47.028813'); args=['contenttypes', u'0001_initial', u'2017-06-27 22:06:47.028813']
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys = 0; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends.schema:111] ALTER TABLE "django_content_type" RENAME TO "django_content_type__old"; (params ())
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.001) ALTER TABLE "django_content_type" RENAME TO "django_content_type__old"; args=()
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends.schema:111] CREATE TABLE "django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL, "name" varchar(100) NULL); (params None)
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) CREATE TABLE "django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL, "name" varchar(100) NULL); args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends.schema:111] INSERT INTO "django_content_type" ("model", "app_label", "id", "name") SELECT "model", "app_label", "id", "name" FROM "django_content_type__old"; (params ())
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) INSERT INTO "django_content_type" ("model", "app_label", "id", "name") SELECT "model", "app_label", "id", "name" FROM "django_content_type__old"; args=()
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends.schema:111] DROP TABLE "django_content_type__old"; (params ())
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) DROP TABLE "django_content_type__old"; args=()
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends.schema:111] CREATE UNIQUE INDEX "django_content_type_app_label_model_76bd3d3b_uniq" ON "django_content_type" ("app_label", "model"); (params ())
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) CREATE UNIQUE INDEX "django_content_type_app_label_model_76bd3d3b_uniq" ON "django_content_type" ("app_label", "model"); args=()
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends.schema:111] ALTER TABLE "django_content_type" RENAME TO "django_content_type__old"; (params ())
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.001) ALTER TABLE "django_content_type" RENAME TO "django_content_type__old"; args=()
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends.schema:111] CREATE TABLE "django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); (params None)
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) CREATE TABLE "django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends.schema:111] INSERT INTO "django_content_type" ("model", "app_label", "id") SELECT "model", "app_label", "id" FROM "django_content_type__old"; (params ())
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) INSERT INTO "django_content_type" ("model", "app_label", "id") SELECT "model", "app_label", "id" FROM "django_content_type__old"; args=()
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends.schema:111] DROP TABLE "django_content_type__old"; (params ())
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) DROP TABLE "django_content_type__old"; args=()
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends.schema:111] CREATE UNIQUE INDEX "django_content_type_app_label_model_76bd3d3b_uniq" ON "django_content_type" ("app_label", "model"); (params ())
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) CREATE UNIQUE INDEX "django_content_type_app_label_model_76bd3d3b_uniq" ON "django_content_type" ("app_label", "model"); args=()
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys = 0; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('contenttypes', '0002_remove_content_type_name', '2017-06-27 22:06:47.205835'); args=['contenttypes', u'0002_remove_content_type_name', u'2017-06-27 22:06:47.205835']
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys = 0; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends.schema:111] CREATE TABLE "auth_permission" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "content_type_id" integer NOT NULL REFERENCES "django_content_type" ("id"), "codename" varchar(100) NOT NULL); (params None)
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) CREATE TABLE "auth_permission" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "content_type_id" integer NOT NULL REFERENCES "django_content_type" ("id"), "codename" varchar(100) NOT NULL); args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends.schema:111] CREATE TABLE "auth_group" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(80) NOT NULL UNIQUE); (params None)
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) CREATE TABLE "auth_group" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(80) NOT NULL UNIQUE); args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends.schema:111] CREATE TABLE "auth_group_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "group_id" integer NOT NULL REFERENCES "auth_group" ("id"), "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id")); (params None)
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) CREATE TABLE "auth_group_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "group_id" integer NOT NULL REFERENCES "auth_group" ("id"), "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id")); args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends.schema:111] CREATE UNIQUE INDEX "auth_permission_content_type_id_codename_01ab375a_uniq" ON "auth_permission" ("content_type_id", "codename"); (params ())
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) CREATE UNIQUE INDEX "auth_permission_content_type_id_codename_01ab375a_uniq" ON "auth_permission" ("content_type_id", "codename"); args=()
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends.schema:111] CREATE INDEX "auth_permission_content_type_id_2f476e4b" ON "auth_permission" ("content_type_id"); (params ())
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) CREATE INDEX "auth_permission_content_type_id_2f476e4b" ON "auth_permission" ("content_type_id"); args=()
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends.schema:111] CREATE UNIQUE INDEX "auth_group_permissions_group_id_permission_id_0cd325b0_uniq" ON "auth_group_permissions" ("group_id", "permission_id"); (params ())
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) CREATE UNIQUE INDEX "auth_group_permissions_group_id_permission_id_0cd325b0_uniq" ON "auth_group_permissions" ("group_id", "permission_id"); args=()
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends.schema:111] CREATE INDEX "auth_group_permissions_group_id_b120cbf9" ON "auth_group_permissions" ("group_id"); (params ())
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) CREATE INDEX "auth_group_permissions_group_id_b120cbf9" ON "auth_group_permissions" ("group_id"); args=()
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends.schema:111] CREATE INDEX "auth_group_permissions_permission_id_84c5c92e" ON "auth_group_permissions" ("permission_id"); (params ())
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) CREATE INDEX "auth_group_permissions_permission_id_84c5c92e" ON "auth_group_permissions" ("permission_id"); args=()
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys = 0; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0001_initial', '2017-06-27 22:06:47.390478'); args=['auth', u'0001_initial', u'2017-06-27 22:06:47.390478']
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys = 0; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends.schema:111] ALTER TABLE "auth_permission" RENAME TO "auth_permission__old"; (params ())
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.001) ALTER TABLE "auth_permission" RENAME TO "auth_permission__old"; args=()
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends.schema:111] CREATE TABLE "auth_permission" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "content_type_id" integer NOT NULL REFERENCES "django_content_type" ("id"), "codename" varchar(100) NOT NULL, "name" varchar(255) NOT NULL); (params None)
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) CREATE TABLE "auth_permission" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "content_type_id" integer NOT NULL REFERENCES "django_content_type" ("id"), "codename" varchar(100) NOT NULL, "name" varchar(255) NOT NULL); args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends.schema:111] INSERT INTO "auth_permission" ("content_type_id", "codename", "id", "name") SELECT "content_type_id", "codename", "id", "name" FROM "auth_permission__old"; (params ())
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) INSERT INTO "auth_permission" ("content_type_id", "codename", "id", "name") SELECT "content_type_id", "codename", "id", "name" FROM "auth_permission__old"; args=()
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends.schema:111] DROP TABLE "auth_permission__old"; (params ())
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) DROP TABLE "auth_permission__old"; args=()
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends.schema:111] CREATE UNIQUE INDEX "auth_permission_content_type_id_codename_01ab375a_uniq" ON "auth_permission" ("content_type_id", "codename"); (params ())
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) CREATE UNIQUE INDEX "auth_permission_content_type_id_codename_01ab375a_uniq" ON "auth_permission" ("content_type_id", "codename"); args=()
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends.schema:111] CREATE INDEX "auth_permission_content_type_id_2f476e4b" ON "auth_permission" ("content_type_id"); (params ())
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) CREATE INDEX "auth_permission_content_type_id_2f476e4b" ON "auth_permission" ("content_type_id"); args=()
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys = 0; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0002_alter_permission_name_max_length', '2017-06-27 22:06:47.542085'); args=['auth', u'0002_alter_permission_name_max_length', u'2017-06-27 22:06:47.542085']
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys = 0; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys = 0; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0003_alter_user_email_max_length', '2017-06-27 22:06:47.622231'); args=['auth', u'0003_alter_user_email_max_length', u'2017-06-27 22:06:47.622231']
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys = 0; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys = 0; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0004_alter_user_username_opts', '2017-06-27 22:06:47.691764'); args=['auth', u'0004_alter_user_username_opts', u'2017-06-27 22:06:47.691764']
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys = 0; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys = 0; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0005_alter_user_last_login_null', '2017-06-27 22:06:47.771353'); args=['auth', u'0005_alter_user_last_login_null', u'2017-06-27 22:06:47.771353']
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys = 0; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys = 0; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0006_require_contenttypes_0002', '2017-06-27 22:06:47.832976'); args=['auth', u'0006_require_contenttypes_0002', u'2017-06-27 22:06:47.832976']
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys = 0; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys = 0; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0007_alter_validators_add_error_messages', '2017-06-27 22:06:47.902705'); args=['auth', u'0007_alter_validators_add_error_messages', u'2017-06-27 22:06:47.902705']
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys = 0; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys = 0; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:06:47] DEBUG [django.db.backends:91] (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0008_alter_user_username_max_length', '2017-06-27 22:06:47.975936'); args=['auth', u'0008_alter_user_username_max_length', u'2017-06-27 22:06:47.975936']
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys; args=None
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys = 0; args=None
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends.schema:111] CREATE TABLE "accounts_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NULL, "is_superuser" bool NOT NULL, "username" varchar(150) NOT NULL UNIQUE, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "activated" bool NOT NULL, "wf_email" varchar(128) NOT NULL, "wf_password" varchar(128) NOT NULL); (params None)
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.001) CREATE TABLE "accounts_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NULL, "is_superuser" bool NOT NULL, "username" varchar(150) NOT NULL UNIQUE, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "activated" bool NOT NULL, "wf_email" varchar(128) NOT NULL, "wf_password" varchar(128) NOT NULL); args=None
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends.schema:111] CREATE TABLE "accounts_user_groups" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "accounts_user" ("id"), "group_id" integer NOT NULL REFERENCES "auth_group" ("id")); (params None)
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) CREATE TABLE "accounts_user_groups" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "accounts_user" ("id"), "group_id" integer NOT NULL REFERENCES "auth_group" ("id")); args=None
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends.schema:111] CREATE TABLE "accounts_user_user_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "accounts_user" ("id"), "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id")); (params None)
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) CREATE TABLE "accounts_user_user_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "accounts_user" ("id"), "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id")); args=None
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends.schema:111] CREATE UNIQUE INDEX "accounts_user_groups_user_id_group_id_59c0b32f_uniq" ON "accounts_user_groups" ("user_id", "group_id"); (params ())
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) CREATE UNIQUE INDEX "accounts_user_groups_user_id_group_id_59c0b32f_uniq" ON "accounts_user_groups" ("user_id", "group_id"); args=()
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends.schema:111] CREATE INDEX "accounts_user_groups_user_id_52b62117" ON "accounts_user_groups" ("user_id"); (params ())
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) CREATE INDEX "accounts_user_groups_user_id_52b62117" ON "accounts_user_groups" ("user_id"); args=()
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends.schema:111] CREATE INDEX "accounts_user_groups_group_id_bd11a704" ON "accounts_user_groups" ("group_id"); (params ())
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) CREATE INDEX "accounts_user_groups_group_id_bd11a704" ON "accounts_user_groups" ("group_id"); args=()
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends.schema:111] CREATE UNIQUE INDEX "accounts_user_user_permissions_user_id_permission_id_2ab516c2_uniq" ON "accounts_user_user_permissions" ("user_id", "permission_id"); (params ())
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) CREATE UNIQUE INDEX "accounts_user_user_permissions_user_id_permission_id_2ab516c2_uniq" ON "accounts_user_user_permissions" ("user_id", "permission_id"); args=()
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends.schema:111] CREATE INDEX "accounts_user_user_permissions_user_id_e4f0a161" ON "accounts_user_user_permissions" ("user_id"); (params ())
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) CREATE INDEX "accounts_user_user_permissions_user_id_e4f0a161" ON "accounts_user_user_permissions" ("user_id"); args=()
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends.schema:111] CREATE INDEX "accounts_user_user_permissions_permission_id_113bb443" ON "accounts_user_user_permissions" ("permission_id"); (params ())
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) CREATE INDEX "accounts_user_user_permissions_permission_id_113bb443" ON "accounts_user_user_permissions" ("permission_id"); args=()
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys = 0; args=None
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('accounts', '0001_initial', '2017-06-27 22:06:48.165598'); args=['accounts', u'0001_initial', u'2017-06-27 22:06:48.165598']
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys; args=None
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys = 0; args=None
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends.schema:111] CREATE TABLE "django_admin_log" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "action_time" datetime NOT NULL, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "action_flag" smallint unsigned NOT NULL, "change_message" text NOT NULL, "content_type_id" integer NULL REFERENCES "django_content_type" ("id"), "user_id" integer NOT NULL REFERENCES "accounts_user" ("id")); (params None)
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) CREATE TABLE "django_admin_log" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "action_time" datetime NOT NULL, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "action_flag" smallint unsigned NOT NULL, "change_message" text NOT NULL, "content_type_id" integer NULL REFERENCES "django_content_type" ("id"), "user_id" integer NOT NULL REFERENCES "accounts_user" ("id")); args=None
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends.schema:111] CREATE INDEX "django_admin_log_content_type_id_c4bce8eb" ON "django_admin_log" ("content_type_id"); (params ())
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) CREATE INDEX "django_admin_log_content_type_id_c4bce8eb" ON "django_admin_log" ("content_type_id"); args=()
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends.schema:111] CREATE INDEX "django_admin_log_user_id_c564eba6" ON "django_admin_log" ("user_id"); (params ())
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) CREATE INDEX "django_admin_log_user_id_c564eba6" ON "django_admin_log" ("user_id"); args=()
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys = 0; args=None
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('admin', '0001_initial', '2017-06-27 22:06:48.351569'); args=['admin', u'0001_initial', u'2017-06-27 22:06:48.351569']
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys; args=None
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys = 0; args=None
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends.schema:111] ALTER TABLE "django_admin_log" RENAME TO "django_admin_log__old"; (params ())
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.001) ALTER TABLE "django_admin_log" RENAME TO "django_admin_log__old"; args=()
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends.schema:111] CREATE TABLE "django_admin_log" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "action_flag" smallint unsigned NOT NULL, "change_message" text NOT NULL, "content_type_id" integer NULL REFERENCES "django_content_type" ("id"), "user_id" integer NOT NULL REFERENCES "accounts_user" ("id"), "action_time" datetime NOT NULL); (params None)
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) CREATE TABLE "django_admin_log" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "action_flag" smallint unsigned NOT NULL, "change_message" text NOT NULL, "content_type_id" integer NULL REFERENCES "django_content_type" ("id"), "user_id" integer NOT NULL REFERENCES "accounts_user" ("id"), "action_time" datetime NOT NULL); args=None
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends.schema:111] INSERT INTO "django_admin_log" ("action_flag", "action_time", "user_id", "content_type_id", "object_repr", "object_id", "change_message", "id") SELECT "action_flag", "action_time", "user_id", "content_type_id", "object_repr", "object_id", "change_message", "id" FROM "django_admin_log__old"; (params ())
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) INSERT INTO "django_admin_log" ("action_flag", "action_time", "user_id", "content_type_id", "object_repr", "object_id", "change_message", "id") SELECT "action_flag", "action_time", "user_id", "content_type_id", "object_repr", "object_id", "change_message", "id" FROM "django_admin_log__old"; args=()
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends.schema:111] DROP TABLE "django_admin_log__old"; (params ())
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.001) DROP TABLE "django_admin_log__old"; args=()
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends.schema:111] CREATE INDEX "django_admin_log_content_type_id_c4bce8eb" ON "django_admin_log" ("content_type_id"); (params ())
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) CREATE INDEX "django_admin_log_content_type_id_c4bce8eb" ON "django_admin_log" ("content_type_id"); args=()
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends.schema:111] CREATE INDEX "django_admin_log_user_id_c564eba6" ON "django_admin_log" ("user_id"); (params ())
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) CREATE INDEX "django_admin_log_user_id_c564eba6" ON "django_admin_log" ("user_id"); args=()
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys = 0; args=None
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('admin', '0002_logentry_remove_auto_add', '2017-06-27 22:06:48.552975'); args=['admin', u'0002_logentry_remove_auto_add', u'2017-06-27 22:06:48.552975']
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys; args=None
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys = 0; args=None
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends.schema:111] CREATE TABLE "django_session" ("session_key" varchar(40) NOT NULL PRIMARY KEY, "session_data" text NOT NULL, "expire_date" datetime NOT NULL); (params None)
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) CREATE TABLE "django_session" ("session_key" varchar(40) NOT NULL PRIMARY KEY, "session_data" text NOT NULL, "expire_date" datetime NOT NULL); args=None
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends.schema:111] CREATE INDEX "django_session_expire_date_a5c62663" ON "django_session" ("expire_date"); (params ())
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) CREATE INDEX "django_session_expire_date_a5c62663" ON "django_session" ("expire_date"); args=()
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) PRAGMA foreign_keys = 0; args=None
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('sessions', '0001_initial', '2017-06-27 22:06:48.738655'); args=['sessions', u'0001_initial', u'2017-06-27 22:06:48.738655']
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'logentry' AND "django_content_type"."app_label" = 'admin'); args=('logentry', 'admin')
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'logentry' AND "django_content_type"."app_label" = 'admin'); args=('logentry', 'admin')
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) INSERT INTO "django_content_type" ("app_label", "model") VALUES ('admin', 'logentry'); args=['admin', 'logentry']
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,)
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.015) INSERT INTO "auth_permission" ("name", "content_type_id", "codename") SELECT 'Can add log entry', 1, 'add_logentry' UNION ALL SELECT 'Can change log entry', 1, 'change_logentry' UNION ALL SELECT 'Can delete log entry', 1, 'delete_logentry'; args=(u'Can add log entry', 1, u'add_logentry', u'Can change log entry', 1, u'change_logentry', u'Can delete log entry', 1, u'delete_logentry')
+[27/Jun/2017 22:06:48] DEBUG [django.db.backends:91] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+[27/Jun/2017 22:06:49] DEBUG [django.db.backends:91] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'group' AND "django_content_type"."app_label" = 'auth'); args=('group', 'auth')
+[27/Jun/2017 22:06:49] DEBUG [django.db.backends:91] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'group' AND "django_content_type"."app_label" = 'auth'); args=('group', 'auth')
+[27/Jun/2017 22:06:49] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:06:49] DEBUG [django.db.backends:91] (0.000) INSERT INTO "django_content_type" ("app_label", "model") VALUES ('auth', 'group'); args=['auth', 'group']
+[27/Jun/2017 22:06:49] DEBUG [django.db.backends:91] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'permission' AND "django_content_type"."app_label" = 'auth'); args=('permission', 'auth')
+[27/Jun/2017 22:06:49] DEBUG [django.db.backends:91] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'permission' AND "django_content_type"."app_label" = 'auth'); args=('permission', 'auth')
+[27/Jun/2017 22:06:49] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:06:49] DEBUG [django.db.backends:91] (0.000) INSERT INTO "django_content_type" ("app_label", "model") VALUES ('auth', 'permission'); args=['auth', 'permission']
+[27/Jun/2017 22:06:49] DEBUG [django.db.backends:91] (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2, 3) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2, 3)
+[27/Jun/2017 22:06:49] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:06:49] DEBUG [django.db.backends:91] (0.000) INSERT INTO "auth_permission" ("name", "content_type_id", "codename") SELECT 'Can add group', 2, 'add_group' UNION ALL SELECT 'Can change group', 2, 'change_group' UNION ALL SELECT 'Can delete group', 2, 'delete_group' UNION ALL SELECT 'Can add permission', 3, 'add_permission' UNION ALL SELECT 'Can change permission', 3, 'change_permission' UNION ALL SELECT 'Can delete permission', 3, 'delete_permission'; args=(u'Can add group', 2, u'add_group', u'Can change group', 2, u'change_group', u'Can delete group', 2, u'delete_group', u'Can add permission', 3, u'add_permission', u'Can change permission', 3, u'change_permission', u'Can delete permission', 3, u'delete_permission')
+[27/Jun/2017 22:06:49] DEBUG [django.db.backends:91] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+[27/Jun/2017 22:06:49] DEBUG [django.db.backends:91] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'contenttype' AND "django_content_type"."app_label" = 'contenttypes'); args=('contenttype', 'contenttypes')
+[27/Jun/2017 22:06:49] DEBUG [django.db.backends:91] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'contenttype' AND "django_content_type"."app_label" = 'contenttypes'); args=('contenttype', 'contenttypes')
+[27/Jun/2017 22:06:49] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:06:49] DEBUG [django.db.backends:91] (0.000) INSERT INTO "django_content_type" ("app_label", "model") VALUES ('contenttypes', 'contenttype'); args=['contenttypes', 'contenttype']
+[27/Jun/2017 22:06:49] DEBUG [django.db.backends:91] (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(4,)
+[27/Jun/2017 22:06:49] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:06:49] DEBUG [django.db.backends:91] (0.000) INSERT INTO "auth_permission" ("name", "content_type_id", "codename") SELECT 'Can add content type', 4, 'add_contenttype' UNION ALL SELECT 'Can change content type', 4, 'change_contenttype' UNION ALL SELECT 'Can delete content type', 4, 'delete_contenttype'; args=(u'Can add content type', 4, u'add_contenttype', u'Can change content type', 4, u'change_contenttype', u'Can delete content type', 4, u'delete_contenttype')
+[27/Jun/2017 22:06:49] DEBUG [django.db.backends:91] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+[27/Jun/2017 22:06:49] DEBUG [django.db.backends:91] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'session' AND "django_content_type"."app_label" = 'sessions'); args=('session', 'sessions')
+[27/Jun/2017 22:06:49] DEBUG [django.db.backends:91] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'session' AND "django_content_type"."app_label" = 'sessions'); args=('session', 'sessions')
+[27/Jun/2017 22:06:49] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:06:49] DEBUG [django.db.backends:91] (0.000) INSERT INTO "django_content_type" ("app_label", "model") VALUES ('sessions', 'session'); args=['sessions', 'session']
+[27/Jun/2017 22:06:49] DEBUG [django.db.backends:91] (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,)
+[27/Jun/2017 22:06:49] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:06:49] DEBUG [django.db.backends:91] (0.000) INSERT INTO "auth_permission" ("name", "content_type_id", "codename") SELECT 'Can add session', 5, 'add_session' UNION ALL SELECT 'Can change session', 5, 'change_session' UNION ALL SELECT 'Can delete session', 5, 'delete_session'; args=(u'Can add session', 5, u'add_session', u'Can change session', 5, u'change_session', u'Can delete session', 5, u'delete_session')
+[27/Jun/2017 22:06:49] DEBUG [django.db.backends:91] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+[27/Jun/2017 22:06:49] DEBUG [django.db.backends:91] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'widget_tweaks'; args=('widget_tweaks',)
+[27/Jun/2017 22:06:49] DEBUG [django.db.backends:91] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'user' AND "django_content_type"."app_label" = 'accounts'); args=('user', 'accounts')
+[27/Jun/2017 22:06:49] DEBUG [django.db.backends:91] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'user' AND "django_content_type"."app_label" = 'accounts'); args=('user', 'accounts')
+[27/Jun/2017 22:06:49] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:06:49] DEBUG [django.db.backends:91] (0.000) INSERT INTO "django_content_type" ("app_label", "model") VALUES ('accounts', 'user'); args=['accounts', 'user']
+[27/Jun/2017 22:06:49] DEBUG [django.db.backends:91] (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,)
+[27/Jun/2017 22:06:49] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:06:49] DEBUG [django.db.backends:91] (0.000) INSERT INTO "auth_permission" ("name", "content_type_id", "codename") SELECT 'Can add user', 6, 'add_user' UNION ALL SELECT 'Can change user', 6, 'change_user' UNION ALL SELECT 'Can delete user', 6, 'delete_user'; args=(u'Can add user', 6, u'add_user', u'Can change user', 6, u'change_user', u'Can delete user', 6, u'delete_user')
+[27/Jun/2017 22:06:49] DEBUG [django.db.backends:91] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'accounts'; args=('accounts',)
+[27/Jun/2017 22:07:04] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[27/Jun/2017 22:07:04] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[27/Jun/2017 22:07:08] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[27/Jun/2017 22:07:08] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[27/Jun/2017 22:07:10] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."username" = 'jwcorle'; args=('jwcorle',)
+[27/Jun/2017 22:07:16] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:07:16] DEBUG [django.db.backends:91] (0.000) INSERT INTO "accounts_user" ("password", "last_login", "is_superuser", "username", "is_staff", "is_active", "date_joined", "activated", "wf_email", "wf_password") VALUES ('pbkdf2_sha256$36000$ICbpL6qBWeGQ$BCNJUD79ZNeBKB+zVvdxuIhTJsvjD5EmuNIes1UP/rI=', NULL, 1, 'jwcorle', 1, 1, '2017-06-27 22:07:16.041956', 0, '', ''); args=[u'pbkdf2_sha256$36000$ICbpL6qBWeGQ$BCNJUD79ZNeBKB+zVvdxuIhTJsvjD5EmuNIes1UP/rI=', None, True, 'jwcorle', True, True, u'2017-06-27 22:07:16.041956', False, u'', u'']
+[27/Jun/2017 22:07:28] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'qgh5p06tmhnz052nho8t8mf3zeec8sk8' AND "django_session"."expire_date" > '2017-06-27 22:07:28.394503'); args=('qgh5p06tmhnz052nho8t8mf3zeec8sk8', u'2017-06-27 22:07:28.394503')
+[27/Jun/2017 22:07:28] INFO [django.server:124] "GET /admin/accounts/user/1/change/ HTTP/1.1" 302 0
+[27/Jun/2017 22:07:28] DEBUG [django.template:925] Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_popup] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x7f18cc2d45f0>>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7f18cc3728d0>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f18cc2cad50>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f18cc3723d0>, u'request': <WSGIRequest: GET '/admin/login/?next=/admin/accounts/user/1/change/'>}, {}, {'username': u'', 'app_path': u'/admin/login/?next=/admin/accounts/user/1/change/', 'available_apps': [], 'site_name': '127.0.0.1:8000', 'form': <AdminAuthenticationForm bound=False, valid=Unknown, fields=(username;password)>, 'title': u'Log in', 'site_header': u'Django administration', 'site': <django.contrib.sites.requests.RequestSite object at 0x7f18cc372f90>, 'next': u'/admin/accounts/user/1/change/', 'site_title': u'Django site admin', u'LANGUAGE_CODE': 'en-us', 'has_permission': False, 'site_url': '/', u'LANGUAGE_BIDI': False, u'view': <django.contrib.auth.views.LoginView object at 0x7f18cc372390>}]"
+[27/Jun/2017 22:07:28] DEBUG [django.template:925] Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_popup] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x7f18cc2d45f0>>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7f18cc3728d0>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f18cc2cad50>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f18cc3723d0>, u'request': <WSGIRequest: GET '/admin/login/?next=/admin/accounts/user/1/change/'>}, {}, {'username': u'', 'app_path': u'/admin/login/?next=/admin/accounts/user/1/change/', 'available_apps': [], 'site_name': '127.0.0.1:8000', 'form': <AdminAuthenticationForm bound=False, valid=Unknown, fields=(username;password)>, 'title': u'Log in', 'site_header': u'Django administration', 'site': <django.contrib.sites.requests.RequestSite object at 0x7f18cc372f90>, 'next': u'/admin/accounts/user/1/change/', 'site_title': u'Django site admin', u'LANGUAGE_CODE': 'en-us', 'has_permission': False, 'site_url': '/', u'LANGUAGE_BIDI': False, u'view': <django.contrib.auth.views.LoginView object at 0x7f18cc372390>}]"
+[27/Jun/2017 22:07:28] INFO [django.server:124] "GET /admin/login/?next=/admin/accounts/user/1/change/ HTTP/1.1" 200 1696
+[27/Jun/2017 22:07:30] DEBUG [django.db.backends:91] (0.001) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."username" = 'jwcorle'; args=(u'jwcorle',)
+[27/Jun/2017 22:07:30] DEBUG [django.db.backends:91] (0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = 'bfo1yk1mawbklq9tuat5kw0f35eyqmen' LIMIT 1; args=(u'bfo1yk1mawbklq9tuat5kw0f35eyqmen',)
+[27/Jun/2017 22:07:30] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:07:30] DEBUG [django.db.backends:91] (0.000) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT 'bfo1yk1mawbklq9tuat5kw0f35eyqmen', 'OWE3OGQxYmI5MDA1NDY0MGZmMGMzZjg5YjhiMGIyOTJjYTVlOTIwNTp7fQ==', '2017-07-11 22:07:30.805839'; args=(u'bfo1yk1mawbklq9tuat5kw0f35eyqmen', u'OWE3OGQxYmI5MDA1NDY0MGZmMGMzZjg5YjhiMGIyOTJjYTVlOTIwNTp7fQ==', u'2017-07-11 22:07:30.805839')
+[27/Jun/2017 22:07:30] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:07:30] DEBUG [django.db.backends:91] (0.000) UPDATE "accounts_user" SET "last_login" = '2017-06-27 22:07:30.920894' WHERE "accounts_user"."id" = 1; args=(u'2017-06-27 22:07:30.920894', 1)
+[27/Jun/2017 22:07:30] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:07:30] DEBUG [django.db.backends:91] (0.000) UPDATE "django_session" SET "session_data" = 'OGQzZDhmZjUyZTBmYjdkNGNhYjdhZDg3NTJiMjk4M2E1MjJjMjZmMjp7Il9hdXRoX3VzZXJfaGFzaCI6ImM3MWIyYTgxMjM2M2IyZTMwY2Q5M2U5ZWZjZGE1MTI1N2NiZWQ1ZDciLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=', "expire_date" = '2017-07-11 22:07:30.993359' WHERE "django_session"."session_key" = 'bfo1yk1mawbklq9tuat5kw0f35eyqmen'; args=(u'OGQzZDhmZjUyZTBmYjdkNGNhYjdhZDg3NTJiMjk4M2E1MjJjMjZmMjp7Il9hdXRoX3VzZXJfaGFzaCI6ImM3MWIyYTgxMjM2M2IyZTMwY2Q5M2U5ZWZjZGE1MTI1N2NiZWQ1ZDciLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=', u'2017-07-11 22:07:30.993359', u'bfo1yk1mawbklq9tuat5kw0f35eyqmen')
+[27/Jun/2017 22:07:31] INFO [django.server:124] "POST /admin/login/?next=/admin/accounts/user/1/change/ HTTP/1.1" 302 0
+[27/Jun/2017 22:07:31] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bfo1yk1mawbklq9tuat5kw0f35eyqmen' AND "django_session"."expire_date" > '2017-06-27 22:07:31.092580'); args=('bfo1yk1mawbklq9tuat5kw0f35eyqmen', u'2017-06-27 22:07:31.092580')
+[27/Jun/2017 22:07:31] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[27/Jun/2017 22:07:31] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:07:31] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[27/Jun/2017 22:07:31] DEBUG [django.db.backends:91] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'user' AND "django_content_type"."app_label" = 'accounts'); args=('user', 'accounts')
+[27/Jun/2017 22:07:31] INFO [django.server:124] "GET /admin/accounts/user/1/change/ HTTP/1.1" 200 7707
+[27/Jun/2017 22:07:31] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bfo1yk1mawbklq9tuat5kw0f35eyqmen' AND "django_session"."expire_date" > '2017-06-27 22:07:31.186023'); args=('bfo1yk1mawbklq9tuat5kw0f35eyqmen', u'2017-06-27 22:07:31.186023')
+[27/Jun/2017 22:07:31] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[27/Jun/2017 22:07:31] INFO [django.server:124] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[27/Jun/2017 22:07:33] DEBUG [django.db.backends:91] (0.009) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bfo1yk1mawbklq9tuat5kw0f35eyqmen' AND "django_session"."expire_date" > '2017-06-27 22:07:33.042368'); args=('bfo1yk1mawbklq9tuat5kw0f35eyqmen', u'2017-06-27 22:07:33.042368')
+[27/Jun/2017 22:07:33] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[27/Jun/2017 22:07:33] DEBUG [django.db.backends:91] (0.000) SELECT COUNT(*) AS "__count" FROM "accounts_user"; args=()
+[27/Jun/2017 22:07:33] DEBUG [django.db.backends:91] (0.000) SELECT COUNT(*) AS "__count" FROM "accounts_user"; args=()
+[27/Jun/2017 22:07:33] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" ORDER BY "accounts_user"."username" ASC, "accounts_user"."id" DESC; args=()
+[27/Jun/2017 22:07:33] DEBUG [django.template:925] Exception while resolving variable 'errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [errors] in u'None'
+[27/Jun/2017 22:07:33] DEBUG [django.template:925] Exception while resolving variable 'show' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [show] in u"[{'False': False, 'None': None, 'True': True, 'csrf_token': <SimpleLazyObject: <function _get_val at 0x7f18cc245ed8>>}]"
+[27/Jun/2017 22:07:33] DEBUG [django.template:925] Exception while resolving variable 'is_multipart' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_multipart] in u'None'
+[27/Jun/2017 22:07:33] DEBUG [django.template:925] Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [non_field_errors] in u'None'
+[27/Jun/2017 22:07:33] INFO [django.server:124] "GET /admin/accounts/user/ HTTP/1.1" 200 5015
+[27/Jun/2017 22:07:33] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bfo1yk1mawbklq9tuat5kw0f35eyqmen' AND "django_session"."expire_date" > '2017-06-27 22:07:33.144458'); args=('bfo1yk1mawbklq9tuat5kw0f35eyqmen', u'2017-06-27 22:07:33.144458')
+[27/Jun/2017 22:07:33] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[27/Jun/2017 22:07:33] INFO [django.server:124] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[27/Jun/2017 22:07:35] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bfo1yk1mawbklq9tuat5kw0f35eyqmen' AND "django_session"."expire_date" > '2017-06-27 22:07:35.523449'); args=('bfo1yk1mawbklq9tuat5kw0f35eyqmen', u'2017-06-27 22:07:35.523449')
+[27/Jun/2017 22:07:35] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[27/Jun/2017 22:07:35] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:07:35] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[27/Jun/2017 22:07:35] INFO [django.server:124] "GET /admin/accounts/user/1/change/ HTTP/1.1" 200 7707
+[27/Jun/2017 22:07:35] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bfo1yk1mawbklq9tuat5kw0f35eyqmen' AND "django_session"."expire_date" > '2017-06-27 22:07:35.610190'); args=('bfo1yk1mawbklq9tuat5kw0f35eyqmen', u'2017-06-27 22:07:35.610190')
+[27/Jun/2017 22:07:35] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[27/Jun/2017 22:07:35] INFO [django.server:124] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[27/Jun/2017 22:09:27] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[27/Jun/2017 22:09:27] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[27/Jun/2017 22:09:47] INFO [django.server:124] "GET /login HTTP/1.1" 301 0
+[27/Jun/2017 22:09:47] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bfo1yk1mawbklq9tuat5kw0f35eyqmen' AND "django_session"."expire_date" > '2017-06-27 22:09:47.326167'); args=('bfo1yk1mawbklq9tuat5kw0f35eyqmen', u'2017-06-27 22:09:47.326167')
+[27/Jun/2017 22:09:47] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[27/Jun/2017 22:09:47] INFO [django.server:124] "GET /login/ HTTP/1.1" 200 6869
+[27/Jun/2017 22:09:47] INFO [django.server:124] "GET /static/css/typeaheadjs.css HTTP/1.1" 200 2578
+[27/Jun/2017 22:09:47] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.css HTTP/1.1" 200 391
+[27/Jun/2017 22:09:47] INFO [django.server:124] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121201
+[27/Jun/2017 22:09:47] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.css HTTP/1.1" 200 47879
+[27/Jun/2017 22:09:47] INFO [django.server:124] "GET /static/css/auth.css HTTP/1.1" 200 4416
+[27/Jun/2017 22:09:47] INFO [django.server:124] "GET /static/css/common.css HTTP/1.1" 200 5124
+[27/Jun/2017 22:09:47] INFO [django.server:124] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+[27/Jun/2017 22:09:47] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.js HTTP/1.1" 200 1631
+[27/Jun/2017 22:09:47] INFO [django.server:124] "GET /static/js/jquery.min.js HTTP/1.1" 200 97163
+[27/Jun/2017 22:09:47] INFO [django.server:124] "GET /static/js/hammer.min.js HTTP/1.1" 200 20765
+[27/Jun/2017 22:09:47] INFO [django.server:124] "GET /static/js/typeahead.js HTTP/1.1" 200 63137
+[27/Jun/2017 22:09:47] INFO [django.server:124] "GET /static/js/search.js HTTP/1.1" 200 31453
+[27/Jun/2017 22:09:47] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.js HTTP/1.1" 200 61679
+[27/Jun/2017 22:09:47] INFO [django.server:124] "GET /static/img/bg.jpg HTTP/1.1" 200 254754
+[27/Jun/2017 22:09:47] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[27/Jun/2017 22:09:48] INFO [django.server:124] "GET /static/img/notFound.png HTTP/1.1" 200 22596
+[27/Jun/2017 22:09:57] DEBUG [django.db.backends:91] (0.001) SELECT (1) AS "a" FROM "accounts_user" WHERE "accounts_user"."username" = 'eqwert' LIMIT 1; args=(u'eqwert',)
+[27/Jun/2017 22:09:57] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:09:57] DEBUG [django.db.backends:91] (0.000) INSERT INTO "accounts_user" ("password", "last_login", "is_superuser", "username", "is_staff", "is_active", "date_joined", "activated", "wf_email", "wf_password") VALUES ('pbkdf2_sha256$36000$pCNUDd2wKVy5$heXa3Pw01vn1oS6KMxaiSaMANGDs192gA3hc2es3oTA=', NULL, 0, 'eqwert', 0, 1, '2017-06-27 22:09:57.096571', 0, '', ''); args=[u'pbkdf2_sha256$36000$pCNUDd2wKVy5$heXa3Pw01vn1oS6KMxaiSaMANGDs192gA3hc2es3oTA=', None, False, u'eqwert', False, True, u'2017-06-27 22:09:57.096571', False, u'', u'']
+[27/Jun/2017 22:09:57] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."username" = 'eqwert'; args=(u'eqwert',)
+[27/Jun/2017 22:09:57] DEBUG [django.db.backends:91] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bfo1yk1mawbklq9tuat5kw0f35eyqmen' AND "django_session"."expire_date" > '2017-06-27 22:09:57.297755'); args=('bfo1yk1mawbklq9tuat5kw0f35eyqmen', u'2017-06-27 22:09:57.297755')
+[27/Jun/2017 22:09:57] DEBUG [django.db.backends:91] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = 'bfo1yk1mawbklq9tuat5kw0f35eyqmen'; args=('bfo1yk1mawbklq9tuat5kw0f35eyqmen',)
+[27/Jun/2017 22:09:57] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:09:57] DEBUG [django.db.backends:91] (0.000) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('bfo1yk1mawbklq9tuat5kw0f35eyqmen'); args=(u'bfo1yk1mawbklq9tuat5kw0f35eyqmen',)
+[27/Jun/2017 22:09:57] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:09:57] DEBUG [django.db.backends:91] (0.000) UPDATE "accounts_user" SET "last_login" = '2017-06-27 22:09:57.386148' WHERE "accounts_user"."id" = 2; args=(u'2017-06-27 22:09:57.386148', 2)
+[27/Jun/2017 22:09:57] DEBUG [django.db.backends:91] (0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = '1qgyhd2ann6gkk9qu05z566f1a9m52rv' LIMIT 1; args=(u'1qgyhd2ann6gkk9qu05z566f1a9m52rv',)
+[27/Jun/2017 22:09:57] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[27/Jun/2017 22:09:57] DEBUG [django.db.backends:91] (0.000) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT '1qgyhd2ann6gkk9qu05z566f1a9m52rv', 'YWExMWNiNTk3NzllOGY1Y2ViMTVmZDk0MzBmYTQwNGJiYmY2NzZmZTp7Il9hdXRoX3VzZXJfaGFzaCI6IjA2NTViOGJkZmFkYTQ1NWFkYjAyNDZjNWMyNWI2NmMwNTJlYzhhY2YiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIyIn0=', '2017-07-11 22:09:57.524880'; args=(u'1qgyhd2ann6gkk9qu05z566f1a9m52rv', u'YWExMWNiNTk3NzllOGY1Y2ViMTVmZDk0MzBmYTQwNGJiYmY2NzZmZTp7Il9hdXRoX3VzZXJfaGFzaCI6IjA2NTViOGJkZmFkYTQ1NWFkYjAyNDZjNWMyNWI2NmMwNTJlYzhhY2YiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIyIn0=', u'2017-07-11 22:09:57.524880')
+[27/Jun/2017 22:09:57] INFO [django.server:124] "POST /signup/ HTTP/1.1" 302 0
+[27/Jun/2017 22:09:57] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1qgyhd2ann6gkk9qu05z566f1a9m52rv' AND "django_session"."expire_date" > '2017-06-27 22:09:57.624999'); args=('1qgyhd2ann6gkk9qu05z566f1a9m52rv', u'2017-06-27 22:09:57.624999')
+[27/Jun/2017 22:09:57] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[27/Jun/2017 22:09:57] INFO [django.server:124] "GET / HTTP/1.1" 200 3231
+[27/Jun/2017 22:09:57] INFO [django.server:124] "GET /static/css/home.css HTTP/1.1" 200 379
+[27/Jun/2017 22:10:02] INFO [django.server:124] "GET /account HTTP/1.1" 301 0
+[27/Jun/2017 22:10:02] ERROR [django.request:135] Internal Server Error: /account/
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/forgeguest/Documents/better_getter/accounts/views.py", line 63, in settings
+    return render(request, 'settings.html', market_form=market_form, err=False)
+TypeError: render() got an unexpected keyword argument 'market_form'
+[27/Jun/2017 22:10:02] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1qgyhd2ann6gkk9qu05z566f1a9m52rv' AND "django_session"."expire_date" > '2017-06-27 22:10:02.424581'); args=('1qgyhd2ann6gkk9qu05z566f1a9m52rv', u'2017-06-27 22:10:02.424581')
+[27/Jun/2017 22:10:02] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[27/Jun/2017 22:10:02] ERROR [django.server:124] "GET /account/ HTTP/1.1" 500 71845
+[27/Jun/2017 22:11:16] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[27/Jun/2017 22:11:16] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[27/Jun/2017 22:11:17] ERROR [django.request:135] Internal Server Error: /account/
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/forgeguest/Documents/better_getter/accounts/views.py", line 63, in settings
+    return render(request, 'settings.html', context=market_form)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/loaders/cached.py", line 60, in get_template
+    template_name, template_dirs, skip,
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Invalid block tag on line 42: 'render_field', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+[27/Jun/2017 22:11:17] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1qgyhd2ann6gkk9qu05z566f1a9m52rv' AND "django_session"."expire_date" > '2017-06-27 22:11:17.581413'); args=('1qgyhd2ann6gkk9qu05z566f1a9m52rv', u'2017-06-27 22:11:17.581413')
+[27/Jun/2017 22:11:17] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[27/Jun/2017 22:11:17] ERROR [django.server:124] "GET /account/ HTTP/1.1" 500 135250
+[27/Jun/2017 22:12:03] ERROR [django.request:135] Internal Server Error: /account/
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/forgeguest/Documents/better_getter/accounts/views.py", line 63, in settings
+    return render(request, 'settings.html', context=market_form)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/backends/django.py", line 64, in render
+    context = make_context(context, request, autoescape=self.backend.engine.autoescape)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/context.py", line 287, in make_context
+    raise TypeError('context must be a dict rather than %s.' % context.__class__.__name__)
+TypeError: context must be a dict rather than MarketForm.
+[27/Jun/2017 22:12:03] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1qgyhd2ann6gkk9qu05z566f1a9m52rv' AND "django_session"."expire_date" > '2017-06-27 22:12:03.388201'); args=('1qgyhd2ann6gkk9qu05z566f1a9m52rv', u'2017-06-27 22:12:03.388201')
+[27/Jun/2017 22:12:03] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[27/Jun/2017 22:12:03] ERROR [django.server:124] "GET /account/ HTTP/1.1" 500 89366
+[27/Jun/2017 22:13:06] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[27/Jun/2017 22:13:06] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[27/Jun/2017 22:13:23] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[27/Jun/2017 22:13:23] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[27/Jun/2017 22:13:27] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[27/Jun/2017 22:13:27] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[27/Jun/2017 22:13:31] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[27/Jun/2017 22:13:31] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[27/Jun/2017 22:13:34] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1qgyhd2ann6gkk9qu05z566f1a9m52rv' AND "django_session"."expire_date" > '2017-06-27 22:13:34.941856'); args=('1qgyhd2ann6gkk9qu05z566f1a9m52rv', u'2017-06-27 22:13:34.941856')
+[27/Jun/2017 22:13:34] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[27/Jun/2017 22:13:34] DEBUG [django.template:925] Exception while resolving variable 'market_error' in template 'settings.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [market_error] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x7fa564022758>>, \'user\': <SimpleLazyObject: <User: eqwert>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7fa56409f790>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fa564068610>, u\'request\': <WSGIRequest: GET \'/account/\'>}, {}, {\'market_form\': <MarketForm bound=False, valid=Unknown, fields=()>}, {\'block\': <Block Node: content. Contents: [<TextNode: u\'\\n<div class="top">\\n  <h1 \'>, <Variable Node: user.username>, <TextNode: u\' </h1>\\n    <div class="ro\'>, <IfNode>, <TextNode: u\'\\n\\n              \'>, <django.template.defaulttags.CsrfTokenNode object at 0x7fa56408d7d0>, <TextNode: u\'\\n\\n              \'>, <For Node: for field in market_form, tail_len: 5>, <TextNode: u\'\\n\\n              <div clas\'>]>}]'
+[27/Jun/2017 22:13:34] INFO [django.server:124] "GET /account/ HTTP/1.1" 200 5130
+[27/Jun/2017 22:13:35] INFO [django.server:124] "GET /static/css/settings.css HTTP/1.1" 200 146
+[27/Jun/2017 22:13:35] INFO [django.server:124] "GET /static/img/favicon-32x32.png HTTP/1.1" 200 2022
+[27/Jun/2017 22:13:35] INFO [django.server:124] "GET /static/img/favicon-16x16.png HTTP/1.1" 200 742
+[27/Jun/2017 22:13:42] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 1673
+[27/Jun/2017 22:13:42] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+[27/Jun/2017 22:16:32] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[27/Jun/2017 22:16:32] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[27/Jun/2017 22:16:48] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1qgyhd2ann6gkk9qu05z566f1a9m52rv' AND "django_session"."expire_date" > '2017-06-27 22:16:48.339937'); args=('1qgyhd2ann6gkk9qu05z566f1a9m52rv', u'2017-06-27 22:16:48.339937')
+[27/Jun/2017 22:16:48] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[27/Jun/2017 22:16:48] DEBUG [django.template:925] Exception while resolving variable 'market_error' in template 'settings.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [market_error] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x7f8e38711758>>, \'user\': <SimpleLazyObject: <User: eqwert>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7f8e3870f890>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f8e386d8610>, u\'request\': <WSGIRequest: GET \'/account/\'>}, {}, {\'market_form\': <MarketForm bound=False, valid=Unknown, fields=(email;password)>}, {\'block\': <Block Node: content. Contents: [<TextNode: u\'\\n<div class="top">\\n  <h1 \'>, <Variable Node: user.username>, <TextNode: u\' </h1>\\n    <div class="ro\'>, <IfNode>, <TextNode: u\'\\n\\n              \'>, <django.template.defaulttags.CsrfTokenNode object at 0x7f8e387008d0>, <TextNode: u\'\\n\\n              \'>, <For Node: for field in market_form, tail_len: 5>, <TextNode: u\'\\n\\n              <div clas\'>]>}]'
+[27/Jun/2017 22:16:48] INFO [django.server:124] "GET /account/ HTTP/1.1" 200 5554
+[27/Jun/2017 22:16:48] INFO [django.server:124] "GET /static/img/favicon-32x32.png HTTP/1.1" 200 2022
+[27/Jun/2017 22:17:04] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 1673
+[27/Jun/2017 22:17:04] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+[27/Jun/2017 22:17:39] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1qgyhd2ann6gkk9qu05z566f1a9m52rv' AND "django_session"."expire_date" > '2017-06-27 22:17:39.465086'); args=('1qgyhd2ann6gkk9qu05z566f1a9m52rv', u'2017-06-27 22:17:39.465086')
+[27/Jun/2017 22:17:39] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[27/Jun/2017 22:17:39] DEBUG [django.template:925] Exception while resolving variable 'market_error' in template 'settings.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [market_error] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x7f8e38666668>>, \'user\': <SimpleLazyObject: <User: eqwert>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7f8e38692990>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f8e38692590>, u\'request\': <WSGIRequest: GET \'/account/\'>}, {}, {\'market_form\': <MarketForm bound=False, valid=Unknown, fields=(email;password)>}, {\'block\': <Block Node: content. Contents: [<TextNode: u\'\\n<div class="top">\\n  <h1 \'>, <Variable Node: user.username>, <TextNode: u\' </h1>\\n    <div class="ro\'>, <IfNode>, <TextNode: u\'\\n\\n              \'>, <django.template.defaulttags.CsrfTokenNode object at 0x7f8e387008d0>, <TextNode: u\'\\n\\n              \'>, <For Node: for field in market_form, tail_len: 5>, <TextNode: u\'\\n\\n              <div clas\'>]>}]'
+[27/Jun/2017 22:17:39] INFO [django.server:124] "GET /account/ HTTP/1.1" 200 5554
+[27/Jun/2017 22:17:39] INFO [django.server:124] "GET /static/css/settings.css HTTP/1.1" 200 146
+[27/Jun/2017 22:17:39] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.css HTTP/1.1" 200 391
+[27/Jun/2017 22:17:39] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.css HTTP/1.1" 200 47879
+[27/Jun/2017 22:17:39] INFO [django.server:124] "GET /static/css/typeaheadjs.css HTTP/1.1" 200 2578
+[27/Jun/2017 22:17:39] INFO [django.server:124] "GET /static/js/hammer.min.js HTTP/1.1" 200 20765
+[27/Jun/2017 22:17:39] INFO [django.server:124] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121201
+[27/Jun/2017 22:17:39] INFO [django.server:124] "GET /static/css/common.css HTTP/1.1" 200 5124
+[27/Jun/2017 22:17:39] INFO [django.server:124] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+[27/Jun/2017 22:17:39] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.js HTTP/1.1" 200 1631
+[27/Jun/2017 22:17:39] INFO [django.server:124] "GET /static/js/typeahead.js HTTP/1.1" 200 63137
+[27/Jun/2017 22:17:39] INFO [django.server:124] "GET /static/js/search.js HTTP/1.1" 200 31453
+[27/Jun/2017 22:17:39] INFO [django.server:124] "GET /static/js/jquery.min.js HTTP/1.1" 200 97163
+[27/Jun/2017 22:17:39] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.js HTTP/1.1" 200 61679
+[27/Jun/2017 22:17:40] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[27/Jun/2017 22:17:40] INFO [django.server:124] "GET /static/img/bg.jpg HTTP/1.1" 200 254754
+[27/Jun/2017 22:17:40] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 1673
+[27/Jun/2017 22:17:40] INFO [django.server:124] "GET /static/img/notFound.png HTTP/1.1" 200 22596
+[27/Jun/2017 22:17:40] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+[27/Jun/2017 22:17:53] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[27/Jun/2017 22:17:53] DEBUG [django.db.backends:91] (0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[27/Jun/2017 22:17:54] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1qgyhd2ann6gkk9qu05z566f1a9m52rv' AND "django_session"."expire_date" > '2017-06-27 22:17:54.423798'); args=('1qgyhd2ann6gkk9qu05z566f1a9m52rv', u'2017-06-27 22:17:54.423798')
+[27/Jun/2017 22:17:54] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[27/Jun/2017 22:17:54] DEBUG [django.template:925] Exception while resolving variable 'market_error' in template 'settings.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [market_error] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x7f7f79d21668>>, \'user\': <SimpleLazyObject: <User: eqwert>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7f7f79d1d490>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f7f7a77d210>, u\'request\': <WSGIRequest: GET \'/account/\'>}, {}, {\'market_form\': <MarketForm bound=False, valid=Unknown, fields=(email;password)>}, {\'block\': <Block Node: content. Contents: [<TextNode: u\'\\n<div class="top">\\n  <h1 \'>, <Variable Node: user.username>, <TextNode: u\' </h1>\\n    <div class="ro\'>, <IfNode>, <TextNode: u\'\\n\\n              \'>, <django.template.defaulttags.CsrfTokenNode object at 0x7f7f79d0f4d0>, <TextNode: u\'\\n\\n              \'>, <For Node: for field in market_form, tail_len: 5>, <TextNode: u\'\\n\\n              <div clas\'>]>}]'
+[27/Jun/2017 22:17:54] INFO [django.server:124] "GET /account/ HTTP/1.1" 200 5566
+[27/Jun/2017 22:17:54] INFO [django.server:124] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121201
+[27/Jun/2017 22:17:54] INFO [django.server:124] "GET /static/css/typeaheadjs.css HTTP/1.1" 200 2578
+[27/Jun/2017 22:17:54] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.css HTTP/1.1" 200 47879
+[27/Jun/2017 22:17:54] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.css HTTP/1.1" 200 391
+[27/Jun/2017 22:17:54] INFO [django.server:124] "GET /static/css/common.css HTTP/1.1" 200 5124
+[27/Jun/2017 22:17:54] INFO [django.server:124] "GET /static/css/settings.css HTTP/1.1" 200 146
+[27/Jun/2017 22:17:54] INFO [django.server:124] "GET /static/js/hammer.min.js HTTP/1.1" 200 20765
+[27/Jun/2017 22:17:54] INFO [django.server:124] "GET /static/js/jquery.min.js HTTP/1.1" 200 97163
+[27/Jun/2017 22:17:54] INFO [django.server:124] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+[27/Jun/2017 22:17:54] INFO [django.server:124] "GET /static/js/typeahead.js HTTP/1.1" 200 63137
+[27/Jun/2017 22:17:54] INFO [django.server:124] "GET /static/js/search.js HTTP/1.1" 200 31453
+[27/Jun/2017 22:17:54] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.js HTTP/1.1" 200 61679
+[27/Jun/2017 22:17:54] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.js HTTP/1.1" 200 1631
+[27/Jun/2017 22:17:54] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[27/Jun/2017 22:17:54] INFO [django.server:124] "GET /static/img/bg.jpg HTTP/1.1" 200 254754
+[27/Jun/2017 22:17:55] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 1673
+[27/Jun/2017 22:17:55] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+[27/Jun/2017 22:17:55] INFO [django.server:124] "GET /static/img/notFound.png HTTP/1.1" 200 22596

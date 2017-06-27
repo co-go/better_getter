@@ -56,8 +56,9 @@ def settings(request):
         if market.is_valid():
             # lets do another check for validity
             # must modify and save the user credentials
-            return render(request, 'settings.html', market_form=market_form)
+            return redirect("settings")
     else:
         market_form = MarketForm()
 
-    return render(request, 'settings.html', market_form=market_form, err=False)
+    context = { "market_form": market_form }
+    return render(request, 'settings.html', context)

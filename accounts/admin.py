@@ -16,7 +16,8 @@ class UserAdmin(DjangoUserAdmin):
     list_filter = ()
     fieldsets = (
         (None, {'fields': ('username', 'password')}),
-        ('Personal info', {'fields': ('username',)}),
+        ('Personal info', {'fields': ('username', 'activated',)}),
+        ('Warframe Market Info', {'fields': ('wf_email', 'wf_password',)}),
         ('Permissions', {'fields': ('is_superuser',)}),
     )
     # add_fieldsets is not a standard ModelAdmin attribute. UserAdmin

@@ -41,6 +41,8 @@ class User(AbstractUser):
     last_name = None
 
     activated = models.BooleanField(default=False)
+    wf_email = models.CharField(max_length=128)
+    wf_password = models.CharField(max_length=128)
 
     USERNAME_FIELD = "username"
     REQUIRED_FIELDS = []

@@ -1,5 +1,6 @@
 {% extends "components/base.html" %}
 {% load static %}
+{% load widget_tweaks %}
 
 {% block title %}
   {{ user.username }} Settings
@@ -44,7 +45,7 @@
               {% endfor %}
 
               <div class="col-xs-6 form-group pull-right">
-                <input type="submit" name="market-submit" id="market-submit" class="form-control btn btn-login" value="Submit">
+                <input type="submit" name="market-submit" id="market-submit" class="form-control btn btn-success btn-login" value="Submit">
               </div>
             </form>
 
