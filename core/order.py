@@ -66,10 +66,7 @@ def place_order(CSRF_TOKEN, item_name, action_type, item_quantity=1,
 
     # stupid JSON layout puts item names under "item_name", so we always
     #   have to search through in a loop
-    for item in ITEMS:
-        if (item["item_name"] == item_name):
-            item_type = item["item_type"]
-            break
+    item_type = get_item_type(item_name)["item_type"]
 
     # couldn't find it, return
     if (item_type == None):

@@ -19,6 +19,10 @@
 
 <div class="container">
   <center>
+    {% if err %}
+    <img src="{% static 'img/notFound.png' %}" style="padding-top: 50px; max-height: 300px;">
+    <h2 class="item"> Sorry! That item was not found. </h2>
+    {% else %}
     <img src="{{ src }}" style="padding-top: 50px; max-height: 300px;">
     <h2 class="item"> {{ item_name }} </h2>
     <h4 class="item_type"> {{ type }} </h4>
@@ -27,7 +31,6 @@
     {% endif %}
 
     <hr style="width: 50%">
-
 
     <div class="row">
       <div class="col-md-4">
@@ -179,6 +182,8 @@
         </div>
       </div>
     </div>
+
+    {% endif %}
   </center>
 </div>
 

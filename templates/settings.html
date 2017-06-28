@@ -30,9 +30,13 @@
             <p>Please enter your email and password for <b>warframe.market</b></p>
 
             <form id="market-form" action="/account/" method="POST" role="form" style="display: block;">
-              {% if market_error %}
+              {% if err %}
                 <div class="alert alert-danger">
                   <p><strong>Oh snap!</strong> Your credentials appear to be invalid! </p>
+                </div>
+              {% elif valid %}
+                <div class="alert alert-success">
+                  <p><strong>You're set!</strong> Any orders you post will be sent to warframe.market. </p>
                 </div>
               {% endif %}
 
@@ -40,7 +44,7 @@
 
               {% for field in market_form %}
                 <div class="form-group {% if field.errors %}has-error{% endif %}">
-                  {% render_field field class="form-control" placeholder=field.label autocomplete="off" %}
+                  {% render_field field class="form-control" placeholder=field.label %}
                 </div>
               {% endfor %}
 
@@ -87,5 +91,6 @@
 {% block extra_scripts %}
 <script>
   $( "ul li" ).eq(4).addClass("mm-selected");
+
 </script>
 {% endblock %}

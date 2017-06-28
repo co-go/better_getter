@@ -4,7 +4,7 @@ from django.contrib.auth.forms import AuthenticationForm
 from forms import CreateUserForm, MarketForm
 from django.shortcuts import render, redirect
 import requests
-from core import login, order
+from core import order, login as wf_login
 
 def signup(request):
     if request.method == "POST":
@@ -52,6 +52,10 @@ def login(request):
 
 
 def settings(request):
+    err = None
+    valid = None
+    user = request.user
+
     if request.method == "POST":
         market_form = MarketForm(request.POST)
 
@@ -59,14 +63,23 @@ def settings(request):
             wf_email = market_form.cleaned_data.get('wf_email')
             wf_password = market_form.cleaned_data.get('wf_password')
 
-            if (login.login(email=wf_email, password=wf_password) != None):
-                print "Valid login"
-                return redirect("settings")
-
-            print "Invalid credentials"
-        print "Enter in all fields"
+            if (wf_login.login_user(email=wf_email, password=wf_password) != None):
+                print "[LOGIN] Valid!"
+                user.wf_email = wf_email
+                user.wf_password = wf_password
+                user.save()
+            else:
+                err = "Invalid credentials"
+        else:
+            err = "Enter in all fields"
     else:
-        market_form = MarketForm()
+        market_form = MarketForm(initial={'wf_email': user.wf_email, 'wf_password': "loluthot"})
 
-    context = { "market_form": market_form }
+    if (user.wf_email != "" and user.wf_password != ""):
+        valid = True
+
+    context = { "market_form": market_form,
+                "err": err,
+                "valid": valid }
+
     return render(request, 'settings.html', context)

@@ -8855,3 +8855,1164 @@ VariableDoesNotExist: Failed lookup for key [market_error] in u'[{\'False\': Fal
             WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
             ORDER BY name; args=None
 [28/Jun/2017 15:17:52] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[28/Jun/2017 15:18:36] DEBUG [django.template:925] Exception while resolving variable 'item_name' in template 'item.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [item_name] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x7f8f6ff4d488>>, 'user': <SimpleLazyObject: <function <lambda> at 0x7f8f8fbac500>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f8f8c945d10>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f8f8f969310>, u'request': <WSGIRequest: GET '/get_item/Mesas%20Waltz/'>}, {}, {'err': True}, {'block': <Block Node: title. Contents: [<TextNode: u'\\n  '>, <Variable Node: item_name>, <TextNode: u' Details\\n'>]>}]"
+[28/Jun/2017 15:18:36] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1qgyhd2ann6gkk9qu05z566f1a9m52rv' AND "django_session"."expire_date" > '2017-06-28 15:18:36.385430'); args=('1qgyhd2ann6gkk9qu05z566f1a9m52rv', u'2017-06-28 15:18:36.385430')
+[28/Jun/2017 15:18:36] DEBUG [django.db.backends:91] (0.001) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[28/Jun/2017 15:18:36] DEBUG [django.template:925] Exception while resolving variable 'src' in template 'item.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [src] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x7f8f6ff4d488>>, \'user\': <SimpleLazyObject: <User: eqwert>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7f8f8c945d10>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f8f8f969310>, u\'request\': <WSGIRequest: GET \'/get_item/Mesas%20Waltz/\'>}, {}, {\'err\': True}, {\'block\': <Block Node: content. Contents: [<TextNode: u\'\\n<div class="top">\\n  <h1 \'>, <Variable Node: src>, <TextNode: u\'" style="padding-top: 50p\'>, <Variable Node: item_name>, <TextNode: u\' </h2>\\n    <h4 class="ite\'>, <Variable Node: type>, <TextNode: u\' </h4>\\n    \'>, <IfNode>, <TextNode: u\'\\n\\n    <hr style="width: 5\'>, <IfNode>, <TextNode: u\'\\n      </div>\\n\\n      <div\'>, <IfNode>, <TextNode: u\'\\n      </div>\\n\\n      <div\'>, <Variable Node: item_name>, <TextNode: u\'" class="btn btn-default \'>]>}]'
+[28/Jun/2017 15:18:36] DEBUG [django.template:925] Exception while resolving variable 'item_name' in template 'item.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [item_name] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x7f8f6ff4d488>>, \'user\': <SimpleLazyObject: <User: eqwert>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7f8f8c945d10>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f8f8f969310>, u\'request\': <WSGIRequest: GET \'/get_item/Mesas%20Waltz/\'>}, {}, {\'err\': True}, {\'block\': <Block Node: content. Contents: [<TextNode: u\'\\n<div class="top">\\n  <h1 \'>, <Variable Node: src>, <TextNode: u\'" style="padding-top: 50p\'>, <Variable Node: item_name>, <TextNode: u\' </h2>\\n    <h4 class="ite\'>, <Variable Node: type>, <TextNode: u\' </h4>\\n    \'>, <IfNode>, <TextNode: u\'\\n\\n    <hr style="width: 5\'>, <IfNode>, <TextNode: u\'\\n      </div>\\n\\n      <div\'>, <IfNode>, <TextNode: u\'\\n      </div>\\n\\n      <div\'>, <Variable Node: item_name>, <TextNode: u\'" class="btn btn-default \'>]>}]'
+[28/Jun/2017 15:18:36] DEBUG [django.template:925] Exception while resolving variable 'type' in template 'item.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [type] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x7f8f6ff4d488>>, \'user\': <SimpleLazyObject: <User: eqwert>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7f8f8c945d10>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f8f8f969310>, u\'request\': <WSGIRequest: GET \'/get_item/Mesas%20Waltz/\'>}, {}, {\'err\': True}, {\'block\': <Block Node: content. Contents: [<TextNode: u\'\\n<div class="top">\\n  <h1 \'>, <Variable Node: src>, <TextNode: u\'" style="padding-top: 50p\'>, <Variable Node: item_name>, <TextNode: u\' </h2>\\n    <h4 class="ite\'>, <Variable Node: type>, <TextNode: u\' </h4>\\n    \'>, <IfNode>, <TextNode: u\'\\n\\n    <hr style="width: 5\'>, <IfNode>, <TextNode: u\'\\n      </div>\\n\\n      <div\'>, <IfNode>, <TextNode: u\'\\n      </div>\\n\\n      <div\'>, <Variable Node: item_name>, <TextNode: u\'" class="btn btn-default \'>]>}]'
+[28/Jun/2017 15:18:36] DEBUG [django.template:925] Exception while resolving variable 'ducats' in template 'item.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [ducats] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x7f8f6ff4d488>>, \'user\': <SimpleLazyObject: <User: eqwert>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7f8f8c945d10>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f8f8f969310>, u\'request\': <WSGIRequest: GET \'/get_item/Mesas%20Waltz/\'>}, {}, {\'err\': True}, {\'block\': <Block Node: content. Contents: [<TextNode: u\'\\n<div class="top">\\n  <h1 \'>, <Variable Node: src>, <TextNode: u\'" style="padding-top: 50p\'>, <Variable Node: item_name>, <TextNode: u\' </h2>\\n    <h4 class="ite\'>, <Variable Node: type>, <TextNode: u\' </h4>\\n    \'>, <IfNode>, <TextNode: u\'\\n\\n    <hr style="width: 5\'>, <IfNode>, <TextNode: u\'\\n      </div>\\n\\n      <div\'>, <IfNode>, <TextNode: u\'\\n      </div>\\n\\n      <div\'>, <Variable Node: item_name>, <TextNode: u\'" class="btn btn-default \'>]>}]'
+[28/Jun/2017 15:18:36] DEBUG [django.template:925] Exception while resolving variable 'ducats' in template 'item.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [ducats] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x7f8f6ff4d488>>, \'user\': <SimpleLazyObject: <User: eqwert>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7f8f8c945d10>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f8f8f969310>, u\'request\': <WSGIRequest: GET \'/get_item/Mesas%20Waltz/\'>}, {}, {\'err\': True}, {\'block\': <Block Node: content. Contents: [<TextNode: u\'\\n<div class="top">\\n  <h1 \'>, <Variable Node: src>, <TextNode: u\'" style="padding-top: 50p\'>, <Variable Node: item_name>, <TextNode: u\' </h2>\\n    <h4 class="ite\'>, <Variable Node: type>, <TextNode: u\' </h4>\\n    \'>, <IfNode>, <TextNode: u\'\\n\\n    <hr style="width: 5\'>, <IfNode>, <TextNode: u\'\\n      </div>\\n\\n      <div\'>, <IfNode>, <TextNode: u\'\\n      </div>\\n\\n      <div\'>, <Variable Node: item_name>, <TextNode: u\'" class="btn btn-default \'>]>}]'
+[28/Jun/2017 15:18:36] DEBUG [django.template:925] Exception while resolving variable 'ingame_sell_prices' in template 'item.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [ingame_sell_prices] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x7f8f6ff4d488>>, \'user\': <SimpleLazyObject: <User: eqwert>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7f8f8c945d10>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f8f8f969310>, u\'request\': <WSGIRequest: GET \'/get_item/Mesas%20Waltz/\'>}, {}, {\'err\': True}, {\'block\': <Block Node: content. Contents: [<TextNode: u\'\\n<div class="top">\\n  <h1 \'>, <Variable Node: src>, <TextNode: u\'" style="padding-top: 50p\'>, <Variable Node: item_name>, <TextNode: u\' </h2>\\n    <h4 class="ite\'>, <Variable Node: type>, <TextNode: u\' </h4>\\n    \'>, <IfNode>, <TextNode: u\'\\n\\n    <hr style="width: 5\'>, <IfNode>, <TextNode: u\'\\n      </div>\\n\\n      <div\'>, <IfNode>, <TextNode: u\'\\n      </div>\\n\\n      <div\'>, <Variable Node: item_name>, <TextNode: u\'" class="btn btn-default \'>]>}]'
+[28/Jun/2017 15:18:36] DEBUG [django.template:925] Exception while resolving variable 'ingame_buy_prices' in template 'item.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [ingame_buy_prices] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x7f8f6ff4d488>>, \'user\': <SimpleLazyObject: <User: eqwert>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7f8f8c945d10>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f8f8f969310>, u\'request\': <WSGIRequest: GET \'/get_item/Mesas%20Waltz/\'>}, {}, {\'err\': True}, {\'block\': <Block Node: content. Contents: [<TextNode: u\'\\n<div class="top">\\n  <h1 \'>, <Variable Node: src>, <TextNode: u\'" style="padding-top: 50p\'>, <Variable Node: item_name>, <TextNode: u\' </h2>\\n    <h4 class="ite\'>, <Variable Node: type>, <TextNode: u\' </h4>\\n    \'>, <IfNode>, <TextNode: u\'\\n\\n    <hr style="width: 5\'>, <IfNode>, <TextNode: u\'\\n      </div>\\n\\n      <div\'>, <IfNode>, <TextNode: u\'\\n      </div>\\n\\n      <div\'>, <Variable Node: item_name>, <TextNode: u\'" class="btn btn-default \'>]>}]'
+[28/Jun/2017 15:18:36] DEBUG [django.template:925] Exception while resolving variable 'item_name' in template 'item.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [item_name] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x7f8f6ff4d488>>, \'user\': <SimpleLazyObject: <User: eqwert>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7f8f8c945d10>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f8f8f969310>, u\'request\': <WSGIRequest: GET \'/get_item/Mesas%20Waltz/\'>}, {}, {\'err\': True}, {\'block\': <Block Node: content. Contents: [<TextNode: u\'\\n<div class="top">\\n  <h1 \'>, <Variable Node: src>, <TextNode: u\'" style="padding-top: 50p\'>, <Variable Node: item_name>, <TextNode: u\' </h2>\\n    <h4 class="ite\'>, <Variable Node: type>, <TextNode: u\' </h4>\\n    \'>, <IfNode>, <TextNode: u\'\\n\\n    <hr style="width: 5\'>, <IfNode>, <TextNode: u\'\\n      </div>\\n\\n      <div\'>, <IfNode>, <TextNode: u\'\\n      </div>\\n\\n      <div\'>, <Variable Node: item_name>, <TextNode: u\'" class="btn btn-default \'>]>}]'
+[28/Jun/2017 15:18:36] INFO [django.server:124] "GET /get_item/Mesas%20Waltz/ HTTP/1.1" 200 5502
+[28/Jun/2017 15:19:35] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[28/Jun/2017 15:19:35] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[28/Jun/2017 15:19:54] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[28/Jun/2017 15:19:54] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[28/Jun/2017 15:19:56] DEBUG [django.template:925] Exception while resolving variable 'item_name' in template 'item.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [item_name] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x7f0bd13ac488>>, 'user': <SimpleLazyObject: <function <lambda> at 0x7f0bd8fe9668>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f0bd8180e10>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f0bd8da2350>, u'request': <WSGIRequest: GET '/get_item/Mesas%20Waltz/'>}, {}, {'err': True}, {'block': <Block Node: title. Contents: [<TextNode: u'\\n  '>, <Variable Node: item_name>, <TextNode: u' Details\\n'>]>}]"
+[28/Jun/2017 15:19:56] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1qgyhd2ann6gkk9qu05z566f1a9m52rv' AND "django_session"."expire_date" > '2017-06-28 15:19:56.042977'); args=('1qgyhd2ann6gkk9qu05z566f1a9m52rv', u'2017-06-28 15:19:56.042977')
+[28/Jun/2017 15:19:56] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[28/Jun/2017 15:19:56] DEBUG [django.template:925] Exception while resolving variable 'src' in template 'item.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [src] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x7f0bd13ac488>>, \'user\': <SimpleLazyObject: <User: eqwert>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7f0bd8180e10>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f0bd8da2350>, u\'request\': <WSGIRequest: GET \'/get_item/Mesas%20Waltz/\'>}, {}, {\'err\': True}, {\'block\': <Block Node: content. Contents: [<TextNode: u\'\\n<div class="top">\\n  <h1 \'>, <Variable Node: src>, <TextNode: u\'" style="padding-top: 50p\'>, <Variable Node: item_name>, <TextNode: u\' </h2>\\n    <h4 class="ite\'>, <Variable Node: type>, <TextNode: u\' </h4>\\n    \'>, <IfNode>, <TextNode: u\'\\n\\n    <hr style="width: 5\'>, <IfNode>, <TextNode: u\'\\n      </div>\\n\\n      <div\'>, <IfNode>, <TextNode: u\'\\n      </div>\\n\\n      <div\'>, <Variable Node: item_name>, <TextNode: u\'" class="btn btn-default \'>]>}]'
+[28/Jun/2017 15:19:56] DEBUG [django.template:925] Exception while resolving variable 'item_name' in template 'item.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [item_name] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x7f0bd13ac488>>, \'user\': <SimpleLazyObject: <User: eqwert>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7f0bd8180e10>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f0bd8da2350>, u\'request\': <WSGIRequest: GET \'/get_item/Mesas%20Waltz/\'>}, {}, {\'err\': True}, {\'block\': <Block Node: content. Contents: [<TextNode: u\'\\n<div class="top">\\n  <h1 \'>, <Variable Node: src>, <TextNode: u\'" style="padding-top: 50p\'>, <Variable Node: item_name>, <TextNode: u\' </h2>\\n    <h4 class="ite\'>, <Variable Node: type>, <TextNode: u\' </h4>\\n    \'>, <IfNode>, <TextNode: u\'\\n\\n    <hr style="width: 5\'>, <IfNode>, <TextNode: u\'\\n      </div>\\n\\n      <div\'>, <IfNode>, <TextNode: u\'\\n      </div>\\n\\n      <div\'>, <Variable Node: item_name>, <TextNode: u\'" class="btn btn-default \'>]>}]'
+[28/Jun/2017 15:19:56] DEBUG [django.template:925] Exception while resolving variable 'type' in template 'item.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [type] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x7f0bd13ac488>>, \'user\': <SimpleLazyObject: <User: eqwert>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7f0bd8180e10>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f0bd8da2350>, u\'request\': <WSGIRequest: GET \'/get_item/Mesas%20Waltz/\'>}, {}, {\'err\': True}, {\'block\': <Block Node: content. Contents: [<TextNode: u\'\\n<div class="top">\\n  <h1 \'>, <Variable Node: src>, <TextNode: u\'" style="padding-top: 50p\'>, <Variable Node: item_name>, <TextNode: u\' </h2>\\n    <h4 class="ite\'>, <Variable Node: type>, <TextNode: u\' </h4>\\n    \'>, <IfNode>, <TextNode: u\'\\n\\n    <hr style="width: 5\'>, <IfNode>, <TextNode: u\'\\n      </div>\\n\\n      <div\'>, <IfNode>, <TextNode: u\'\\n      </div>\\n\\n      <div\'>, <Variable Node: item_name>, <TextNode: u\'" class="btn btn-default \'>]>}]'
+[28/Jun/2017 15:19:56] DEBUG [django.template:925] Exception while resolving variable 'ducats' in template 'item.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [ducats] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x7f0bd13ac488>>, \'user\': <SimpleLazyObject: <User: eqwert>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7f0bd8180e10>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f0bd8da2350>, u\'request\': <WSGIRequest: GET \'/get_item/Mesas%20Waltz/\'>}, {}, {\'err\': True}, {\'block\': <Block Node: content. Contents: [<TextNode: u\'\\n<div class="top">\\n  <h1 \'>, <Variable Node: src>, <TextNode: u\'" style="padding-top: 50p\'>, <Variable Node: item_name>, <TextNode: u\' </h2>\\n    <h4 class="ite\'>, <Variable Node: type>, <TextNode: u\' </h4>\\n    \'>, <IfNode>, <TextNode: u\'\\n\\n    <hr style="width: 5\'>, <IfNode>, <TextNode: u\'\\n      </div>\\n\\n      <div\'>, <IfNode>, <TextNode: u\'\\n      </div>\\n\\n      <div\'>, <Variable Node: item_name>, <TextNode: u\'" class="btn btn-default \'>]>}]'
+[28/Jun/2017 15:19:56] DEBUG [django.template:925] Exception while resolving variable 'ducats' in template 'item.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [ducats] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x7f0bd13ac488>>, \'user\': <SimpleLazyObject: <User: eqwert>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7f0bd8180e10>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f0bd8da2350>, u\'request\': <WSGIRequest: GET \'/get_item/Mesas%20Waltz/\'>}, {}, {\'err\': True}, {\'block\': <Block Node: content. Contents: [<TextNode: u\'\\n<div class="top">\\n  <h1 \'>, <Variable Node: src>, <TextNode: u\'" style="padding-top: 50p\'>, <Variable Node: item_name>, <TextNode: u\' </h2>\\n    <h4 class="ite\'>, <Variable Node: type>, <TextNode: u\' </h4>\\n    \'>, <IfNode>, <TextNode: u\'\\n\\n    <hr style="width: 5\'>, <IfNode>, <TextNode: u\'\\n      </div>\\n\\n      <div\'>, <IfNode>, <TextNode: u\'\\n      </div>\\n\\n      <div\'>, <Variable Node: item_name>, <TextNode: u\'" class="btn btn-default \'>]>}]'
+[28/Jun/2017 15:19:56] DEBUG [django.template:925] Exception while resolving variable 'ingame_sell_prices' in template 'item.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [ingame_sell_prices] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x7f0bd13ac488>>, \'user\': <SimpleLazyObject: <User: eqwert>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7f0bd8180e10>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f0bd8da2350>, u\'request\': <WSGIRequest: GET \'/get_item/Mesas%20Waltz/\'>}, {}, {\'err\': True}, {\'block\': <Block Node: content. Contents: [<TextNode: u\'\\n<div class="top">\\n  <h1 \'>, <Variable Node: src>, <TextNode: u\'" style="padding-top: 50p\'>, <Variable Node: item_name>, <TextNode: u\' </h2>\\n    <h4 class="ite\'>, <Variable Node: type>, <TextNode: u\' </h4>\\n    \'>, <IfNode>, <TextNode: u\'\\n\\n    <hr style="width: 5\'>, <IfNode>, <TextNode: u\'\\n      </div>\\n\\n      <div\'>, <IfNode>, <TextNode: u\'\\n      </div>\\n\\n      <div\'>, <Variable Node: item_name>, <TextNode: u\'" class="btn btn-default \'>]>}]'
+[28/Jun/2017 15:19:56] DEBUG [django.template:925] Exception while resolving variable 'ingame_buy_prices' in template 'item.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [ingame_buy_prices] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x7f0bd13ac488>>, \'user\': <SimpleLazyObject: <User: eqwert>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7f0bd8180e10>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f0bd8da2350>, u\'request\': <WSGIRequest: GET \'/get_item/Mesas%20Waltz/\'>}, {}, {\'err\': True}, {\'block\': <Block Node: content. Contents: [<TextNode: u\'\\n<div class="top">\\n  <h1 \'>, <Variable Node: src>, <TextNode: u\'" style="padding-top: 50p\'>, <Variable Node: item_name>, <TextNode: u\' </h2>\\n    <h4 class="ite\'>, <Variable Node: type>, <TextNode: u\' </h4>\\n    \'>, <IfNode>, <TextNode: u\'\\n\\n    <hr style="width: 5\'>, <IfNode>, <TextNode: u\'\\n      </div>\\n\\n      <div\'>, <IfNode>, <TextNode: u\'\\n      </div>\\n\\n      <div\'>, <Variable Node: item_name>, <TextNode: u\'" class="btn btn-default \'>]>}]'
+[28/Jun/2017 15:19:56] DEBUG [django.template:925] Exception while resolving variable 'item_name' in template 'item.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [item_name] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x7f0bd13ac488>>, \'user\': <SimpleLazyObject: <User: eqwert>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7f0bd8180e10>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f0bd8da2350>, u\'request\': <WSGIRequest: GET \'/get_item/Mesas%20Waltz/\'>}, {}, {\'err\': True}, {\'block\': <Block Node: content. Contents: [<TextNode: u\'\\n<div class="top">\\n  <h1 \'>, <Variable Node: src>, <TextNode: u\'" style="padding-top: 50p\'>, <Variable Node: item_name>, <TextNode: u\' </h2>\\n    <h4 class="ite\'>, <Variable Node: type>, <TextNode: u\' </h4>\\n    \'>, <IfNode>, <TextNode: u\'\\n\\n    <hr style="width: 5\'>, <IfNode>, <TextNode: u\'\\n      </div>\\n\\n      <div\'>, <IfNode>, <TextNode: u\'\\n      </div>\\n\\n      <div\'>, <Variable Node: item_name>, <TextNode: u\'" class="btn btn-default \'>]>}]'
+[28/Jun/2017 15:19:56] INFO [django.server:124] "GET /get_item/Mesas%20Waltz/ HTTP/1.1" 200 5502
+[28/Jun/2017 15:19:56] INFO [django.server:124] "GET /static/img/favicon-32x32.png HTTP/1.1" 200 2022
+[28/Jun/2017 15:20:04] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[28/Jun/2017 15:20:04] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[28/Jun/2017 15:26:02] ERROR [django.request:135] Internal Server Error: /get_item/Mesas Waltz/
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/forgeguest/Documents/better_getter/get_item/views.py", line 11, in get_item_details
+    return render(request, 'item.html', context)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/loaders/cached.py", line 60, in get_template
+    template_name, template_dirs, skip,
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Could not parse the remainder: ' 'img/notFound.png'' from 'static 'img/notFound.png''
+[28/Jun/2017 15:26:02] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1qgyhd2ann6gkk9qu05z566f1a9m52rv' AND "django_session"."expire_date" > '2017-06-28 15:26:02.217529'); args=('1qgyhd2ann6gkk9qu05z566f1a9m52rv', u'2017-06-28 15:26:02.217529')
+[28/Jun/2017 15:26:02] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[28/Jun/2017 15:26:02] ERROR [django.server:124] "GET /get_item/Mesas%20Waltz/ HTTP/1.1" 500 136388
+[28/Jun/2017 15:26:59] DEBUG [django.template:925] Exception while resolving variable 'item_name' in template 'item.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [item_name] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x7fe422229d70>>, 'user': <SimpleLazyObject: <function <lambda> at 0x7fe4221c3f50>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fe4222bb450>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fe430361750>, u'request': <WSGIRequest: GET '/get_item/Mesas%20Waltz/'>}, {}, {'err': True}, {'block': <Block Node: title. Contents: [<TextNode: u'\\n  '>, <Variable Node: item_name>, <TextNode: u' Details\\n'>]>}]"
+[28/Jun/2017 15:26:59] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1qgyhd2ann6gkk9qu05z566f1a9m52rv' AND "django_session"."expire_date" > '2017-06-28 15:26:59.355868'); args=('1qgyhd2ann6gkk9qu05z566f1a9m52rv', u'2017-06-28 15:26:59.355868')
+[28/Jun/2017 15:26:59] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[28/Jun/2017 15:26:59] INFO [django.server:124] "GET /get_item/Mesas%20Waltz/ HTTP/1.1" 200 3235
+[28/Jun/2017 15:26:59] INFO [django.server:124] "GET /static/img/favicon-32x32.png HTTP/1.1" 200 2022
+[28/Jun/2017 15:27:03] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 1673
+[28/Jun/2017 15:27:03] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+[28/Jun/2017 15:27:24] DEBUG [django.template:925] Exception while resolving variable 'item_name' in template 'item.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [item_name] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x7fe4221c3f50>>, 'user': <SimpleLazyObject: <function <lambda> at 0x7fe422244668>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fe430361710>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fe4222afed0>, u'request': <WSGIRequest: GET '/get_item/Mesas%20Waltz/'>}, {}, {'err': True}, {'block': <Block Node: title. Contents: [<TextNode: u'\\n  '>, <Variable Node: item_name>, <TextNode: u' Details\\n'>]>}]"
+[28/Jun/2017 15:27:24] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1qgyhd2ann6gkk9qu05z566f1a9m52rv' AND "django_session"."expire_date" > '2017-06-28 15:27:24.192594'); args=('1qgyhd2ann6gkk9qu05z566f1a9m52rv', u'2017-06-28 15:27:24.192594')
+[28/Jun/2017 15:27:24] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[28/Jun/2017 15:27:24] INFO [django.server:124] "GET /get_item/Mesas%20Waltz/ HTTP/1.1" 200 3235
+[28/Jun/2017 15:27:24] INFO [django.server:124] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121201
+[28/Jun/2017 15:27:24] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.css HTTP/1.1" 200 391
+[28/Jun/2017 15:27:24] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.css HTTP/1.1" 200 47879
+[28/Jun/2017 15:27:24] INFO [django.server:124] "GET /static/css/typeaheadjs.css HTTP/1.1" 200 2578
+[28/Jun/2017 15:27:24] INFO [django.server:124] "GET /static/css/common.css HTTP/1.1" 200 5124
+[28/Jun/2017 15:27:24] INFO [django.server:124] "GET /static/css/get_item.css HTTP/1.1" 200 1779
+[28/Jun/2017 15:27:24] INFO [django.server:124] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+[28/Jun/2017 15:27:24] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.js HTTP/1.1" 200 1631
+[28/Jun/2017 15:27:24] INFO [django.server:124] "GET /static/js/hammer.min.js HTTP/1.1" 200 20765
+[28/Jun/2017 15:27:24] INFO [django.server:124] "GET /static/js/typeahead.js HTTP/1.1" 200 63137
+[28/Jun/2017 15:27:24] INFO [django.server:124] "GET /static/js/jquery.min.js HTTP/1.1" 200 97163
+[28/Jun/2017 15:27:24] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.js HTTP/1.1" 200 61679
+[28/Jun/2017 15:27:24] INFO [django.server:124] "GET /static/js/search.js HTTP/1.1" 200 31453
+[28/Jun/2017 15:27:24] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[28/Jun/2017 15:27:24] INFO [django.server:124] "GET /static/img/bg.jpg HTTP/1.1" 200 254754
+[28/Jun/2017 15:27:24] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 1673
+[28/Jun/2017 15:27:24] INFO [django.server:124] "GET /static/img/notFound.png HTTP/1.1" 200 22596
+[28/Jun/2017 15:27:24] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+[28/Jun/2017 15:30:37] DEBUG [django.template:925] Exception while resolving variable 'item_name' in template 'item.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [item_name] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x7fe43308c0c8>>, 'user': <SimpleLazyObject: <function <lambda> at 0x7fe43308c050>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fe4221f0990>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fe431e18790>, u'request': <WSGIRequest: GET '/get_item/Mesas%20Waltz/'>}, {}, {'err': True}, {'block': <Block Node: title. Contents: [<TextNode: u'\\n  '>, <Variable Node: item_name>, <TextNode: u' Details\\n'>]>}]"
+[28/Jun/2017 15:30:38] DEBUG [django.db.backends:91] (0.056) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1qgyhd2ann6gkk9qu05z566f1a9m52rv' AND "django_session"."expire_date" > '2017-06-28 15:30:37.878093'); args=('1qgyhd2ann6gkk9qu05z566f1a9m52rv', u'2017-06-28 15:30:37.878093')
+[28/Jun/2017 15:30:38] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[28/Jun/2017 15:30:38] INFO [django.server:124] "GET /get_item/Mesas%20Waltz/ HTTP/1.1" 200 3235
+[28/Jun/2017 15:30:38] INFO [django.server:124] "GET /static/css/get_item.css HTTP/1.1" 200 1779
+[28/Jun/2017 15:30:38] INFO [django.server:124] "GET /static/css/common.css HTTP/1.1" 200 5124
+[28/Jun/2017 15:30:38] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.css HTTP/1.1" 200 391
+[28/Jun/2017 15:30:38] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.css HTTP/1.1" 200 47879
+[28/Jun/2017 15:30:38] INFO [django.server:124] "GET /static/css/typeaheadjs.css HTTP/1.1" 200 2578
+[28/Jun/2017 15:30:38] INFO [django.server:124] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+[28/Jun/2017 15:30:38] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.js HTTP/1.1" 200 1631
+[28/Jun/2017 15:30:38] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.js HTTP/1.1" 200 61679
+[28/Jun/2017 15:30:38] INFO [django.server:124] "GET /static/js/search.js HTTP/1.1" 200 31453
+[28/Jun/2017 15:30:38] INFO [django.server:124] "GET /static/js/hammer.min.js HTTP/1.1" 200 20765
+[28/Jun/2017 15:30:38] INFO [django.server:124] "GET /static/js/jquery.min.js HTTP/1.1" 200 97163
+[28/Jun/2017 15:30:38] INFO [django.server:124] "GET /static/js/typeahead.js HTTP/1.1" 200 63137
+[28/Jun/2017 15:30:38] INFO [django.server:124] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121201
+[28/Jun/2017 15:30:39] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[28/Jun/2017 15:30:39] INFO [django.server:124] "GET /static/img/bg.jpg HTTP/1.1" 200 254754
+[28/Jun/2017 15:30:39] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+[28/Jun/2017 15:30:39] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 1673
+[28/Jun/2017 15:30:39] INFO [django.server:124] "GET /static/img/notFound.png HTTP/1.1" 200 22596
+[28/Jun/2017 15:32:13] DEBUG [django.db.backends:91] (0.034) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[28/Jun/2017 15:32:13] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[28/Jun/2017 15:32:16] DEBUG [django.template:925] Exception while resolving variable 'item_name' in template 'item.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [item_name] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x7ff2d9d11488>>, 'user': <SimpleLazyObject: <function <lambda> at 0x7ff2db10f500>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7ff2da0869d0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7ff2db128ad0>, u'request': <WSGIRequest: GET '/get_item/Mesas%20Waltz/'>}, {}, {'err': True}, {'block': <Block Node: title. Contents: [<TextNode: u'\\n  '>, <Variable Node: item_name>, <TextNode: u' Details\\n'>]>}]"
+[28/Jun/2017 15:32:16] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1qgyhd2ann6gkk9qu05z566f1a9m52rv' AND "django_session"."expire_date" > '2017-06-28 15:32:16.848968'); args=('1qgyhd2ann6gkk9qu05z566f1a9m52rv', u'2017-06-28 15:32:16.848968')
+[28/Jun/2017 15:32:16] DEBUG [django.db.backends:91] (0.001) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[28/Jun/2017 15:32:16] INFO [django.server:124] "GET /get_item/Mesas%20Waltz/ HTTP/1.1" 200 3387
+[28/Jun/2017 15:32:17] INFO [django.server:124] "GET /static/css/typeaheadjs.css HTTP/1.1" 200 2578
+[28/Jun/2017 15:32:17] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.css HTTP/1.1" 200 391
+[28/Jun/2017 15:32:17] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.css HTTP/1.1" 200 47879
+[28/Jun/2017 15:32:17] INFO [django.server:124] "GET /static/css/get_item.css HTTP/1.1" 200 1779
+[28/Jun/2017 15:32:17] INFO [django.server:124] "GET /static/css/common.css HTTP/1.1" 200 5124
+[28/Jun/2017 15:32:17] INFO [django.server:124] "GET /static/js/hammer.min.js HTTP/1.1" 200 20765
+[28/Jun/2017 15:32:17] INFO [django.server:124] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121201
+[28/Jun/2017 15:32:17] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.js HTTP/1.1" 200 1631
+[28/Jun/2017 15:32:17] INFO [django.server:124] "GET /static/js/search.js HTTP/1.1" 200 31453
+[28/Jun/2017 15:32:17] INFO [django.server:124] "GET /static/js/jquery.min.js HTTP/1.1" 200 97163
+[28/Jun/2017 15:32:17] INFO [django.server:124] "GET /static/js/typeahead.js HTTP/1.1" 200 63137
+[28/Jun/2017 15:32:17] INFO [django.server:124] "GET /static/img/notFound.png HTTP/1.1" 200 22596
+[28/Jun/2017 15:32:17] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.js HTTP/1.1" 200 61679
+[28/Jun/2017 15:32:17] INFO [django.server:124] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+[28/Jun/2017 15:32:17] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 1673
+[28/Jun/2017 15:32:17] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[28/Jun/2017 15:32:17] INFO [django.server:124] "GET /static/img/bg.jpg HTTP/1.1" 200 254754
+[28/Jun/2017 15:32:17] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+[28/Jun/2017 15:32:23] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1qgyhd2ann6gkk9qu05z566f1a9m52rv' AND "django_session"."expire_date" > '2017-06-28 15:32:23.040839'); args=('1qgyhd2ann6gkk9qu05z566f1a9m52rv', u'2017-06-28 15:32:23.040839')
+[28/Jun/2017 15:32:23] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[28/Jun/2017 15:32:23] INFO [django.server:124] "GET / HTTP/1.1" 200 3231
+[28/Jun/2017 15:32:23] INFO [django.server:124] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121201
+[28/Jun/2017 15:32:23] INFO [django.server:124] "GET /static/css/typeaheadjs.css HTTP/1.1" 200 2578
+[28/Jun/2017 15:32:23] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.css HTTP/1.1" 200 47879
+[28/Jun/2017 15:32:23] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.css HTTP/1.1" 200 391
+[28/Jun/2017 15:32:23] INFO [django.server:124] "GET /static/css/common.css HTTP/1.1" 200 5124
+[28/Jun/2017 15:32:23] INFO [django.server:124] "GET /static/js/hammer.min.js HTTP/1.1" 200 20765
+[28/Jun/2017 15:32:23] INFO [django.server:124] "GET /static/css/home.css HTTP/1.1" 200 379
+[28/Jun/2017 15:32:23] INFO [django.server:124] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+[28/Jun/2017 15:32:23] INFO [django.server:124] "GET /static/js/jquery.min.js HTTP/1.1" 200 97163
+[28/Jun/2017 15:32:23] INFO [django.server:124] "GET /static/js/typeahead.js HTTP/1.1" 200 63137
+[28/Jun/2017 15:32:23] INFO [django.server:124] "GET /static/js/search.js HTTP/1.1" 200 31453
+[28/Jun/2017 15:32:23] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.js HTTP/1.1" 200 61679
+[28/Jun/2017 15:32:23] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.js HTTP/1.1" 200 1631
+[28/Jun/2017 15:32:23] INFO [django.server:124] "GET /static/img/bg.jpg HTTP/1.1" 200 254754
+[28/Jun/2017 15:32:23] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[28/Jun/2017 15:32:23] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 1673
+[28/Jun/2017 15:32:23] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+[28/Jun/2017 15:32:23] INFO [django.server:124] "GET /static/img/notFound.png HTTP/1.1" 200 22596
+[28/Jun/2017 15:32:31] INFO [django.server:124] "GET /account HTTP/1.1" 301 0
+[28/Jun/2017 15:32:32] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1qgyhd2ann6gkk9qu05z566f1a9m52rv' AND "django_session"."expire_date" > '2017-06-28 15:32:32.037303'); args=('1qgyhd2ann6gkk9qu05z566f1a9m52rv', u'2017-06-28 15:32:32.037303')
+[28/Jun/2017 15:32:32] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[28/Jun/2017 15:32:32] DEBUG [django.template:925] Exception while resolving variable 'market_error' in template 'settings.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [market_error] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x7ff2d9d078c0>>, \'user\': <SimpleLazyObject: <User: eqwert>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7ff2d9d060d0>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7ff2d9e34410>, u\'request\': <WSGIRequest: GET \'/account/\'>}, {}, {\'market_form\': <MarketForm bound=False, valid=Unknown, fields=(wf_email;wf_password)>}, {\'block\': <Block Node: content. Contents: [<TextNode: u\'\\n<div class="top">\\n  <h1 \'>, <Variable Node: user.username>, <TextNode: u\' </h1>\\n    <div class="ro\'>, <IfNode>, <TextNode: u\'\\n\\n              \'>, <django.template.defaulttags.CsrfTokenNode object at 0x7ff2d9d06cd0>, <TextNode: u\'\\n\\n              \'>, <For Node: for field in market_form, tail_len: 5>, <TextNode: u\'\\n\\n              <div clas\'>]>}]'
+[28/Jun/2017 15:32:32] INFO [django.server:124] "GET /account/ HTTP/1.1" 200 5647
+[28/Jun/2017 15:32:32] INFO [django.server:124] "GET /static/css/typeaheadjs.css HTTP/1.1" 200 2578
+[28/Jun/2017 15:32:32] INFO [django.server:124] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121201
+[28/Jun/2017 15:32:32] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.css HTTP/1.1" 200 47879
+[28/Jun/2017 15:32:32] INFO [django.server:124] "GET /static/css/common.css HTTP/1.1" 200 5124
+[28/Jun/2017 15:32:32] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.css HTTP/1.1" 200 391
+[28/Jun/2017 15:32:32] INFO [django.server:124] "GET /static/js/typeahead.js HTTP/1.1" 200 63137
+[28/Jun/2017 15:32:32] INFO [django.server:124] "GET /static/css/settings.css HTTP/1.1" 200 146
+[28/Jun/2017 15:32:32] INFO [django.server:124] "GET /static/js/search.js HTTP/1.1" 200 31453
+[28/Jun/2017 15:32:32] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.js HTTP/1.1" 200 61679
+[28/Jun/2017 15:32:32] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.js HTTP/1.1" 200 1631
+[28/Jun/2017 15:32:32] INFO [django.server:124] "GET /static/js/jquery.min.js HTTP/1.1" 200 97163
+[28/Jun/2017 15:32:32] INFO [django.server:124] "GET /static/js/hammer.min.js HTTP/1.1" 200 20765
+[28/Jun/2017 15:32:32] INFO [django.server:124] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+[28/Jun/2017 15:32:32] INFO [django.server:124] "GET /static/img/bg.jpg HTTP/1.1" 200 254754
+[28/Jun/2017 15:32:32] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[28/Jun/2017 15:32:32] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 1673
+[28/Jun/2017 15:32:32] INFO [django.server:124] "GET /static/img/notFound.png HTTP/1.1" 200 22596
+[28/Jun/2017 15:32:32] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+[28/Jun/2017 15:32:44] ERROR [django.request:135] Internal Server Error: /account/
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/forgeguest/Documents/better_getter/accounts/views.py", line 62, in settings
+    if (login.login(email=wf_email, password=wf_password) != None):
+AttributeError: 'function' object has no attribute 'login'
+[28/Jun/2017 15:32:44] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1qgyhd2ann6gkk9qu05z566f1a9m52rv' AND "django_session"."expire_date" > '2017-06-28 15:32:44.581156'); args=('1qgyhd2ann6gkk9qu05z566f1a9m52rv', u'2017-06-28 15:32:44.581156')
+[28/Jun/2017 15:32:44] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[28/Jun/2017 15:32:44] ERROR [django.server:124] "POST /account/ HTTP/1.1" 500 73402
+[28/Jun/2017 15:34:01] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[28/Jun/2017 15:34:01] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[28/Jun/2017 15:35:24] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[28/Jun/2017 15:35:24] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[28/Jun/2017 15:35:38] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[28/Jun/2017 15:35:38] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[28/Jun/2017 15:35:40] ERROR [django.request:135] Internal Server Error: /account/
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/forgeguest/Documents/better_getter/accounts/views.py", line 62, in settings
+    if (login.login_user(email=wf_email, password=wf_password) != None):
+AttributeError: 'function' object has no attribute 'login_user'
+[28/Jun/2017 15:35:40] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1qgyhd2ann6gkk9qu05z566f1a9m52rv' AND "django_session"."expire_date" > '2017-06-28 15:35:40.929960'); args=('1qgyhd2ann6gkk9qu05z566f1a9m52rv', u'2017-06-28 15:35:40.929960')
+[28/Jun/2017 15:35:40] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[28/Jun/2017 15:35:40] ERROR [django.server:124] "POST /account/ HTTP/1.1" 500 73442
+[28/Jun/2017 15:35:56] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1qgyhd2ann6gkk9qu05z566f1a9m52rv' AND "django_session"."expire_date" > '2017-06-28 15:35:56.081949'); args=('1qgyhd2ann6gkk9qu05z566f1a9m52rv', u'2017-06-28 15:35:56.081949')
+[28/Jun/2017 15:35:56] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[28/Jun/2017 15:35:56] DEBUG [django.template:925] Exception while resolving variable 'market_error' in template 'settings.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [market_error] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x7fbef43b8050>>, \'user\': <SimpleLazyObject: <User: eqwert>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7fbef4364190>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fbef434a990>, u\'request\': <WSGIRequest: GET \'/account/\'>}, {}, {\'market_form\': <MarketForm bound=False, valid=Unknown, fields=(wf_email;wf_password)>}, {\'block\': <Block Node: content. Contents: [<TextNode: u\'\\n<div class="top">\\n  <h1 \'>, <Variable Node: user.username>, <TextNode: u\' </h1>\\n    <div class="ro\'>, <IfNode>, <TextNode: u\'\\n\\n              \'>, <django.template.defaulttags.CsrfTokenNode object at 0x7fbef4356950>, <TextNode: u\'\\n\\n              \'>, <For Node: for field in market_form, tail_len: 5>, <TextNode: u\'\\n\\n              <div clas\'>]>}]'
+[28/Jun/2017 15:35:56] INFO [django.server:124] "GET /account/ HTTP/1.1" 200 5647
+[28/Jun/2017 15:35:56] INFO [django.server:124] "GET /static/css/typeaheadjs.css HTTP/1.1" 200 2578
+[28/Jun/2017 15:35:56] INFO [django.server:124] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121201
+[28/Jun/2017 15:35:56] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.css HTTP/1.1" 200 47879
+[28/Jun/2017 15:35:56] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.css HTTP/1.1" 200 391
+[28/Jun/2017 15:35:56] INFO [django.server:124] "GET /static/js/hammer.min.js HTTP/1.1" 200 20765
+[28/Jun/2017 15:35:56] INFO [django.server:124] "GET /static/css/common.css HTTP/1.1" 200 5124
+[28/Jun/2017 15:35:56] INFO [django.server:124] "GET /static/css/settings.css HTTP/1.1" 200 146
+[28/Jun/2017 15:35:56] INFO [django.server:124] "GET /static/js/jquery.min.js HTTP/1.1" 200 97163
+[28/Jun/2017 15:35:56] INFO [django.server:124] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+[28/Jun/2017 15:35:56] INFO [django.server:124] "GET /static/js/typeahead.js HTTP/1.1" 200 63137
+[28/Jun/2017 15:35:56] INFO [django.server:124] "GET /static/js/search.js HTTP/1.1" 200 31453
+[28/Jun/2017 15:35:56] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.js HTTP/1.1" 200 1631
+[28/Jun/2017 15:35:56] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.js HTTP/1.1" 200 61679
+[28/Jun/2017 15:35:56] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[28/Jun/2017 15:35:56] INFO [django.server:124] "GET /static/img/bg.jpg HTTP/1.1" 200 254754
+[28/Jun/2017 15:35:56] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 1673
+[28/Jun/2017 15:35:56] INFO [django.server:124] "GET /static/img/notFound.png HTTP/1.1" 200 22596
+[28/Jun/2017 15:35:56] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+[28/Jun/2017 15:36:06] ERROR [django.request:135] Internal Server Error: /account/
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/forgeguest/Documents/better_getter/accounts/views.py", line 62, in settings
+    if (login.login_user(email=wf_email, password=wf_password) != None):
+AttributeError: 'function' object has no attribute 'login_user'
+[28/Jun/2017 15:36:06] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1qgyhd2ann6gkk9qu05z566f1a9m52rv' AND "django_session"."expire_date" > '2017-06-28 15:36:06.031764'); args=('1qgyhd2ann6gkk9qu05z566f1a9m52rv', u'2017-06-28 15:36:06.031764')
+[28/Jun/2017 15:36:06] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[28/Jun/2017 15:36:06] ERROR [django.server:124] "POST /account/ HTTP/1.1" 500 73444
+[28/Jun/2017 15:38:41] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[28/Jun/2017 15:38:41] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[28/Jun/2017 15:38:49] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[28/Jun/2017 15:38:49] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[28/Jun/2017 15:39:10] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[28/Jun/2017 15:39:10] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[28/Jun/2017 15:39:15] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[28/Jun/2017 15:39:15] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[28/Jun/2017 15:39:20] ERROR [django.request:135] Internal Server Error: /account/
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/forgeguest/Documents/better_getter/accounts/views.py", line 62, in settings
+    if (wf_login.login_user(email=wf_email, password=wf_password) != None):
+  File "/home/forgeguest/Documents/better_getter/core/login.py", line 38, in login_user
+    login_post = s.post(
+NameError: global name 's' is not defined
+[28/Jun/2017 15:39:20] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1qgyhd2ann6gkk9qu05z566f1a9m52rv' AND "django_session"."expire_date" > '2017-06-28 15:39:20.516852'); args=('1qgyhd2ann6gkk9qu05z566f1a9m52rv', u'2017-06-28 15:39:20.516852')
+[28/Jun/2017 15:39:20] DEBUG [django.db.backends:91] (0.001) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[28/Jun/2017 15:39:20] ERROR [django.server:124] "POST /account/ HTTP/1.1" 500 83879
+[28/Jun/2017 15:40:01] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[28/Jun/2017 15:40:01] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[28/Jun/2017 15:40:11] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1qgyhd2ann6gkk9qu05z566f1a9m52rv' AND "django_session"."expire_date" > '2017-06-28 15:40:11.620743'); args=('1qgyhd2ann6gkk9qu05z566f1a9m52rv', u'2017-06-28 15:40:11.620743')
+[28/Jun/2017 15:40:11] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[28/Jun/2017 15:40:11] DEBUG [django.template:925] Exception while resolving variable 'market_error' in template 'settings.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [market_error] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x7f83ae72b5f0>>, \'user\': <SimpleLazyObject: <User: eqwert>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7f83ae725a90>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f83af854bd0>, u\'request\': <WSGIRequest: POST \'/account/\'>}, {}, {\'market_form\': <MarketForm bound=True, valid=True, fields=(wf_email;wf_password)>}, {\'block\': <Block Node: content. Contents: [<TextNode: u\'\\n<div class="top">\\n  <h1 \'>, <Variable Node: user.username>, <TextNode: u\' </h1>\\n    <div class="ro\'>, <IfNode>, <TextNode: u\'\\n\\n              \'>, <django.template.defaulttags.CsrfTokenNode object at 0x7f83ae71aad0>, <TextNode: u\'\\n\\n              \'>, <For Node: for field in market_form, tail_len: 5>, <TextNode: u\'\\n\\n              <div clas\'>]>}]'
+[28/Jun/2017 15:40:11] INFO [django.server:124] "POST /account/ HTTP/1.1" 200 5676
+[28/Jun/2017 15:40:11] INFO [django.server:124] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121201
+[28/Jun/2017 15:40:11] INFO [django.server:124] "GET /static/css/typeaheadjs.css HTTP/1.1" 200 2578
+[28/Jun/2017 15:40:11] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.css HTTP/1.1" 200 391
+[28/Jun/2017 15:40:11] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.css HTTP/1.1" 200 47879
+[28/Jun/2017 15:40:11] INFO [django.server:124] "GET /static/css/common.css HTTP/1.1" 200 5124
+[28/Jun/2017 15:40:11] INFO [django.server:124] "GET /static/css/settings.css HTTP/1.1" 200 146
+[28/Jun/2017 15:40:11] INFO [django.server:124] "GET /static/js/hammer.min.js HTTP/1.1" 200 20765
+[28/Jun/2017 15:40:11] INFO [django.server:124] "GET /static/js/jquery.min.js HTTP/1.1" 200 97163
+[28/Jun/2017 15:40:11] INFO [django.server:124] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+[28/Jun/2017 15:40:11] INFO [django.server:124] "GET /static/js/typeahead.js HTTP/1.1" 200 63137
+[28/Jun/2017 15:40:11] INFO [django.server:124] "GET /static/js/search.js HTTP/1.1" 200 31453
+[28/Jun/2017 15:40:11] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.js HTTP/1.1" 200 61679
+[28/Jun/2017 15:40:11] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.js HTTP/1.1" 200 1631
+[28/Jun/2017 15:40:12] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[28/Jun/2017 15:40:12] INFO [django.server:124] "GET /static/img/bg.jpg HTTP/1.1" 200 254754
+[28/Jun/2017 15:40:12] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 1673
+[28/Jun/2017 15:40:12] INFO [django.server:124] "GET /static/img/notFound.png HTTP/1.1" 200 22596
+[28/Jun/2017 15:40:12] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+[28/Jun/2017 15:43:32] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[28/Jun/2017 15:43:32] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[28/Jun/2017 15:56:11] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1qgyhd2ann6gkk9qu05z566f1a9m52rv' AND "django_session"."expire_date" > '2017-06-28 15:56:11.614521'); args=('1qgyhd2ann6gkk9qu05z566f1a9m52rv', u'2017-06-28 15:56:11.614521')
+[28/Jun/2017 15:56:11] DEBUG [django.db.backends:91] (0.001) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[28/Jun/2017 15:56:11] DEBUG [django.template:925] Exception while resolving variable 'market_error' in template 'settings.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [market_error] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x7f18f79525f0>>, \'user\': <SimpleLazyObject: <User: eqwert>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7f18f794aa50>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f18fcaafb50>, u\'request\': <WSGIRequest: POST \'/account/\'>}, {}, {\'market_form\': <MarketForm bound=True, valid=True, fields=(wf_email;wf_password)>, \'err\': \'Invalid credentials\'}, {\'block\': <Block Node: content. Contents: [<TextNode: u\'\\n<div class="top">\\n  <h1 \'>, <Variable Node: user.username>, <TextNode: u\' </h1>\\n    <div class="ro\'>, <IfNode>, <TextNode: u\'\\n\\n              \'>, <django.template.defaulttags.CsrfTokenNode object at 0x7f18f793ca90>, <TextNode: u\'\\n\\n              \'>, <For Node: for field in market_form, tail_len: 5>, <TextNode: u\'\\n\\n              <div clas\'>]>}]'
+[28/Jun/2017 15:56:11] INFO [django.server:124] "POST /account/ HTTP/1.1" 200 5676
+[28/Jun/2017 15:56:11] INFO [django.server:124] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121201
+[28/Jun/2017 15:56:11] INFO [django.server:124] "GET /static/css/typeaheadjs.css HTTP/1.1" 200 2578
+[28/Jun/2017 15:56:11] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.css HTTP/1.1" 200 47879
+[28/Jun/2017 15:56:11] INFO [django.server:124] "GET /static/css/common.css HTTP/1.1" 200 5124
+[28/Jun/2017 15:56:11] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.css HTTP/1.1" 200 391
+[28/Jun/2017 15:56:11] INFO [django.server:124] "GET /static/css/settings.css HTTP/1.1" 200 146
+[28/Jun/2017 15:56:11] INFO [django.server:124] "GET /static/js/hammer.min.js HTTP/1.1" 200 20765
+[28/Jun/2017 15:56:11] INFO [django.server:124] "GET /static/js/jquery.min.js HTTP/1.1" 200 97163
+[28/Jun/2017 15:56:11] INFO [django.server:124] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+[28/Jun/2017 15:56:11] INFO [django.server:124] "GET /static/js/typeahead.js HTTP/1.1" 200 63137
+[28/Jun/2017 15:56:11] INFO [django.server:124] "GET /static/js/search.js HTTP/1.1" 200 31453
+[28/Jun/2017 15:56:11] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.js HTTP/1.1" 200 61679
+[28/Jun/2017 15:56:11] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.js HTTP/1.1" 200 1631
+[28/Jun/2017 15:56:12] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[28/Jun/2017 15:56:12] INFO [django.server:124] "GET /static/img/bg.jpg HTTP/1.1" 200 254754
+[28/Jun/2017 15:56:12] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 1673
+[28/Jun/2017 15:56:12] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+[28/Jun/2017 15:56:12] INFO [django.server:124] "GET /static/img/notFound.png HTTP/1.1" 200 22596
+[28/Jun/2017 16:00:30] DEBUG [django.db.backends:91] (0.023) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1qgyhd2ann6gkk9qu05z566f1a9m52rv' AND "django_session"."expire_date" > '2017-06-28 16:00:30.924362'); args=('1qgyhd2ann6gkk9qu05z566f1a9m52rv', u'2017-06-28 16:00:30.924362')
+[28/Jun/2017 16:00:31] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[28/Jun/2017 16:00:31] DEBUG [django.template:925] Exception while resolving variable 'market_error' in template 'settings.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [market_error] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x7f18f7909140>>, \'user\': <SimpleLazyObject: <User: eqwert>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7f18f796b190>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f18f5865a90>, u\'request\': <WSGIRequest: POST \'/account/\'>}, {}, {\'market_form\': <MarketForm bound=True, valid=True, fields=(wf_email;wf_password)>, \'err\': \'Invalid credentials\'}, {\'block\': <Block Node: content. Contents: [<TextNode: u\'\\n<div class="top">\\n  <h1 \'>, <Variable Node: user.username>, <TextNode: u\' </h1>\\n    <div class="ro\'>, <IfNode>, <TextNode: u\'\\n\\n              \'>, <django.template.defaulttags.CsrfTokenNode object at 0x7f18f793ca90>, <TextNode: u\'\\n\\n              \'>, <For Node: for field in market_form, tail_len: 5>, <TextNode: u\'\\n\\n              <div clas\'>]>}]'
+[28/Jun/2017 16:00:31] INFO [django.server:124] "POST /account/ HTTP/1.1" 200 5676
+[28/Jun/2017 16:00:31] INFO [django.server:124] "GET /static/css/typeaheadjs.css HTTP/1.1" 200 2578
+[28/Jun/2017 16:00:31] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.css HTTP/1.1" 200 391
+[28/Jun/2017 16:00:31] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.css HTTP/1.1" 200 47879
+[28/Jun/2017 16:00:31] INFO [django.server:124] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121201
+[28/Jun/2017 16:00:31] INFO [django.server:124] "GET /static/css/common.css HTTP/1.1" 200 5124
+[28/Jun/2017 16:00:31] INFO [django.server:124] "GET /static/css/settings.css HTTP/1.1" 200 146
+[28/Jun/2017 16:00:31] INFO [django.server:124] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+[28/Jun/2017 16:00:31] INFO [django.server:124] "GET /static/js/jquery.min.js HTTP/1.1" 200 97163
+[28/Jun/2017 16:00:31] INFO [django.server:124] "GET /static/js/hammer.min.js HTTP/1.1" 200 20765
+[28/Jun/2017 16:00:31] INFO [django.server:124] "GET /static/js/typeahead.js HTTP/1.1" 200 63137
+[28/Jun/2017 16:00:31] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.js HTTP/1.1" 200 61679
+[28/Jun/2017 16:00:31] INFO [django.server:124] "GET /static/js/search.js HTTP/1.1" 200 31453
+[28/Jun/2017 16:00:31] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.js HTTP/1.1" 200 1631
+[28/Jun/2017 16:00:31] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[28/Jun/2017 16:00:31] INFO [django.server:124] "GET /static/img/bg.jpg HTTP/1.1" 200 254754
+[28/Jun/2017 16:00:31] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 1673
+[28/Jun/2017 16:00:31] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+[28/Jun/2017 16:00:31] INFO [django.server:124] "GET /static/img/notFound.png HTTP/1.1" 200 22596
+[28/Jun/2017 16:00:43] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[28/Jun/2017 16:00:43] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[28/Jun/2017 16:00:48] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1qgyhd2ann6gkk9qu05z566f1a9m52rv' AND "django_session"."expire_date" > '2017-06-28 16:00:48.622196'); args=('1qgyhd2ann6gkk9qu05z566f1a9m52rv', u'2017-06-28 16:00:48.622196')
+[28/Jun/2017 16:00:48] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[28/Jun/2017 16:00:48] INFO [django.server:124] "POST /account/ HTTP/1.1" 200 5854
+[28/Jun/2017 16:00:48] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.css HTTP/1.1" 200 47879
+[28/Jun/2017 16:00:48] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.css HTTP/1.1" 200 391
+[28/Jun/2017 16:00:48] INFO [django.server:124] "GET /static/css/common.css HTTP/1.1" 200 5124
+[28/Jun/2017 16:00:48] INFO [django.server:124] "GET /static/css/typeaheadjs.css HTTP/1.1" 200 2578
+[28/Jun/2017 16:00:48] INFO [django.server:124] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121201
+[28/Jun/2017 16:00:48] INFO [django.server:124] "GET /static/css/settings.css HTTP/1.1" 200 146
+[28/Jun/2017 16:00:48] INFO [django.server:124] "GET /static/js/hammer.min.js HTTP/1.1" 200 20765
+[28/Jun/2017 16:00:48] INFO [django.server:124] "GET /static/js/jquery.min.js HTTP/1.1" 200 97163
+[28/Jun/2017 16:00:48] INFO [django.server:124] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+[28/Jun/2017 16:00:48] INFO [django.server:124] "GET /static/js/typeahead.js HTTP/1.1" 200 63137
+[28/Jun/2017 16:00:48] INFO [django.server:124] "GET /static/js/search.js HTTP/1.1" 200 31453
+[28/Jun/2017 16:00:48] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.js HTTP/1.1" 200 61679
+[28/Jun/2017 16:00:48] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.js HTTP/1.1" 200 1631
+[28/Jun/2017 16:00:49] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[28/Jun/2017 16:00:49] INFO [django.server:124] "GET /static/img/bg.jpg HTTP/1.1" 200 254754
+[28/Jun/2017 16:00:49] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 1673
+[28/Jun/2017 16:00:49] INFO [django.server:124] "GET /static/img/notFound.png HTTP/1.1" 200 22596
+[28/Jun/2017 16:00:49] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+[28/Jun/2017 16:01:36] INFO [django.server:124] "POST /account/ HTTP/1.1" 302 0
+[28/Jun/2017 16:01:36] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1qgyhd2ann6gkk9qu05z566f1a9m52rv' AND "django_session"."expire_date" > '2017-06-28 16:01:36.797057'); args=('1qgyhd2ann6gkk9qu05z566f1a9m52rv', u'2017-06-28 16:01:36.797057')
+[28/Jun/2017 16:01:36] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[28/Jun/2017 16:01:36] INFO [django.server:124] "GET /account/ HTTP/1.1" 200 5647
+[28/Jun/2017 16:01:36] INFO [django.server:124] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121201
+[28/Jun/2017 16:01:36] INFO [django.server:124] "GET /static/css/typeaheadjs.css HTTP/1.1" 200 2578
+[28/Jun/2017 16:01:36] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.css HTTP/1.1" 200 47879
+[28/Jun/2017 16:01:36] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.css HTTP/1.1" 200 391
+[28/Jun/2017 16:01:36] INFO [django.server:124] "GET /static/css/settings.css HTTP/1.1" 200 146
+[28/Jun/2017 16:01:36] INFO [django.server:124] "GET /static/css/common.css HTTP/1.1" 200 5124
+[28/Jun/2017 16:01:36] INFO [django.server:124] "GET /static/js/hammer.min.js HTTP/1.1" 200 20765
+[28/Jun/2017 16:01:36] INFO [django.server:124] "GET /static/js/jquery.min.js HTTP/1.1" 200 97163
+[28/Jun/2017 16:01:36] INFO [django.server:124] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+[28/Jun/2017 16:01:36] INFO [django.server:124] "GET /static/js/typeahead.js HTTP/1.1" 200 63137
+[28/Jun/2017 16:01:36] INFO [django.server:124] "GET /static/js/search.js HTTP/1.1" 200 31453
+[28/Jun/2017 16:01:36] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.js HTTP/1.1" 200 61679
+[28/Jun/2017 16:01:36] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.js HTTP/1.1" 200 1631
+[28/Jun/2017 16:01:37] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[28/Jun/2017 16:01:37] INFO [django.server:124] "GET /static/img/bg.jpg HTTP/1.1" 200 254754
+[28/Jun/2017 16:01:37] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 1673
+[28/Jun/2017 16:01:37] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+[28/Jun/2017 16:01:37] INFO [django.server:124] "GET /static/img/notFound.png HTTP/1.1" 200 22596
+[28/Jun/2017 16:41:40] DEBUG [django.db.backends:91] (0.033) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[28/Jun/2017 16:41:40] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[28/Jun/2017 17:17:18] DEBUG [django.db.backends:91] (0.034) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[28/Jun/2017 17:17:18] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[28/Jun/2017 17:18:59] ERROR [django.request:135] Internal Server Error: /account/
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/forgeguest/Documents/better_getter/accounts/views.py", line 56, in settings
+    user = user.request
+UnboundLocalError: local variable 'user' referenced before assignment
+[28/Jun/2017 17:18:59] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1qgyhd2ann6gkk9qu05z566f1a9m52rv' AND "django_session"."expire_date" > '2017-06-28 17:18:59.221630'); args=('1qgyhd2ann6gkk9qu05z566f1a9m52rv', u'2017-06-28 17:18:59.221630')
+[28/Jun/2017 17:18:59] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[28/Jun/2017 17:18:59] ERROR [django.server:124] "GET /account/ HTTP/1.1" 500 71743
+[28/Jun/2017 17:19:45] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[28/Jun/2017 17:19:45] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[28/Jun/2017 17:19:48] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1qgyhd2ann6gkk9qu05z566f1a9m52rv' AND "django_session"."expire_date" > '2017-06-28 17:19:48.752692'); args=('1qgyhd2ann6gkk9qu05z566f1a9m52rv', u'2017-06-28 17:19:48.752692')
+[28/Jun/2017 17:19:48] DEBUG [django.db.backends:91] (0.001) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[28/Jun/2017 17:19:48] INFO [django.server:124] "GET /account/ HTTP/1.1" 200 5843
+[28/Jun/2017 17:19:49] INFO [django.server:124] "GET /static/css/settings.css HTTP/1.1" 200 146
+[28/Jun/2017 17:19:49] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.css HTTP/1.1" 200 391
+[28/Jun/2017 17:19:49] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.css HTTP/1.1" 200 47879
+[28/Jun/2017 17:19:49] INFO [django.server:124] "GET /static/js/hammer.min.js HTTP/1.1" 200 20765
+[28/Jun/2017 17:19:49] INFO [django.server:124] "GET /static/css/typeaheadjs.css HTTP/1.1" 200 2578
+[28/Jun/2017 17:19:49] INFO [django.server:124] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+[28/Jun/2017 17:19:49] INFO [django.server:124] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121201
+[28/Jun/2017 17:19:49] INFO [django.server:124] "GET /static/js/jquery.min.js HTTP/1.1" 200 97163
+[28/Jun/2017 17:19:49] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.js HTTP/1.1" 200 1631
+[28/Jun/2017 17:19:49] INFO [django.server:124] "GET /static/css/common.css HTTP/1.1" 200 5124
+[28/Jun/2017 17:19:49] INFO [django.server:124] "GET /static/js/typeahead.js HTTP/1.1" 200 63137
+[28/Jun/2017 17:19:49] INFO [django.server:124] "GET /static/js/search.js HTTP/1.1" 200 31453
+[28/Jun/2017 17:19:49] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.js HTTP/1.1" 200 61679
+[28/Jun/2017 17:19:49] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+[28/Jun/2017 17:19:50] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[28/Jun/2017 17:19:50] INFO [django.server:124] "GET /static/img/bg.jpg HTTP/1.1" 200 254754
+[28/Jun/2017 17:19:51] INFO [django.server:124] "GET /static/img/notFound.png HTTP/1.1" 200 22596
+[28/Jun/2017 17:19:51] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 1673
+[28/Jun/2017 17:20:20] INFO [django.server:124] "GET /admin HTTP/1.1" 301 0
+[28/Jun/2017 17:20:21] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1qgyhd2ann6gkk9qu05z566f1a9m52rv' AND "django_session"."expire_date" > '2017-06-28 17:20:21.049271'); args=('1qgyhd2ann6gkk9qu05z566f1a9m52rv', u'2017-06-28 17:20:21.049271')
+[28/Jun/2017 17:20:21] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[28/Jun/2017 17:20:21] INFO [django.server:124] "GET /admin/ HTTP/1.1" 302 0
+[28/Jun/2017 17:20:21] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1qgyhd2ann6gkk9qu05z566f1a9m52rv' AND "django_session"."expire_date" > '2017-06-28 17:20:21.078722'); args=('1qgyhd2ann6gkk9qu05z566f1a9m52rv', u'2017-06-28 17:20:21.078722')
+[28/Jun/2017 17:20:21] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[28/Jun/2017 17:20:21] DEBUG [django.db.backends:91] (0.000) SELECT "django_content_type"."app_label", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "accounts_user_user_permissions" ON ("auth_permission"."id" = "accounts_user_user_permissions"."permission_id") INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "accounts_user_user_permissions"."user_id" = 2; args=(2,)
+[28/Jun/2017 17:20:21] DEBUG [django.db.backends:91] (0.000) SELECT "django_content_type"."app_label", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "auth_group_permissions" ON ("auth_permission"."id" = "auth_group_permissions"."permission_id") INNER JOIN "auth_group" ON ("auth_group_permissions"."group_id" = "auth_group"."id") INNER JOIN "accounts_user_groups" ON ("auth_group"."id" = "accounts_user_groups"."group_id") INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "accounts_user_groups"."user_id" = 2; args=(2,)
+[28/Jun/2017 17:20:21] DEBUG [django.template:925] Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_popup] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x7f59283a9398>>, 'user': <SimpleLazyObject: <User: eqwert>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f592836a050>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f5928361090>, u'request': <WSGIRequest: GET '/admin/login/?next=/admin/'>}, {}, {'username': u'eqwert', 'app_path': u'/admin/login/?next=/admin/', 'available_apps': [], 'site_name': '127.0.0.1:8000', 'form': <AdminAuthenticationForm bound=False, valid=Unknown, fields=(username;password)>, 'title': u'Log in', 'site_header': u'Django administration', 'site': <django.contrib.sites.requests.RequestSite object at 0x7f5928373750>, 'next': u'/admin/', 'site_title': u'Django site admin', u'LANGUAGE_CODE': 'en-us', 'has_permission': False, 'site_url': '/', u'LANGUAGE_BIDI': False, u'view': <django.contrib.auth.views.LoginView object at 0x7f5928361150>}]"
+[28/Jun/2017 17:20:21] DEBUG [django.template:925] Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_popup] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x7f59283a9398>>, 'user': <SimpleLazyObject: <User: eqwert>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f592836a050>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f5928361090>, u'request': <WSGIRequest: GET '/admin/login/?next=/admin/'>}, {}, {'username': u'eqwert', 'app_path': u'/admin/login/?next=/admin/', 'available_apps': [], 'site_name': '127.0.0.1:8000', 'form': <AdminAuthenticationForm bound=False, valid=Unknown, fields=(username;password)>, 'title': u'Log in', 'site_header': u'Django administration', 'site': <django.contrib.sites.requests.RequestSite object at 0x7f5928373750>, 'next': u'/admin/', 'site_title': u'Django site admin', u'LANGUAGE_CODE': 'en-us', 'has_permission': False, 'site_url': '/', u'LANGUAGE_BIDI': False, u'view': <django.contrib.auth.views.LoginView object at 0x7f5928361150>}]"
+[28/Jun/2017 17:20:21] INFO [django.server:124] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1803
+[28/Jun/2017 17:20:21] INFO [django.server:124] "GET /static/admin/css/base.css HTTP/1.1" 200 16066
+[28/Jun/2017 17:20:21] INFO [django.server:124] "GET /static/admin/css/login.css HTTP/1.1" 200 1203
+[28/Jun/2017 17:20:21] INFO [django.server:124] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[28/Jun/2017 17:20:21] INFO [django.server:124] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+[28/Jun/2017 17:20:21] INFO [django.server:124] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+[28/Jun/2017 17:20:21] INFO [django.server:124] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+[28/Jun/2017 17:20:28] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1qgyhd2ann6gkk9qu05z566f1a9m52rv' AND "django_session"."expire_date" > '2017-06-28 17:20:28.236998'); args=('1qgyhd2ann6gkk9qu05z566f1a9m52rv', u'2017-06-28 17:20:28.236998')
+[28/Jun/2017 17:20:28] DEBUG [django.db.backends:91] (0.001) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[28/Jun/2017 17:20:28] DEBUG [django.db.backends:91] (0.000) SELECT "django_content_type"."app_label", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "accounts_user_user_permissions" ON ("auth_permission"."id" = "accounts_user_user_permissions"."permission_id") INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "accounts_user_user_permissions"."user_id" = 2; args=(2,)
+[28/Jun/2017 17:20:28] DEBUG [django.db.backends:91] (0.000) SELECT "django_content_type"."app_label", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "auth_group_permissions" ON ("auth_permission"."id" = "auth_group_permissions"."permission_id") INNER JOIN "auth_group" ON ("auth_group_permissions"."group_id" = "auth_group"."id") INNER JOIN "accounts_user_groups" ON ("auth_group"."id" = "accounts_user_groups"."group_id") INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "accounts_user_groups"."user_id" = 2; args=(2,)
+[28/Jun/2017 17:20:28] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."username" = 'jwcorle'; args=(u'jwcorle',)
+[28/Jun/2017 17:20:28] DEBUG [django.db.backends:91] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = '1qgyhd2ann6gkk9qu05z566f1a9m52rv'; args=('1qgyhd2ann6gkk9qu05z566f1a9m52rv',)
+[28/Jun/2017 17:20:28] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[28/Jun/2017 17:20:28] DEBUG [django.db.backends:91] (0.000) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('1qgyhd2ann6gkk9qu05z566f1a9m52rv'); args=(u'1qgyhd2ann6gkk9qu05z566f1a9m52rv',)
+[28/Jun/2017 17:20:28] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[28/Jun/2017 17:20:28] DEBUG [django.db.backends:91] (0.000) UPDATE "accounts_user" SET "last_login" = '2017-06-28 17:20:28.582691' WHERE "accounts_user"."id" = 1; args=(u'2017-06-28 17:20:28.582691', 1)
+[28/Jun/2017 17:20:28] DEBUG [django.db.backends:91] (0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = '1zk3qcyvoy8ehsmp8kgbaxrnculp81w7' LIMIT 1; args=(u'1zk3qcyvoy8ehsmp8kgbaxrnculp81w7',)
+[28/Jun/2017 17:20:28] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[28/Jun/2017 17:20:28] DEBUG [django.db.backends:91] (0.000) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT '1zk3qcyvoy8ehsmp8kgbaxrnculp81w7', 'OGQzZDhmZjUyZTBmYjdkNGNhYjdhZDg3NTJiMjk4M2E1MjJjMjZmMjp7Il9hdXRoX3VzZXJfaGFzaCI6ImM3MWIyYTgxMjM2M2IyZTMwY2Q5M2U5ZWZjZGE1MTI1N2NiZWQ1ZDciLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=', '2017-07-12 17:20:28.740570'; args=(u'1zk3qcyvoy8ehsmp8kgbaxrnculp81w7', u'OGQzZDhmZjUyZTBmYjdkNGNhYjdhZDg3NTJiMjk4M2E1MjJjMjZmMjp7Il9hdXRoX3VzZXJfaGFzaCI6ImM3MWIyYTgxMjM2M2IyZTMwY2Q5M2U5ZWZjZGE1MTI1N2NiZWQ1ZDciLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=', u'2017-07-12 17:20:28.740570')
+[28/Jun/2017 17:20:28] INFO [django.server:124] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[28/Jun/2017 17:20:28] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zk3qcyvoy8ehsmp8kgbaxrnculp81w7' AND "django_session"."expire_date" > '2017-06-28 17:20:28.912980'); args=('1zk3qcyvoy8ehsmp8kgbaxrnculp81w7', u'2017-06-28 17:20:28.912980')
+[28/Jun/2017 17:20:28] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[28/Jun/2017 17:20:28] DEBUG [django.template:925] Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_popup] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x7f592837e938>>, 'user': <SimpleLazyObject: <User: jwcorle>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f59282c36d0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f5928316c10>, u'request': <WSGIRequest: GET '/admin/'>}, {}, {'site_header': u'Django administration', 'available_apps': [{'app_url': u'/admin/accounts/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/accounts/user/', 'object_name': 'User', 'name': u'Users', 'add_url': u'/admin/accounts/user/add/'}], 'has_module_perms': True, 'name': 'Accounts', 'app_label': 'accounts'}, {'app_url': u'/admin/auth/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/group/', 'object_name': 'Group', 'name': u'Groups', 'add_url': u'/admin/auth/group/add/'}], 'has_module_perms': True, 'name': u'Authentication and Authorization', 'app_label': 'auth'}], 'site_title': u'Django site admin', 'title': u'Site administration', 'has_permission': True, 'app_list': [{'app_url': u'/admin/accounts/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/accounts/user/', 'object_name': 'User', 'name': u'Users', 'add_url': u'/admin/accounts/user/add/'}], 'has_module_perms': True, 'name': 'Accounts', 'app_label': 'accounts'}, {'app_url': u'/admin/auth/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/group/', 'object_name': 'Group', 'name': u'Groups', 'add_url': u'/admin/auth/group/add/'}], 'has_module_perms': True, 'name': u'Authentication and Authorization', 'app_label': 'auth'}], u'LANGUAGE_CODE': 'en-us', u'LANGUAGE_BIDI': False, 'site_url': '/'}]"
+[28/Jun/2017 17:20:28] DEBUG [django.template:925] Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_popup] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x7f592837e938>>, 'user': <SimpleLazyObject: <User: jwcorle>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f59282c36d0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f5928316c10>, u'request': <WSGIRequest: GET '/admin/'>}, {}, {'site_header': u'Django administration', 'available_apps': [{'app_url': u'/admin/accounts/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/accounts/user/', 'object_name': 'User', 'name': u'Users', 'add_url': u'/admin/accounts/user/add/'}], 'has_module_perms': True, 'name': 'Accounts', 'app_label': 'accounts'}, {'app_url': u'/admin/auth/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/group/', 'object_name': 'Group', 'name': u'Groups', 'add_url': u'/admin/auth/group/add/'}], 'has_module_perms': True, 'name': u'Authentication and Authorization', 'app_label': 'auth'}], 'site_title': u'Django site admin', 'title': u'Site administration', 'has_permission': True, 'app_list': [{'app_url': u'/admin/accounts/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/accounts/user/', 'object_name': 'User', 'name': u'Users', 'add_url': u'/admin/accounts/user/add/'}], 'has_module_perms': True, 'name': 'Accounts', 'app_label': 'accounts'}, {'app_url': u'/admin/auth/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/group/', 'object_name': 'Group', 'name': u'Groups', 'add_url': u'/admin/auth/group/add/'}], 'has_module_perms': True, 'name': u'Authentication and Authorization', 'app_label': 'auth'}], u'LANGUAGE_CODE': 'en-us', u'LANGUAGE_BIDI': False, 'site_url': '/'}]"
+[28/Jun/2017 17:20:28] DEBUG [django.db.backends:91] (0.000) SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_admin_log" INNER JOIN "accounts_user" ON ("django_admin_log"."user_id" = "accounts_user"."id") LEFT OUTER JOIN "django_content_type" ON ("django_admin_log"."content_type_id" = "django_content_type"."id") WHERE "django_admin_log"."user_id" = 1 ORDER BY "django_admin_log"."action_time" DESC LIMIT 10; args=(1,)
+[28/Jun/2017 17:20:28] INFO [django.server:124] "GET /admin/ HTTP/1.1" 200 3045
+[28/Jun/2017 17:20:28] INFO [django.server:124] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+[28/Jun/2017 17:20:31] INFO [django.server:124] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[28/Jun/2017 17:20:31] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zk3qcyvoy8ehsmp8kgbaxrnculp81w7' AND "django_session"."expire_date" > '2017-06-28 17:20:31.064054'); args=('1zk3qcyvoy8ehsmp8kgbaxrnculp81w7', u'2017-06-28 17:20:31.064054')
+[28/Jun/2017 17:20:31] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[28/Jun/2017 17:20:31] DEBUG [django.db.backends:91] (0.000) SELECT COUNT(*) AS "__count" FROM "accounts_user"; args=()
+[28/Jun/2017 17:20:31] DEBUG [django.db.backends:91] (0.000) SELECT COUNT(*) AS "__count" FROM "accounts_user"; args=()
+[28/Jun/2017 17:20:31] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" ORDER BY "accounts_user"."username" ASC, "accounts_user"."id" DESC; args=()
+[28/Jun/2017 17:20:31] INFO [django.server:124] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[28/Jun/2017 17:20:31] DEBUG [django.template:925] Exception while resolving variable 'errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [errors] in u'None'
+[28/Jun/2017 17:20:31] DEBUG [django.template:925] Exception while resolving variable 'show' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [show] in u"[{'False': False, 'None': None, 'True': True, 'csrf_token': <SimpleLazyObject: <function _get_val at 0x7f592837e938>>}]"
+[28/Jun/2017 17:20:31] DEBUG [django.template:925] Exception while resolving variable 'is_multipart' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_multipart] in u'None'
+[28/Jun/2017 17:20:31] DEBUG [django.template:925] Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [non_field_errors] in u'None'
+[28/Jun/2017 17:20:31] DEBUG [django.template:925] Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [non_field_errors] in u'None'
+[28/Jun/2017 17:20:31] INFO [django.server:124] "GET /admin/accounts/user/ HTTP/1.1" 200 5329
+[28/Jun/2017 17:20:31] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zk3qcyvoy8ehsmp8kgbaxrnculp81w7' AND "django_session"."expire_date" > '2017-06-28 17:20:31.981833'); args=('1zk3qcyvoy8ehsmp8kgbaxrnculp81w7', u'2017-06-28 17:20:31.981833')
+[28/Jun/2017 17:20:31] DEBUG [django.db.backends:91] (0.001) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[28/Jun/2017 17:20:31] INFO [django.server:124] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6170
+[28/Jun/2017 17:20:32] INFO [django.server:124] "GET /static/admin/js/core.js HTTP/1.1" 200 7976
+[28/Jun/2017 17:20:32] INFO [django.server:124] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[28/Jun/2017 17:20:32] INFO [django.server:124] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[28/Jun/2017 17:20:32] INFO [django.server:124] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 258648
+[28/Jun/2017 17:20:32] INFO [django.server:124] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6591
+[28/Jun/2017 17:20:32] INFO [django.server:124] "GET /static/admin/js/actions.js HTTP/1.1" 200 6501
+[28/Jun/2017 17:20:34] INFO [django.server:124] "GET /static/admin/js/urlify.js HTTP/1.1" 200 8186
+[28/Jun/2017 17:20:34] INFO [django.server:124] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1538
+[28/Jun/2017 17:20:34] INFO [django.server:124] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+[28/Jun/2017 17:20:34] INFO [django.server:124] "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+[28/Jun/2017 17:20:34] INFO [django.server:124] "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+[28/Jun/2017 17:20:34] INFO [django.server:124] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[28/Jun/2017 17:20:34] INFO [django.server:124] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[28/Jun/2017 17:20:34] INFO [django.server:124] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+[28/Jun/2017 17:20:37] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zk3qcyvoy8ehsmp8kgbaxrnculp81w7' AND "django_session"."expire_date" > '2017-06-28 17:20:37.338800'); args=('1zk3qcyvoy8ehsmp8kgbaxrnculp81w7', u'2017-06-28 17:20:37.338800')
+[28/Jun/2017 17:20:37] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[28/Jun/2017 17:20:37] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[28/Jun/2017 17:20:37] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 2; args=(2,)
+[28/Jun/2017 17:20:37] DEBUG [django.db.backends:91] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'user' AND "django_content_type"."app_label" = 'accounts'); args=('user', 'accounts')
+[28/Jun/2017 17:20:37] INFO [django.server:124] "GET /admin/accounts/user/2/change/ HTTP/1.1" 200 7696
+[28/Jun/2017 17:20:37] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zk3qcyvoy8ehsmp8kgbaxrnculp81w7' AND "django_session"."expire_date" > '2017-06-28 17:20:37.810400'); args=('1zk3qcyvoy8ehsmp8kgbaxrnculp81w7', u'2017-06-28 17:20:37.810400')
+[28/Jun/2017 17:20:37] DEBUG [django.db.backends:91] (0.001) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[28/Jun/2017 17:20:37] INFO [django.server:124] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[28/Jun/2017 17:20:37] INFO [django.server:124] "GET /static/admin/css/forms.css HTTP/1.1" 200 8173
+[28/Jun/2017 17:20:37] INFO [django.server:124] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+[28/Jun/2017 17:20:37] INFO [django.server:124] "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+[28/Jun/2017 17:20:37] INFO [django.server:124] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+[28/Jun/2017 17:25:28] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[28/Jun/2017 17:25:28] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[28/Jun/2017 17:25:33] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zk3qcyvoy8ehsmp8kgbaxrnculp81w7' AND "django_session"."expire_date" > '2017-06-28 17:25:33.593531'); args=('1zk3qcyvoy8ehsmp8kgbaxrnculp81w7', u'2017-06-28 17:25:33.593531')
+[28/Jun/2017 17:25:33] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[28/Jun/2017 17:25:33] INFO [django.server:124] "GET /account/ HTTP/1.1" 200 5846
+[28/Jun/2017 17:25:33] INFO [django.server:124] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121201
+[28/Jun/2017 17:25:33] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.css HTTP/1.1" 200 391
+[28/Jun/2017 17:25:33] INFO [django.server:124] "GET /static/css/typeaheadjs.css HTTP/1.1" 200 2578
+[28/Jun/2017 17:25:33] INFO [django.server:124] "GET /static/css/common.css HTTP/1.1" 200 5124
+[28/Jun/2017 17:25:33] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.css HTTP/1.1" 200 47879
+[28/Jun/2017 17:25:33] INFO [django.server:124] "GET /static/css/settings.css HTTP/1.1" 200 146
+[28/Jun/2017 17:25:33] INFO [django.server:124] "GET /static/js/hammer.min.js HTTP/1.1" 200 20765
+[28/Jun/2017 17:25:33] INFO [django.server:124] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+[28/Jun/2017 17:25:33] INFO [django.server:124] "GET /static/js/jquery.min.js HTTP/1.1" 200 97163
+[28/Jun/2017 17:25:33] INFO [django.server:124] "GET /static/js/typeahead.js HTTP/1.1" 200 63137
+[28/Jun/2017 17:25:33] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.js HTTP/1.1" 200 61679
+[28/Jun/2017 17:25:33] INFO [django.server:124] "GET /static/js/search.js HTTP/1.1" 200 31453
+[28/Jun/2017 17:25:33] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.js HTTP/1.1" 200 1631
+[28/Jun/2017 17:25:34] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[28/Jun/2017 17:25:34] INFO [django.server:124] "GET /static/img/bg.jpg HTTP/1.1" 200 254754
+[28/Jun/2017 17:25:34] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 1673
+[28/Jun/2017 17:25:34] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+[28/Jun/2017 17:25:34] INFO [django.server:124] "GET /static/img/notFound.png HTTP/1.1" 200 22596
+[28/Jun/2017 17:27:11] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zk3qcyvoy8ehsmp8kgbaxrnculp81w7' AND "django_session"."expire_date" > '2017-06-28 17:27:11.988528'); args=('1zk3qcyvoy8ehsmp8kgbaxrnculp81w7', u'2017-06-28 17:27:11.988528')
+[28/Jun/2017 17:27:12] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[28/Jun/2017 17:27:12] INFO [django.server:124] "GET /account/ HTTP/1.1" 200 5846
+[28/Jun/2017 17:27:12] INFO [django.server:124] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121201
+[28/Jun/2017 17:27:12] INFO [django.server:124] "GET /static/css/typeaheadjs.css HTTP/1.1" 200 2578
+[28/Jun/2017 17:27:12] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.css HTTP/1.1" 200 47879
+[28/Jun/2017 17:27:12] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.css HTTP/1.1" 200 391
+[28/Jun/2017 17:27:12] INFO [django.server:124] "GET /static/css/common.css HTTP/1.1" 200 5124
+[28/Jun/2017 17:27:12] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.js HTTP/1.1" 200 1631
+[28/Jun/2017 17:27:12] INFO [django.server:124] "GET /static/js/hammer.min.js HTTP/1.1" 200 20765
+[28/Jun/2017 17:27:12] INFO [django.server:124] "GET /static/css/settings.css HTTP/1.1" 200 146
+[28/Jun/2017 17:27:12] INFO [django.server:124] "GET /static/js/jquery.min.js HTTP/1.1" 200 97163
+[28/Jun/2017 17:27:12] INFO [django.server:124] "GET /static/js/typeahead.js HTTP/1.1" 200 63137
+[28/Jun/2017 17:27:12] INFO [django.server:124] "GET /static/js/search.js HTTP/1.1" 200 31453
+[28/Jun/2017 17:27:12] INFO [django.server:124] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+[28/Jun/2017 17:27:12] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.js HTTP/1.1" 200 61679
+[28/Jun/2017 17:27:12] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[28/Jun/2017 17:27:12] INFO [django.server:124] "GET /static/img/bg.jpg HTTP/1.1" 200 254754
+[28/Jun/2017 17:27:12] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 1673
+[28/Jun/2017 17:27:12] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+[28/Jun/2017 17:27:12] INFO [django.server:124] "GET /static/img/notFound.png HTTP/1.1" 200 22596
+[28/Jun/2017 17:27:28] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zk3qcyvoy8ehsmp8kgbaxrnculp81w7' AND "django_session"."expire_date" > '2017-06-28 17:27:28.848932'); args=('1zk3qcyvoy8ehsmp8kgbaxrnculp81w7', u'2017-06-28 17:27:28.848932')
+[28/Jun/2017 17:27:28] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[28/Jun/2017 17:27:28] INFO [django.server:124] "GET /account/ HTTP/1.1" 200 5846
+[28/Jun/2017 17:27:28] INFO [django.server:124] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121201
+[28/Jun/2017 17:27:28] INFO [django.server:124] "GET /static/css/typeaheadjs.css HTTP/1.1" 200 2578
+[28/Jun/2017 17:27:28] INFO [django.server:124] "GET /static/css/common.css HTTP/1.1" 200 5124
+[28/Jun/2017 17:27:28] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.css HTTP/1.1" 200 391
+[28/Jun/2017 17:27:28] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.css HTTP/1.1" 200 47879
+[28/Jun/2017 17:27:28] INFO [django.server:124] "GET /static/js/hammer.min.js HTTP/1.1" 200 20765
+[28/Jun/2017 17:27:28] INFO [django.server:124] "GET /static/css/settings.css HTTP/1.1" 200 146
+[28/Jun/2017 17:27:28] INFO [django.server:124] "GET /static/js/jquery.min.js HTTP/1.1" 200 97163
+[28/Jun/2017 17:27:28] INFO [django.server:124] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+[28/Jun/2017 17:27:28] INFO [django.server:124] "GET /static/js/typeahead.js HTTP/1.1" 200 63137
+[28/Jun/2017 17:27:28] INFO [django.server:124] "GET /static/js/search.js HTTP/1.1" 200 31453
+[28/Jun/2017 17:27:28] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.js HTTP/1.1" 200 61679
+[28/Jun/2017 17:27:28] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.js HTTP/1.1" 200 1631
+[28/Jun/2017 17:27:29] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[28/Jun/2017 17:27:29] INFO [django.server:124] "GET /static/img/bg.jpg HTTP/1.1" 200 254754
+[28/Jun/2017 17:27:29] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 1673
+[28/Jun/2017 17:27:29] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+[28/Jun/2017 17:27:29] INFO [django.server:124] "GET /static/img/notFound.png HTTP/1.1" 200 22596
+[28/Jun/2017 17:27:40] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[28/Jun/2017 17:27:40] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[28/Jun/2017 17:27:45] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zk3qcyvoy8ehsmp8kgbaxrnculp81w7' AND "django_session"."expire_date" > '2017-06-28 17:27:45.463715'); args=('1zk3qcyvoy8ehsmp8kgbaxrnculp81w7', u'2017-06-28 17:27:45.463715')
+[28/Jun/2017 17:27:45] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[28/Jun/2017 17:27:45] INFO [django.server:124] "GET /account/ HTTP/1.1" 200 5827
+[28/Jun/2017 17:27:45] INFO [django.server:124] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121201
+[28/Jun/2017 17:27:45] INFO [django.server:124] "GET /static/css/typeaheadjs.css HTTP/1.1" 200 2578
+[28/Jun/2017 17:27:45] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.css HTTP/1.1" 200 47879
+[28/Jun/2017 17:27:45] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.css HTTP/1.1" 200 391
+[28/Jun/2017 17:27:45] INFO [django.server:124] "GET /static/css/common.css HTTP/1.1" 200 5124
+[28/Jun/2017 17:27:45] INFO [django.server:124] "GET /static/css/settings.css HTTP/1.1" 200 146
+[28/Jun/2017 17:27:45] INFO [django.server:124] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+[28/Jun/2017 17:27:45] INFO [django.server:124] "GET /static/js/hammer.min.js HTTP/1.1" 200 20765
+[28/Jun/2017 17:27:45] INFO [django.server:124] "GET /static/js/jquery.min.js HTTP/1.1" 200 97163
+[28/Jun/2017 17:27:45] INFO [django.server:124] "GET /static/js/typeahead.js HTTP/1.1" 200 63137
+[28/Jun/2017 17:27:45] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.js HTTP/1.1" 200 61679
+[28/Jun/2017 17:27:45] INFO [django.server:124] "GET /static/js/search.js HTTP/1.1" 200 31453
+[28/Jun/2017 17:27:45] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.js HTTP/1.1" 200 1631
+[28/Jun/2017 17:27:46] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[28/Jun/2017 17:27:46] INFO [django.server:124] "GET /static/img/bg.jpg HTTP/1.1" 200 254754
+[28/Jun/2017 17:27:46] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 1673
+[28/Jun/2017 17:27:46] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+[28/Jun/2017 17:27:46] INFO [django.server:124] "GET /static/img/notFound.png HTTP/1.1" 200 22596
+[28/Jun/2017 17:29:11] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[28/Jun/2017 17:29:11] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[28/Jun/2017 17:29:13] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zk3qcyvoy8ehsmp8kgbaxrnculp81w7' AND "django_session"."expire_date" > '2017-06-28 17:29:13.855911'); args=('1zk3qcyvoy8ehsmp8kgbaxrnculp81w7', u'2017-06-28 17:29:13.855911')
+[28/Jun/2017 17:29:13] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[28/Jun/2017 17:29:13] INFO [django.server:124] "GET /account/ HTTP/1.1" 200 5827
+[28/Jun/2017 17:29:13] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.css HTTP/1.1" 200 391
+[28/Jun/2017 17:29:13] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.css HTTP/1.1" 200 47879
+[28/Jun/2017 17:29:13] INFO [django.server:124] "GET /static/css/settings.css HTTP/1.1" 200 146
+[28/Jun/2017 17:29:13] INFO [django.server:124] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121201
+[28/Jun/2017 17:29:13] INFO [django.server:124] "GET /static/css/common.css HTTP/1.1" 200 5124
+[28/Jun/2017 17:29:13] INFO [django.server:124] "GET /static/js/jquery.min.js HTTP/1.1" 200 97163
+[28/Jun/2017 17:29:13] INFO [django.server:124] "GET /static/css/typeaheadjs.css HTTP/1.1" 200 2578
+[28/Jun/2017 17:29:14] INFO [django.server:124] "GET /static/js/hammer.min.js HTTP/1.1" 200 20765
+[28/Jun/2017 17:29:14] INFO [django.server:124] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+[28/Jun/2017 17:29:14] INFO [django.server:124] "GET /static/js/typeahead.js HTTP/1.1" 200 63137
+[28/Jun/2017 17:29:14] INFO [django.server:124] "GET /static/js/search.js HTTP/1.1" 200 31453
+[28/Jun/2017 17:29:14] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.js HTTP/1.1" 200 61679
+[28/Jun/2017 17:29:14] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.js HTTP/1.1" 200 1631
+[28/Jun/2017 17:29:14] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[28/Jun/2017 17:29:14] INFO [django.server:124] "GET /static/img/bg.jpg HTTP/1.1" 200 254754
+[28/Jun/2017 17:29:14] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 1673
+[28/Jun/2017 17:29:14] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+[28/Jun/2017 17:29:14] INFO [django.server:124] "GET /static/img/notFound.png HTTP/1.1" 200 22596
+[28/Jun/2017 17:33:33] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[28/Jun/2017 17:33:33] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[28/Jun/2017 17:33:38] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[28/Jun/2017 17:33:38] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[28/Jun/2017 17:33:47] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[28/Jun/2017 17:33:47] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[28/Jun/2017 17:34:27] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zk3qcyvoy8ehsmp8kgbaxrnculp81w7' AND "django_session"."expire_date" > '2017-06-28 17:34:27.498003'); args=('1zk3qcyvoy8ehsmp8kgbaxrnculp81w7', u'2017-06-28 17:34:27.498003')
+[28/Jun/2017 17:34:27] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[28/Jun/2017 17:34:27] INFO [django.server:124] "GET /account/ HTTP/1.1" 200 5670
+[28/Jun/2017 17:34:27] INFO [django.server:124] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121201
+[28/Jun/2017 17:34:27] INFO [django.server:124] "GET /static/css/typeaheadjs.css HTTP/1.1" 200 2578
+[28/Jun/2017 17:34:27] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.css HTTP/1.1" 200 47879
+[28/Jun/2017 17:34:27] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.css HTTP/1.1" 200 391
+[28/Jun/2017 17:34:27] INFO [django.server:124] "GET /static/css/common.css HTTP/1.1" 200 5124
+[28/Jun/2017 17:34:27] INFO [django.server:124] "GET /static/css/settings.css HTTP/1.1" 200 146
+[28/Jun/2017 17:34:27] INFO [django.server:124] "GET /static/js/hammer.min.js HTTP/1.1" 200 20765
+[28/Jun/2017 17:34:27] INFO [django.server:124] "GET /static/js/jquery.min.js HTTP/1.1" 200 97163
+[28/Jun/2017 17:34:27] INFO [django.server:124] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+[28/Jun/2017 17:34:27] INFO [django.server:124] "GET /static/js/typeahead.js HTTP/1.1" 200 63137
+[28/Jun/2017 17:34:27] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.js HTTP/1.1" 200 1631
+[28/Jun/2017 17:34:27] INFO [django.server:124] "GET /static/js/search.js HTTP/1.1" 200 31453
+[28/Jun/2017 17:34:27] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.js HTTP/1.1" 200 61679
+[28/Jun/2017 17:34:28] INFO [django.server:124] "GET /static/img/bg.jpg HTTP/1.1" 200 254754
+[28/Jun/2017 17:34:28] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[28/Jun/2017 17:34:28] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 1673
+[28/Jun/2017 17:34:28] INFO [django.server:124] "GET /static/img/notFound.png HTTP/1.1" 200 22596
+[28/Jun/2017 17:34:28] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+[28/Jun/2017 17:36:58] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[28/Jun/2017 17:36:58] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[28/Jun/2017 17:37:21] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zk3qcyvoy8ehsmp8kgbaxrnculp81w7' AND "django_session"."expire_date" > '2017-06-28 17:37:21.654110'); args=('1zk3qcyvoy8ehsmp8kgbaxrnculp81w7', u'2017-06-28 17:37:21.654110')
+[28/Jun/2017 17:37:21] DEBUG [django.db.backends:91] (0.001) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[28/Jun/2017 17:37:21] INFO [django.server:124] "GET /account/ HTTP/1.1" 200 5774
+[28/Jun/2017 17:37:21] INFO [django.server:124] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121201
+[28/Jun/2017 17:37:21] INFO [django.server:124] "GET /static/css/typeaheadjs.css HTTP/1.1" 200 2578
+[28/Jun/2017 17:37:21] INFO [django.server:124] "GET /static/css/common.css HTTP/1.1" 200 5124
+[28/Jun/2017 17:37:21] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.css HTTP/1.1" 200 47879
+[28/Jun/2017 17:37:21] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.css HTTP/1.1" 200 391
+[28/Jun/2017 17:37:21] INFO [django.server:124] "GET /static/css/settings.css HTTP/1.1" 200 146
+[28/Jun/2017 17:37:21] INFO [django.server:124] "GET /static/js/hammer.min.js HTTP/1.1" 200 20765
+[28/Jun/2017 17:37:21] INFO [django.server:124] "GET /static/js/jquery.min.js HTTP/1.1" 200 97163
+[28/Jun/2017 17:37:21] INFO [django.server:124] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+[28/Jun/2017 17:37:21] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.js HTTP/1.1" 200 61679
+[28/Jun/2017 17:37:21] INFO [django.server:124] "GET /static/js/search.js HTTP/1.1" 200 31453
+[28/Jun/2017 17:37:21] INFO [django.server:124] "GET /static/js/typeahead.js HTTP/1.1" 200 63137
+[28/Jun/2017 17:37:21] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.js HTTP/1.1" 200 1631
+[28/Jun/2017 17:37:22] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[28/Jun/2017 17:37:22] INFO [django.server:124] "GET /static/img/bg.jpg HTTP/1.1" 200 254754
+[28/Jun/2017 17:37:22] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 1673
+[28/Jun/2017 17:37:22] INFO [django.server:124] "GET /static/img/notFound.png HTTP/1.1" 200 22596
+[28/Jun/2017 17:37:22] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+[28/Jun/2017 17:37:25] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[28/Jun/2017 17:37:25] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[28/Jun/2017 17:37:27] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zk3qcyvoy8ehsmp8kgbaxrnculp81w7' AND "django_session"."expire_date" > '2017-06-28 17:37:27.073910'); args=('1zk3qcyvoy8ehsmp8kgbaxrnculp81w7', u'2017-06-28 17:37:27.073910')
+[28/Jun/2017 17:37:27] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[28/Jun/2017 17:37:27] INFO [django.server:124] "GET /account/ HTTP/1.1" 200 5774
+[28/Jun/2017 17:37:27] INFO [django.server:124] "GET /static/css/common.css HTTP/1.1" 200 5124
+[28/Jun/2017 17:37:27] INFO [django.server:124] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121201
+[28/Jun/2017 17:37:27] INFO [django.server:124] "GET /static/css/settings.css HTTP/1.1" 200 146
+[28/Jun/2017 17:37:27] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.css HTTP/1.1" 200 391
+[28/Jun/2017 17:37:27] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.css HTTP/1.1" 200 47879
+[28/Jun/2017 17:37:27] INFO [django.server:124] "GET /static/js/hammer.min.js HTTP/1.1" 200 20765
+[28/Jun/2017 17:37:27] INFO [django.server:124] "GET /static/css/typeaheadjs.css HTTP/1.1" 200 2578
+[28/Jun/2017 17:37:27] INFO [django.server:124] "GET /static/js/jquery.min.js HTTP/1.1" 200 97163
+[28/Jun/2017 17:37:27] INFO [django.server:124] "GET /static/js/typeahead.js HTTP/1.1" 200 63137
+[28/Jun/2017 17:37:27] INFO [django.server:124] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+[28/Jun/2017 17:37:27] INFO [django.server:124] "GET /static/js/search.js HTTP/1.1" 200 31453
+[28/Jun/2017 17:37:27] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.js HTTP/1.1" 200 61679
+[28/Jun/2017 17:37:27] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.js HTTP/1.1" 200 1631
+[28/Jun/2017 17:37:27] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[28/Jun/2017 17:37:27] INFO [django.server:124] "GET /static/img/bg.jpg HTTP/1.1" 200 254754
+[28/Jun/2017 17:37:27] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 1673
+[28/Jun/2017 17:37:27] INFO [django.server:124] "GET /static/img/notFound.png HTTP/1.1" 200 22596
+[28/Jun/2017 17:37:27] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+[28/Jun/2017 17:39:50] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zk3qcyvoy8ehsmp8kgbaxrnculp81w7' AND "django_session"."expire_date" > '2017-06-28 17:39:50.118371'); args=('1zk3qcyvoy8ehsmp8kgbaxrnculp81w7', u'2017-06-28 17:39:50.118371')
+[28/Jun/2017 17:39:50] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[28/Jun/2017 17:39:50] INFO [django.server:124] "GET /account/ HTTP/1.1" 200 5774
+[28/Jun/2017 17:39:50] INFO [django.server:124] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121201
+[28/Jun/2017 17:39:50] INFO [django.server:124] "GET /static/css/typeaheadjs.css HTTP/1.1" 200 2578
+[28/Jun/2017 17:39:50] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.css HTTP/1.1" 200 47879
+[28/Jun/2017 17:39:50] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.css HTTP/1.1" 200 391
+[28/Jun/2017 17:39:50] INFO [django.server:124] "GET /static/css/common.css HTTP/1.1" 200 5124
+[28/Jun/2017 17:39:50] INFO [django.server:124] "GET /static/css/settings.css HTTP/1.1" 200 146
+[28/Jun/2017 17:39:50] INFO [django.server:124] "GET /static/js/hammer.min.js HTTP/1.1" 200 20765
+[28/Jun/2017 17:39:50] INFO [django.server:124] "GET /static/js/jquery.min.js HTTP/1.1" 200 97163
+[28/Jun/2017 17:39:50] INFO [django.server:124] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+[28/Jun/2017 17:39:50] INFO [django.server:124] "GET /static/js/typeahead.js HTTP/1.1" 200 63137
+[28/Jun/2017 17:39:50] INFO [django.server:124] "GET /static/js/search.js HTTP/1.1" 200 31453
+[28/Jun/2017 17:39:50] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.js HTTP/1.1" 200 61679
+[28/Jun/2017 17:39:50] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.js HTTP/1.1" 200 1631
+[28/Jun/2017 17:39:50] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[28/Jun/2017 17:39:50] INFO [django.server:124] "GET /static/img/bg.jpg HTTP/1.1" 200 254754
+[28/Jun/2017 17:39:50] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 1673
+[28/Jun/2017 17:39:50] INFO [django.server:124] "GET /static/img/notFound.png HTTP/1.1" 200 22596
+[28/Jun/2017 17:39:50] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+[28/Jun/2017 17:40:01] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zk3qcyvoy8ehsmp8kgbaxrnculp81w7' AND "django_session"."expire_date" > '2017-06-28 17:40:01.598629'); args=('1zk3qcyvoy8ehsmp8kgbaxrnculp81w7', u'2017-06-28 17:40:01.598629')
+[28/Jun/2017 17:40:01] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[28/Jun/2017 17:40:01] INFO [django.server:124] "POST /account/ HTTP/1.1" 200 5981
+[28/Jun/2017 17:40:01] INFO [django.server:124] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121201
+[28/Jun/2017 17:40:01] INFO [django.server:124] "GET /static/css/typeaheadjs.css HTTP/1.1" 200 2578
+[28/Jun/2017 17:40:01] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.css HTTP/1.1" 200 47879
+[28/Jun/2017 17:40:01] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.css HTTP/1.1" 200 391
+[28/Jun/2017 17:40:01] INFO [django.server:124] "GET /static/js/hammer.min.js HTTP/1.1" 200 20765
+[28/Jun/2017 17:40:01] INFO [django.server:124] "GET /static/css/settings.css HTTP/1.1" 200 146
+[28/Jun/2017 17:40:01] INFO [django.server:124] "GET /static/js/jquery.min.js HTTP/1.1" 200 97163
+[28/Jun/2017 17:40:01] INFO [django.server:124] "GET /static/css/common.css HTTP/1.1" 200 5124
+[28/Jun/2017 17:40:01] INFO [django.server:124] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+[28/Jun/2017 17:40:01] INFO [django.server:124] "GET /static/js/typeahead.js HTTP/1.1" 200 63137
+[28/Jun/2017 17:40:01] INFO [django.server:124] "GET /static/js/search.js HTTP/1.1" 200 31453
+[28/Jun/2017 17:40:01] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.js HTTP/1.1" 200 61679
+[28/Jun/2017 17:40:01] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.js HTTP/1.1" 200 1631
+[28/Jun/2017 17:40:02] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[28/Jun/2017 17:40:02] INFO [django.server:124] "GET /static/img/bg.jpg HTTP/1.1" 200 254754
+[28/Jun/2017 17:40:02] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 1673
+[28/Jun/2017 17:40:02] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+[28/Jun/2017 17:40:02] INFO [django.server:124] "GET /static/img/notFound.png HTTP/1.1" 200 22596
+[28/Jun/2017 17:40:14] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zk3qcyvoy8ehsmp8kgbaxrnculp81w7' AND "django_session"."expire_date" > '2017-06-28 17:40:14.793611'); args=('1zk3qcyvoy8ehsmp8kgbaxrnculp81w7', u'2017-06-28 17:40:14.793611')
+[28/Jun/2017 17:40:14] DEBUG [django.db.backends:91] (0.001) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[28/Jun/2017 17:40:14] INFO [django.server:124] "POST /account/ HTTP/1.1" 200 5999
+[28/Jun/2017 17:40:14] INFO [django.server:124] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121201
+[28/Jun/2017 17:40:14] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.css HTTP/1.1" 200 391
+[28/Jun/2017 17:40:14] INFO [django.server:124] "GET /static/css/typeaheadjs.css HTTP/1.1" 200 2578
+[28/Jun/2017 17:40:14] INFO [django.server:124] "GET /static/css/common.css HTTP/1.1" 200 5124
+[28/Jun/2017 17:40:14] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.css HTTP/1.1" 200 47879
+[28/Jun/2017 17:40:14] INFO [django.server:124] "GET /static/css/settings.css HTTP/1.1" 200 146
+[28/Jun/2017 17:40:14] INFO [django.server:124] "GET /static/js/hammer.min.js HTTP/1.1" 200 20765
+[28/Jun/2017 17:40:14] INFO [django.server:124] "GET /static/js/jquery.min.js HTTP/1.1" 200 97163
+[28/Jun/2017 17:40:14] INFO [django.server:124] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+[28/Jun/2017 17:40:14] INFO [django.server:124] "GET /static/js/typeahead.js HTTP/1.1" 200 63137
+[28/Jun/2017 17:40:14] INFO [django.server:124] "GET /static/js/search.js HTTP/1.1" 200 31453
+[28/Jun/2017 17:40:14] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.js HTTP/1.1" 200 61679
+[28/Jun/2017 17:40:14] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.js HTTP/1.1" 200 1631
+[28/Jun/2017 17:40:15] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[28/Jun/2017 17:40:15] INFO [django.server:124] "GET /static/img/bg.jpg HTTP/1.1" 200 254754
+[28/Jun/2017 17:40:15] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 1673
+[28/Jun/2017 17:40:15] INFO [django.server:124] "GET /static/img/notFound.png HTTP/1.1" 200 22596
+[28/Jun/2017 17:40:15] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+[28/Jun/2017 17:40:22] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zk3qcyvoy8ehsmp8kgbaxrnculp81w7' AND "django_session"."expire_date" > '2017-06-28 17:40:22.115053'); args=('1zk3qcyvoy8ehsmp8kgbaxrnculp81w7', u'2017-06-28 17:40:22.115053')
+[28/Jun/2017 17:40:22] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[28/Jun/2017 17:40:22] INFO [django.server:124] "GET /account/ HTTP/1.1" 200 5774
+[28/Jun/2017 17:40:22] INFO [django.server:124] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121201
+[28/Jun/2017 17:40:22] INFO [django.server:124] "GET /static/css/typeaheadjs.css HTTP/1.1" 200 2578
+[28/Jun/2017 17:40:22] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.css HTTP/1.1" 200 47879
+[28/Jun/2017 17:40:22] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.css HTTP/1.1" 200 391
+[28/Jun/2017 17:40:22] INFO [django.server:124] "GET /static/css/common.css HTTP/1.1" 200 5124
+[28/Jun/2017 17:40:22] INFO [django.server:124] "GET /static/css/settings.css HTTP/1.1" 200 146
+[28/Jun/2017 17:40:22] INFO [django.server:124] "GET /static/js/hammer.min.js HTTP/1.1" 200 20765
+[28/Jun/2017 17:40:22] INFO [django.server:124] "GET /static/js/jquery.min.js HTTP/1.1" 200 97163
+[28/Jun/2017 17:40:22] INFO [django.server:124] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+[28/Jun/2017 17:40:22] INFO [django.server:124] "GET /static/js/typeahead.js HTTP/1.1" 200 63137
+[28/Jun/2017 17:40:22] INFO [django.server:124] "GET /static/js/search.js HTTP/1.1" 200 31453
+[28/Jun/2017 17:40:22] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.js HTTP/1.1" 200 61679
+[28/Jun/2017 17:40:22] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.js HTTP/1.1" 200 1631
+[28/Jun/2017 17:40:22] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[28/Jun/2017 17:40:22] INFO [django.server:124] "GET /static/img/bg.jpg HTTP/1.1" 200 254754
+[28/Jun/2017 17:40:22] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 1673
+[28/Jun/2017 17:40:22] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+[28/Jun/2017 17:40:22] INFO [django.server:124] "GET /static/img/notFound.png HTTP/1.1" 200 22596
+[28/Jun/2017 17:40:38] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zk3qcyvoy8ehsmp8kgbaxrnculp81w7' AND "django_session"."expire_date" > '2017-06-28 17:40:38.618447'); args=('1zk3qcyvoy8ehsmp8kgbaxrnculp81w7', u'2017-06-28 17:40:38.618447')
+[28/Jun/2017 17:40:38] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[28/Jun/2017 17:40:38] DEBUG [django.template:925] Exception while resolving variable 'is_popup' in template 'admin/app_index.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_popup] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x7f95b27c8f50>>, 'user': <SimpleLazyObject: <User: jwcorle>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f95b37f5bd0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f95b37f2bd0>, u'request': <WSGIRequest: GET '/admin/accounts/'>}, {}, {'available_apps': [{'app_url': u'/admin/accounts/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/accounts/user/', 'object_name': 'User', 'name': u'Users', 'add_url': u'/admin/accounts/user/add/'}], 'has_module_perms': True, 'name': 'Accounts', 'app_label': 'accounts'}, {'app_url': u'/admin/auth/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/group/', 'object_name': 'Group', 'name': u'Groups', 'add_url': u'/admin/auth/group/add/'}], 'has_module_perms': True, 'name': u'Authentication and Authorization', 'app_label': 'auth'}], 'app_list': [{'app_url': u'/admin/accounts/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/accounts/user/', 'object_name': 'User', 'name': u'Users', 'add_url': u'/admin/accounts/user/add/'}], 'has_module_perms': True, 'name': 'Accounts', 'app_label': 'accounts'}], 'title': u'Accounts administration', 'site_header': u'Django administration', u'LANGUAGE_CODE': 'en-us', 'site_url': '/', 'site_title': u'Django site admin', 'app_label': u'accounts', 'has_permission': True, u'LANGUAGE_BIDI': False}]"
+[28/Jun/2017 17:40:38] DEBUG [django.template:925] Exception while resolving variable 'is_popup' in template 'admin/app_index.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_popup] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x7f95b27c8f50>>, 'user': <SimpleLazyObject: <User: jwcorle>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f95b37f5bd0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f95b37f2bd0>, u'request': <WSGIRequest: GET '/admin/accounts/'>}, {}, {'available_apps': [{'app_url': u'/admin/accounts/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/accounts/user/', 'object_name': 'User', 'name': u'Users', 'add_url': u'/admin/accounts/user/add/'}], 'has_module_perms': True, 'name': 'Accounts', 'app_label': 'accounts'}, {'app_url': u'/admin/auth/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/group/', 'object_name': 'Group', 'name': u'Groups', 'add_url': u'/admin/auth/group/add/'}], 'has_module_perms': True, 'name': u'Authentication and Authorization', 'app_label': 'auth'}], 'app_list': [{'app_url': u'/admin/accounts/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/accounts/user/', 'object_name': 'User', 'name': u'Users', 'add_url': u'/admin/accounts/user/add/'}], 'has_module_perms': True, 'name': 'Accounts', 'app_label': 'accounts'}], 'title': u'Accounts administration', 'site_header': u'Django administration', u'LANGUAGE_CODE': 'en-us', 'site_url': '/', 'site_title': u'Django site admin', 'app_label': u'accounts', 'has_permission': True, u'LANGUAGE_BIDI': False}]"
+[28/Jun/2017 17:40:38] INFO [django.server:124] "GET /admin/accounts/ HTTP/1.1" 200 2224
+[28/Jun/2017 17:40:40] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zk3qcyvoy8ehsmp8kgbaxrnculp81w7' AND "django_session"."expire_date" > '2017-06-28 17:40:40.565194'); args=('1zk3qcyvoy8ehsmp8kgbaxrnculp81w7', u'2017-06-28 17:40:40.565194')
+[28/Jun/2017 17:40:40] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[28/Jun/2017 17:40:40] DEBUG [django.db.backends:91] (0.000) SELECT COUNT(*) AS "__count" FROM "accounts_user"; args=()
+[28/Jun/2017 17:40:40] DEBUG [django.db.backends:91] (0.000) SELECT COUNT(*) AS "__count" FROM "accounts_user"; args=()
+[28/Jun/2017 17:40:40] DEBUG [django.db.backends:91] (0.001) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" ORDER BY "accounts_user"."username" ASC, "accounts_user"."id" DESC; args=()
+[28/Jun/2017 17:40:40] DEBUG [django.template:925] Exception while resolving variable 'errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [errors] in u'None'
+[28/Jun/2017 17:40:40] DEBUG [django.template:925] Exception while resolving variable 'show' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [show] in u"[{'False': False, 'None': None, 'True': True, 'csrf_token': <SimpleLazyObject: <function _get_val at 0x7f95c0a082a8>>}]"
+[28/Jun/2017 17:40:40] DEBUG [django.template:925] Exception while resolving variable 'is_multipart' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_multipart] in u'None'
+[28/Jun/2017 17:40:40] DEBUG [django.template:925] Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [non_field_errors] in u'None'
+[28/Jun/2017 17:40:40] DEBUG [django.template:925] Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [non_field_errors] in u'None'
+[28/Jun/2017 17:40:40] INFO [django.server:124] "GET /admin/accounts/user/ HTTP/1.1" 200 5329
+[28/Jun/2017 17:40:40] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zk3qcyvoy8ehsmp8kgbaxrnculp81w7' AND "django_session"."expire_date" > '2017-06-28 17:40:40.702104'); args=('1zk3qcyvoy8ehsmp8kgbaxrnculp81w7', u'2017-06-28 17:40:40.702104')
+[28/Jun/2017 17:40:40] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[28/Jun/2017 17:40:40] INFO [django.server:124] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[28/Jun/2017 17:40:42] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zk3qcyvoy8ehsmp8kgbaxrnculp81w7' AND "django_session"."expire_date" > '2017-06-28 17:40:42.155490'); args=('1zk3qcyvoy8ehsmp8kgbaxrnculp81w7', u'2017-06-28 17:40:42.155490')
+[28/Jun/2017 17:40:42] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[28/Jun/2017 17:40:42] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[28/Jun/2017 17:40:42] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[28/Jun/2017 17:40:42] DEBUG [django.db.backends:91] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'user' AND "django_content_type"."app_label" = 'accounts'); args=('user', 'accounts')
+[28/Jun/2017 17:40:42] INFO [django.server:124] "GET /admin/accounts/user/1/change/ HTTP/1.1" 200 7707
+[28/Jun/2017 17:40:42] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zk3qcyvoy8ehsmp8kgbaxrnculp81w7' AND "django_session"."expire_date" > '2017-06-28 17:40:42.262187'); args=('1zk3qcyvoy8ehsmp8kgbaxrnculp81w7', u'2017-06-28 17:40:42.262187')
+[28/Jun/2017 17:40:42] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[28/Jun/2017 17:40:42] INFO [django.server:124] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[28/Jun/2017 17:41:24] DEBUG [django.db.backends:91] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[28/Jun/2017 17:41:24] DEBUG [django.db.backends:91] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[28/Jun/2017 17:41:36] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zk3qcyvoy8ehsmp8kgbaxrnculp81w7' AND "django_session"."expire_date" > '2017-06-28 17:41:36.891050'); args=('1zk3qcyvoy8ehsmp8kgbaxrnculp81w7', u'2017-06-28 17:41:36.891050')
+[28/Jun/2017 17:41:36] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[28/Jun/2017 17:41:36] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[28/Jun/2017 17:41:36] DEBUG [django.db.backends:91] (0.000) UPDATE "accounts_user" SET "password" = 'pbkdf2_sha256$36000$ICbpL6qBWeGQ$BCNJUD79ZNeBKB+zVvdxuIhTJsvjD5EmuNIes1UP/rI=', "last_login" = '2017-06-28 17:20:28.582691', "is_superuser" = 1, "username" = 'jwcorle', "is_staff" = 1, "is_active" = 1, "date_joined" = '2017-06-27 22:07:16.041956', "activated" = 0, "wf_email" = 'JCorley111@gmail.com', "wf_password" = 'market1232' WHERE "accounts_user"."id" = 1; args=(u'pbkdf2_sha256$36000$ICbpL6qBWeGQ$BCNJUD79ZNeBKB+zVvdxuIhTJsvjD5EmuNIes1UP/rI=', u'2017-06-28 17:20:28.582691', True, u'jwcorle', True, True, u'2017-06-27 22:07:16.041956', False, u'JCorley111@gmail.com', u'market1232', 1)
+[28/Jun/2017 17:41:37] INFO [django.server:124] "POST /account/ HTTP/1.1" 200 5838
+[28/Jun/2017 17:41:37] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.css HTTP/1.1" 200 47879
+[28/Jun/2017 17:41:37] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.css HTTP/1.1" 200 391
+[28/Jun/2017 17:41:37] INFO [django.server:124] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121201
+[28/Jun/2017 17:41:37] INFO [django.server:124] "GET /static/css/typeaheadjs.css HTTP/1.1" 200 2578
+[28/Jun/2017 17:41:37] INFO [django.server:124] "GET /static/css/common.css HTTP/1.1" 200 5124
+[28/Jun/2017 17:41:37] INFO [django.server:124] "GET /static/css/settings.css HTTP/1.1" 200 146
+[28/Jun/2017 17:41:37] INFO [django.server:124] "GET /static/js/hammer.min.js HTTP/1.1" 200 20765
+[28/Jun/2017 17:41:37] INFO [django.server:124] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+[28/Jun/2017 17:41:37] INFO [django.server:124] "GET /static/js/jquery.min.js HTTP/1.1" 200 97163
+[28/Jun/2017 17:41:37] INFO [django.server:124] "GET /static/js/typeahead.js HTTP/1.1" 200 63137
+[28/Jun/2017 17:41:37] INFO [django.server:124] "GET /static/js/search.js HTTP/1.1" 200 31453
+[28/Jun/2017 17:41:37] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.js HTTP/1.1" 200 61679
+[28/Jun/2017 17:41:37] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.js HTTP/1.1" 200 1631
+[28/Jun/2017 17:41:37] INFO [django.server:124] "GET /static/img/bg.jpg HTTP/1.1" 200 254754
+[28/Jun/2017 17:41:37] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[28/Jun/2017 17:41:37] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 1673
+[28/Jun/2017 17:41:37] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+[28/Jun/2017 17:41:37] INFO [django.server:124] "GET /static/img/notFound.png HTTP/1.1" 200 22596
+[28/Jun/2017 17:41:41] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zk3qcyvoy8ehsmp8kgbaxrnculp81w7' AND "django_session"."expire_date" > '2017-06-28 17:41:41.874117'); args=('1zk3qcyvoy8ehsmp8kgbaxrnculp81w7', u'2017-06-28 17:41:41.874117')
+[28/Jun/2017 17:41:41] DEBUG [django.db.backends:91] (0.001) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[28/Jun/2017 17:41:41] INFO [django.server:124] "GET /account/ HTTP/1.1" 200 5838
+[28/Jun/2017 17:41:41] INFO [django.server:124] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121201
+[28/Jun/2017 17:41:41] INFO [django.server:124] "GET /static/css/typeaheadjs.css HTTP/1.1" 200 2578
+[28/Jun/2017 17:41:42] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.css HTTP/1.1" 200 47879
+[28/Jun/2017 17:41:42] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.css HTTP/1.1" 200 391
+[28/Jun/2017 17:41:42] INFO [django.server:124] "GET /static/css/common.css HTTP/1.1" 200 5124
+[28/Jun/2017 17:41:42] INFO [django.server:124] "GET /static/css/settings.css HTTP/1.1" 200 146
+[28/Jun/2017 17:41:42] INFO [django.server:124] "GET /static/js/hammer.min.js HTTP/1.1" 200 20765
+[28/Jun/2017 17:41:42] INFO [django.server:124] "GET /static/js/jquery.min.js HTTP/1.1" 200 97163
+[28/Jun/2017 17:41:42] INFO [django.server:124] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+[28/Jun/2017 17:41:42] INFO [django.server:124] "GET /static/js/typeahead.js HTTP/1.1" 200 63137
+[28/Jun/2017 17:41:42] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.js HTTP/1.1" 200 61679
+[28/Jun/2017 17:41:42] INFO [django.server:124] "GET /static/js/search.js HTTP/1.1" 200 31453
+[28/Jun/2017 17:41:42] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.js HTTP/1.1" 200 1631
+[28/Jun/2017 17:41:42] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[28/Jun/2017 17:41:42] INFO [django.server:124] "GET /static/img/bg.jpg HTTP/1.1" 200 254754
+[28/Jun/2017 17:41:42] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 1673
+[28/Jun/2017 17:41:42] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+[28/Jun/2017 17:41:42] INFO [django.server:124] "GET /static/img/notFound.png HTTP/1.1" 200 22596
+[28/Jun/2017 17:41:57] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zk3qcyvoy8ehsmp8kgbaxrnculp81w7' AND "django_session"."expire_date" > '2017-06-28 17:41:57.913079'); args=('1zk3qcyvoy8ehsmp8kgbaxrnculp81w7', u'2017-06-28 17:41:57.913079')
+[28/Jun/2017 17:41:57] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[28/Jun/2017 17:41:57] DEBUG [django.db.backends:91] (0.000) BEGIN; args=None
+[28/Jun/2017 17:41:57] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[28/Jun/2017 17:41:57] DEBUG [django.db.backends:91] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'user' AND "django_content_type"."app_label" = 'accounts'); args=('user', 'accounts')
+[28/Jun/2017 17:41:57] INFO [django.server:124] "GET /admin/accounts/user/1/change/ HTTP/1.1" 200 7755
+[28/Jun/2017 17:41:58] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zk3qcyvoy8ehsmp8kgbaxrnculp81w7' AND "django_session"."expire_date" > '2017-06-28 17:41:58.017941'); args=('1zk3qcyvoy8ehsmp8kgbaxrnculp81w7', u'2017-06-28 17:41:58.017941')
+[28/Jun/2017 17:41:58] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[28/Jun/2017 17:41:58] INFO [django.server:124] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[28/Jun/2017 17:42:22] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zk3qcyvoy8ehsmp8kgbaxrnculp81w7' AND "django_session"."expire_date" > '2017-06-28 17:42:22.217059'); args=('1zk3qcyvoy8ehsmp8kgbaxrnculp81w7', u'2017-06-28 17:42:22.217059')
+[28/Jun/2017 17:42:22] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[28/Jun/2017 17:42:22] INFO [django.server:124] "GET / HTTP/1.1" 200 3232
+[28/Jun/2017 17:42:22] INFO [django.server:124] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121201
+[28/Jun/2017 17:42:22] INFO [django.server:124] "GET /static/css/typeaheadjs.css HTTP/1.1" 200 2578
+[28/Jun/2017 17:42:22] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.css HTTP/1.1" 200 391
+[28/Jun/2017 17:42:22] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.css HTTP/1.1" 200 47879
+[28/Jun/2017 17:42:22] INFO [django.server:124] "GET /static/css/common.css HTTP/1.1" 200 5124
+[28/Jun/2017 17:42:22] INFO [django.server:124] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+[28/Jun/2017 17:42:22] INFO [django.server:124] "GET /static/js/jquery.min.js HTTP/1.1" 200 97163
+[28/Jun/2017 17:42:22] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.js HTTP/1.1" 200 61679
+[28/Jun/2017 17:42:22] INFO [django.server:124] "GET /static/js/typeahead.js HTTP/1.1" 200 63137
+[28/Jun/2017 17:42:22] INFO [django.server:124] "GET /static/js/search.js HTTP/1.1" 200 31453
+[28/Jun/2017 17:42:22] INFO [django.server:124] "GET /static/css/home.css HTTP/1.1" 200 379
+[28/Jun/2017 17:42:22] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.js HTTP/1.1" 200 1631
+[28/Jun/2017 17:42:22] INFO [django.server:124] "GET /static/js/hammer.min.js HTTP/1.1" 200 20765
+[28/Jun/2017 17:42:22] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[28/Jun/2017 17:42:22] INFO [django.server:124] "GET /static/img/bg.jpg HTTP/1.1" 200 254754
+[28/Jun/2017 17:42:22] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 1673
+[28/Jun/2017 17:42:22] INFO [django.server:124] "GET /static/img/notFound.png HTTP/1.1" 200 22596
+[28/Jun/2017 17:42:22] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+[28/Jun/2017 17:42:29] INFO [django.server:124] "GET /account HTTP/1.1" 301 0
+[28/Jun/2017 17:42:29] DEBUG [django.db.backends:91] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zk3qcyvoy8ehsmp8kgbaxrnculp81w7' AND "django_session"."expire_date" > '2017-06-28 17:42:29.089728'); args=('1zk3qcyvoy8ehsmp8kgbaxrnculp81w7', u'2017-06-28 17:42:29.089728')
+[28/Jun/2017 17:42:29] DEBUG [django.db.backends:91] (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."is_superuser", "accounts_user"."username", "accounts_user"."is_staff", "accounts_user"."is_active", "accounts_user"."date_joined", "accounts_user"."activated", "accounts_user"."wf_email", "accounts_user"."wf_password" FROM "accounts_user" WHERE "accounts_user"."id" = 1; args=(1,)
+[28/Jun/2017 17:42:29] INFO [django.server:124] "GET /account/ HTTP/1.1" 200 5838
+[28/Jun/2017 17:42:29] INFO [django.server:124] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121201
+[28/Jun/2017 17:42:29] INFO [django.server:124] "GET /static/css/typeaheadjs.css HTTP/1.1" 200 2578
+[28/Jun/2017 17:42:29] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.css HTTP/1.1" 200 47879
+[28/Jun/2017 17:42:29] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.css HTTP/1.1" 200 391
+[28/Jun/2017 17:42:29] INFO [django.server:124] "GET /static/css/common.css HTTP/1.1" 200 5124
+[28/Jun/2017 17:42:29] INFO [django.server:124] "GET /static/css/settings.css HTTP/1.1" 200 146
+[28/Jun/2017 17:42:29] INFO [django.server:124] "GET /static/js/hammer.min.js HTTP/1.1" 200 20765
+[28/Jun/2017 17:42:29] INFO [django.server:124] "GET /static/js/jquery.min.js HTTP/1.1" 200 97163
+[28/Jun/2017 17:42:29] INFO [django.server:124] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+[28/Jun/2017 17:42:29] INFO [django.server:124] "GET /static/js/search.js HTTP/1.1" 200 31453
+[28/Jun/2017 17:42:29] INFO [django.server:124] "GET /static/js/typeahead.js HTTP/1.1" 200 63137
+[28/Jun/2017 17:42:29] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.js HTTP/1.1" 200 1631
+[28/Jun/2017 17:42:29] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.js HTTP/1.1" 200 61679
+[28/Jun/2017 17:42:29] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[28/Jun/2017 17:42:29] INFO [django.server:124] "GET /static/img/bg.jpg HTTP/1.1" 200 254754
+[28/Jun/2017 17:42:29] WARNING [django.server:124] "GET /static/js/hammer.min.js.map HTTP/1.1" 404 1673
+[28/Jun/2017 17:42:29] INFO [django.server:124] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+[28/Jun/2017 17:42:29] INFO [django.server:124] "GET /static/img/notFound.png HTTP/1.1" 200 22596

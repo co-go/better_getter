@@ -43,7 +43,9 @@ def filter_items(item, online, ingame):
         item: JSON formatted object that holds item data
         online: array of parsed items (with sellers that are online)
         ingame: array of parsed items (with sellers that are ingame)
-
+        
+    Returns:
+        Nothing. It sets the data into the online and ingame arrays
     """
     seller = item["ingame_name"]
 
@@ -158,7 +160,7 @@ def order_handler(item_name):
     item_info = get_item_type(item_name, items)
     orders = get_orders(item_name, item_info["item_type"])
 
-    if (orders == None): return None
+    if (not orders): return None
 
     item_det = item_details(item_name)
 

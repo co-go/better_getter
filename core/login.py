@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 
 LOGIN_URL = "https://warframe.market/signin"
 
-def login(email, password, session=requests.Session()):
+def login_user(email, password, session=requests.Session()):
     """ Attempts to log-in based off the given credentials
 
     Args:
@@ -35,11 +35,11 @@ def login(email, password, session=requests.Session()):
                                             login_payload['csrf_token']));
 
     # lets try and post the payload
-    login_post = s.post(
-                        LOGIN_URL,
-                        data=login_payload,
-                        headers={ "Referer": LOGIN_URL }
-                        )
+    login_post = session.post(
+                                LOGIN_URL,
+                                data=login_payload,
+                                headers={ "Referer": LOGIN_URL }
+                                )
 
     # check to see if we're logged in
     soup = BeautifulSoup(login_post.text, 'html.parser')
