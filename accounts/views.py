@@ -3,6 +3,8 @@ from django.contrib.auth import authenticate, login as auth_login
 from django.contrib.auth.forms import AuthenticationForm
 from forms import CreateUserForm, MarketForm
 from django.shortcuts import render, redirect
+import requests
+from core import login, order
 
 def signup(request):
     if request.method == "POST":
@@ -53,10 +55,16 @@ def settings(request):
     if request.method == "POST":
         market_form = MarketForm(request.POST)
 
-        if market.is_valid():
-            # lets do another check for validity
-            # must modify and save the user credentials
-            return redirect("settings")
+        if market_form.is_valid():
+            wf_email = market_form.cleaned_data.get('wf_email')
+            wf_password = market_form.cleaned_data.get('wf_password')
+
+            if (login.login(email=wf_email, password=wf_password) != None):
+                print "Valid login"
+                return redirect("settings")
+
+            print "Invalid credentials"
+        print "Enter in all fields"
     else:
         market_form = MarketForm()
 

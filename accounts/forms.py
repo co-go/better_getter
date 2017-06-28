@@ -19,5 +19,5 @@ class MarketForm(forms.Form):
         model = User
         fields = ('wf_email', 'wf_password')
 
-    email = forms.EmailField(label="Email", max_length=254)
-    password = forms.CharField(label="Password", widget=forms.PasswordInput)
+    wf_email = forms.EmailField(label="Warframe Market Email", max_length=254)
+    wf_password = forms.CharField(label="Warframe Market Password", widget=forms.PasswordInput)

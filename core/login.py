@@ -3,14 +3,14 @@ from bs4 import BeautifulSoup
 
 LOGIN_URL = "https://warframe.market/signin"
 
-def login(session=requests.Session(), email, password):
+def login(email, password, session=requests.Session()):
     """ Attempts to log-in based off the given credentials
 
     Args:
-        session: (Optional) Allows for future GET's using the same session
-            to be authenticated. Defaults to arbitrary session if not given.
         email: E-mail to be used to log-in
         password: Password to use when logging-in (plaintext)
+        session: (Optional) Allows for future GET's using the same session
+            to be authenticated. Defaults to arbitrary session if not given.
 
     Returns:
         Returns "None" if unable to log-in, otherwise, return

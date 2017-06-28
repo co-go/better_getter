@@ -29,7 +29,7 @@
           <div class="panel-body">
             <p>Please enter your email and password for <b>warframe.market</b></p>
 
-            <form id="market-form" action="/settings/" method="POST" role="form" style="display: block;">
+            <form id="market-form" action="/account/" method="POST" role="form" style="display: block;">
               {% if market_error %}
                 <div class="alert alert-danger">
                   <p><strong>Oh snap!</strong> Your credentials appear to be invalid! </p>
@@ -40,7 +40,7 @@
 
               {% for field in market_form %}
                 <div class="form-group {% if field.errors %}has-error{% endif %}">
-                  {% render_field field class="form-control" placeholder=field.label %}
+                  {% render_field field class="form-control" placeholder=field.label autocomplete="off" %}
                 </div>
               {% endfor %}
 
