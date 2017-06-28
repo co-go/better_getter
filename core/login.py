@@ -47,7 +47,7 @@ def login_user(email, password, session=requests.Session()):
     # something went wrong (it cannot find the "Account" dropdown)
     if (soup.find( "a", class_="dropdown-toggle" ) == None):
         print "[ERR] Uh oh! Check your credentials."
-        return
+        return None
 
     # if we've reached here, SUCCESS!
     return CSRF_TOKEN

@@ -2,13 +2,17 @@ function handler(item) {
   if (valid_item(item)) {
     window.location.href = "/get_item/" + item;
   } else {
-    $('.typeahead').addClass('err');
-    $('.typeahead').addClass('err-animation');
-
-    setTimeout(function() {
-      $('.typeahead').removeClass('err-animation');
-    }, 1000);
+    err_item();
   }
+}
+
+function err_item() {
+  $('.typeahead').addClass('err');
+  $('.typeahead').addClass('err-animation');
+
+  setTimeout(function() {
+    $('.typeahead').removeClass('err-animation');
+  }, 1000);
 }
 
 function valid_item(item) {
@@ -47,7 +51,9 @@ $( document ).ready(function() {
     name: 'valid_items',
     source: substringMatcher(valid_items)
   }).bind('typeahead:select', function(ev, suggestion) {
-    handler(suggestion);
+    if ( !$(this).hasClass("no-redirect") ) {
+      handler(suggestion);
+    }
   });
 
   $('.typeahead').keypress(function(event){

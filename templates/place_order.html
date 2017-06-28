@@ -1,0 +1,102 @@
+{% extends "components/base.html" %}
+{% load static %}
+{% load widget_tweaks %}
+
+{% block title %}
+  Order
+{% endblock %}
+
+{% block extra_styles %}
+  <link href="{% static 'css/settings.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<div class="top">
+  <h1 class="title"> Better <b style="font-weight: 900;">Getter</b> </h1>
+  <h5 class="subtitle"> built for Warframe </h5>
+</div>
+
+<div class="container">
+  <center>
+    <h1 style="margin-top: 30px"> Place Order </h1>
+    <div class="row">
+
+      <div class="col-md-6 col-md-offset-3">
+        <div class="panel panel-default">
+          <div class="panel-body">
+
+            <form id="order-form" action="/orders/place_order/" method="POST" role="form" onSubmit="return checkItem()" style="display: block;">
+              {% if err %}
+                <div class="alert alert-danger">
+                  <p><strong>Oh snap!</strong> Check your inputs again. </p>
+                </div>
+              {% elif valid %}
+                <div class="alert alert-success">
+                  <p><strong>Bam!</strong> Your order has been placed! </p>
+                </div>
+              {% endif %}
+
+              {% csrf_token %}
+
+              <div class="btn-group" data-toggle="buttons" id="market_type" name="market_type" style="margin-bottom: 10px">
+                <label class="btn btn-lg btn-success active">
+                  <input type="radio" name="market_type" autocomplete="off" value="sell" checked> Want to <b>Sell</b>
+                </label>
+                <label class="btn btn-lg btn-primary">
+                  <input type="radio" name="market_type" autocomplete="off" value="buy"> Want to <b>Buy</b>
+                </label>
+              </div>
+
+              {% render_field order_form.item_name class="form-control input-lg typeahead no-redirect" style="margin: 10px 0" placeholder="Enter the item name you want to Buy/Sell" %}
+
+              <hr>
+
+              <div class="input-group {% if order_form.plat.errors %}has-error{% endif %}">
+                <span class="input-group-addon">Platinum:</span>
+                {% render_field order_form.plat class="form-control" placeholder="Platinum buying/sell this item for" %}
+              </div>
+              <p style="margin-bottom: 10px"><code>Optional</code> If left blank, will try and beat the lowest online price (either +/- 1)</p>
+
+              <div class="input-group {% if order_form.quantity.errors %}has-error{% endif %}">
+                <span class="input-group-addon">Quantity:</span>
+                {% render_field order_form.quantity class="form-control" placeholder="How many are you buying/selling?" %}
+              </div>
+              <p style="margin-bottom: 10px"><code>Optional</code> If left blank, defaults to 1 </p>
+
+              <div class="input-group {% if order_form.rank.errors %}has-error{% endif %}">
+                <span class="input-group-addon">Rank:</span>
+                {% render_field order_form.rank class="form-control" placeholder="Rank of the item" %}
+              </div>
+              <p style="margin-bottom: 15px"><code>Optional</code> This is only needed for Mods/Sculptures. If left blank, defaults to rank 0 </p>
+
+              <hr>
+
+              <div class="form-group">
+                <input type="submit" name="order-submit" id="order-submit" class="form-control btn btn-success" value="Place Sell Order">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </center>
+</div>
+
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+  $( "ul li" ).eq(1).addClass("mm-selected");
+
+  function checkItem() {
+    if (valid_item($(".typeahead.tt-input").val())) {
+      return true;
+    }
+
+    err_item();
+    return false;
+  }
+
+</script>
+{% endblock %}

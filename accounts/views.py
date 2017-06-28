@@ -4,7 +4,7 @@ from django.contrib.auth.forms import AuthenticationForm
 from forms import CreateUserForm, MarketForm
 from django.shortcuts import render, redirect
 import requests
-from core import order, login as wf_login
+from core import login as wf_login
 
 def signup(request):
     if request.method == "POST":
