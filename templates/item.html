@@ -1,5 +1,6 @@
 {% extends "components/base.html" %}
 {% load static %}
+{% load widget_tweaks %}
 
 {% block title %}
   {{ item_name }} Details
@@ -19,7 +20,7 @@
 
 <div class="container">
   <center>
-    {% if err %}
+    {% if main_err %}
     <img src="{% static 'img/notFound.png' %}" style="padding-top: 50px; max-height: 300px;">
     <h2 class="item"> Sorry! That item was not found. </h2>
     {% else %}
@@ -157,27 +158,61 @@
             </a>
             <hr style="width: 80%">
 
-            <div class="btn-group" data-toggle="buttons" id="market_type">
-              <label class="btn btn-lg btn-success active">
-                <input type="radio" id="sell" autocomplete="off" checked> Want to <b>Sell</b>
-              </label>
-              <label class="btn btn-lg btn-warning">
-                <input type="radio" id="buy" autocomplete="off"> Want to <b>Buy</b>
-              </label>
-            </div>
+            {% if has_credentials %}
+            <form id="order-form" action="/get_item/{{ item_name }}/" method="POST" role="form" onSubmit="return checkItem()" style="display: block;">
+              {% if err %}
+                <div class="alert alert-danger">
+                  <p><strong>Oh snap!</strong> {{ err }} </p>
+                </div>
+              {% elif valid %}
+                <div class="alert alert-success">
+                  <p><strong>Bam!</strong> Your order has been placed! </p>
+                </div>
+              {% endif %}
 
-            <div class="input-group" style="margin-bottom: 5px;">
-              <span class="input-group-addon">Quantity:</span>
-              <input type="text" id="quantity" class="form-control" placeholder="Default is 1">
-            </div>
-            <div class="input-group" style="margin-bottom: 10px;">
-              <span class="input-group-addon">Platinum:</span>
-              <input type="text" id="platinum" class="form-control" placeholder="Default is (lowest price - 1)">
-            </div>
+              {% csrf_token %}
 
-            <a href="#" class="btn btn-primary submit">Submit</a>
+              <div class="btn-group" data-toggle="buttons" id="market_type" name="market_type" style="margin-bottom: 10px">
+                <label class="btn btn-lg btn-success active">
+                  <input type="radio" name="market_type" autocomplete="off" value="sell" checked> Want to <b>Sell</b>
+                </label>
+                <label class="btn btn-lg btn-primary">
+                  <input type="radio" name="market_type" autocomplete="off" value="buy"> Want to <b>Buy</b>
+                </label>
+              </div>
 
-            <hr style="width: 80%">
+              <hr>
+
+              {% render_field order_form.item_name class="form-control" style="display: none" value="item_name" %}
+
+              <div class="input-group {% if order_form.plat.errors %}has-error{% endif %}">
+                <span class="input-group-addon">Platinum:</span>
+                {% render_field order_form.plat class="form-control" placeholder="Platinum buying/sell this item for" %}
+              </div>
+              <p style="margin-bottom: 10px"><code>Optional</code> If left blank, will try and beat the lowest online price (either +/- 1)</p>
+
+              <div class="input-group {% if order_form.quantity.errors %}has-error{% endif %}">
+                <span class="input-group-addon">Quantity:</span>
+                {% render_field order_form.quantity class="form-control" placeholder="How many are you buying/selling?" %}
+              </div>
+              <p style="margin-bottom: 10px"><code>Optional</code> If left blank, defaults to 1 </p>
+
+              <div class="input-group {% if order_form.rank.errors %}has-error{% endif %}">
+                <span class="input-group-addon">Rank:</span>
+                {% render_field order_form.rank class="form-control" placeholder="Rank of the item" %}
+              </div>
+              <p style="margin-bottom: 15px"><code>Optional</code> This is only needed for Mods/Sculptures. If left blank, defaults to rank 0 </p>
+
+              <hr>
+
+              <div class="form-group">
+                <input type="submit" name="order-submit" id="order-submit" class="form-control btn btn-success" value="Place Sell Order">
+              </div>
+            </form>
+            </div>
+            {% else %}
+            <h3 style="margin-top: 30px"> You can't place an order without <a href="/account/">entering</a> your warframe.market credentials </h3>
+            {% endif %}
           </div>
         </div>
       </div>
