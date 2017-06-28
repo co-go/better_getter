@@ -13603,3 +13603,77 @@ Traceback (most recent call last):
 VariableDoesNotExist: Failed lookup for key [main_err] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x7fcf77d4fe60>>, \'user\': <SimpleLazyObject: <User: jwcorle>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7fcf77da55d0>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fcf976b8d90>, u\'request\': <WSGIRequest: GET \'/get_item/Loki%20Prime%20Neuroptics/\'>}, {}, {\'src\': u\'https://vignette2.wikia.nocookie.net/warframe/images/f/f5/LokiPrime.png\', \'max_rank\': None, \'online_buy_prices\': [], \'err\': None, \'order_form\': <OrderForm bound=False, valid=Unknown, fields=(item_name;plat;quantity;rank)>, \'ducats\': u\'15\', \'online_sell_prices\': [{\'count\': 1, \'mod_rank\': None, \'price\': 10, \'name\': u\'Classic\'}, {\'count\': 1, \'mod_rank\': None, \'price\': 10, \'name\': u\'Ueusebi\'}, {\'count\': 4, \'mod_rank\': None, \'price\': 10, \'name\': u\'MescheaTR\'}, {\'count\': 3, \'mod_rank\': None, \'price\': 13, \'name\': u\'TesaStrip\'}, {\'count\': 1, \'mod_rank\': None, \'price\': 15, \'name\': u\'Furybone\'}], \'ingame_buy_prices\': [{\'count\': 5, \'mod_rank\': None, \'price\': 7, \'name\': u\'--Q--Oren\'}, {\'count\': 1, \'mod_rank\': None, \'price\': 6, \'name\': u\'BlaivaS\'}, {\'count\': 5, \'mod_rank\': None, \'price\': 5, \'name\': u\'Applezz\'}, {\'count\': 5, \'mod_rank\': None, \'price\': 3, \'name\': u\'Royalty\'}], \'item_name\': u\'Loki Prime Neuroptics\', \'valid\': None, \'has_credentials\': True, \'ingame_sell_prices\': [{\'count\': 1, \'mod_rank\': None, \'price\': 8, \'name\': u\'eqwert\'}, {\'count\': 1, \'mod_rank\': None, \'price\': 9, \'name\': u\'Hyxonek\'}, {\'count\': 1, \'mod_rank\': None, \'price\': 10, \'name\': u\'YourSecretAdmirer\'}, {\'count\': 7, \'mod_rank\': None, \'price\': 14, \'name\': u\'Kokusnuss\'}, {\'count\': 12, \'mod_rank\': None, \'price\': 15, \'name\': u\'-STR-MegumiN\'}, {\'count\': 1, \'mod_rank\': None, \'price\': 15, \'name\': u\'JP3885\'}, {\'count\': 1, \'mod_rank\': None, \'price\': 15, \'name\': u\'Yoshua89\'}, {\'count\': 1, \'mod_rank\': None, \'price\': 15, \'name\': u\'-DeathOverLord-\'}, {\'count\': 2, \'mod_rank\': None, \'price\': 18, \'name\': u\'FrOzEnBoRiTo\'}, {\'count\': 45, \'mod_rank\': None, \'price\': 20, \'name\': u\'-Miau-Darinus\'}], \'type\': u\'Blueprint\'}, {\'block\': <Block Node: content. Contents: [<TextNode: u\'\\n<div class="top">\\n  <h1 \'>, <IfNode>, <TextNode: u\'\\n  </center>\\n</div>\\n\\n\'>]>}]'
 [28/Jun/2017 22:14:25] INFO [django.server:124] "GET /get_item/Loki%20Prime%20Neuroptics/ HTTP/1.1" 200 17191
 [28/Jun/2017 22:14:25] INFO [django.server:124] "GET /static/img/favicon-32x32.png HTTP/1.1" 200 2022
+[28/Jun/2017 22:15:53] DEBUG [django.template:925] Exception while resolving variable 'main_err' in template 'item.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [main_err] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x7f56d00da8c0>>, \'user\': <SimpleLazyObject: <User: jwcorle>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7f56d00d4f10>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f56d056a7d0>, u\'request\': <WSGIRequest: GET \'/get_item/Loki%20Prime%20Neuroptics/\'>}, {}, {\'src\': u\'https://vignette2.wikia.nocookie.net/warframe/images/f/f5/LokiPrime.png\', \'max_rank\': None, \'online_buy_prices\': [], \'err\': None, \'order_form\': <OrderForm bound=False, valid=Unknown, fields=(item_name;plat;quantity;rank)>, \'ducats\': u\'15\', \'online_sell_prices\': [{\'count\': 1, \'mod_rank\': None, \'price\': 10, \'name\': u\'Classic\'}, {\'count\': 1, \'mod_rank\': None, \'price\': 10, \'name\': u\'Ueusebi\'}, {\'count\': 4, \'mod_rank\': None, \'price\': 10, \'name\': u\'MescheaTR\'}, {\'count\': 3, \'mod_rank\': None, \'price\': 13, \'name\': u\'TesaStrip\'}, {\'count\': 1, \'mod_rank\': None, \'price\': 15, \'name\': u\'Furybone\'}], \'ingame_buy_prices\': [{\'count\': 5, \'mod_rank\': None, \'price\': 7, \'name\': u\'--Q--Oren\'}, {\'count\': 1, \'mod_rank\': None, \'price\': 6, \'name\': u\'BlaivaS\'}, {\'count\': 5, \'mod_rank\': None, \'price\': 5, \'name\': u\'Applezz\'}, {\'count\': 5, \'mod_rank\': None, \'price\': 3, \'name\': u\'Royalty\'}], \'item_name\': u\'Loki Prime Neuroptics\', \'valid\': None, \'has_credentials\': True, \'ingame_sell_prices\': [{\'count\': 1, \'mod_rank\': None, \'price\': 9, \'name\': u\'Hyxonek\'}, {\'count\': 1, \'mod_rank\': None, \'price\': 10, \'name\': u\'YourSecretAdmirer\'}, {\'count\': 7, \'mod_rank\': None, \'price\': 14, \'name\': u\'Kokusnuss\'}, {\'count\': 1, \'mod_rank\': None, \'price\': 15, \'name\': u\'JP3885\'}, {\'count\': 1, \'mod_rank\': None, \'price\': 15, \'name\': u\'Yoshua89\'}, {\'count\': 1, \'mod_rank\': None, \'price\': 15, \'name\': u\'-DeathOverLord-\'}, {\'count\': 2, \'mod_rank\': None, \'price\': 18, \'name\': u\'FrOzEnBoRiTo\'}, {\'count\': 45, \'mod_rank\': None, \'price\': 20, \'name\': u\'-Miau-Darinus\'}, {\'count\': 3, \'mod_rank\': None, \'price\': 25, \'name\': u\'PiscoPato\'}, {\'count\': 1, \'mod_rank\': None, \'price\': 30, \'name\': u\'Mariju17\'}], \'type\': u\'Blueprint\'}, {\'block\': <Block Node: content. Contents: [<TextNode: u\'\\n<div class="top">\\n  <h1 \'>, <IfNode>, <TextNode: u\'\\n  </center>\\n</div>\\n\\n\'>]>}]'
+[28/Jun/2017 22:15:53] WARNING [django.template:232] Exception raised while rendering {% include %} for template 'item.html'. Empty string rendered instead.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 216, in render
+    return template.render(context)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/templatetags/static.py", line 105, in render
+    url = self.url(context)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/templatetags/static.py", line 102, in url
+    return self.handle_simple(path)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/templatetags/static.py", line 117, in handle_simple
+    return staticfiles_storage.url(path)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/contrib/staticfiles/storage.py", line 162, in url
+    return self._url(self.stored_name, name, force)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/contrib/staticfiles/storage.py", line 141, in _url
+    hashed_name = hashed_name_func(*args)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/contrib/staticfiles/storage.py", line 432, in stored_name
+    raise ValueError("Missing staticfiles manifest entry for '%s'" % clean_name)
+ValueError: Missing staticfiles manifest entry for 'js/common.js'
+[28/Jun/2017 22:15:53] INFO [django.server:124] "GET /get_item/Loki%20Prime%20Neuroptics/ HTTP/1.1" 200 16577
+[28/Jun/2017 22:15:53] INFO [django.server:124] "GET /static/css/typeaheadjs.74cbdb0b28ef.css HTTP/1.1" 200 685
+[28/Jun/2017 22:15:53] INFO [django.server:124] "GET /static/css/bootstrap.min.1825bc9de3d6.css HTTP/1.1" 200 19644
+[28/Jun/2017 22:15:53] INFO [django.server:124] "GET /static/css/common.99ff5595c212.css HTTP/1.1" 200 1305
+[28/Jun/2017 22:15:53] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.d0a03cbdb1ba.css HTTP/1.1" 200 150
+[28/Jun/2017 22:15:53] INFO [django.server:124] "GET /static/css/get_item.65b81c747eb4.css HTTP/1.1" 200 805
+[28/Jun/2017 22:15:53] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.9e950209fa6b.css HTTP/1.1" 200 6658
+[28/Jun/2017 22:15:53] INFO [django.server:124] "GET /static/img/duc.1727a9df825d.png HTTP/1.1" 200 133953
+[28/Jun/2017 22:15:53] INFO [django.server:124] "GET /static/img/plat.884aa1f89f92.png HTTP/1.1" 200 103876
+[28/Jun/2017 22:15:53] INFO [django.server:124] "GET /static/fonts/glyphicons-halflings-regular.448c34a56d69.woff2 HTTP/1.1" 200 18028
+[28/Jun/2017 22:15:53] INFO [django.server:124] "GET /static/img/bg.4a370c063b65.jpg HTTP/1.1" 200 254754
+[28/Jun/2017 22:15:53] INFO [django.server:124] "GET /static/img/favicon-32x32.d59b1d998588.png HTTP/1.1" 200 2022
+[28/Jun/2017 22:15:53] INFO [django.server:124] "GET /static/img/favicon-16x16.e45deacf157e.png HTTP/1.1" 200 742
+[28/Jun/2017 22:16:12] DEBUG [django.template:925] Exception while resolving variable 'main_err' in template 'item.html'.
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [main_err] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: <function _get_val at 0x7fe54b34b938>>, \'user\': <SimpleLazyObject: <User: jwcorle>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7fe54b34a8d0>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fe56855a150>, u\'request\': <WSGIRequest: GET \'/get_item/Loki%20Prime%20Neuroptics/\'>}, {}, {\'src\': u\'https://vignette2.wikia.nocookie.net/warframe/images/f/f5/LokiPrime.png\', \'max_rank\': None, \'online_buy_prices\': [], \'err\': None, \'order_form\': <OrderForm bound=False, valid=Unknown, fields=(item_name;plat;quantity;rank)>, \'ducats\': u\'15\', \'online_sell_prices\': [{\'count\': 1, \'mod_rank\': None, \'price\': 10, \'name\': u\'Classic\'}, {\'count\': 1, \'mod_rank\': None, \'price\': 10, \'name\': u\'Ueusebi\'}, {\'count\': 4, \'mod_rank\': None, \'price\': 10, \'name\': u\'MescheaTR\'}, {\'count\': 3, \'mod_rank\': None, \'price\': 13, \'name\': u\'TesaStrip\'}, {\'count\': 1, \'mod_rank\': None, \'price\': 15, \'name\': u\'Furybone\'}], \'ingame_buy_prices\': [{\'count\': 5, \'mod_rank\': None, \'price\': 7, \'name\': u\'--Q--Oren\'}, {\'count\': 1, \'mod_rank\': None, \'price\': 6, \'name\': u\'BlaivaS\'}, {\'count\': 5, \'mod_rank\': None, \'price\': 5, \'name\': u\'Applezz\'}, {\'count\': 5, \'mod_rank\': None, \'price\': 3, \'name\': u\'Royalty\'}], \'item_name\': u\'Loki Prime Neuroptics\', \'valid\': None, \'has_credentials\': True, \'ingame_sell_prices\': [{\'count\': 1, \'mod_rank\': None, \'price\': 9, \'name\': u\'Hyxonek\'}, {\'count\': 1, \'mod_rank\': None, \'price\': 10, \'name\': u\'YourSecretAdmirer\'}, {\'count\': 7, \'mod_rank\': None, \'price\': 14, \'name\': u\'Kokusnuss\'}, {\'count\': 1, \'mod_rank\': None, \'price\': 15, \'name\': u\'JP3885\'}, {\'count\': 1, \'mod_rank\': None, \'price\': 15, \'name\': u\'Yoshua89\'}, {\'count\': 1, \'mod_rank\': None, \'price\': 15, \'name\': u\'-DeathOverLord-\'}, {\'count\': 2, \'mod_rank\': None, \'price\': 18, \'name\': u\'FrOzEnBoRiTo\'}, {\'count\': 45, \'mod_rank\': None, \'price\': 20, \'name\': u\'-Miau-Darinus\'}, {\'count\': 3, \'mod_rank\': None, \'price\': 25, \'name\': u\'PiscoPato\'}, {\'count\': 1, \'mod_rank\': None, \'price\': 30, \'name\': u\'Mariju17\'}], \'type\': u\'Blueprint\'}, {\'block\': <Block Node: content. Contents: [<TextNode: u\'\\n<div class="top">\\n  <h1 \'>, <IfNode>, <TextNode: u\'\\n  </center>\\n</div>\\n\\n\'>]>}]'
+[28/Jun/2017 22:16:12] INFO [django.server:124] "GET /get_item/Loki%20Prime%20Neuroptics/ HTTP/1.1" 200 17619
+[28/Jun/2017 22:16:12] INFO [django.server:124] "GET /static/css/common.84db01ac05f8.css HTTP/1.1" 200 1488
+[28/Jun/2017 22:16:12] INFO [django.server:124] "GET /static/css/get_item.deb72381b4db.css HTTP/1.1" 200 686
+[28/Jun/2017 22:16:12] INFO [django.server:124] "GET /static/js/hammer.min.150659814972.js HTTP/1.1" 200 7341
+[28/Jun/2017 22:16:12] INFO [django.server:124] "GET /static/js/jquery.min.4f252523d4af.js HTTP/1.1" 200 33738
+[28/Jun/2017 22:16:12] INFO [django.server:124] "GET /static/js/bootstrap.min.5869c96cc8f1.js HTTP/1.1" 200 9806
+[28/Jun/2017 22:16:12] INFO [django.server:124] "GET /static/js/typeahead.fd054c48bcd9.js HTTP/1.1" 200 11583
+[28/Jun/2017 22:16:12] INFO [django.server:124] "GET /static/mmenu/jquery.mmenu.all.28049b64fb08.js HTTP/1.1" 200 15166
+[28/Jun/2017 22:16:12] INFO [django.server:124] "GET /static/js/common.1283d17d428d.js HTTP/1.1" 200 227
+[28/Jun/2017 22:16:12] INFO [django.server:124] "GET /static/mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.213ae8f5d26d.js HTTP/1.1" 200 743
+[28/Jun/2017 22:16:12] INFO [django.server:124] "GET /static/js/search.647a73a75913.js HTTP/1.1" 200 9818
+[28/Jun/2017 22:16:12] INFO [django.server:124] "GET /static/img/notFound.66b0c87f4487.png HTTP/1.1" 200 22596
+[28/Jun/2017 22:16:12] INFO [django.server:124] "GET /static/img/favicon-32x32.d59b1d998588.png HTTP/1.1" 200 2022
+[28/Jun/2017 22:16:17] INFO [django.server:124] "GET /logout/ HTTP/1.1" 302 0
+[28/Jun/2017 22:16:17] INFO [django.server:124] "GET / HTTP/1.1" 200 3156
+[28/Jun/2017 22:16:17] INFO [django.server:124] "GET /static/css/home.b4fab64ce7ea.css HTTP/1.1" 200 229
+[28/Jun/2017 22:16:20] INFO [django.server:124] "GET /login/ HTTP/1.1" 200 6793
+[28/Jun/2017 22:16:20] INFO [django.server:124] "GET /static/css/auth.b951660a57fc.css HTTP/1.1" 200 1148
+[28/Jun/2017 22:16:23] INFO [django.server:124] "POST /login/ HTTP/1.1" 302 0
+[28/Jun/2017 22:16:23] INFO [django.server:124] "GET / HTTP/1.1" 200 3516
+[28/Jun/2017 22:16:26] INFO [django.server:124] "GET /account/ HTTP/1.1" 200 6122
+[28/Jun/2017 22:16:26] INFO [django.server:124] "GET /static/css/settings.5a94c554c510.css HTTP/1.1" 200 150
+[28/Jun/2017 22:16:29] INFO [django.server:124] "GET /orders/place_order/ HTTP/1.1" 200 6309
+[28/Jun/2017 22:16:38] INFO [django.server:124] "POST /orders/place_order/ HTTP/1.1" 200 6503
+[28/Jun/2017 22:16:52] INFO [django.server:124] "GET /logout/ HTTP/1.1" 302 0
+[28/Jun/2017 22:16:52] INFO [django.server:124] "GET / HTTP/1.1" 200 3156
