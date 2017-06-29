@@ -1,3 +1,4 @@
+from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 from django.shortcuts import render
 from forms import OrderForm
@@ -5,22 +6,21 @@ from order import place_order as p_order
 from core.login import login_user
 import requests
 
+@login_required
 def place_order(request):
     err = None
     valid = None
     has_credentials = None
     if request.method == "POST":
         order_form = OrderForm(request.POST)
-
         # valid form data, lets generate an order
         if (order_form.is_valid()):
-
             # create a session to use throughout the process
             with requests.Session() as s:
                 # log into the user's account, save the token
-                token = login_user(request.user.wf_email, request.user.wf_password, session=s);
+                token = login_user( request.user.wf_email,
+                                    request.user.wf_password, session=s);
                 if (token):
-
                     # gather all the form data needed
                     item_name = order_form.cleaned_data["item_name"]
                     market_type = request.POST.get("market_type")
@@ -29,18 +29,17 @@ def place_order(request):
                     plat = order_form.cleaned_data["plat"]
 
                     # try actually placing the order
-                    # TODO: in the future, change error message to the actual error
-                    if (p_order(token, item_name, market_type,
-                                item_quantity=quantity, mod_rank=rank,
-                                plat=plat, session=s) == None):
+                    err =   p_order(token, item_name, market_type,
+                                    item_quantity=quantity, mod_rank=rank,
+                                    plat=plat, session=s)
 
-                        err = "There was a problem placing your order, please try again."
-                    else:
+                    if (err == True):
                         # show valid when the order has successfully been placed
                         valid = True
+                        err = None
+
                 else:
                     err = "We've had a problem logging you in!"
-
         else:
             err = "Check the values on your form"
     else:

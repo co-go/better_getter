@@ -9,6 +9,17 @@ ITEMS       = None
 
 
 def default_price(item_name, action_type, items):
+    """ Gets a default price if one is not given
+
+    Args:
+        item_name: the name of the item to search for
+        action_type: either 'buy' or 'sell'
+        items: an array of all the items (will just pass into get_item_type)
+
+    Returns:
+        Function will return either a -69 if no price could be found, or
+        the suggested price based off the other orders
+    """
     item_info = get_item_type(item_name, items)
     orders = get_orders(item_name, item_info["item_type"])
 
@@ -46,9 +57,9 @@ def place_order(CSRF_TOKEN, item_name, action_type, item_quantity=None,
             to be authenticated. Defaults to arbitrary session if not given.
 
     Returns:
-        Returns "None" if unable to get the correct information about the item
-        or if the order was not submitted. Otherwise a True boolean will be
-        returned
+        Returns a string of the error if unable to get the correct information
+        about the item or if the order was not submitted. Otherwise a True
+        boolean will be returned
     """
 
     # lets set up default values
@@ -67,7 +78,7 @@ def place_order(CSRF_TOKEN, item_name, action_type, item_quantity=None,
 
         if (plat == -69):
             print "[ERR] Could not get an accurate price, user must provide one."
-            return None
+            return "[ERR] Could not get an accurate price, user must provide one."
 
     # now let's check for the existance of the item
     item_type = None;
@@ -79,7 +90,7 @@ def place_order(CSRF_TOKEN, item_name, action_type, item_quantity=None,
     # couldn't find it, return
     if (item_type == None):
         print "[ERR] There was a problem finding the type of '%s'" % item_name
-        return None
+        return "[ERR] There was a problem finding the type of '%s'" % item_name
 
     # we have the item and its type, lets generate an order
     print "[ITEM] %s | %s" % (item_name, item_type)
@@ -114,4 +125,7 @@ def place_order(CSRF_TOKEN, item_name, action_type, item_quantity=None,
     # we were able to submit the order, lets check it
     print "[RESPONSE] %s" % order_post.json()['response']
 
-    return True
+    if (order_post.json()['response'] == "Order Placed"):
+        return True
+
+    return "[RESPONSE] %s" % order_post.json()['response']

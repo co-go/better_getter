@@ -13677,3 +13677,271 @@ VariableDoesNotExist: Failed lookup for key [main_err] in u'[{\'False\': False, 
 [28/Jun/2017 22:16:38] INFO [django.server:124] "POST /orders/place_order/ HTTP/1.1" 200 6503
 [28/Jun/2017 22:16:52] INFO [django.server:124] "GET /logout/ HTTP/1.1" 302 0
 [28/Jun/2017 22:16:52] INFO [django.server:124] "GET / HTTP/1.1" 200 3156
+[29/Jun/2017 13:03:56] ERROR [django.request:135] Internal Server Error: /orders/place_order/
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/forgeguest/Documents/better_getter/orders/views.py", line 50, in place_order
+    if (request.user.wf_email != "" and request.user.wf_password != ""):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/utils/functional.py", line 239, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'wf_email'
+[29/Jun/2017 13:03:56] WARNING [django.request:152] Not Found: /favicon.ico
+[29/Jun/2017 13:12:24] ERROR [django.request:135] Internal Server Error: /orders/place_order/
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 362, in resolve
+    for pattern in self.url_patterns:
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/forgeguest/Documents/better_getter/better_getter/urls.py", line 17, in <module>
+    url(r'^orders/', include('orders.urls'))
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/forgeguest/Documents/better_getter/orders/urls.py", line 3, in <module>
+    from . import views
+  File "/home/forgeguest/Documents/better_getter/orders/views.py", line 34
+    plat=plat, session=s) == None):
+                                 ^
+SyntaxError: invalid syntax
+[29/Jun/2017 13:12:24] ERROR [django.request:135] Internal Server Error: /orders/place_order/
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/utils/deprecation.py", line 140, in __call__
+    response = self.get_response(request)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 43, in inner
+    response = response_for_exception(request, exc)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 93, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 142, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 418, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/forgeguest/Documents/better_getter/better_getter/urls.py", line 17, in <module>
+    url(r'^orders/', include('orders.urls'))
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/forgeguest/Documents/better_getter/orders/urls.py", line 3, in <module>
+    from . import views
+  File "/home/forgeguest/Documents/better_getter/orders/views.py", line 34
+    plat=plat, session=s) == None):
+                                 ^
+SyntaxError: invalid syntax
+[29/Jun/2017 13:12:24] ERROR [django.request:135] Internal Server Error: /orders/place_order/
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/utils/deprecation.py", line 140, in __call__
+    response = self.get_response(request)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 43, in inner
+    response = response_for_exception(request, exc)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 93, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 142, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 418, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/forgeguest/Documents/better_getter/better_getter/urls.py", line 17, in <module>
+    url(r'^orders/', include('orders.urls'))
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/forgeguest/Documents/better_getter/orders/urls.py", line 3, in <module>
+    from . import views
+  File "/home/forgeguest/Documents/better_getter/orders/views.py", line 34
+    plat=plat, session=s) == None):
+                                 ^
+SyntaxError: invalid syntax
+[29/Jun/2017 13:12:24] ERROR [django.request:135] Internal Server Error: /orders/place_order/
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/utils/deprecation.py", line 140, in __call__
+    response = self.get_response(request)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 43, in inner
+    response = response_for_exception(request, exc)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 93, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 142, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 418, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/forgeguest/Documents/better_getter/better_getter/urls.py", line 17, in <module>
+    url(r'^orders/', include('orders.urls'))
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/forgeguest/Documents/better_getter/orders/urls.py", line 3, in <module>
+    from . import views
+  File "/home/forgeguest/Documents/better_getter/orders/views.py", line 34
+    plat=plat, session=s) == None):
+                                 ^
+SyntaxError: invalid syntax
+[29/Jun/2017 13:12:24] ERROR [django.request:135] Internal Server Error: /orders/place_order/
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/utils/deprecation.py", line 140, in __call__
+    response = self.get_response(request)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 43, in inner
+    response = response_for_exception(request, exc)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 93, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 142, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 418, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/forgeguest/Documents/better_getter/better_getter/urls.py", line 17, in <module>
+    url(r'^orders/', include('orders.urls'))
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/forgeguest/Documents/better_getter/orders/urls.py", line 3, in <module>
+    from . import views
+  File "/home/forgeguest/Documents/better_getter/orders/views.py", line 34
+    plat=plat, session=s) == None):
+                                 ^
+SyntaxError: invalid syntax
+[29/Jun/2017 13:12:24] ERROR [django.request:135] Internal Server Error: /orders/place_order/
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/utils/deprecation.py", line 140, in __call__
+    response = self.get_response(request)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 43, in inner
+    response = response_for_exception(request, exc)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 93, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 142, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 418, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/forgeguest/Documents/better_getter/better_getter/urls.py", line 17, in <module>
+    url(r'^orders/', include('orders.urls'))
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/forgeguest/Documents/better_getter/orders/urls.py", line 3, in <module>
+    from . import views
+  File "/home/forgeguest/Documents/better_getter/orders/views.py", line 34
+    plat=plat, session=s) == None):
+                                 ^
+SyntaxError: invalid syntax
+[29/Jun/2017 13:12:24] ERROR [django.request:135] Internal Server Error: /orders/place_order/
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/utils/deprecation.py", line 140, in __call__
+    response = self.get_response(request)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 43, in inner
+    response = response_for_exception(request, exc)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 93, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 142, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 418, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/forgeguest/Documents/better_getter/better_getter/urls.py", line 17, in <module>
+    url(r'^orders/', include('orders.urls'))
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/forgeguest/Documents/better_getter/orders/urls.py", line 3, in <module>
+    from . import views
+  File "/home/forgeguest/Documents/better_getter/orders/views.py", line 34
+    plat=plat, session=s) == None):
+                                 ^
+SyntaxError: invalid syntax
+[29/Jun/2017 13:12:24] ERROR [django.request:135] Internal Server Error: /orders/place_order/
+Traceback (most recent call last):
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/utils/deprecation.py", line 140, in __call__
+    response = self.get_response(request)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 43, in inner
+    response = response_for_exception(request, exc)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 93, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 142, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 418, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/forgeguest/Documents/better_getter/better_getter/urls.py", line 17, in <module>
+    url(r'^orders/', include('orders.urls'))
+  File "/home/forgeguest/Documents/better_getter/.venv/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/forgeguest/Documents/better_getter/orders/urls.py", line 3, in <module>
+    from . import views
+  File "/home/forgeguest/Documents/better_getter/orders/views.py", line 34
+    plat=plat, session=s) == None):
+                                 ^
+SyntaxError: invalid syntax

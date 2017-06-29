@@ -43,7 +43,7 @@ def filter_items(item, online, ingame):
         item: JSON formatted object that holds item data
         online: array of parsed items (with sellers that are online)
         ingame: array of parsed items (with sellers that are ingame)
-        
+
     Returns:
         Nothing. It sets the data into the online and ingame arrays
     """
@@ -68,6 +68,18 @@ def filter_items(item, online, ingame):
 
 
 def item_details(item_name):
+    """ Gets the ducat value and picture link for an item
+
+    Args:
+        item_name: the name of the item to find
+
+    Returns:
+        A dictionary of form:
+        {
+            "duc": duc,
+            "src": src
+        }
+    """
     r = requests.get("http://warframe.wikia.com/wiki/Ducats/Prices")
     soup = BeautifulSoup(r.text, "html.parser")
 
@@ -102,8 +114,24 @@ def item_details(item_name):
             }
 
 def get_orders(item_name, item_type):
+    """ Function to return the orders for the given item
+
+    Args:
+        item_name: the name of the item to get the orders for
+        item_type: the type of the item
+
+    Returns:
+        A dictionary with all the online, ingame, sell and buy orders
+        {
+            "ingame_buy": ingame_buy,
+            "ingame_sell": ingame_sell,
+            "online_buy": online_buy,
+            "online_sell": online_sell
+        }
+    """
     items = requests.get(ITEMS_URL).json()
 
+    # special cases. Maybe move these later?
     if (item_name == "Mesa's Waltz"):
         item_alt_name = "Mesa%E2%80%99s%20Waltz"
         item_type = "Mod"
@@ -123,6 +151,7 @@ def get_orders(item_name, item_type):
                                                             item_alt_name )
     r = requests.get(url)
 
+    # init our arrays
     current_items = r.json()
     online_sell = []
     ingame_sell = []
@@ -156,6 +185,25 @@ def get_orders(item_name, item_type):
 
 
 def order_handler(item_name):
+    """ A Handler that will be called by the /get_item/ pages
+
+    Args:
+        item_name: The name of the item to get information for
+
+    Returns:
+        A dictionary full of all the information requested
+        {
+            "item_name": item_name,
+            "ducats": item_det["duc"],
+            "src": item_det["src"],
+            "type": item_info["item_type"],
+            "ingame_sell_prices": orders['ingame_sell'][:10],
+            "online_sell_prices": orders['online_sell'][:5],
+            "ingame_buy_prices": orders['ingame_buy'][:10],
+            "online_buy_prices": orders['online_buy'][:5],
+            "max_rank": item_info["max_rank"]
+        }
+    """
     items = requests.get(ITEMS_URL).json()
     item_info = get_item_type(item_name, items)
     orders = get_orders(item_name, item_info["item_type"])

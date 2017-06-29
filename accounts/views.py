@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from django.contrib.auth import authenticate, login as auth_login
+from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import AuthenticationForm
 from forms import CreateUserForm, MarketForm
 from django.shortcuts import render, redirect
@@ -50,7 +51,7 @@ def login(request):
 
     return render(request, 'login.html', context)
 
-
+@login_required
 def settings(request):
     err = None
     valid = None
