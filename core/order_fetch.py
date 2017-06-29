@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 
 ITEMS_URL   = "http://warframe.market/api/get_all_items_v2"
 USER_URL    = "http://warframe.market/person/"
+ORDER_URL   = "http://warframe.market/orders"
 
 def get_item_type(item_name, items):
     """ Will return a dictionary with the item_type and max_rank (if present)
@@ -256,4 +257,49 @@ def get_public_orders(username):
     return {
                 "buying": str(buy_orders),
                 "selling": str(sell_orders)
+            }
+
+def parse_private_orders(main, orders):
+    """ Will parse the rows and place into the dictionary 'main'
+
+    Args:
+        main: The dictionary the parsed rows will be added to
+        orders: an array of row elements holding information about each order
+
+    Returns:
+        Nothing. Output will be put into 'main'
+    """
+    for row in orders:
+        data = []
+        if (row.find("td") != None):
+            data.append(row.select_one("td:nth-of-type(2)").text)
+            data += [ele.text for ele in row.find_all("span")[:3]]
+
+            main[row["data-id"]] = data
+
+def get_private_orders(session):
+    """ Fetch the currently logged-in users' orders
+
+    Args:
+        session: Takes in just the current session object
+
+    Returns:
+        A dictionary containing the keys and data for the table
+    """
+
+    orders = session.get(ORDER_URL)
+    soup = BeautifulSoup(orders.text, "html.parser")
+
+    sell_orders = soup.find(id="you-orders-table-sell").find_all("tr")
+    buy_orders = soup.find(id="you-orders-table-buy").find_all("tr")
+
+    selling = {}
+    buying = {}
+
+    parse_private_orders(selling, sell_orders)
+    parse_private_orders(buying, buy_orders)
+
+    return {
+            "buying": buying,
+            "selling": selling
             }

@@ -2,7 +2,8 @@ from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 from django.shortcuts import render
 from orders.order import order_form_handler
-from core.order_fetch import get_public_orders
+from core.order_fetch import get_public_orders, get_private_orders
+from core.login import login_user
 import requests
 
 @login_required
@@ -18,8 +19,20 @@ def get_user_orders(request, username):
 @login_required
 def get_orders(request):
     user = request.user
+    err = None
+    with requests.Session() as s:
+        if (user.wf_email and user.wf_password):
+            # attempt to log in the user
+            token = login_user(user.wf_email, user.wf_password, s)
+            if (token):
+                # get ourselves some orders
+                context = get_private_orders(s)
+            else:
+                err = "There was a problem logging you in!"
+        else:
+            err = "Please enter in your warframe.market credentials."
 
-    context = { "buying": [], "selling": [] }
+    context.update({"err": err})
 
     return render(request, "orders.html", context)
 

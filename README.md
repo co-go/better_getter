@@ -18,3 +18,4 @@ Auto Orders!
 
 # TODO
  * Potentially expand to Rivens?
+ * Add in "ranks" to orders

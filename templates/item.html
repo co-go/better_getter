@@ -53,7 +53,7 @@
               <tr class="details">
                 <td></td>
                 <td>Selling <b>{{ item.count }}</b></td>
-                <td>{% if 'mod_rank' in item %}
+                <td>{% if item.mod_rank %}
                 Rank <b>{{ item.mod_rank }}/{{ max_rank }}</b>
                 {% endif %}</td>
                 <td></td>
@@ -72,7 +72,7 @@
               <tr class="details">
                 <td></td>
                 <td>Selling <b>{{ item.count }}</b></td>
-                <td>{% if 'mod_rank' in item %}
+                <td>{% if item.mod_rank %}
                 Rank <b>{{ item.mod_rank }}/{{ max_rank }}</b>
                 {% endif %}</td>
                 <td></td>
@@ -110,7 +110,7 @@
               <tr class="details">
                 <td></td>
                 <td>Buying <b>{{ item.count }}</b></td>
-                <td>{% if 'mod_rank' in item %}
+                <td>{% if item.mod_rank %}
                 Rank <b>{{ item.mod_rank }}/{{ max_rank }}</b>
                 {% endif %}</td>
                 <td></td>
@@ -129,7 +129,7 @@
               <tr class="details">
                 <td></td>
                 <td>Buying <b>{{ item.count }}</b></td>
-                <td>{% if 'mod_rank' in item %}
+                <td>{% if item.mod_rank %}
                 Rank <b>{{ item.mod_rank }}/{{ max_rank }}</b>
                 {% endif %}</td>
                 <td></td>

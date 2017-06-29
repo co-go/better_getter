@@ -1,0 +1,114 @@
+{% extends "components/base.html" %}
+{% load static %}
+{% load widget_tweaks %}
+
+{% block title %}
+  {{ user.username }} Settings
+{% endblock %}
+
+{% block extra_styles %}
+  <link href="{% static 'css/orders.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<div class="top">
+  <h1 class="title"> Better <b style="font-weight: 900;">Getter</b> </h1>
+
+  <h5 class="subtitle"> built for Warframe </h5>
+</div>
+
+<div class="container">
+  <center>
+    {% if not err %}
+    <h1 class="order_title" style="padding: 30px 0"> Orders </h1>
+    <div class="row">
+
+
+      <div class="col-md-6">
+        {% if selling %}
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Sell Orders</h3>
+          </div>
+
+          <table class="table table-hover info-row">
+            <tbody>
+              {% for item, data in selling.items %}
+              <tr class="order" id="{{ item }}">
+                <td><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></td>
+                <td><b style="float: left"> {{ data.0 }} </b></td>
+                <td>{{ data.1 }} <img style="height: 1em;" src="{% static 'img/plat.png' %}" /></td>
+              </tr>
+              <tr class="details">
+                <td></td>
+                <td>Selling <b>{{ data.2 }}</b></td>
+
+                <td>{% if data.3 %}
+                Rank <b>{{ data.3 }}</b>
+                {% endif %}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+        {% else %}
+        <div class="panel panel-default">
+          <div class="panel-body">
+            No sell orders!
+          </div>
+        </div>
+        {% endif %}
+      </div>
+
+
+      <div class="col-md-6">
+        {% if buying %}
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Buy Orders</h3>
+          </div>
+
+          <table class="table table-hover info-row">
+            <tbody>
+              {% for item, data in buying.items %}
+              <tr class="order" id="{{ item }}">
+                <td><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></td>
+                <td><b style="float: left"> {{ data.0 }} </b></td>
+                <td>{{ data.1 }} <img style="height: 1em;" src="{% static 'img/plat.png' %}" /></td>
+              </tr>
+              <tr class="details">
+                <td></td>
+                <td>Selling <b>{{ data.2 }}</b></td>
+
+                <td>{% if data.3 %}
+                Rank <b>{{ data.3 }}</b>
+                {% endif %}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+        {% else %}
+        <div class="panel panel-default">
+          <div class="panel-body">
+            No buy orders!
+          </div>
+        </div>
+        {% endif %}
+      </div>
+
+    </div>
+    {% else %}
+    <h3>{{ err }}</h3>
+    {% endif %}
+  </center>
+</div>
+
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+// TODO: highlight
+
+</script>
+{% endblock %}
