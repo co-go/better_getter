@@ -2,11 +2,70 @@ import requests
 from bs4 import BeautifulSoup
 import json
 from core.order_fetch import get_orders, get_item_type
+from forms import OrderForm
+from core.login import login_user
 
 ITEM_URL    = "http://warframe.market/api/get_all_items_v2"
 ORDER_URL   = "https://warframe.market/api/place_order"
 ITEMS       = None
 
+
+def order_form_handler(request, item_name=None):
+    """ One handler for any order forms on warframe.market
+
+    Args:
+        request: the get/post data from the views
+        item_name: (Optional) can be specified if omitted
+    """
+    err = None
+    has_credentials = None
+    if request.method == "POST":
+        order_form = OrderForm(request.POST)
+        # valid form data, lets generate an order
+        if (order_form.is_valid()):
+            # create a session to use throughout the process
+            with requests.Session() as s:
+                # log into the user's account, save the token
+                if (request.user.is_authenticated):
+                    token = login_user( request.user.wf_email,
+                                        request.user.wf_password, session=s);
+
+                if (token):
+                    # gather all the form data needed
+                    if (item_name == None):
+                        item_name = order_form.cleaned_data["item_name"]
+                    market_type = request.POST.get("market_type")
+                    quantity = order_form.cleaned_data["quantity"]
+                    rank = order_form.cleaned_data["rank"]
+                    plat = order_form.cleaned_data["plat"]
+
+                    # try actually placing the order
+                    err =   place_order(token, item_name, market_type,
+                                        item_quantity=quantity, mod_rank=rank,
+                                        plat=plat, session=s)
+
+                    if (err == True):
+                        # show valid when the order has successfully been placed
+                        err = "Valid"
+
+                else:
+                    err = "We've had a problem logging you in!"
+        else:
+            err = "Check the values on your form"
+    else:
+        order_form = OrderForm()
+
+    # only users who are logged in should be able to submit stuff
+    if (request.user.is_authenticated and
+        request.user.wf_email != "" and request.user.wf_password != ""):
+
+        has_credentials = True
+
+    context = { "order_form": order_form,
+                "err": err,
+                "has_credentials": has_credentials }
+
+    return context
 
 def default_price(item_name, action_type, items):
     """ Gets a default price if one is not given

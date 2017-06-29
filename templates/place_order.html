@@ -27,11 +27,11 @@
           <div class="panel-body">
 
             <form id="order-form" action="/orders/place_order/" method="POST" role="form" onSubmit="return checkItem()" style="display: block;">
-              {% if err %}
+              {% if err and err != "Valid" %}
                 <div class="alert alert-danger">
                   <p><strong>Oh snap!</strong> {{ err }} </p>
                 </div>
-              {% elif valid %}
+              {% elif err %}
                 <div class="alert alert-success">
                   <p><strong>Bam!</strong> Your order has been placed! </p>
                 </div>

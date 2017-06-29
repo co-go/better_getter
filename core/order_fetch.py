@@ -50,7 +50,7 @@ def filter_items(item, online, ingame):
     seller = item["ingame_name"]
 
     # we're excluding PS4 and XB1 for now
-    if (seller.find("(PS4)") == -1 and seller.find("(XB1)") == -1):
+    if (seller and seller.find("(PS4)") == -1 and seller.find("(XB1)") == -1):
 
         # build a dict with the item information
         stuffs = {

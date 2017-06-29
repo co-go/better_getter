@@ -10,6 +10,7 @@ ALLOWED_HOSTS = [ 'better-getter.herokuapp.com', '127.0.0.1', 'localhost' ]
 # heroku config:set SECRET="MY_KEY_VALUE"
 SECRET_KEY = os.environ.get('SECRET', 'my-default-secret-key')
 
+LOGIN_URL = "/login/"
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -134,6 +135,14 @@ LOGGING = {
             'level': 'DEBUG',
         },
         'accounts': {
+            'handlers': ['file'],
+            'level': 'DEBUG',
+        },
+        'core': {
+            'handlers': ['file'],
+            'level': 'DEBUG',
+        },
+        'orders': {
             'handlers': ['file'],
             'level': 'DEBUG',
         },

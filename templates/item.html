@@ -159,12 +159,12 @@
             <hr style="width: 80%">
 
             {% if has_credentials %}
-            <form id="order-form" action="/get_item/{{ item_name }}/" method="POST" role="form" onSubmit="return checkItem()" style="display: block;">
-              {% if err %}
+            <form id="order-form" action="/get_item/{{ item_name }}/" method="POST" role="form" style="display: block;">
+              {% if err and err != "Valid" %}
                 <div class="alert alert-danger">
                   <p><strong>Oh snap!</strong> {{ err }} </p>
                 </div>
-              {% elif valid %}
+              {% elif err %}
                 <div class="alert alert-success">
                   <p><strong>Bam!</strong> Your order has been placed! </p>
                 </div>
