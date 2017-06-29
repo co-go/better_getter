@@ -18,6 +18,7 @@ def get_user_orders(request, username):
 @login_required
 def get_orders(request):
     user = request.user
+
     context = { "buying": [], "selling": [] }
 
     return render(request, "orders.html", context)
