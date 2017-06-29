@@ -15,6 +15,7 @@ Any User's Orders can be accessed at **/orders/[USERNAME]**
 Auto Orders!
   * Just enter in an item name and it will automatically adjust the price, plat, quantity
   * Orders can be placed on item pages as-well
+  * A logged in user's orders can be modified on /orders/
 
 # TODO
  * Potentially expand to Rivens?
