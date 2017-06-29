@@ -1,0 +1,59 @@
+{% extends "components/base.html" %}
+{% load static %}
+{% load widget_tweaks %}
+
+{% block title %}
+  {{ user.username }} Settings
+{% endblock %}
+
+{% block extra_styles %}
+  <link href="{% static 'css/settings.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<div class="top">
+  <h1 class="title"> Better <b style="font-weight: 900;">Getter</b> </h1>
+
+  <h5 class="subtitle"> built for Warframe </h5>
+</div>
+
+<div class="container">
+  <center>
+    <h1 class="order_title" style="padding: 30px 0"> Orders </h1>
+    <div class="row">
+
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading"> Sell Orders </div>
+          <div class="panel-body">
+            {{ selling|safe }}
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading"> Buy Orders </div>
+          <div class="panel-body">
+            {{ buying|safe }}
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </center>
+</div>
+
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+  $(function() {
+    var user = "{{ request.path }}";
+    user = user.split("/")[2]
+
+    $( ".order_title" ).html("Orders for " + user);
+  });
+
+</script>
+{% endblock %}

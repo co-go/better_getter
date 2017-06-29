@@ -184,7 +184,7 @@ def place_order(CSRF_TOKEN, item_name, action_type, item_quantity=None,
     # we were able to submit the order, lets check it
     print "[RESPONSE] %s" % order_post.json()['response']
 
-    if (order_post.json()['response'] == "Order Placed"):
+    if (order_post.json()['response'] == "Order placed."):
         return True
 
     return "[RESPONSE] %s" % order_post.json()['response']

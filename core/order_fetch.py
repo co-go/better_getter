@@ -2,7 +2,8 @@ import requests
 import json
 from bs4 import BeautifulSoup
 
-ITEMS_URL = "http://warframe.market/api/get_all_items_v2"
+ITEMS_URL   = "http://warframe.market/api/get_all_items_v2"
+USER_URL    = "http://warframe.market/person/"
 
 def get_item_type(item_name, items):
     """ Will return a dictionary with the item_type and max_rank (if present)
@@ -222,4 +223,37 @@ def order_handler(item_name):
                 "ingame_buy_prices": orders['ingame_buy'][:10],
                 "online_buy_prices": orders['online_buy'][:5],
                 "max_rank": item_info["max_rank"]
+            }
+
+
+def get_public_orders(username):
+    """ Function that will return the buy and sell orders of a user
+
+    Args:
+        username: The username of the user to get the orders for
+
+    Returns:
+        A dictionary of structure:
+        {
+            "buying": buying,
+            "selling": selling
+        }
+    """
+    r = requests.get(USER_URL + username)
+    soup = BeautifulSoup(r.text, "html.parser")
+
+    try:
+        sell_orders = soup.find_all(class_="personal-cont")[0].contents[1]
+    except:
+        sell_orders = '<p>User does not sell anything</p>'
+
+    try:
+        buy_orders = soup.find_all(class_="personal-cont")[1].contents[1]
+    except:
+        buy_orders = '<p>User does not buy anything</p>'
+
+
+    return {
+                "buying": str(buy_orders),
+                "selling": str(sell_orders)
             }
