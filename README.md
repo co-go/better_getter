@@ -18,5 +18,4 @@ Auto Orders!
   * A logged in user's orders can be modified on /orders/
 
 # TODO
- * Potentially expand to Rivens?
  * Add in "ranks" to orders
